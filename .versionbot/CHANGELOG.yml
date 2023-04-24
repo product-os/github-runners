@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.3.0
+      hash: 90b2f820874451affd361559d9d5b2b600016adc
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.2.0 to 0.3.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+  version: 0.1.0
+  title: ""
+  date: 2023-04-24T18:14:51.037Z
+- commits:
     - subject: Cleanup redundant environment variables
       hash: ddf0d082858f4ce48175a50f6121226759ed9a86
       body: ""
