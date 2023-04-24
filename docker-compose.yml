@@ -33,11 +33,6 @@ x-runner-common:
   labels:
     io.balena.features.optional: '1'
   privileged: true
-  userns_mode: host
-  cap_add:
-    - ALL
-  env_file:
-    - .env
   healthcheck:
     test: |
       /bin/bash -c '\
@@ -51,6 +46,7 @@ x-runner-common:
   tmpfs:
     - /tmp
     - /run:exec
+    - /var/lib/docker
     - /home/github/_work:exec
     - /scratch
   environment:
