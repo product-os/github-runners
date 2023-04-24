@@ -57,7 +57,6 @@ services:
   builder-amd64:
     <<: *builder-common
     build: builder-amd64
-    platform: linux/arm64
     ports:
       - 2376:2376
     networks:
@@ -68,7 +67,6 @@ services:
   builder-arm64v8:
     <<: *builder-common
     build: builder-arm64v8
-    platform: linux/arm64
     ports:
       - 2377:2376
     networks:
@@ -79,7 +77,6 @@ services:
   builder-arm32v7:
     <<: *builder-common
     build: builder-arm32v7
-    platform: linux/arm/v7
     ports:
       - 2378:2376
     networks:
@@ -94,7 +91,6 @@ services:
   builder-arm32v6:
     <<: *builder-common
     build: builder-arm32v6
-    platform: linux/arm/v6
     ports:
       - 2379:2376
     networks:
@@ -110,35 +106,30 @@ services:
   runner-jammy-amd64:
     <<: *runner-common
     build: runner-jammy-amd64
-    platform: linux/amd64
     networks:
       - runner-jammy-amd64
 
   runner-focal-amd64:
     <<: *runner-common
     build: runner-focal-amd64
-    platform: linux/amd64
     networks:
       - runner-focal-amd64
 
   runner-jammy-arm64v8:
     <<: *runner-common
     build: runner-jammy-arm64v8
-    platform: linux/arm64
     networks:
       - runner-jammy-arm64v8
 
   runner-focal-arm64v8:
     <<: *runner-common
     build: runner-focal-arm64v8
-    platform: linux/arm64
     networks:
       - runner-focal-arm64v8
 
   runner-jammy-arm32v7:
     <<: *runner-common
     build: runner-jammy-arm32v7
-    platform: linux/arm/v7
     networks:
       - runner-jammy-arm32v7
     command:
@@ -149,7 +140,6 @@ services:
   runner-focal-arm32v7:
     <<: *runner-common
     build: runner-focal-arm32v7
-    platform: linux/arm/v7
     networks:
       - runner-focal-arm32v7
     command:
