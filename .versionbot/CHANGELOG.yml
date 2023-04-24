@@ -1,0 +1,13 @@
+- commits:
+    - subject: Cleanup redundant environment variables
+      hash: ddf0d082858f4ce48175a50f6121226759ed9a86
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+  version: 0.0.2
+  title: ""
+  date: 2023-04-24T17:56:19.383Z
