@@ -17,7 +17,6 @@ x-builder-common:
     - /tmp
     - /var/run
   environment:
-    DOCKER_TMPDIR: /tmp
     DNS_0: "1.1.1.1"
     DNS_1: "1.0.0.1"
     STORAGE_DRIVER: "overlay2"
@@ -27,7 +26,7 @@ x-builder-common:
     HOSTS_0: "unix:///var/run/balena.sock"
     HOSTS_1: "tcp://0.0.0.0:2376"
     OOM_SCORE_ADJUST: "-999"
-    EXTRA_RUNTIME_ARGS: --tlsverify
+    TLSVERIFY: "true"
 
 x-runner-common:
   &runner-common
@@ -57,7 +56,6 @@ x-runner-common:
   environment:
     GITHUB_ENTERPRISE: balena
     VERBOSE: "false"
-    EXTRA_DOCKER_OPTS: --iptables=true
 
 services:
   builder-amd64:
