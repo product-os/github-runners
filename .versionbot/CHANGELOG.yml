@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix runner-amd64 image tag
+      hash: 46182784e236f02bde50fdf1979f5f02b6b8e7d8
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.1.3
+  title: ""
+  date: 2023-04-24T19:54:56.499Z
+- commits:
     - subject: Remove platform setting from compose services
       hash: e17ef5d9ffdf988b6faaa9058cb1ff907e3d2fd7
       body: |
