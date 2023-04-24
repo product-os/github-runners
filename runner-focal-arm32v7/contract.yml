@@ -1,0 +1,6 @@
+type: "sw.container"
+slug: "runner-focal-arm32v7"
+name: "GitHub Runner (runner-focal-arm32v7)"
+requires:
+  - type: "hw.device-type"
+    name: "generic-aarch64"

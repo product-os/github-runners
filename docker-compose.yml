@@ -1,0 +1,183 @@
+---
+version: "2.4"
+
+x-builder-common:
+  &builder-common
+  labels:
+    io.balena.features.optional: '1'
+  privileged: true
+  restart: always
+  healthcheck:
+    test: curl --silent --fail --unix-socket /var/run/balena.sock http:/v1.41/_ping
+    interval: 300s
+    timeout: 60s
+    retries: 5
+    start_period: 30s
+  tmpfs:
+    - /tmp
+    - /var/run
+  environment:
+    DOCKER_TMPDIR: /tmp
+    DNS_0: "1.1.1.1"
+    DNS_1: "1.0.0.1"
+    STORAGE_DRIVER: "overlay2"
+    STORAGE_OPTS_0: "overlay2.sync_diffs=false"
+    REGISTRY_MIRRORS_0: "https://registry-cache.balena-cloud.com"
+    REGISTRY_MIRRORS_1: "https://registry-1.docker.io"
+    HOSTS_0: "unix:///var/run/balena.sock"
+    HOSTS_1: "tcp://0.0.0.0:2376"
+    OOM_SCORE_ADJUST: "-999"
+    EXTRA_RUNTIME_ARGS: --tlsverify
+
+x-runner-common:
+  &runner-common
+  labels:
+    io.balena.features.optional: '1'
+  privileged: true
+  userns_mode: host
+  cap_add:
+    - ALL
+  env_file:
+    - .env
+  healthcheck:
+    test: |
+      /bin/bash -c '\
+        curl --silent --fail --unix-socket /var/run/docker.sock http:/v1.41/_ping && \
+        pgrep Runner.Listener'
+    interval: 300s
+    timeout: 60s
+    retries: 5
+    start_period: 30s
+  restart: always
+  tmpfs:
+    - /tmp
+    - /run:exec
+    - /home/github/_work:exec
+    - /scratch
+  environment:
+    GITHUB_ENTERPRISE: balena
+    VERBOSE: "false"
+    EXTRA_DOCKER_OPTS: --iptables=true
+
+services:
+  builder-amd64:
+    <<: *builder-common
+    build: builder-amd64
+    platform: linux/arm64
+    ports:
+      - 2376:2376
+    networks:
+      - builder-amd64
+    volumes:
+      - builder-amd64:/var/lib/balena
+
+  builder-arm64v8:
+    <<: *builder-common
+    build: builder-arm64v8
+    platform: linux/arm64
+    ports:
+      - 2377:2376
+    networks:
+      - builder-arm64v8
+    volumes:
+      - builder-arm64v8:/var/lib/balena
+
+  builder-arm32v7:
+    <<: *builder-common
+    build: builder-arm32v7
+    platform: linux/arm/v7
+    ports:
+      - 2378:2376
+    networks:
+      - builder-arm32v7
+    volumes:
+      - builder-arm32v7:/var/lib/balena
+    command:
+      - /usr/bin/setarch
+      - linux32
+      - /start-engine.sh
+
+  builder-arm32v6:
+    <<: *builder-common
+    build: builder-arm32v6
+    platform: linux/arm/v6
+    ports:
+      - 2379:2376
+    networks:
+      - builder-arm32v6
+    volumes:
+      - builder-arm32v6:/var/lib/balena
+    command:
+      - /usr/bin/setarch
+      - linux32
+      - --uname-2.6
+      - /start-engine.sh
+
+  runner-jammy-amd64:
+    <<: *runner-common
+    build: runner-jammy-amd64
+    platform: linux/amd64
+    networks:
+      - runner-jammy-amd64
+
+  runner-focal-amd64:
+    <<: *runner-common
+    build: runner-focal-amd64
+    platform: linux/amd64
+    networks:
+      - runner-focal-amd64
+
+  runner-jammy-arm64v8:
+    <<: *runner-common
+    build: runner-jammy-arm64v8
+    platform: linux/arm64
+    networks:
+      - runner-jammy-arm64v8
+
+  runner-focal-arm64v8:
+    <<: *runner-common
+    build: runner-focal-arm64v8
+    platform: linux/arm64
+    networks:
+      - runner-focal-arm64v8
+
+  runner-jammy-arm32v7:
+    <<: *runner-common
+    build: runner-jammy-arm32v7
+    platform: linux/arm/v7
+    networks:
+      - runner-jammy-arm32v7
+    command:
+      - /usr/bin/setarch
+      - linux32
+      - /start-runner.sh
+
+  runner-focal-arm32v7:
+    <<: *runner-common
+    build: runner-focal-arm32v7
+    platform: linux/arm/v7
+    networks:
+      - runner-focal-arm32v7
+    command:
+      - /usr/bin/setarch
+      - linux32
+      - /start-runner.sh
+
+# isolate container networks for security
+networks:
+  builder-amd64: {}
+  builder-arm64v8: {}
+  builder-arm32v7: {}
+  builder-arm32v6: {}
+  runner-focal-amd64: {}
+  runner-focal-arm64v8: {}
+  runner-focal-arm32v7: {}
+  runner-jammy-amd64: {}
+  runner-jammy-arm64v8: {}
+  runner-jammy-arm32v7: {}
+
+volumes:
+  builder-amd64: {}
+  builder-arm64v8: {}
+  builder-arm32v7: {}
+  builder-arm32v6: {}

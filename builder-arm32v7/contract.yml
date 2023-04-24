@@ -1,0 +1,6 @@
+type: "sw.container"
+slug: "builder-arm32v7"
+name: "Balena Builder Worker (builder-arm32v7)"
+requires:
+  - type: "hw.device-type"
+    name: "generic-aarch64"

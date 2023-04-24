@@ -1,0 +1,6 @@
+type: "sw.container"
+slug: "runner-focal-amd64"
+name: "GitHub Runner (runner-focal-amd64)"
+requires:
+  - type: "hw.device-type"
+    name: "generic-amd64"
