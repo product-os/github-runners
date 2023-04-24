@@ -1,4 +1,18 @@
 - commits:
+    - subject: Remove leftover runner config
+      hash: efe119203c881059945e476a921e58eca16332fd
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.1.1
+  title: ""
+  date: 2023-04-24T18:34:06.508Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.3.0
       hash: 90b2f820874451affd361559d9d5b2b600016adc
       body: |
