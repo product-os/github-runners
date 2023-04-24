@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.3.1
+      hash: 49ac61a0c8875e313582ed98d56d22aadae4c470
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.3.0 to 0.3.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested: []
+  version: 0.1.4
+  title: ""
+  date: 2023-04-24T20:15:39.571Z
+- commits:
     - subject: Fix runner-amd64 image tag
       hash: 46182784e236f02bde50fdf1979f5f02b6b8e7d8
       body: ""
