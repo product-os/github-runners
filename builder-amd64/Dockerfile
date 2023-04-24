@@ -1,1 +1,1 @@
-FROM ghcr.io/balena-io/balena-builder-worker:0.3.0-amd64
+FROM ghcr.io/balena-io/balena-builder-worker:0.3.1-amd64
