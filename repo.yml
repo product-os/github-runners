@@ -1,2 +1,7 @@
 ---
 type: balena
+upstream:
+- repo: ghcr.io/balena-io/balena-builder-worker
+  url: https://github.com/balena-io/balena-builder-worker
+- repo: ghcr.io/product-os/self-hosted-runners
+  url: https://github.com/product-os/self-hosted-runners
