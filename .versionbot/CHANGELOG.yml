@@ -1,4 +1,16 @@
 - commits:
+    - subject: dynamically generate builder PKI
+      hash: 441d94cedfc3d5649b1ad7924717ec23e87f8ad4
+      body: |
+        Co-authored-by: Kyle Harding <kyle@balena.io>
+      footer:
+        change-type: patch
+      author: ab77
+      nested: []
+  version: 0.2.1
+  title: ""
+  date: 2023-04-25T18:58:38.881Z
+- commits:
     - subject: Update builder-worker to v0.4.0
       hash: ac21fe048468b4ec9043257c1d552f30ace65578
       body: ""
