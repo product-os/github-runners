@@ -1,4 +1,63 @@
 - commits:
+    - subject: Update builder-worker to v0.4.0
+      hash: ac21fe048468b4ec9043257c1d552f30ace65578
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.4.0
+      hash: 6c95073be90c7dd20fa6d34028102246432ae12f
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.3.1 to 0.4.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Add DOCKER_ prefix to almost all supported env vars for daemon config
+              hash: 55579dc0247b18709275506fc9830242d47c0718
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Allow configuring TLS cert paths
+              hash: 9b3f3a003c4207b1df4643bd2b1113872f48b103
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Add DOCKER_ prefix to DNS_ and HOSTS_ list inputs
+              hash: a3f055b921558a873dda39aba5c05bbd869698d7
+              body: |
+                This should avoid conflicts with other services using
+                similar env vars like DNS_TLD.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.4.0
+          title: ""
+          date: 2023-04-25T14:57:28.600Z
+  version: 0.2.0
+  title: ""
+  date: 2023-04-25T15:13:52.014Z
+- commits:
     - subject: Set self-hosted runners to ephemeral
       hash: 468e677e2063d875fbd4d86a8ea5598cefaa6e6a
       body: ""
