@@ -1,4 +1,18 @@
 - commits:
+    - subject: Set self-hosted runners to ephemeral
+      hash: 468e677e2063d875fbd4d86a8ea5598cefaa6e6a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.1.5
+  title: ""
+  date: 2023-04-25T13:59:30.570Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.3.1
       hash: 49ac61a0c8875e313582ed98d56d22aadae4c470
       body: |
