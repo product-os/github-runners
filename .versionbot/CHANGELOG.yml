@@ -1,4 +1,61 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.3
+      hash: adb9432f3dbabdd33cda3163330c72a84bf9d23f
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 2.0.0 to 2.0.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Test that the runner process is using the correct HOME env
+              hash: 2aa3021cd3a5588915f66ba4e8c036c950741593
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-2.0.3
+          title: ""
+          date: 2023-04-26T01:50:31.645Z
+        - commits:
+            - subject: Install unzip
+              hash: 2facc1933ea4fb2148007ea8ecd268b1b20b360e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-2.0.2
+          title: ""
+          date: 2023-04-25T23:57:55.038Z
+        - commits:
+            - subject: Use su to switch to github user instead of s6-setuidgid
+              hash: a13df17fc9c4f90b6afb3480f59a6b980296d6fe
+              body: |
+                s6-setuidgid does not set the target user environment so
+                env vars like HOME still point to /root
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-2.0.1
+          title: ""
+          date: 2023-04-25T20:48:41.572Z
+  version: 0.2.2
+  title: ""
+  date: 2023-04-26T03:21:46.819Z
+- commits:
     - subject: dynamically generate builder PKI
       hash: 441d94cedfc3d5649b1ad7924717ec23e87f8ad4
       body: |
