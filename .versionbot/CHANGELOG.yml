@@ -1,4 +1,28 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.6
+      hash: b4c8da48f581235e1e70715489606564b5e515f0
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 2.0.5 to 2.0.6
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: switch to if/then block
+              hash: 3a6a29dea116a77a59df95d1c097511e1162c01d
+              body: ""
+              footer:
+                change-type: patch
+              author: ab77
+              nested: []
+          version: self-hosted-runners-2.0.6
+          title: ""
+          date: 2023-04-27T22:15:43.847Z
+  version: 0.2.5
+  title: ""
+  date: 2023-04-27T23:23:03.630Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.5
       hash: f40e8d5d37f172b51b28454593fc0062837c41c6
       body: |
