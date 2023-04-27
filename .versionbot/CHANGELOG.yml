@@ -1,4 +1,28 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.5
+      hash: f40e8d5d37f172b51b28454593fc0062837c41c6
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 2.0.4 to 2.0.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: add balena, aws and gh CLIs
+              hash: cf99411cb94eb2c8d647cb48c676a3410aee3178
+              body: ""
+              footer:
+                change-type: patch
+              author: ab77
+              nested: []
+          version: self-hosted-runners-2.0.5
+          title: ""
+          date: 2023-04-27T21:20:33.919Z
+  version: 0.2.4
+  title: ""
+  date: 2023-04-27T22:22:33.249Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.4
       hash: e2662296de499b62243ada1e041f8517995c81b3
       body: |
