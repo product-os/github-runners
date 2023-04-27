@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.4
+      hash: e2662296de499b62243ada1e041f8517995c81b3
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 2.0.3 to 2.0.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Handle whitespaces in labels
+              hash: c3893dcf8e84e3c34a53e9f76484fcdc32e6f785
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-2.0.4
+          title: ""
+          date: 2023-04-27T17:23:11.833Z
+  version: 0.2.3
+  title: ""
+  date: 2023-04-27T18:26:31.681Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.3
       hash: adb9432f3dbabdd33cda3163330c72a84bf9d23f
       body: |
