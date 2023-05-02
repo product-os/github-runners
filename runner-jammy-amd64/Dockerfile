@@ -1,1 +1,1 @@
-FROM ghcr.io/product-os/self-hosted-runners:2.0.6-amd64
+FROM ghcr.io/product-os/self-hosted-runners:2.0.7-amd64
