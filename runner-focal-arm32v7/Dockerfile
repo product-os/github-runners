@@ -1,1 +1,1 @@
-FROM ghcr.io/product-os/self-hosted-runners:2.0.7-focal-arm32v7
+FROM ghcr.io/product-os/self-hosted-runners:2.0.8-focal-arm32v7
