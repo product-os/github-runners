@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.5.0
+      hash: b8900f5b998552f3bf81994a01e8a55f86b6e76a
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.4.0 to 0.5.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Prefer base64 TLS env vars over files on disk
+              hash: 643efe0f23b26715838b427776e3df81839fbc53
+              body: |
+                If both DOCKER_TLS* paths and TLS_*_B64 values
+                are provided, use the latter.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.5.0
+          title: ""
+          date: 2023-05-04T17:21:52.958Z
+  version: 0.3.0
+  title: ""
+  date: 2023-05-04T17:34:26.483Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.7
       hash: 47907e366ed0fbcf49b68165332fdc1393847987
       body: |
