@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update docker data root to new defaults
+      hash: d1d56e261f0d4422a911fa8b9238f2c34e806216
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.4.1
+  title: ""
+  date: 2023-05-08T19:27:19.447Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.6.0
       hash: 9323ac4a52cc3ee1cd6e6eafab547cf9607adfbe
       body: |
