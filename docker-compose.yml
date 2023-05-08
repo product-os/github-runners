@@ -8,7 +8,7 @@ x-builder-common:
   privileged: true
   restart: always
   healthcheck:
-    test: curl --silent --fail --unix-socket /var/run/balena.sock http:/v1.41/_ping
+    test: curl --silent --fail --unix-socket /var/run/balena-engine.sock http:/v1.41/_ping
     interval: 300s
     timeout: 60s
     retries: 5
@@ -22,7 +22,7 @@ x-builder-common:
     DOCKER_STORAGE_DRIVER: "overlay2"
     DOCKER_STORAGE_OPTS: "overlay2.sync_diffs=false"
     DOCKER_REGISTRY_MIRRORS: "https://registry-cache.balena-cloud.com"
-    DOCKER_HOSTS: "unix:///var/run/balena.sock,tcp://0.0.0.0:2376"
+    DOCKER_HOSTS: "unix:///var/run/balena-engine.sock,tcp://0.0.0.0:2376"
     DOCKER_OOM_SCORE_ADJUST: "-999"
     DOCKER_TLSVERIFY: "true"
   depends_on:
@@ -62,7 +62,7 @@ services:
     networks:
       - builder-amd64
     volumes:
-      - builder-amd64:/var/lib/balena
+      - builder-amd64:/var/lib/balena-engine
       - certs:/certs:ro
 
   builder-arm64v8:
@@ -73,7 +73,7 @@ services:
     networks:
       - builder-arm64v8
     volumes:
-      - builder-arm64v8:/var/lib/balena
+      - builder-arm64v8:/var/lib/balena-engine
       - certs:/certs:ro
 
   builder-arm32v7:
@@ -84,7 +84,7 @@ services:
     networks:
       - builder-arm32v7
     volumes:
-      - builder-arm32v7:/var/lib/balena
+      - builder-arm32v7:/var/lib/balena-engine
       - certs:/certs:ro
     command:
       - /usr/bin/setarch
@@ -99,7 +99,7 @@ services:
     networks:
       - builder-arm32v6
     volumes:
-      - builder-arm32v6:/var/lib/balena
+      - builder-arm32v6:/var/lib/balena-engine
       - certs:/certs:ro
     command:
       - /usr/bin/setarch
