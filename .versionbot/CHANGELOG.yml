@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.6.0
+      hash: 9323ac4a52cc3ee1cd6e6eafab547cf9607adfbe
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.5.0 to 0.6.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Switch to tini for container init
+              hash: 0f5e206787066499b8bfa101474766aff674060e
+              body: |
+                Also rename some paths from balena to the default balena-engine.
+                This avoids having to set env vars for the client to find
+                the socket.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.6.0
+          title: ""
+          date: 2023-05-08T18:54:47.082Z
+  version: 0.4.0
+  title: ""
+  date: 2023-05-08T19:19:42.912Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.9
       hash: 78c9ce39a4b764cea50ac5ddfe8fb1ef2ab31d86
       body: |
