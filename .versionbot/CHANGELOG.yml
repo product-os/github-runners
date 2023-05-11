@@ -1,4 +1,19 @@
 - commits:
+    - subject: Switch to arch.sw based contracts
+      hash: 615e69e4729e269ef5fd23eb0f74bfb95d3f5548
+      body: |
+        Requires supervisor v14.11.0
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.6.0
+  title: ""
+  date: 2023-05-11T17:55:22.772Z
+- commits:
     - subject: Use new builder worker env vars
       hash: 3ef3d134f30f7859aa95a310928c23adeee11889
       body: ""
