@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.7.0
+      hash: ceee51a6cf48f3aa45a8974c37bb99094eb3e099
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.6.1 to 0.7.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Use confd to write TLS certificates to disk
+              hash: 7eaa22f16dc3be9c9f350b63c3632fd6528b0cf1
+              body: |
+                These can be overridden with env vars
+                to provide a custom path to certs on a shared volume.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.7.0
+          title: ""
+          date: 2023-05-11T13:28:44.652Z
+  version: 0.5.0
+  title: ""
+  date: 2023-05-11T15:22:43.181Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.10
       hash: 45e8d46b3e287a3d2b0ea2564a87e576287bb096
       body: |
