@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.7.1
+      hash: ca50cfd0ee7e09c9351f5d91e899bff919103602
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.7.0 to 0.7.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Only pass BUILDER_WORKER_ env vars to confd
+              hash: dc87b1d53657d273560b5f628b8f0cccdb211c45
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.7.1
+          title: ""
+          date: 2023-05-11T17:39:43.524Z
+  version: 0.6.1
+  title: ""
+  date: 2023-05-11T18:29:44.395Z
+- commits:
     - subject: Switch to arch.sw based contracts
       hash: 615e69e4729e269ef5fd23eb0f74bfb95d3f5548
       body: |
