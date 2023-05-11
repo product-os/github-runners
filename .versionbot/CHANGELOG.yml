@@ -1,4 +1,18 @@
 - commits:
+    - subject: Use new builder worker env vars
+      hash: 3ef3d134f30f7859aa95a310928c23adeee11889
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.5.2
+  title: ""
+  date: 2023-05-11T16:36:28.872Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.11
       hash: 2e4405dd4499a84f5c5231086e1968970b14a54a
       body: |
