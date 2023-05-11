@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.11
+      hash: 2e4405dd4499a84f5c5231086e1968970b14a54a
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 2.0.10 to 2.0.11
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Restore balena device uuid custom label
+              hash: c7bc030963ac29592d6a05b42571e29fecb13e92
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-2.0.11
+          title: ""
+          date: 2023-05-10T13:46:48.681Z
+  version: 0.5.1
+  title: ""
+  date: 2023-05-11T16:26:13.569Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.7.0
       hash: ceee51a6cf48f3aa45a8974c37bb99094eb3e099
       body: |
