@@ -2,5 +2,5 @@ type: "sw.container"
 slug: "builder-amd64"
 name: "Balena Builder Worker (builder-amd64)"
 requires:
-  - type: "hw.device-type"
-    name: "generic-amd64"
+  - type: "arch.sw"
+    name: "amd64"
