@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.12
+      hash: ffd58756efedac6edde3fab16df569eeea81b2ab
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 2.0.11 to 2.0.12
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Install zstd
+              hash: 94aed53f175ad12f0bb5535577c272ff424bdcef
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Harald Fischer <harald@balena.io>
+                signed-off-by: Harald Fischer <harald@balena.io>
+              author: Harald Fischer
+              nested: []
+          version: self-hosted-runners-2.0.12
+          title: ""
+          date: 2023-05-11T20:37:20.019Z
+  version: 0.6.2
+  title: ""
+  date: 2023-05-11T21:26:25.103Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.7.1
       hash: ca50cfd0ee7e09c9351f5d91e899bff919103602
       body: |
