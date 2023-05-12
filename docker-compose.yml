@@ -45,8 +45,6 @@ x-runner-common:
   restart: always
   tmpfs:
     - /tmp
-    - /run:exec
-    - /home/github/_work:exec
     - /scratch
   environment:
     GITHUB_ENTERPRISE: balena
@@ -112,30 +110,40 @@ services:
     build: runner-jammy-amd64
     networks:
       - runner-jammy-amd64
+    volumes:
+      - runner-jammy-amd64:/home/github/_work
 
   runner-focal-amd64:
     <<: *runner-common
     build: runner-focal-amd64
     networks:
       - runner-focal-amd64
+    volumes:
+      - runner-focal-arm64v8:/home/github/_work
 
   runner-jammy-arm64v8:
     <<: *runner-common
     build: runner-jammy-arm64v8
     networks:
       - runner-jammy-arm64v8
+    volumes:
+      - runner-jammy-arm64v8:/home/github/_work
 
   runner-focal-arm64v8:
     <<: *runner-common
     build: runner-focal-arm64v8
     networks:
       - runner-focal-arm64v8
+    volumes:
+      - runner-focal-arm64v8:/home/github/_work
 
   runner-jammy-arm32v7:
     <<: *runner-common
     build: runner-jammy-arm32v7
     networks:
       - runner-jammy-arm32v7
+    volumes:
+      - runner-jammy-arm32v7:/home/github/_work
     command:
       - /usr/bin/setarch
       - linux32
@@ -146,6 +154,8 @@ services:
     build: runner-focal-arm32v7
     networks:
       - runner-focal-arm32v7
+    volumes:
+      - runner-focal-arm32v7:/home/github/_work
     command:
       - /usr/bin/setarch
       - linux32
@@ -184,3 +194,19 @@ volumes:
   builder-arm32v6: {}
   cert-manager: {}
   certs: {}
+  # runner workspaces should be tmpfs, but also need execute permissions
+  runner-focal-amd64: &tmpfs-driver-ops
+    driver_opts:
+      type: tmpfs
+      device: tmpfs
+      o: "mode=1770"
+  runner-focal-arm64v8:
+    <<: *tmpfs-driver-ops
+  runner-focal-arm32v7:
+    <<: *tmpfs-driver-ops
+  runner-jammy-amd64:
+    <<: *tmpfs-driver-ops
+  runner-jammy-arm64v8:
+    <<: *tmpfs-driver-ops
+  runner-jammy-arm32v7:
+    <<: *tmpfs-driver-ops
