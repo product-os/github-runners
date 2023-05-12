@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix tmpfs volume syntax and retain execute bit
+      hash: 85e1982b15df43492055bd2ee522e782ccd9ea31
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.6.3
+  title: ""
+  date: 2023-05-12T15:59:18.812Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.12
       hash: ffd58756efedac6edde3fab16df569eeea81b2ab
       body: |
