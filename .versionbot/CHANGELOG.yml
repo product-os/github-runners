@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.1.0
+      hash: 276bb2539cce08896cc08ee0dcef74461f919c2a
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 2.0.13 to 2.1.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Automatically remount /run and as executable tmpfs
+              hash: 724a4ab5b32026e3f056d079de336ea1dcf61e42
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-2.1.0
+          title: ""
+          date: 2023-05-12T20:15:17.053Z
+  version: 0.7.0
+  title: ""
+  date: 2023-05-12T21:25:50.767Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.13
       hash: 401940f65b2611365546c2cff7d70c105d84b5b7
       body: |
