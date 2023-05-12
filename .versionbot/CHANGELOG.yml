@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.0.13
+      hash: 401940f65b2611365546c2cff7d70c105d84b5b7
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 2.0.12 to 2.0.13
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Fix tmpfs syntax but keep execute bit
+              hash: cbadfe5a75d9cd78aeb294ff5bfc286a9ec5568c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-2.0.13
+          title: ""
+          date: 2023-05-12T15:57:22.552Z
+  version: 0.6.4
+  title: ""
+  date: 2023-05-12T16:26:45.125Z
+- commits:
     - subject: Fix tmpfs volume syntax and retain execute bit
       hash: 85e1982b15df43492055bd2ee522e782ccd9ea31
       body: ""
