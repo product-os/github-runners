@@ -1,1 +1,1 @@
-FROM ghcr.io/product-os/self-hosted-runners:2.1.0-focal-amd64
+FROM ghcr.io/product-os/self-hosted-runners:2.1.1-focal-amd64
