@@ -1,4 +1,28 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.1.1
+      hash: 10d049d56498e3fb9ac8c38618012ec840a8b944
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 2.1.0 to 2.1.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: balena-cli ARM binaries
+              hash: 07a7eea9dbb031990e9de97e43b162fa652e90b5
+              body: ""
+              footer:
+                change-type: patch
+              author: ab77
+              nested: []
+          version: self-hosted-runners-2.1.1
+          title: ""
+          date: 2023-05-16T19:16:59.583Z
+  version: 0.7.2
+  title: ""
+  date: 2023-05-16T20:35:02.059Z
+- commits:
     - subject: Use a work dir in /run that is remounted as tmpfs,exec by s6-overlay
       hash: 6abbbfc6bd2cf11eb3c1aa3b6ccb7fa05109d705
       body: ""
