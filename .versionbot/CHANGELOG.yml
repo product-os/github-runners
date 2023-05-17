@@ -1,4 +1,18 @@
 - commits:
+    - subject: Remove hardcoded registry mirrors
+      hash: 5d52f5aaea4bcf0447a434a549e13c04e7d4639c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.7.3
+  title: ""
+  date: 2023-05-17T14:42:29.284Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.1.1
       hash: 10d049d56498e3fb9ac8c38618012ec840a8b944
       body: |
