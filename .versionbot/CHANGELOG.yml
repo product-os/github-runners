@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.7.2
+      hash: 85a0cf7f120876f8bd42c7e99291e1fb22c79459
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.7.1 to 0.7.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Publish as a balena block
+              hash: 3dad1e9e7bb6b002e0e884dd63f9c5983890376c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.7.2
+          title: ""
+          date: 2023-05-19T18:04:36.721Z
+  version: 0.7.4
+  title: ""
+  date: 2023-05-19T18:18:33.748Z
+- commits:
     - subject: Remove hardcoded registry mirrors
       hash: 5d52f5aaea4bcf0447a434a549e13c04e7d4639c
       body: ""
