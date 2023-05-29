@@ -1,4 +1,35 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.8.0
+      hash: 198cfbd2a3cbdaf006c1ba958ac4879180c950c4
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.7.2 to 0.8.0
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: Revert "Register ARM QEMU binfmt on x86 workers"
+              hash: ae9fc19847ee52c777844d0d7e1030bedf9b2140
+              body: |
+                This reverts commit d03050b49616748b31ae558a1233968b4b68ba58.
+
+                Instead we will register QEMU binfmt on the host via a separate
+                service.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@ablena.io>
+                signed-off-by: Kyle Harding <kyle@ablena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.8.0
+          title: ""
+          date: 2023-05-29T15:15:13.770Z
+  version: 0.9.0
+  title: ""
+  date: 2023-05-29T16:18:40.304Z
+- commits:
     - subject: Register QEMU binfmt on x86 only
       hash: ee5b1cc423d97ab089311f3a3b29660307a365a5
       body: |
