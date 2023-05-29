@@ -1,0 +1,6 @@
+type: "sw.container"
+slug: "qemu-user-static"
+name: "qemu-user-static for amd64"
+requires:
+  - type: "arch.sw"
+    name: "amd64"
