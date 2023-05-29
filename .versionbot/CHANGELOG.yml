@@ -1,4 +1,20 @@
 - commits:
+    - subject: Register QEMU binfmt on x86 only
+      hash: ee5b1cc423d97ab089311f3a3b29660307a365a5
+      body: |
+        This is used for build emulation so we can remove
+        the QEMU binaries from the builder-worker image.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.8.0
+  title: ""
+  date: 2023-05-29T14:00:25.721Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.7.2
       hash: 85a0cf7f120876f8bd42c7e99291e1fb22c79459
       body: |
