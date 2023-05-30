@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.8.2
+      hash: 4bcce1b205cbe4ad4ed7fc21223794286e0c829c
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.8.0 to 0.8.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: build quicker on native ARM builders
+              hash: f955ad962500fc2ce5790e4b5a16b1b90a034792
+              body: ""
+              footer:
+                change-type: patch
+              author: Anton Belodedenko
+              nested: []
+          version: balena-builder-worker-0.8.2
+          title: ""
+          date: 2023-05-30T14:14:18.878Z
+        - commits:
+            - subject: Deploy to DockerHub
+              hash: 400ff31900ba6c6eac1d86cd064e0c4e3219f180
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.8.1
+          title: ""
+          date: 2023-05-30T13:53:30.149Z
+  version: 0.9.1
+  title: ""
+  date: 2023-05-30T15:10:07.875Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.8.0
       hash: 198cfbd2a3cbdaf006c1ba958ac4879180c950c4
       body: |
