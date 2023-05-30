@@ -1,1 +1,1 @@
-FROM ghcr.io/balena-io/balena-builder-worker:0.8.0-arm32v7
+FROM ghcr.io/balena-io/balena-builder-worker:0.8.2-arm32v7
