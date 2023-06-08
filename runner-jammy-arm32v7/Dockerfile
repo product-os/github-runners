@@ -1,1 +1,1 @@
-FROM ghcr.io/product-os/self-hosted-runners:2.1.1-arm32v7
+FROM ghcr.io/product-os/self-hosted-runners:2.1.2-arm32v7
