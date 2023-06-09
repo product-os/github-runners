@@ -170,6 +170,8 @@ services:
     command: [ -p, yes ]
     privileged: true
     restart: no
+    labels:
+      io.balena.features.optional: '1'
 
 # isolate container networks for security
 networks:
