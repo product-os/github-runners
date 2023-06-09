@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add missing optional label on the qemu service
+      hash: 0c7862c0a4bc12e7498b425173874d5273161a2d
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.9.3
+  title: ""
+  date: 2023-06-09T15:27:43.591Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.1.2
       hash: a7e08b8bb0eee27a4b80670293f2b9337549f966
       body: |
