@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.8.3
+      hash: 87b2ab880f84b3a1e572067582e4f8dba90e7406
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.8.2 to 0.8.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Use the default storage options in the deployed image
+              hash: fec6c775bb6f8cdba6fd1ba24f65f1c06fb29ae6
+              body: |
+                Custom storage opts can be applied at runtime via env vars.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.8.3
+          title: ""
+          date: 2023-06-20T18:57:58.816Z
+  version: 0.9.5
+  title: ""
+  date: 2023-06-20T20:10:19.051Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.1.3
       hash: aa0f1c135fbd15cd6391fe59efba1c2a817ac45e
       body: |
