@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.8.4
+      hash: d5003d2721c463b26db60735a6d58d976e1cc38d
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.8.3 to 0.8.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update to debian bookworm
+              hash: 57883cb6d95fc736cbe2ecbb4dcb7c094fc2b024
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Pagan Gazzard
+              nested: []
+          version: balena-builder-worker-0.8.4
+          title: ""
+          date: 2023-07-14T15:34:21.033Z
+  version: 0.9.8
+  title: ""
+  date: 2023-07-14T16:20:39.893Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.1.4
       hash: 131730934b1b48bfc2f2e7560bf0af0064f54cde
       body: |
