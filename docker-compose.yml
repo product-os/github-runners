@@ -167,7 +167,7 @@ services:
   # https://hub.docker.com/r/multiarch/qemu-user-static
   qemu-user-static:
     build: qemu-user-static
-    command: [ -p, yes ]
+    command: [ --reset, -p, yes ]
     privileged: true
     restart: no
     labels:
