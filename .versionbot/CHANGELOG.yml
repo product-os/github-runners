@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.2.0
+      hash: e11f9849ebe1190dd413ddee3c20f97fafbce140
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 2.1.5 to 2.2.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Remount tmpfs volumes with execute bit before starting s6
+              hash: 7d4ac13c72c3194584855d3f01af95408e02b931
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-2.2.0
+          title: ""
+          date: 2023-08-08T19:37:03.153Z
+  version: 0.9.11
+  title: ""
+  date: 2023-08-08T20:25:41.260Z
+- commits:
     - subject: Reset QEMU binfmt on register
       hash: 3168ffc526d806243222e8119e1236c49f87c8e4
       body: |
