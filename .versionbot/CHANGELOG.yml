@@ -1,4 +1,19 @@
 - commits:
+    - subject: Set cp15 barrier configuration on arm32 builders
+      hash: 3a4c03dac3ff07c3146d3682e48824e2069d7cc5
+      body: |
+        This should prevent rust builds freezing on armv6
+      footer:
+        See: https://users.rust-lang.org/t/solved-armv6l-release-build-binary-freezes-debug-binary-works/27190/10
+        see: https://users.rust-lang.org/t/solved-armv6l-release-build-binary-freezes-debug-binary-works/27190/10
+        Change-type: patch
+        change-type: patch
+      author: Felipe Lalanne
+      nested: []
+  version: 0.9.12
+  title: ""
+  date: 2023-08-08T20:42:44.011Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.2.0
       hash: e11f9849ebe1190dd413ddee3c20f97fafbce140
       body: |
