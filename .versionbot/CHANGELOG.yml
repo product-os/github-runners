@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.8.5
+      hash: 66f79d64f38fe45e52e078f49a3751c6517880c5
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.8.4 to 0.8.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Use hardware execution for cp15 barrier on arm32
+              hash: 3870f643e2305ec3d1a5c76eec3b549ade4d7cfa
+              body: |
+                This should avoid rust builds freezing on armv6
+              footer:
+                See: https://users.rust-lang.org/t/solved-armv6l-release-build-binary-freezes-debug-binary-works/27190/10
+                see: https://users.rust-lang.org/t/solved-armv6l-release-build-binary-freezes-debug-binary-works/27190/10
+                Change-type: patch
+                change-type: patch
+              author: Felipe Lalanne
+              nested: []
+          version: balena-builder-worker-0.8.5
+          title: ""
+          date: 2023-08-09T16:16:52.888Z
+  version: 0.9.14
+  title: ""
+  date: 2023-08-09T17:20:34.949Z
+- commits:
     - subject: Revert changes to set abi.cp15_barrier
       hash: f973facb151139626fb5008aa6bb736693058ac1
       body: |
