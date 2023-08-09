@@ -85,9 +85,6 @@ services:
     volumes:
       - builder-arm32v7:/var/lib/balena-engine
       - certs:/certs:ro
-    sysctls:
-      abi.cp15_barrier: 2
-      vm.swappiness: 0
     command:
       - /usr/bin/setarch
       - linux32
@@ -103,9 +100,6 @@ services:
     volumes:
       - builder-arm32v6:/var/lib/balena-engine
       - certs:/certs:ro
-    sysctls:
-      abi.cp15_barrier: 2
-      vm.swappiness: 0
     command:
       - /usr/bin/setarch
       - linux32
