@@ -1,4 +1,19 @@
 - commits:
+    - subject: Revert changes to set abi.cp15_barrier
+      hash: f973facb151139626fb5008aa6bb736693058ac1
+      body: |
+        This reverts the changes in PR #54, as sysctls can only be used with
+        namespaced kernel parameters. The sysctl call will be performed in
+        https://github.com/balena-io/balena-builder-worker instead.
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Felipe Lalanne
+      nested: []
+  version: 0.9.13
+  title: ""
+  date: 2023-08-09T15:53:16.392Z
+- commits:
     - subject: Set cp15 barrier configuration on arm32 builders
       hash: 3a4c03dac3ff07c3146d3682e48824e2069d7cc5
       body: |
