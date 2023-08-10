@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.4.2
+      hash: 38b9a57f22f78b4e9aa9f3c645cd075ab641ca11
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 2.4.1 to 2.4.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Allow Renovate to manage packages installed via eget
+              hash: ef9a55ccd1e01eb804de3b476d2766c8476c8f47
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-2.4.2
+          title: ""
+          date: 2023-08-10T14:00:53.219Z
+  version: 0.9.19
+  title: ""
+  date: 2023-08-10T15:16:49.254Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.8.6
       hash: 9e183e549796bd5b17ca49408f1eb5711c80cf19
       body: |
