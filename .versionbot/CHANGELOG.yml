@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.8.7
+      hash: 092dda9da7f7a56aeed6a7c5cbc6efb7f1fcde3d
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.8.6 to 0.8.7
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Fix typo in vm.swappiness
+              hash: 0f988e4b68b6b64493ddeb10d56776d362862521
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.8.7
+          title: ""
+          date: 2023-08-10T18:11:52.375Z
+  version: 0.9.23
+  title: ""
+  date: 2023-08-10T19:29:37.541Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.0.2
       hash: 3526d589b0a59e69daafdd324a1ed28b6595a25b
       body: |
