@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.0.2
+      hash: 3526d589b0a59e69daafdd324a1ed28b6595a25b
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.0.1 to 3.0.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v16.7.6
+              hash: eb2d4553793810f652ef75448504a20eaf9e6ec1
+              body: |
+                Update balena-io/balena-cli from 16.1.0 to 16.7.6
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-3.0.2
+          title: ""
+          date: 2023-08-10T17:13:17.349Z
+  version: 0.9.22
+  title: ""
+  date: 2023-08-10T18:24:07.913Z
+- commits:
     - subject: Remove custom work directory
       hash: 62bc3d282a1e2cf111d851b3e919c93487291566
       body: |
