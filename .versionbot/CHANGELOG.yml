@@ -1,4 +1,19 @@
 - commits:
+    - subject: Remove custom work directory
+      hash: 62bc3d282a1e2cf111d851b3e919c93487291566
+      body: |
+        The self-hosted runner image now has a sane, ephemeral work directory.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.9.21
+  title: ""
+  date: 2023-08-10T17:56:37.951Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3
       hash: 24dd5f89c5e10141f84ef371fb43c91a9f158988
       body: |
