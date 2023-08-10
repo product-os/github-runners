@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.0.3
+      hash: 48e3597b09bc53176e64aa807b9fc1e63d7b8a64
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.0.2 to 3.0.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Unmount any existing tmpfs binds that may exist on startup
+              hash: 28479c2507936d07511fd03b19a24ba8fd2abd5d
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.0.3
+          title: ""
+          date: 2023-08-10T19:08:55.790Z
+  version: 0.9.24
+  title: ""
+  date: 2023-08-10T21:22:06.889Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.8.7
       hash: 092dda9da7f7a56aeed6a7c5cbc6efb7f1fcde3d
       body: |
