@@ -50,7 +50,6 @@ x-runner-common:
     GITHUB_ENTERPRISE: balena
     VERBOSE: "false"
     ACTIONS_RUNNER_EPHEMERAL: "true"
-    ACTIONS_RUNNER_WORK_DIRECTORY: /run/github/_work
 
 services:
   builder-amd64:
