@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.8.6
+      hash: 9e183e549796bd5b17ca49408f1eb5711c80cf19
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.8.5 to 0.8.6
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Install procps package to provide sysctl binary
+              hash: 25b40841cf5017efa24b601f3912bd68a9567bd5
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.8.6
+          title: ""
+          date: 2023-08-10T13:41:26.723Z
+  version: 0.9.18
+  title: ""
+  date: 2023-08-10T14:21:04.761Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v2.4.1
       hash: add622b755ca5c1fe091b23d5a29974e92d8bfda
       body: |
