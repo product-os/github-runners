@@ -134,20 +134,12 @@ services:
     build: runner-jammy-arm32v7
     networks:
       - runner-jammy-arm32v7
-    command:
-      - /usr/bin/setarch
-      - linux32
-      - /start-runner.sh
 
   runner-focal-arm32v7:
     <<: *runner-common
     build: runner-focal-arm32v7
     networks:
       - runner-focal-arm32v7
-    command:
-      - /usr/bin/setarch
-      - linux32
-      - /start-runner.sh
 
   # https://github.com/balenablocks/cert-manager
   # https://certbot.eff.org/docs/using.html
