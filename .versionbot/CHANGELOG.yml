@@ -1,4 +1,23 @@
 - commits:
+    - subject: Remove custom entrypoints from armv7 runners
+      hash: 9cea9cfbcd4e57e8caf20e0511a423946654ece6
+      body: |
+        Starting in runner v3.1.0 the setarch command is applied
+        automatically to the entrypoint if the userspace arch does
+        not match the kernel arch.
+
+        See: https://github.com/product-os/self-hosted-runners/pull/66
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.9.26
+  title: ""
+  date: 2023-08-11T18:06:45.744Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.1.0
       hash: 768386686047c2aca3b07f60b56083f9e3da849d
       body: |
