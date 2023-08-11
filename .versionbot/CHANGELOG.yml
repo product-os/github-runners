@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.1.0
+      hash: 768386686047c2aca3b07f60b56083f9e3da849d
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.0.3 to 3.1.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Move mount script to a oneshot service
+              hash: c0a645b049ab61f97031962f7370deec8af88924
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.1.0
+          title: ""
+          date: 2023-08-11T17:09:24.771Z
+  version: 0.9.25
+  title: ""
+  date: 2023-08-11T17:21:02.861Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.0.3
       hash: 48e3597b09bc53176e64aa807b9fc1e63d7b8a64
       body: |
