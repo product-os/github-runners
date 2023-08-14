@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.1.1
+      hash: f1dca96578c97846fd9bfe59417ff1f80d17f6c2
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.1.0 to 3.1.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency actions/runner to v2.308.0
+              hash: cac64d172c5062e2d9161e398c069e6542f18027
+              body: |
+                Update actions/runner from 2.307.1 to 2.308.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-3.1.1
+          title: ""
+          date: 2023-08-14T12:30:20.392Z
+  version: 0.9.27
+  title: ""
+  date: 2023-08-14T13:31:56.191Z
+- commits:
     - subject: Remove custom entrypoints from armv7 runners
       hash: 9cea9cfbcd4e57e8caf20e0511a423946654ece6
       body: |
