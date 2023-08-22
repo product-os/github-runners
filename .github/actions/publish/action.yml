@@ -1,0 +1,43 @@
+# https://docs.github.com/en/actions/creating-actions/creating-a-composite-action
+name: 'Deploy to multiple fleets'
+description: 'Deploy to multiple fleets'
+# these inputs are always provided by flowzone, so they must always be defined on the composite action
+inputs:
+  json:
+    description: 'JSON stringified object containing all the inputs from the calling workflow'
+    required: true
+  secrets:
+    description: 'JSON stringified object containing all the secrets from the calling workflow'
+    required: true
+  variables:
+    description: "JSON stringified object containing all the variables from the calling workflow"
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Merge compose files
+      shell: bash
+      run: |
+        cat docker-compose.common.yml docker-compose.${{ env.matrix_value }}.yml > docker-compose.yml
+        yq . docker-compose.yml
+
+    - name: Deploy release
+      uses: balena-io/deploy-to-balena-action@9ed3f40c78344bab0e1024e3c7aeb92dae70bd8b # v0.28.0
+      with:
+        balena_token: ${{ fromJSON(inputs.secrets).BALENA_API_KEY }}
+        fleet: balena/remote-workers-${{ env.matrix_value }}
+        environment: balena-cloud.com
+        source: .
+        debug: true
+        registry_secrets: |
+          {
+            "ghcr.io": {
+              "username": "${{ github.actor }}",
+              "password": "${{ fromJSON(inputs.secrets).GITHUB_TOKEN }}"
+            },
+            "docker.io": {
+              "username": "${{ fromJSON(inputs.secrets).DOCKERHUB_USER }}",
+              "password": "${{ fromJSON(inputs.secrets).DOCKERHUB_TOKEN }}"
+            }
+          }

@@ -1,6 +1,0 @@
-type: "sw.container"
-slug: "runner-focal-arm32v7"
-name: "GitHub Runner (runner-focal-arm32v7)"
-requires:
-  - type: "arch.sw"
-    name: "aarch64"
