@@ -1,6 +1,0 @@
-type: "sw.container"
-slug: "builder-amd64"
-name: "Balena Builder Worker (builder-amd64)"
-requires:
-  - type: "arch.sw"
-    name: "amd64"

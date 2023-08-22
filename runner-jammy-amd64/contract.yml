@@ -1,6 +1,0 @@
-type: "sw.container"
-slug: "runner-jammy-amd64"
-name: "GitHub Runner (runner-jammy-amd64)"
-requires:
-  - type: "arch.sw"
-    name: "amd64"

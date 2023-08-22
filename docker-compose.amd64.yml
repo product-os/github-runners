@@ -1,0 +1,42 @@
+version: "2.4"
+
+services:
+  builder:
+    <<: *builder-common
+    image: ghcr.io/balena-io/balena-builder-worker:0.8.7-amd64
+    ports:
+      - 2376:2376
+    networks:
+      - builder
+    volumes:
+      - builder:/var/lib/balena-engine
+      - certs:/certs:ro
+
+  runner-jammy:
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.1.4-amd64
+    networks:
+      - runner-jammy
+
+  runner-focal:
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.1.4-focal-amd64
+    networks:
+      - runner-focal
+
+  cert-manager:
+    <<: *cert-manager-common
+
+  qemu-user-static:
+    <<: *qemu-user-static-common
+
+# isolate container networks for security
+networks:
+  builder: {}
+  runner-focal: {}
+  runner-jammy: {}
+
+volumes:
+  builder: {}
+  cert-manager: {}
+  certs: {}

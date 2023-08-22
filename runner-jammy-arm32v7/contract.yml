@@ -1,6 +1,0 @@
-type: "sw.container"
-slug: "runner-jammy-arm32v7"
-name: "GitHub Runner (runner-jammy-arm32v7)"
-requires:
-  - type: "arch.sw"
-    name: "aarch64"

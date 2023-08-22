@@ -1,0 +1,88 @@
+version: "2.4"
+
+services:
+  builder-arm64v8:
+    <<: *builder-common
+    image: ghcr.io/balena-io/balena-builder-worker:0.8.7-arm64v8
+    ports:
+      - 2377:2376
+    networks:
+      - builder-arm64v8
+    volumes:
+      - builder-arm64v8:/var/lib/balena-engine
+      - certs:/certs:ro
+
+  builder-arm32v7:
+    <<: *builder-common
+    image: ghcr.io/balena-io/balena-builder-worker:0.8.7-arm32v7
+    ports:
+      - 2378:2376
+    networks:
+      - builder-arm32v7
+    volumes:
+      - builder-arm32v7:/var/lib/balena-engine
+      - certs:/certs:ro
+    command:
+      - /usr/bin/setarch
+      - linux32
+      - /start-engine.sh
+
+  builder-arm32v6:
+    <<: *builder-common
+    image: ghcr.io/balena-io/balena-builder-worker:0.8.7-arm32v6
+    ports:
+      - 2379:2376
+    networks:
+      - builder-arm32v6
+    volumes:
+      - builder-arm32v6:/var/lib/balena-engine
+      - certs:/certs:ro
+    command:
+      - /usr/bin/setarch
+      - linux32
+      - --uname-2.6
+      - /start-engine.sh
+
+  runner-jammy-arm64v8:
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.1.4-arm64v8
+    networks:
+      - runner-jammy-arm64v8
+
+  runner-focal-arm64v8:
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.1.4-focal-arm64v8
+    networks:
+      - runner-focal-arm64v8
+
+  runner-jammy-arm32v7:
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.1.4-arm32v7
+    networks:
+      - runner-jammy-arm32v7
+
+  runner-focal-arm32v7:
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.1.4-focal-arm32v7
+    networks:
+      - runner-focal-arm32v7
+
+  cert-manager:
+    <<: *cert-manager-common
+
+# isolate container networks for security
+networks:
+  builder-arm64v8: {}
+  builder-arm32v7: {}
+  builder-arm32v6: {}
+  runner-focal-arm64v8: {}
+  runner-focal-arm32v7: {}
+  runner-jammy-arm64v8: {}
+  runner-jammy-arm32v7: {}
+
+volumes:
+  builder-arm64v8: {}
+  builder-arm32v7: {}
+  builder-arm32v6: {}
+  cert-manager: {}
+  certs: {}

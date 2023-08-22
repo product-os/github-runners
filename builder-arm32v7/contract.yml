@@ -1,6 +1,0 @@
-type: "sw.container"
-slug: "builder-arm32v7"
-name: "Balena Builder Worker (builder-arm32v7)"
-requires:
-  - type: "arch.sw"
-    name: "aarch64"
