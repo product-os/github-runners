@@ -1,4 +1,21 @@
 - commits:
+    - subject: Split compose files by arch and merge before deploy
+      hash: 67acca3689579f86bb9870525297e19dcbbe20c2
+      body: |
+        Rather than creating service contracts for every container,
+        just manage two compose files and merge them with the common
+        anchors file before deploying.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.10.0
+  title: ""
+  date: 2023-08-22T20:07:38.248Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.1.4
       hash: 1b01190443ba3a8c6248d3a0035fcabd6bedab28
       body: |
