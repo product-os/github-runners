@@ -1,4 +1,19 @@
 - commits:
+    - subject: Double count of x86 runners from 2 to 4 (2x jammy, 2x focal)
+      hash: 1ef46eb53d92bd26644bfae9b1ec6cfce5a09dce
+      body: |
+        The aarch64 nodes already have 4 runners (2x aarch64, 2x armv7hf)
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.10.1
+  title: ""
+  date: 2023-08-23T13:21:09.802Z
+- commits:
     - subject: Split compose files by arch and merge before deploy
       hash: 67acca3689579f86bb9870525297e19dcbbe20c2
       body: |
