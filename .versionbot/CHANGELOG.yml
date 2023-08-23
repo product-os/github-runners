@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.8.8
+      hash: dca8cd247774fb4667811349897ce64fb8390f75
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.8.7 to 0.8.8
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update golang Docker tag to v1.20.7
+              hash: 9df68ae09a57c62fba1964688a342c0caac9cd37
+              body: |
+                Update golang from 1.20.6 to 1.20.7
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: balena-builder-worker-0.8.8
+          title: ""
+          date: 2023-08-23T16:15:18.996Z
+  version: 0.10.2
+  title: ""
+  date: 2023-08-23T17:15:52.043Z
+- commits:
     - subject: Double count of x86 runners from 2 to 4 (2x jammy, 2x focal)
       hash: 1ef46eb53d92bd26644bfae9b1ec6cfce5a09dce
       body: |
