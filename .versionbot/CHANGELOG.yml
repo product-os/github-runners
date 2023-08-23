@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.1.5
+      hash: 1e875f5065a5aa7edf8241980a98a632367f3867
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.1.4 to 3.1.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Install specific npm version controlled via Renovate
+              hash: 327025ef41215030c7583a23d244c8c64a484f1e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.1.5
+          title: ""
+          date: 2023-08-23T20:14:07.096Z
+  version: 0.10.3
+  title: ""
+  date: 2023-08-23T20:23:47.328Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.8.8
       hash: dca8cd247774fb4667811349897ce64fb8390f75
       body: |
