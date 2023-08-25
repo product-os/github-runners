@@ -36,6 +36,8 @@ x-runner-common:
     retries: 5
     start_period: 30s
   restart: always
+  labels:
+    io.balena.features.supervisor-api: 1
   tmpfs:
     - /tmp
     - /run
