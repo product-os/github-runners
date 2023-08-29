@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.2.5
+      hash: f4e8d40dc21711bebac1bd3b4083a2e17a50f0ae
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.2.4 to 3.2.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Fallback to GitHub PAT for enterprise runner registration
+              hash: da87a364c6dacb4a7088b71b94fa6da9ac4b935e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.2.5
+          title: ""
+          date: 2023-08-29T20:12:35.612Z
+  version: 0.10.8
+  title: ""
+  date: 2023-08-29T21:22:10.436Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.2.4
       hash: 12f02b73a3001970a95286d146099d3c4331d562
       body: |
