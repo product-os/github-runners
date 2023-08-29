@@ -1,4 +1,45 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.2.4
+      hash: 12f02b73a3001970a95286d146099d3c4331d562
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.2.2 to 3.2.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Install github token npm package at build time
+              hash: 4a56245c9a246b6a8d07ae351535a04de3285d90
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.2.4
+          title: ""
+          date: 2023-08-29T17:57:29.182Z
+        - commits:
+            - subject: Install podman, buildah, and skopeo from ubuntu 21 repos
+              hash: 39af98f2e430c3fea70cdf73529e20347e127177
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.2.3
+          title: ""
+          date: 2023-08-29T16:24:11.648Z
+  version: 0.10.7
+  title: ""
+  date: 2023-08-29T18:23:54.665Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.2.2
       hash: c66cbf897f0ff9428d74c815c313fffd9d2d3e7a
       body: |
