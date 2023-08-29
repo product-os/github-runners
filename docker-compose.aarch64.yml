@@ -1,5 +1,53 @@
 version: "2.4"
 
+x-builder-common:
+  &builder-common
+  privileged: true
+  restart: always
+  healthcheck:
+    test: curl --silent --fail --unix-socket /var/run/balena-engine.sock http:/v1.41/_ping
+    interval: 300s
+    timeout: 60s
+    retries: 5
+    start_period: 30s
+  tmpfs:
+    - /tmp
+    - /run
+    - /var/run
+  environment:
+    BUILDER_WORKER_DNS: "1.1.1.1,1.0.0.1"
+    BUILDER_WORKER_STORAGE_DRIVER: "overlay2"
+    BUILDER_WORKER_STORAGE_OPTS: "overlay2.sync_diffs=false"
+    BUILDER_WORKER_HOSTS: "unix:///var/run/balena-engine.sock,tcp://0.0.0.0:2376"
+    BUILDER_WORKER_OOM_SCORE_ADJUST: "-999"
+    BUILDER_WORKER_TLSVERIFY: "true"
+  depends_on:
+    - cert-manager
+
+x-runner-common:
+  &runner-common
+  privileged: true
+  healthcheck:
+    test: |
+      /bin/bash -c '\
+        curl --silent --fail --unix-socket /var/run/docker.sock http:/v1.41/_ping && \
+        pgrep Runner.Listener'
+    interval: 300s
+    timeout: 60s
+    retries: 5
+    start_period: 30s
+  restart: always
+  labels:
+    io.balena.features.supervisor-api: 1
+  tmpfs:
+    - /tmp
+    - /run
+    - /scratch
+  environment:
+    GITHUB_ENTERPRISE: balena
+    VERBOSE: "false"
+    ACTIONS_RUNNER_EPHEMERAL: "true"
+
 services:
   builder-arm64v8:
     <<: *builder-common
@@ -67,8 +115,18 @@ services:
     networks:
       - runner-focal-arm32v7
 
+  # https://github.com/balenablocks/cert-manager
+  # https://certbot.eff.org/docs/using.html
+  # https://certbot-dns-cloudflare.readthedocs.io/
   cert-manager:
-    <<: *cert-manager-common
+    build: cert-manager
+    restart: unless-stopped
+    volumes:
+      - cert-manager:/etc/letsencrypt
+      - certs:/certs
+    labels:
+      io.balena.features.balena-api: 1
+      io.balena.features.supervisor-api: 1
 
 # isolate container networks for security
 networks:
