@@ -62,25 +62,25 @@ services:
 
   runner-jammy-1:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.1.5-amd64
+    image: ghcr.io/product-os/self-hosted-runners:3.2.1-amd64
     networks:
       - runner-jammy-1
 
   runner-jammy-2:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.1.5-amd64
+    image: ghcr.io/product-os/self-hosted-runners:3.2.1-amd64
     networks:
       - runner-jammy-2
 
   runner-focal-1:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.1.5-focal-amd64
+    image: ghcr.io/product-os/self-hosted-runners:3.2.1-focal-amd64
     networks:
       - runner-focal-1
 
   runner-focal-2:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.1.5-focal-amd64
+    image: ghcr.io/product-os/self-hosted-runners:3.2.1-focal-amd64
     networks:
       - runner-focal-2
 
