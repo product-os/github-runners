@@ -1,4 +1,22 @@
 - commits:
+    - subject: Remove supervisor API from runners
+      hash: 185be9e8fea85b22e06624dc374b5dce826b808d
+      body: |
+        Reverts commit da675087620f908a7029e0c148c02312d49be314
+
+        The above commit was not intended to be merged as it exposes
+        a security risk on the runners.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.10.11
+  title: ""
+  date: 2023-08-30T19:10:07.171Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.3.0
       hash: da71ffdba6dfb259623060077f075d19b01466a8
       body: |
