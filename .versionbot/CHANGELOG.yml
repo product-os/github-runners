@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.3.1
+      hash: db505df4f1d353e13fced15093bae9c131a09a0f
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.3.0 to 3.3.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Run e2e tests from a sidecar service
+              hash: 0002e0bb6090ca6f2338ef7abce73df3d5405887
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.3.1
+          title: ""
+          date: 2023-08-30T21:03:05.913Z
+  version: 0.10.12
+  title: ""
+  date: 2023-08-30T21:25:16.783Z
+- commits:
     - subject: Remove supervisor API from runners
       hash: 185be9e8fea85b22e06624dc374b5dce826b808d
       body: |
