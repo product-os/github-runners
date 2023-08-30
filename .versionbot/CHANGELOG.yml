@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.3.0
+      hash: da71ffdba6dfb259623060077f075d19b01466a8
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.2.6 to 3.3.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Add runner as a supervised service
+              hash: 4c65cf8d0cf8eb0f651d9eb56effa3941025d8c6
+              body: |
+                This allows us to test the runner service the same
+                way we do in production, as a supervised service, rather
+                than a background shell.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.3.0
+          title: ""
+          date: 2023-08-30T15:29:50.219Z
+  version: 0.10.10
+  title: ""
+  date: 2023-08-30T16:17:41.315Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.2.6
       hash: 91a5e1a3d52d6e454177bffa21128369981a0566
       body: |
