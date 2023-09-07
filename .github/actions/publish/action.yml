@@ -22,7 +22,7 @@ runs:
         ln -sf docker-compose.${{ env.matrix_value }}.yml docker-compose.yml
 
     - name: Deploy release
-      uses: balena-io/deploy-to-balena-action@9ed3f40c78344bab0e1024e3c7aeb92dae70bd8b # v0.28.0
+      uses: balena-io/deploy-to-balena-action@4495424a8247c08911413a57afbbc62815a39e56 # v1.0.3
       with:
         balena_token: ${{ fromJSON(inputs.secrets).BALENA_API_KEY }}
         fleet: balena/remote-workers-${{ env.matrix_value }}
