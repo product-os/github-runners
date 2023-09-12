@@ -76,29 +76,41 @@ services:
       - builder-arm32v6:/var/lib/balena-engine
       - certs:/certs:ro
 
-  runner-jammy-arm64v8:
+  runner-jammy-1:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.3.4-arm64v8
+    image: ghcr.io/product-os/self-hosted-runners:3.3.4
     networks:
-      - runner-jammy-arm64v8
+      - runner-jammy-1
 
-  runner-focal-arm64v8:
+  runner-jammy-2:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.3.4-focal-arm64v8
+    image: ghcr.io/product-os/self-hosted-runners:3.3.4
     networks:
-      - runner-focal-arm64v8
+      - runner-jammy-2
 
-  runner-jammy-arm32v7:
+  runner-jammy-3:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.3.4-arm32v7
+    image: ghcr.io/product-os/self-hosted-runners:3.3.4
     networks:
-      - runner-jammy-arm32v7
+      - runner-jammy-3
 
-  runner-focal-arm32v7:
+  runner-focal-1:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.3.4-focal-arm32v7
+    image: ghcr.io/product-os/self-hosted-runners:3.3.4-focal
     networks:
-      - runner-focal-arm32v7
+      - runner-focal-1
+
+  runner-focal-2:
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.3.4-focal
+    networks:
+      - runner-focal-2
+
+  runner-focal-3:
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.3.3-focal
+    networks:
+      - runner-focal-3
 
   # https://github.com/balenablocks/cert-manager
   # https://certbot.eff.org/docs/using.html
@@ -118,10 +130,12 @@ networks:
   builder-arm64v8: {}
   builder-arm32v7: {}
   builder-arm32v6: {}
-  runner-focal-arm64v8: {}
-  runner-focal-arm32v7: {}
-  runner-jammy-arm64v8: {}
-  runner-jammy-arm32v7: {}
+  runner-jammy-1: {}
+  runner-jammy-2: {}
+  runner-jammy-3: {}
+  runner-focal-1: {}
+  runner-focal-2: {}
+  runner-focal-3: {}
 
 volumes:
   builder-arm64v8: {}
