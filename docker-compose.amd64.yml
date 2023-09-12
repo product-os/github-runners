@@ -40,7 +40,6 @@ x-runner-common:
     - /scratch
   environment:
     GITHUB_ENTERPRISE: balena
-    VERBOSE: "false"
     ACTIONS_RUNNER_EPHEMERAL: "true"
 
 services:
