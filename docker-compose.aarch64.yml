@@ -49,7 +49,7 @@ x-runner-common:
 services:
   builder-arm64v8:
     <<: *builder-common
-    image: ghcr.io/balena-io/balena-builder-worker:0.8.9-arm64v8
+    image: ghcr.io/balena-io/balena-builder-worker:0.8.10-arm64v8
     ports:
       - 2377:2376
     networks:
@@ -60,7 +60,7 @@ services:
 
   builder-arm32v7:
     <<: *builder-common
-    image: ghcr.io/balena-io/balena-builder-worker:0.8.9-arm32v7
+    image: ghcr.io/balena-io/balena-builder-worker:0.8.10-arm32v7
     ports:
       - 2378:2376
     networks:
@@ -75,7 +75,7 @@ services:
 
   builder-arm32v6:
     <<: *builder-common
-    image: ghcr.io/balena-io/balena-builder-worker:0.8.9-arm32v6
+    image: ghcr.io/balena-io/balena-builder-worker:0.8.10-arm32v6
     ports:
       - 2379:2376
     networks:
