@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.8.10
+      hash: c09d9a6bc656372d0628d259d306f2914943410e
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.8.9 to 0.8.10
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Set DOCKER_HOST to the local engine socket
+              hash: aaa96c73d309ee1bfa96d603a62a8ea9fca61827
+              body: |
+                This allows easier running of debugging tools that expect
+                the docker socket to be set.
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.8.10
+          title: ""
+          date: 2023-09-21T19:28:21.304Z
+  version: 0.10.17
+  title: ""
+  date: 2023-09-21T20:12:52.208Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.3.3
       hash: b6423badb4394f0025a74e0c81071ec50657df98
       body: |
