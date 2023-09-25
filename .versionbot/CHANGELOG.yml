@@ -1,4 +1,21 @@
 - commits:
+    - subject: Remove redundant setarch entrypoint from armv6 and armv7 builders
+      hash: f560c5043b5b696f445c600ebc973f9c88c5f942
+      body: |
+        This command is now part of the upstream image.
+      footer:
+        See: https://github.com/balena-io/balena-builder-worker/pull/38/commits/7e95260006fd25465efdab1e4dee5ee8cd784e9d
+        see: https://github.com/balena-io/balena-builder-worker/pull/38/commits/7e95260006fd25465efdab1e4dee5ee8cd784e9d
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.10.19
+  title: ""
+  date: 2023-09-25T13:39:05.309Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.10.0
       hash: da7760c739df4b51da722990c52b6f9661f25b61
       body: |
