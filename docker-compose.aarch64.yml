@@ -68,10 +68,6 @@ services:
     volumes:
       - builder-arm32v7:/var/lib/balena-engine
       - certs:/certs:ro
-    command:
-      - /usr/bin/setarch
-      - linux32
-      - /start-engine.sh
 
   builder-arm32v6:
     <<: *builder-common
@@ -83,11 +79,6 @@ services:
     volumes:
       - builder-arm32v6:/var/lib/balena-engine
       - certs:/certs:ro
-    command:
-      - /usr/bin/setarch
-      - linux32
-      - --uname-2.6
-      - /start-engine.sh
 
   runner-jammy-arm64v8:
     <<: *runner-common
