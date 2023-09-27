@@ -1,4 +1,41 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.11.0
+      hash: 50ab167bef96f8757634faff37141336c1775d9a
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.10.0 to 0.11.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Create balena application locks when builds are in progress
+              hash: e30275207dc092dad34a23d7a87624d2eefcef61
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Add docker healthcheck script from meta-balena
+              hash: 8189d59ee9b383b9dc009f9fcfa752e2cbdcc3e7
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.11.0
+          title: ""
+          date: 2023-09-27T12:06:52.729Z
+  version: 0.10.20
+  title: ""
+  date: 2023-09-27T13:23:33.231Z
+- commits:
     - subject: Remove redundant setarch entrypoint from armv6 and armv7 builders
       hash: f560c5043b5b696f445c600ebc973f9c88c5f942
       body: |
