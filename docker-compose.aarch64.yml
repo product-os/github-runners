@@ -5,7 +5,7 @@ x-builder-common:
   privileged: true
   restart: always
   healthcheck:
-    test: curl --silent --fail --unix-socket /var/run/balena-engine.sock http:/v1.41/_ping
+    test: /docker-hc
     interval: 300s
     timeout: 60s
     retries: 5
@@ -28,10 +28,7 @@ x-runner-common:
   &runner-common
   privileged: true
   healthcheck:
-    test: |
-      /bin/bash -c '\
-        curl --silent --fail --unix-socket /var/run/docker.sock http:/v1.41/_ping && \
-        pgrep Runner.Listener'
+    test: /home/runner/docker-hc
     interval: 300s
     timeout: 60s
     retries: 5
