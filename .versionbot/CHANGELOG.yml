@@ -1,4 +1,18 @@
 - commits:
+    - subject: Use docker-hc script in container root
+      hash: ae2b6ae511069e5f333ab3102e74237ec7e175da
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.10.21
+  title: ""
+  date: 2023-09-27T16:16:02.881Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.11.0
       hash: 50ab167bef96f8757634faff37141336c1775d9a
       body: |
