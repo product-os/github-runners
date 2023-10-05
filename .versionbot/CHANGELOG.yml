@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.11.1
+      hash: 424d9f280575480b09fde7b7cb9dbe231c516493
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.11.0 to 0.11.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Force build with cgo for DNS resolution with support for MDNS
+              hash: cf33a10b940b9bcba7efce0d068dd1b2a75b0837
+              body: ""
+              footer:
+                See: https://pkg.go.dev/net#hdr-Name_Resolution
+                see: https://pkg.go.dev/net#hdr-Name_Resolution
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.11.1
+          title: ""
+          date: 2023-10-05T18:39:10.954Z
+  version: 0.10.22
+  title: ""
+  date: 2023-10-05T19:10:36.798Z
+- commits:
     - subject: Use docker-hc script in container root
       hash: ae2b6ae511069e5f333ab3102e74237ec7e175da
       body: ""
