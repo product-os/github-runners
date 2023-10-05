@@ -46,7 +46,7 @@ x-runner-common:
 services:
   builder:
     <<: *builder-common
-    image: ghcr.io/balena-io/balena-builder-worker:0.11.0-amd64
+    image: ghcr.io/balena-io/balena-builder-worker:0.11.1-amd64
     ports:
       - 2376:2376
     networks:
