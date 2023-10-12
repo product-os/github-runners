@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.11.2
+      hash: 93275ddf639ad50da3da4f7d462c3c290ecffb9d
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.11.1 to 0.11.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Expose default shm size and ulimits as env vars
+              hash: 251790b4fe71a4750e04a04e1e4dd4f0f8a1277f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.11.2
+          title: ""
+          date: 2023-10-12T19:06:11.673Z
+  version: 0.10.23
+  title: ""
+  date: 2023-10-12T20:09:29.347Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.11.1
       hash: 424d9f280575480b09fde7b7cb9dbe231c516493
       body: |
