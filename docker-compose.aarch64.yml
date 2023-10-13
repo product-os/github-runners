@@ -79,25 +79,25 @@ services:
 
   runner-jammy-arm64v8:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.3.3-arm64v8
+    image: ghcr.io/product-os/self-hosted-runners:3.3.4-arm64v8
     networks:
       - runner-jammy-arm64v8
 
   runner-focal-arm64v8:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.3.3-focal-arm64v8
+    image: ghcr.io/product-os/self-hosted-runners:3.3.4-focal-arm64v8
     networks:
       - runner-focal-arm64v8
 
   runner-jammy-arm32v7:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.3.3-arm32v7
+    image: ghcr.io/product-os/self-hosted-runners:3.3.4-arm32v7
     networks:
       - runner-jammy-arm32v7
 
   runner-focal-arm32v7:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.3.3-focal-arm32v7
+    image: ghcr.io/product-os/self-hosted-runners:3.3.4-focal-arm32v7
     networks:
       - runner-focal-arm32v7
 
