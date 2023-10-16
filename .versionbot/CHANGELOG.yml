@@ -1,4 +1,28 @@
 - commits:
+    - subject: Replace arm32v7 runners with additional arm64 runners
+      hash: 8e95a562cee6eb5d0f027052721bb3f6b856c0f8
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Use included docker healtcheck script in runners
+      hash: 4f404ec43a0f5a6af0b8e1ea7b8e726088ac8e20
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.11.0
+  title: ""
+  date: 2023-10-16T20:56:56.798Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.3.4
       hash: 49bc792c8abdf3af320fd543f873e60a206fa97c
       body: |
