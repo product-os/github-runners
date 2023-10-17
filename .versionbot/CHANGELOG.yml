@@ -1,4 +1,57 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.4.1
+      hash: 3598b16eb35282cdd7657186853ab8107707d84a
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.3.4 to 3.4.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v17.1.5
+              hash: d3913d8c4ba2da49ffa191d593b9641973e1b897
+              body: |
+                Update balena-io/balena-cli from 17.1.1 to 17.1.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-3.4.1
+          title: ""
+          date: 2023-10-17T21:15:55.481Z
+        - commits:
+            - subject: Disable publish of separate images per architecture
+              hash: b2760b9df582aedc9014102e1b4effe945b8847e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Remove support for arm32v7 builds
+              hash: fbabae9f8dd9b0669270d04199c4f04783ee00ae
+              body: |
+                These images were under-utilized and anything
+                that needs to target that platform can run natively
+                on aarch64 runners anyway.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.4.0
+          title: ""
+          date: 2023-10-16T23:25:54.126Z
+  version: 0.11.1
+  title: ""
+  date: 2023-10-17T22:14:45.454Z
+- commits:
     - subject: Replace arm32v7 runners with additional arm64 runners
       hash: 8e95a562cee6eb5d0f027052721bb3f6b856c0f8
       body: ""
