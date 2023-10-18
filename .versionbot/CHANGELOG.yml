@@ -1,4 +1,44 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.4.4
+      hash: 853e435d6239130933543a293d32f485db2db861
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.4.2 to 3.4.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove actions hooks and powershell release tag prefix
+              hash: 846e315a71eacb815fce815ed574521479e3c077
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.4.4
+          title: ""
+          date: 2023-10-18T17:59:24.501Z
+        - commits:
+            - subject: Update dependency actions/runner to v2.310.2
+              hash: f9eb62952295c5596b4581af8131a6fbc0dc0554
+              body: |
+                Update actions/runner from 2.309.0 to 2.310.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-3.4.3
+          title: ""
+          date: 2023-10-17T23:36:00.598Z
+  version: 0.11.3
+  title: ""
+  date: 2023-10-18T18:13:26.354Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.4.2
       hash: 05f8ae3e3be98b563cc3581981a7504aa91dc772
       body: |
