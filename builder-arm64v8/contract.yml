@@ -1,0 +1,6 @@
+type: "sw.container"
+slug: "builder-arm64v8"
+name: "builder-arm64v8 on aarch64"
+requires:
+  - type: "arch.sw"
+    name: "aarch64"
