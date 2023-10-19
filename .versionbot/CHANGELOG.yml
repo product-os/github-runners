@@ -1,4 +1,18 @@
 - commits:
+    - subject: Merge compose files and use container contracts
+      hash: b0c6244643dafd32e5ef4dd39c00d804bcb40236
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.12.0
+  title: ""
+  date: 2023-10-19T16:19:28.534Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.4.4
       hash: 853e435d6239130933543a293d32f485db2db861
       body: |
