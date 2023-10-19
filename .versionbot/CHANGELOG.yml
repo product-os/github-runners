@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.11.3
+      hash: ab80af3cef4005e67eee63e9a08da36600bbc9e2
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.11.2 to 0.11.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove default registry mirror
+              hash: 113ee99ea6f0c33ebf904a0ed8e93ef79a967e94
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.11.3
+          title: ""
+          date: 2023-10-19T16:22:41.599Z
+  version: 0.12.1
+  title: ""
+  date: 2023-10-19T17:14:56.983Z
+- commits:
     - subject: Merge compose files and use container contracts
       hash: b0c6244643dafd32e5ef4dd39c00d804bcb40236
       body: ""
