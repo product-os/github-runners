@@ -1,0 +1,6 @@
+type: "sw.container"
+slug: "builder-amd64"
+name: "builder-amd64 on amd64"
+requires:
+  - type: "arch.sw"
+    name: "amd64"

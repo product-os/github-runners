@@ -24,11 +24,8 @@ jobs:
       )
     secrets: inherit
     with:
-      custom_publish_matrix: >
-        amd64,
-        aarch64
-      custom_finalize_matrix: >
-        amd64,
-        aarch64
+      balena_slugs: |
+        balena/remote-workers-amd64,
+        balena/remote-workers-aarch64
       repo_config: true
       repo_description: "Remote balena builder workers and self-hosted GitHub runners for balena.io"
