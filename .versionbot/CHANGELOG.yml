@@ -1,4 +1,15 @@
 - commits:
+    - subject: runners with balena-cli allowing unsetting of env vars (e.g. '')
+      hash: 3350c5e64cf83388471830a95830818107bab35f
+      body: ""
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.12.2
+  title: ""
+  date: 2023-10-23T20:36:59.686Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.11.3
       hash: ab80af3cef4005e67eee63e9a08da36600bbc9e2
       body: |
