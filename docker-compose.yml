@@ -47,12 +47,12 @@ x-runner-common:
 x-runner-jammy:
   &runner-jammy
   <<: *runner-common
-  image: ghcr.io/product-os/self-hosted-runners:3.4.4
+  image: ghcr.io/product-os/self-hosted-runners:3.4.8
 
 x-runner-focal:
   &runner-focal
   <<: *runner-common
-  image: ghcr.io/product-os/self-hosted-runners:3.4.4-focal
+  image: ghcr.io/product-os/self-hosted-runners:3.4.8-focal
 
 services:
   builder-amd64:
