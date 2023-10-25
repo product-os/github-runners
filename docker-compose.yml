@@ -44,16 +44,6 @@ x-runner-common:
     GITHUB_ENTERPRISE: balena
     ACTIONS_RUNNER_EPHEMERAL: "true"
 
-x-runner-jammy:
-  &runner-jammy
-  <<: *runner-common
-  image: ghcr.io/product-os/self-hosted-runners:3.4.8
-
-x-runner-focal:
-  &runner-focal
-  <<: *runner-common
-  image: ghcr.io/product-os/self-hosted-runners:3.4.8-focal
-
 services:
   builder-amd64:
     <<: *builder-common
@@ -100,22 +90,28 @@ services:
       - certs:/certs:ro
 
   runner-jammy-1:
-    <<: *runner-jammy
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.4.8
 
   runner-jammy-2:
-    <<: *runner-jammy
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.4.8
 
   runner-jammy-3:
-    <<: *runner-jammy
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.4.8
 
   runner-focal-1:
-    <<: *runner-focal
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.4.8-focal
 
   runner-focal-2:
-    <<: *runner-focal
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.4.8-focal
 
   runner-focal-3:
-    <<: *runner-focal
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.4.8-focal
 
   # https://github.com/balenablocks/cert-manager
   # https://certbot.eff.org/docs/using.html
