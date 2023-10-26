@@ -1,4 +1,20 @@
 - commits:
+    - subject: Remove network isolation that wasn't functionally more secure
+      hash: cbc4a40e17c25670b871b9c382a6f5c9f361253d
+      body: |
+        Docker builds are use their own bridge anyway, so there
+        are no concerns with the builder containers sharing a runtime bridge.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.12.5
+  title: ""
+  date: 2023-10-26T16:33:48.790Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.5.0
       hash: 55346846fc232a6caf9dcbe3dac5d3e9bd66e276
       body: |
