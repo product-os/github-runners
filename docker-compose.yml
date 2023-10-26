@@ -50,8 +50,6 @@ services:
     build: builder-amd64
     ports:
       - 2376:2376
-    networks:
-      - builder-amd64
     volumes:
       - builder-amd64:/var/lib/balena-engine
       - certs:/certs:ro
@@ -61,8 +59,6 @@ services:
     build: builder-arm64v8
     ports:
       - 2377:2376
-    networks:
-      - builder-arm64v8
     volumes:
       - builder-arm64v8:/var/lib/balena-engine
       - certs:/certs:ro
@@ -72,8 +68,6 @@ services:
     build: builder-arm32v7
     ports:
       - 2378:2376
-    networks:
-      - builder-arm32v7
     volumes:
       - builder-arm32v7:/var/lib/balena-engine
       - certs:/certs:ro
@@ -83,8 +77,6 @@ services:
     build: builder-arm32v6
     ports:
       - 2379:2376
-    networks:
-      - builder-arm32v6
     volumes:
       - builder-arm32v6:/var/lib/balena-engine
       - certs:/certs:ro
@@ -135,13 +127,6 @@ services:
     restart: no
     labels:
       io.balena.features.optional: '1'
-
-# isolate container networks for security
-networks:
-  builder-amd64: {}
-  builder-arm64v8: {}
-  builder-arm32v7: {}
-  builder-arm32v6: {}
 
 volumes:
   builder-amd64: {}
