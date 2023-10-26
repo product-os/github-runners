@@ -29,20 +29,15 @@ x-builder-common:
 x-runner-common:
   &runner-common
   privileged: true
-  healthcheck:
-    test: /home/runner/docker-hc
-    interval: 300s
-    timeout: 60s
-    retries: 5
-    start_period: 30s
-  restart: always
+  network_mode: host
   tmpfs:
     - /tmp
     - /run
     - /scratch
+    - /srv
   environment:
     GITHUB_ENTERPRISE: balena
-    ACTIONS_RUNNER_EPHEMERAL: "true"
+    ACTIONS_RUNNER_GROUP: self-hosted
 
 services:
   builder-amd64:
@@ -89,21 +84,21 @@ services:
     <<: *runner-common
     image: ghcr.io/product-os/self-hosted-runners:3.5.1
 
-  runner-jammy-3:
+  runner-jammy-vm-1:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.5.1
+    image: ghcr.io/product-os/self-hosted-runners:3.5.1-jammy-vm
+
+  runner-jammy-vm-2:
+    <<: *runner-common
+    image: ghcr.io/product-os/self-hosted-runners:3.5.1-jammy-vm
 
   runner-focal-1:
     <<: *runner-common
     image: ghcr.io/product-os/self-hosted-runners:3.5.1-focal
 
-  runner-focal-2:
+  runner-focal-vm-1:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.5.1-focal
-
-  runner-focal-3:
-    <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.5.1-focal
+    image: ghcr.io/product-os/self-hosted-runners:3.5.1-focal-vm
 
   # https://github.com/balenablocks/cert-manager
   # https://certbot.eff.org/docs/using.html
