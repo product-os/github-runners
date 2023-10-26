@@ -1,4 +1,20 @@
 - commits:
+    - subject: Deploy vm runners in addition to container runners
+      hash: 828835d05bd18a898e3123c3f15aba15fb78bd7d
+      body: |
+        In a future commit these will be assigned to separate
+        runner groups, but for now we want to perform A/B testing.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.13.0
+  title: ""
+  date: 2023-10-26T17:36:06.424Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.5.1
       hash: c7d1ec05aa8cce6c325238c4daaf742b5d3ca8ac
       body: |
