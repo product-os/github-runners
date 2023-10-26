@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.5.1
+      hash: c7d1ec05aa8cce6c325238c4daaf742b5d3ca8ac
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.5.0 to 3.5.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Provide additional build-time runner tags
+              hash: bdbfc865b161ee1865ef2b40f518b782ecde27b3
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.5.1
+          title: ""
+          date: 2023-10-26T15:56:05.694Z
+  version: 0.12.6
+  title: ""
+  date: 2023-10-26T17:10:15.792Z
+- commits:
     - subject: Remove network isolation that wasn't functionally more secure
       hash: cbc4a40e17c25670b871b9c382a6f5c9f361253d
       body: |
