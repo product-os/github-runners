@@ -1,4 +1,18 @@
 - commits:
+    - subject: Scale VM runners to 0 while we fix some bugs
+      hash: 8af9e45656a3fb7257af1b653f727fc0613f920b
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.13.5
+  title: ""
+  date: 2023-10-27T16:48:50.049Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.5.5
       hash: 5f7f402891ad29a8df2cb75a6c3d2452f7568d64
       body: |
