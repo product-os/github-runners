@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.5.7
+      hash: 55a14e99ff95acec712a0de8670a5618701942be
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.5.6 to 3.5.7
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/balena-io-experimental/ctr-jailer Docker tag to v0.0.22
+              hash: 2f2a0eca2f852f0a84faa0f5450d129746569fea
+              body: >
+                Update ghcr.io/balena-io-experimental/ctr-jailer from 0.0.20 to
+                0.0.22
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-3.5.7
+          title: ""
+          date: 2023-10-27T21:15:29.023Z
+  version: 0.13.8
+  title: ""
+  date: 2023-10-27T22:09:02.494Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.5.6
       hash: e6acf085885c6de6b7e421206663ed81304834fa
       body: |
