@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.5.2
+      hash: 92ba87e0a2dea7a642eed8a2abf6a5fd5be15200
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.5.1 to 3.5.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Silence the error when board_name is unknown
+              hash: 67cfd2cb6c16393a61c74784cde555be4f887d89
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.5.2
+          title: ""
+          date: 2023-10-26T23:28:21.048Z
+  version: 0.13.1
+  title: ""
+  date: 2023-10-27T00:14:08.368Z
+- commits:
     - subject: Deploy vm runners in addition to container runners
       hash: 828835d05bd18a898e3123c3f15aba15fb78bd7d
       body: |
