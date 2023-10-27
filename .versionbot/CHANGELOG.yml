@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.11.4
+      hash: 5e4ab97af35eb52acb4fa030380f989a23e2fe63
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.11.3 to 0.11.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Increase default nofile ulimit to 65535
+              hash: c72767dc62927829065d4eebeef46cfccebebe19
+              body: |
+                We have been running this in production a week or so,
+                best to make it the default in the image.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.11.4
+          title: ""
+          date: 2023-10-27T17:38:48.731Z
+  version: 0.13.6
+  title: ""
+  date: 2023-10-27T18:12:48.841Z
+- commits:
     - subject: Scale VM runners to 0 while we fix some bugs
       hash: 8af9e45656a3fb7257af1b653f727fc0613f920b
       body: ""
