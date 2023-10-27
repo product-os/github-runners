@@ -84,21 +84,21 @@ services:
     <<: *runner-common
     image: ghcr.io/product-os/self-hosted-runners:3.5.5
 
-  runner-jammy-vm-1:
+  runner-jammy-3:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.5.5-jammy-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.5.5
 
-  runner-jammy-vm-2:
+  runner-jammy-4:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.5.5-jammy-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.5.5
 
   runner-focal-1:
     <<: *runner-common
     image: ghcr.io/product-os/self-hosted-runners:3.5.5-focal
 
-  runner-focal-vm-1:
+  runner-focal-2:
     <<: *runner-common
-    image: ghcr.io/product-os/self-hosted-runners:3.5.5-focal-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.5.5-focal
 
   # https://github.com/balenablocks/cert-manager
   # https://certbot.eff.org/docs/using.html
