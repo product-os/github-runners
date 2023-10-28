@@ -29,7 +29,6 @@ x-builder-common:
 x-runner-common:
   &runner-common
   privileged: true
-  network_mode: host
   tmpfs:
     - /tmp
     - /run
