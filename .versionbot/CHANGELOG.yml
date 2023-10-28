@@ -1,4 +1,17 @@
 - commits:
+    - subject: Remove host network mode from container runners
+      hash: 7c56d97e57bd1e2f410ad8f21c8b65d24e2a5a38
+      body: |
+        Host networking should only be used with vm runners.
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 0.13.10
+  title: ""
+  date: 2023-10-28T23:00:36.004Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.6.0
       hash: 42099d83594a68d284b4968b88f8e74d5560843a
       body: |
