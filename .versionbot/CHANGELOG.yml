@@ -1,4 +1,20 @@
 - commits:
+    - subject: Disable embedded changelogs for self-hosted-runners
+      hash: 555db1b655a72fd02a4d75d739d82bec41c0cdb8
+      body: |
+        Embedded changelogs are not supported cross-org when
+        the dependency is private/internal.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.13.11
+  title: ""
+  date: 2023-11-01T13:34:07.983Z
+- commits:
     - subject: Remove host network mode from container runners
       hash: 7c56d97e57bd1e2f410ad8f21c8b65d24e2a5a38
       body: |
