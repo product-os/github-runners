@@ -122,6 +122,13 @@ services:
     labels:
       io.balena.features.optional: '1'
 
+  lock-manager:
+    build: lock-manager
+    labels:
+      io.balena.features.balena-socket: 1
+    environment:
+      DOCKER_HOST: unix:///var/run/balena-engine.sock
+
 volumes:
   builder-amd64: {}
   builder-arm64v8: {}
