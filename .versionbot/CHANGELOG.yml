@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add lock-manager to create application update locks
+      hash: 1a739ea343dfad84d1438124f949474123eae318
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.13.32
+  title: ""
+  date: 2023-11-10T20:26:02.902Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.18
       hash: c92f0556468555556213e0b1dfeb6eba2b8389b6
       body: |
