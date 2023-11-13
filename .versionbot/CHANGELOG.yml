@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.19
+      hash: de1c26a330e3198df9d4b54f6c84c0078f6cd161
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.8.18 to 3.8.19
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 0.13.34
+  title: ""
+  date: 2023-11-13T21:11:17.851Z
+- commits:
     - subject: Deploy microVM self-hosted-runners
       hash: 13edf2139fc6919055e675625a54c4ffa7b6c55d
       body: ""
