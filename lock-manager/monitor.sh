@@ -13,33 +13,52 @@
 
 set -euo pipefail
 
-lock_file=/tmp/balena/updates.lock
-in_progress=false
+LOCKFILE=/tmp/balena/updates.lock
 
-while true; do
+# Create the lockfile
+touch $LOCKFILE
+
+# get all recent container logs matching supported filters and sort them by timestamp
+get_sorted_logs() {
+    # shellcheck disable=SC2086
+    docker logs --since 30m "${1}" | grep -E "Listening for Jobs|Running job:|completed with result:" | sort -k 1,1 || true
+}
+
+are_jobs_in_progress() {
+    # iterate over all runner container ids
     for id in $(docker ps --filter "name=runner" --format "{{.ID}}"); do
-        # get all recent container logs matching supported filters and sort them by timestamp
-        # shellcheck disable=SC2086
-        logs="$(docker logs --since 30m "${id}" | grep -E "Listening for Jobs|Running job:|completed with result:" | sort -k 1,1 || true)"
-
         # get the last log line (most recent) and check if it's a job start
-        # if it is, then we have a running job and we should create a lock
-        if echo "${logs}" | tail -n 1 | grep "Running job:" >/dev/null; then
-            in_progress=true
-            echo "Container ${id} is running a job."
-            docker ps --filter "id=${id}" --format "{{.ID}} {{.Names}} {{.Status}}"
-            echo "${logs}"
-            break
+        if get_sorted_logs "${id}" | tail -n 1 | grep "Running job:" >/dev/null; then
+            echo "Container ${id} has a job in progress..."
+            return 0
         fi
     done
+    return 1
+}
 
-    if [ "${in_progress}" = true ]; then
-        echo "Locking supervisor updates..."
-        exec {FD}<${lock_file}
-        (flock -n $FD && sleep infinity) &
-    else
-        rm -vf ${lock_file}
-    fi
+while true; do
+    # if the subshell exits for any reason, the lock will be released automatically
+    # this includes failing to get a lock, or exiting the script
+    (
+        # if there are any jobs in progress, create a lock
+        while are_jobs_in_progress; do
 
+            # Create a file descriptor over the given lockfile.
+            exec {fd}<>${LOCKFILE}
+
+            # request an exclusive lock in non-blocking mode (i.e. fail immediately if lock is held)
+            flock -n $fd || {
+                # echo "Failed to obtain update lock..."
+                exit 0
+            }
+
+            # wait 10 seconds before checking container logs again
+            # updates are locked during this time
+            sleep 10
+        done
+    ) &
+
+    # wait 10 seconds before checking container logs again
+    # updates are unlocked during this time
     sleep 10
 done
