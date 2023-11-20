@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix creation of locks for running jobs
+      hash: 6d8d3618f4a7342124fdb8ced6463b2a078fc43f
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.13.43
+  title: ""
+  date: 2023-11-20T16:29:52.757Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.28
       hash: 00ae6f8e63ef7ad7e7a48c860605b8d1e7fc727b
       body: |
