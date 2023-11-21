@@ -135,11 +135,13 @@ services:
       io.balena.features.balena-api: 1
       io.balena.features.supervisor-api: 1
 
-  # https://github.com/multiarch/qemu-user-static
-  # https://hub.docker.com/r/multiarch/qemu-user-static
-  qemu-user-static:
-    build: qemu-user-static
-    command: [ --reset, -p, yes ]
+  # https://github.com/tonistiigi/binfmt
+  # https://hub.docker.com/r/tonistiigi/binfmt
+  qemu-binfmt:
+    build: qemu-binfmt
+    command:
+      - --install
+      - arm64,arm
     privileged: true
     restart: no
     labels:

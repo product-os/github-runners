@@ -1,6 +1,6 @@
 type: "sw.container"
-slug: "qemu-user-static"
-name: "qemu-user-static on amd64"
+slug: "qemu-binfmt"
+name: "qemu-binfmt on amd64"
 requires:
   - type: "arch.sw"
     name: "amd64"
