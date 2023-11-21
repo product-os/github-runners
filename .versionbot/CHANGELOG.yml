@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update QEMU binfmt to v8.0.4 and only register arm and arm64
+      hash: cdb0605a451c27983575ddfda798ac0d29c8cca5
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.13.45
+  title: ""
+  date: 2023-11-21T23:40:34.174Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.29
       hash: f6cc1ab37e1e76dd9d735fae31620d6c2b786974
       body: |
