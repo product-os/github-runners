@@ -1,4 +1,20 @@
 - commits:
+    - subject: Run the locking subshell in the foreground
+      hash: 568d172cd2e153c7baba689f186e56b4b7ef479b
+      body: |
+        This will avoid overlapping subshells all trying to obtain
+        locks and leading to race conditions.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.13.47
+  title: ""
+  date: 2023-11-22T16:41:05.650Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.30
       hash: 74f27eeeed819177dafa53ab2c8d92acc2a4a6b3
       body: |
