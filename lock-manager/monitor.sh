@@ -15,9 +15,6 @@ set -euo pipefail
 
 LOCKFILE=/tmp/balena/updates.lock
 
-# Create the lockfile
-touch $LOCKFILE
-
 # get all recent container logs matching supported filters and sort them by timestamp
 get_sorted_logs() {
     # shellcheck disable=SC2086
@@ -43,6 +40,9 @@ while true; do
         # if there are any jobs in progress, create a lock
         while are_jobs_in_progress; do
 
+            # Create the lockfile
+            touch $LOCKFILE
+
             # Create a file descriptor over the given lockfile.
             exec {fd}<>${LOCKFILE}
 
@@ -52,13 +52,15 @@ while true; do
                 exit 0
             }
 
-            # wait 10 seconds before checking container logs again
-            # updates are locked during this time
-            sleep 10
+            # wait 30 seconds before checking container logs again
+            # updates are locked during this time so check less often
+            sleep 30
         done
-    ) &
+    )
+
+    rm -f $LOCKFILE
 
     # wait 10 seconds before checking container logs again
-    # updates are unlocked during this time
+    # updates are unlocked during this time so check often
     sleep 10
 done
