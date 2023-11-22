@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.30
+      hash: 74f27eeeed819177dafa53ab2c8d92acc2a4a6b3
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.8.29 to 3.8.30
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 0.13.46
+  title: ""
+  date: 2023-11-22T01:26:35.713Z
+- commits:
     - subject: Update QEMU binfmt to v8.0.4 and only register arm and arm64
       hash: cdb0605a451c27983575ddfda798ac0d29c8cca5
       body: ""
