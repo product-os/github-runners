@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.31
+      hash: 1f6ba4ce39199893b61bb4ca77d88a0e6e3a5a48
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.8.30 to 3.8.31
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 0.13.48
+  title: ""
+  date: 2023-11-22T17:12:08.699Z
+- commits:
     - subject: Run the locking subshell in the foreground
       hash: 568d172cd2e153c7baba689f186e56b4b7ef479b
       body: |
