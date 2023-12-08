@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update alpine Docker tag to v3.19
+      hash: 2fd4220309196e28422b918594967321f949faaf
+      body: |
+        Update alpine from 3.18 to 3.19
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 0.13.55
+  title: ""
+  date: 2023-12-08T02:20:51.732Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.38
       hash: 9230e4bebd63d6635f1762878126288ac57a7ca6
       body: |
