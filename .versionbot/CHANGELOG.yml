@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.12.0
+      hash: da6be6eab2fad33e4a39a2b5909936a7cd59310f
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.11.4 to 0.12.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update CA certificates for accessing private regisitries
+              hash: 7718ea52f4bf2573ee7f7edda267f7bd6ce5eb02
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-builder-worker-0.12.0
+          title: ""
+          date: 2023-11-29T13:59:18.852Z
+  version: 0.13.57
+  title: ""
+  date: 2023-12-11T21:28:27.137Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.39
       hash: b17e8a91f3e3fcc5d3b2d5295880e23b5b622162
       body: |
