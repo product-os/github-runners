@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.12.2
+      hash: f5378a5a792fa227dc1730a4e3a3881e405fa92b
+      body: |
+        Update ghcr.io/balena-io/balena-builder-worker from 0.12.1 to 0.12.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency balena-os/balena-engine to v20.10.41
+              hash: 36b9eaa07d5c9f873cf9514b9d274e6e2a78fd5b
+              body: |
+                Update balena-os/balena-engine from 20.10.40 to 20.10.41
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: balena-builder-worker-0.12.2
+          title: ""
+          date: 2023-12-12T18:19:19.634Z
+  version: 0.13.61
+  title: ""
+  date: 2023-12-12T19:05:02.480Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.12.1
       hash: 3ade7d0b0105edb1eddac097bc579bc9754bf740
       body: |
