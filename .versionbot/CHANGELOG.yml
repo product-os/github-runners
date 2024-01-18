@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.52
+      hash: ad245f96ad41bab47312ad96140e89fe845b2e44
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.8.51 to 3.8.52
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 0.13.74
+  title: ""
+  date: 2024-01-18T13:09:40.432Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.51
       hash: c172e4286d95980ccceaf0c6e9f752dc49311693
       body: |
