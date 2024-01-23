@@ -25,6 +25,9 @@ x-builder-common:
     BUILDER_WORKER_TLSVERIFY: "true"
   depends_on:
     - cert-manager
+  sysctls:
+    net.ipv6.conf.all.disable_ipv6: 1
+    net.ipv6.conf.default.disable_ipv6: 1
 
 x-runner-container:
   &runner-container
