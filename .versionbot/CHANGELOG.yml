@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.57
+      hash: 09ae9ea43bb9089ee1fbc71565460ec61905abcc
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: fisehara <harald@balena.io>
+        signed-off-by: fisehara <harald@balena.io>
+      author: fisehara
+      nested: []
+  version: 0.13.80
+  title: ""
+  date: 2024-02-06T15:23:23.779Z
+- commits:
     - subject: Revert update of self-hosted-runner image 3.8.56 to 3.8.55
       hash: e7c000bdbd18fb48959dc2eb1b8d31e9dfac50bf
       body: ""
