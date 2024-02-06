@@ -1,4 +1,18 @@
 - commits:
+    - subject: Revert update of self-hosted-runner image 3.8.56 to 3.8.55
+      hash: e7c000bdbd18fb48959dc2eb1b8d31e9dfac50bf
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: fisehara <harald@balena.io>
+        signed-off-by: fisehara <harald@balena.io>
+      author: fisehara
+      nested: []
+  version: 0.13.79
+  title: ""
+  date: 2024-02-06T14:16:14.607Z
+- commits:
     - subject: Update balena/cert-manager Docker tag to v0.2.1
       hash: 6f96b9bf47810f54e758dff580c12d572f0ba4d7
       body: |
