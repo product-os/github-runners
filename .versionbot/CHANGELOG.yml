@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update balena/cert-manager Docker tag to v0.2.2
+      hash: e9b77ceb2d45e4bf1e12f66ceafcefe33261c60f
+      body: |
+        Update balena/cert-manager from 0.2.1 to 0.2.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 0.13.83
+  title: ""
+  date: 2024-02-06T23:39:38.191Z
+- commits:
     - subject: Update ghcr.io/balena-io/balena-builder-worker Docker tag to v0.12.4
       hash: ce09fd4227e97ef01ebcaa5ff9bc63380e06eab2
       body: |
