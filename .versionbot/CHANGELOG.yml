@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.59
+      hash: 2be3594503b7c1da90bb485a5e75c94df19e8624
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.8.58 to 3.8.59
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 0.13.85
+  title: ""
+  date: 2024-02-08T16:14:01.090Z
+- commits:
     - subject: Disable ipv6 in builder services
       hash: b63ed701ed6bdf05da7930d6eb71c50ba5fa081c
       body: |
