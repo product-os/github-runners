@@ -95,35 +95,35 @@ services:
 
   runner-jammy-1:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.8.67
+    image: ghcr.io/product-os/self-hosted-runners:3.8.68
 
   runner-jammy-2:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.8.67
+    image: ghcr.io/product-os/self-hosted-runners:3.8.68
 
   runner-focal-1:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.8.67-focal
+    image: ghcr.io/product-os/self-hosted-runners:3.8.68-focal
 
   runner-focal-2:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.8.67-focal
+    image: ghcr.io/product-os/self-hosted-runners:3.8.68-focal
 
   runner-jammy-vm-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.67-jammy-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.68-jammy-vm
 
   runner-jammy-vm-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.67-jammy-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.68-jammy-vm
 
   runner-focal-vm-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.67-focal-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.68-focal-vm
 
   runner-focal-vm-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.67-focal-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.68-focal-vm
 
   # https://github.com/balenablocks/cert-manager
   # https://certbot.eff.org/docs/using.html
