@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.77
+      hash: a54b7ff9399a3361f8b54cfa9545cbeaaf5783c3
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.8.76 to 3.8.77
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 0.13.96
+  title: ""
+  date: 2024-03-07T18:03:34.666Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.76
       hash: 0843a821dd636a899c81722a85cf793e53bd77fd
       body: |
@@ -1976,10 +1989,12 @@
                         This commit updates balena-containerd to a new version
                         in which we
 
-                        cherry-picked the change from here: https://github.com/containerd/containerd/pull/8086
+                        cherry-picked the change from here:
+                        https://github.com/containerd/containerd/pull/8086
 
 
-                        This change avoids enabling AppArmor if the `/sbin/apparmor_parser`
+                        This change avoids enabling AppArmor if the
+                        `/sbin/apparmor_parser`
 
                         binary is not found in the system.
                       footer:
@@ -2017,7 +2032,8 @@
                         Previously, `concatReadSeekCloser.Read()` would
                         incorrectly return
 
-                        an `io.ErrUnexpectedEOF` if the last read from the second concatenated
+                        an `io.ErrUnexpectedEOF` if the last read from the
+                        second concatenated
 
                         `Reader` didn't completely fill the passed buffer.
 
@@ -2033,60 +2049,79 @@
                         ```
 
 
-                        In this example, we have a `concatReadSeekCloser` that concatenates two
+                        In this example, we have a `concatReadSeekCloser` that
+                        concatenates two
 
-                        `Reader`s (`aaa...` and `bbb...`). The last `Read()` used a buffer
+                        `Reader`s (`aaa...` and `bbb...`). The last `Read()`
+                        used a buffer
 
-                        larger than the yet-to-be-read portion of the `bbb...`. So, it would
+                        larger than the yet-to-be-read portion of the `bbb...`.
+                        So, it would
 
                         incorrectly return an `io.ErrUnexpectedEOF`.
 
 
-                        This commit makes sure that last `Read()` returns all the remaining data
+                        This commit makes sure that last `Read()` returns all
+                        the remaining data
 
                         without an error. It also adds various test cases for
 
-                        `concatReadSeekCloser.Read()`, many of which would fail before this
+                        `concatReadSeekCloser.Read()`, many of which would fail
+                        before this
 
                         correction.
 
 
-                        Interestingly, this bug was silently affecting us. Not in a fatal way,
+                        Interestingly, this bug was silently affecting us. Not
+                        in a fatal way,
 
-                        but causing deltas to be larger than necessary. Indeed, running
+                        but causing deltas to be larger than necessary. Indeed,
+                        running
 
-                        `TestDeltaSize` after this commit shows that some test cases are
+                        `TestDeltaSize` after this commit shows that some test
+                        cases are
 
-                        producing deltas smaller than what we expected before. For posterity,
+                        producing deltas smaller than what we expected before.
+                        For posterity,
 
                         see all the details below.
 
 
-                        We use `concatReadSeekCloser`s to concatenate all layers of the basis
+                        We use `concatReadSeekCloser`s to concatenate all layers
+                        of the basis
 
-                        image when creating the "signature" of the basis image. In this process,
+                        image when creating the "signature" of the basis image.
+                        In this process,
 
-                        the `concatReadSeekCloser`s are wrapped around by a buffered reader with
+                        the `concatReadSeekCloser`s are wrapped around by a
+                        buffered reader with
 
                         a buffer of 65kB.
 
 
-                        If, in any read, part of this 65kB buffer was beyond the second
+                        If, in any read, part of this 65kB buffer was beyond the
+                        second
 
-                        concatenated reader, it would result in an `io.ErrUnexpectedEOF`. This
+                        concatenated reader, it would result in an
+                        `io.ErrUnexpectedEOF`. This
 
-                        would not cause the whole process to fail, but would prematurely end the
+                        would not cause the whole process to fail, but would
+                        prematurely end the
 
-                        signature generation: some of the final blocks in the basis image would
+                        signature generation: some of the final blocks in the
+                        basis image would
 
-                        not be added to the signature. Therefore, if those blocks appeared in
+                        not be added to the signature. Therefore, if those
+                        blocks appeared in
 
-                        the target image, they'd result in (larger) LITERAL, instead of
+                        the target image, they'd result in (larger) LITERAL,
+                        instead of
 
                         (smaller) COPY operations.
 
 
-                        For illustration, here's the delta generated for the `delta-006-008`
+                        For illustration, here's the delta generated for the
+                        `delta-006-008`
 
                         test case. First before this commit:
 
@@ -2139,7 +2174,8 @@
                         ```
 
 
-                        That 21kB LITERAL is the difference in size we saw in the test results.
+                        That 21kB LITERAL is the difference in size we saw in
+                        the test results.
                       footer:
                         Signed-off-by: Leandro Motta Barros <leandro@balena.io>
                         signed-off-by: Leandro Motta Barros <leandro@balena.io>
@@ -2153,7 +2189,8 @@
                         Using `defer` for the sake of being more idiomatic (and
                         maybe slightly
 
-                        more reliable); plus, using the proper doc comment standards.
+                        more reliable); plus, using the proper doc comment
+                        standards.
                       footer:
                         Signed-off-by: Leandro Motta Barros <leandro@balena.io>
                         signed-off-by: Leandro Motta Barros <leandro@balena.io>
@@ -2173,11 +2210,14 @@
 
                         for about 17 minutes (for details see commit
 
-                        582487f832c59c2f734a780ab0492833f29002c9). This worked fine in most
+                        582487f832c59c2f734a780ab0492833f29002c9). This worked
+                        fine in most
 
-                        situations, but we have seen at least one case of a particularly
+                        situations, but we have seen at least one case of a
+                        particularly
 
-                        unreliable network connection that would not be able to finish a large
+                        unreliable network connection that would not be able to
+                        finish a large
 
                         pull when operating under this policy.
 
@@ -2185,17 +2225,20 @@
                         This commit:
 
 
-                        * Completely removes timeouts from image pulls. We'll keep retrying
+                        * Completely removes timeouts from image pulls. We'll
+                        keep retrying
                           forever, or until users cancel the pull. (From the perspective of the
                           REST API, "canceling" mean closing the HTTP connection. This is what
                           happens when a user Ctrl+C during a pull in the CLI, or, say, we kill
                           a curl process that was using the REST API to pull image.)
-                        * Still uses exponential back-off, but we now limit the interval between
+                        * Still uses exponential back-off, but we now limit the
+                        interval between
                           retries to 5 minutes. The rationale is that some very unreliable
                           networks may be up only for relatively small time windows. Therefore,
                           using intervals that are too long would increase the risk of missing
                           these windows.
-                        * Tries to avoid flooding the log stream with messages about retries.
+                        * Tries to avoid flooding the log stream with messages
+                        about retries.
                           We'll log every retry attempt up to the 10th. After that, we'll log
                           retries only once about every 2h. This retry count is reset every time
                           we successfully download any amount of data.
@@ -2218,7 +2261,8 @@
                         https://github.com/moby/libnetwork/pull/1805
 
 
-                        This patch is meant to avoid cases in which libnetwork internal state
+                        This patch is meant to avoid cases in which libnetwork
+                        internal state
 
                         gets inconsistent in case of crashes.
                       footer:
@@ -2238,11 +2282,14 @@
                         Notable improvements these new versions bring:
 
 
-                        * Optimized code path for generating deltas with blocks that are
+                        * Optimized code path for generating deltas with blocks
+                        that are
                           power-of-two-sized.
-                        * Avoid allocating unbounded amounts of memory when the target differs
+                        * Avoid allocating unbounded amounts of memory when the
+                        target differs
                           completely from the source.
-                        * Several bugfixes in edge cases that shall not affect balenaEngine.
+                        * Several bugfixes in edge cases that shall not affect
+                        balenaEngine.
                       footer:
                         Signed-off-by: Leandro Motta Barros <leandro@balena.io>
                         signed-off-by: Leandro Motta Barros <leandro@balena.io>
@@ -2270,16 +2317,20 @@
                         The original delta code on the `xfer` package used to
                         set `d.err` when
 
-                        an unexpected EOF was found in the delta tar stream. Turns out `d.err`
+                        an unexpected EOF was found in the delta tar stream.
+                        Turns out `d.err`
 
-                        would end up being overwritten before it was read, so that initial
+                        would end up being overwritten before it was read, so
+                        that initial
 
                         assignment was effectively a no-op.
 
 
-                        This commit simplifies the code a little bit by removing this bogus
+                        This commit simplifies the code a little bit by removing
+                        this bogus
 
-                        assignment and also improves the error reporting a notch by adding more
+                        assignment and also improves the error reporting a notch
+                        by adding more
 
                         context to the error messages.
                       footer:
@@ -2295,7 +2346,8 @@
                         This factors out portions of the `xfer` package, so that
                         we can
 
-                        reuse this functionality between `balena pull` and `balena load`. There
+                        reuse this functionality between `balena pull` and
+                        `balena load`. There
 
                         was a good deal of duplication.
                       footer:
@@ -2311,31 +2363,39 @@
                         This factors out portions of the `distribution` package,
                         so that we can
 
-                        reuse this functionality between `balena pull` and `balena load`. There
+                        reuse this functionality between `balena pull` and
+                        `balena load`. There
 
                         was a good deal of duplication.
 
 
-                        This piece of code is tricky to factor out into a separate function.
+                        This piece of code is tricky to factor out into a
+                        separate function.
 
                         Basically we had two options:
 
 
-                        1. Create a completely reusable, DRY function that encapsulates all the
+                        1. Create a completely reusable, DRY function that
+                        encapsulates all the
                            duplicate code. Sounds nice until you noticed that would be a
                            horrendous function with 5 return values and overly obscure
                            semantics.
-                        2. We create a small set of functions with clearer interfaces and
+                        2. We create a small set of functions with clearer
+                        interfaces and
                            semantics, but which will still lead to some code duplication between
                            the `pull` and `load` implementations.
 
-                        I opted for the second alternative because the resulting code is much
+                        I opted for the second alternative because the resulting
+                        code is much
 
-                        easier to understand and maintain. Also, the remaining duplication is
+                        easier to understand and maintain. Also, the remaining
+                        duplication is
 
-                        mostly dumb, integration and error handling code that almost writes
+                        mostly dumb, integration and error handling code that
+                        almost writes
 
-                        itself as we call the new reusable functions -- so, this is sort of a
+                        itself as we call the new reusable functions -- so, this
+                        is sort of a
 
                         benign duplication.
                       footer:
@@ -2355,7 +2415,8 @@
                         There were various usages of Bash-specific features. As
                         a result, the
 
-                        script would work correctly only on OSes that have `sh` as an alias to
+                        script would work correctly only on OSes that have `sh`
+                        as an alias to
 
                         `bash`. It would fail on Ubuntu, for example.
                       footer:
@@ -2371,9 +2432,11 @@
                         A couple of changes here:
 
 
-                        * Check for sudo necessity and availability before doing any real work.
+                        * Check for sudo necessity and availability before doing
+                        any real work.
                           Better to warn and exit quick and early!
-                        * Remove the support for using `su`. It was broken for two reasons.
+                        * Remove the support for using `su`. It was broken for
+                        two reasons.
                           First, unlike `sudo`, `su -c` expects the command as a single
                           argument. Second, `su`, unlike `sudo`, reads the password from stdin
                           which in this case "contains" the tarball being downloaded. The second
@@ -2394,9 +2457,11 @@
                         A couple of changes here:
 
 
-                        * Check for missing dependencies before doing any real work. Better to
+                        * Check for missing dependencies before doing any real
+                        work. Better to
                           warn and exit quick and early!
-                        * Fix the actual check. We previously used `[ $abort ] && exit 1` which
+                        * Fix the actual check. We previously used `[ $abort ]
+                        && exit 1` which
                           caused the script to always exit (`abort` is never empty).
                       footer:
                         Signed-off-by: Leandro Motta Barros <leandro@balena.io>
@@ -2800,7 +2865,8 @@
                 if ACTIONS_RUNNER_AUTH_TOKEN is unset.
 
 
-                This way we can optionally set ACTIONS_RUNNER_AUTH_TOKEN as a PAT
+                This way we can optionally set ACTIONS_RUNNER_AUTH_TOKEN as a
+                PAT
 
                 on the repo and avoid using the token provided by Flowzone.
               footer:
