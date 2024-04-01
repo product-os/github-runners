@@ -24,8 +24,8 @@ x-runner-vm:
     GITHUB_ENTERPRISE: balena
     # register to the self-hosted runner group allowed on public repositories
     ACTIONS_RUNNER_GROUP: self-hosted
-    # limit VM memory to 32GB, or the host total memory, whichever is lower
-    MEM_SIZE_MIB: 32768
+    # limit VM memory to 8GB, or the host total memory, whichever is lower
+    MEM_SIZE_MIB: 8192
 
 services:
 
