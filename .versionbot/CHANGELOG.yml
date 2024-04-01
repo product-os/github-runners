@@ -1,4 +1,38 @@
 - commits:
+    - subject: Limit VM memory to overprovisioned 8GB each
+      hash: 6b791fe88730048a72fa69e04b6aa85a9ea658e1
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Scale to 8x jammy-vm and 4x focal-vm runners
+      hash: d2434d1ba4fb02d98d871ecc89094627da7c4cae
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Remove builder and related services from deployment
+      hash: a35ae971c30a0acec79df7730c92a73df21f247e
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.14.0
+  title: ""
+  date: 2024-04-01T20:04:13.387Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.87
       hash: e316c96aa14fccf913b5716369cf495d73ae8e26
       body: |
