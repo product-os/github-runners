@@ -23,5 +23,5 @@ jobs:
     secrets: inherit
     with:
       balena_slugs: |
-        balena/github-runners-amd64,
-        balena/github-runners-aarch64
+        product_os/github-runners-amd64,
+        product_os/github-runners-aarch64
