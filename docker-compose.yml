@@ -1,34 +1,5 @@
 version: "2.4"
 
-x-builder-common:
-  &builder-common
-  labels:
-    io.balena.features.optional: '1'
-  privileged: true
-  restart: always
-  healthcheck:
-    test: /docker-hc
-    interval: 300s
-    timeout: 60s
-    retries: 5
-    start_period: 30s
-  tmpfs:
-    - /tmp
-    - /run
-    - /var/run
-  environment:
-    BUILDER_WORKER_DNS: "1.1.1.1,1.0.0.1"
-    BUILDER_WORKER_STORAGE_DRIVER: "overlay2"
-    BUILDER_WORKER_STORAGE_OPTS: "overlay2.sync_diffs=false"
-    BUILDER_WORKER_HOSTS: "unix:///var/run/balena-engine.sock,tcp://0.0.0.0:2376"
-    BUILDER_WORKER_OOM_SCORE_ADJUST: "-999"
-    BUILDER_WORKER_TLSVERIFY: "true"
-  depends_on:
-    - cert-manager
-  sysctls:
-    net.ipv6.conf.all.disable_ipv6: 1
-    net.ipv6.conf.default.disable_ipv6: 1
-
 x-runner-container:
   &runner-container
   privileged: true
@@ -57,41 +28,6 @@ x-runner-vm:
     MEM_SIZE_MIB: 32768
 
 services:
-  builder-amd64:
-    <<: *builder-common
-    build: builder-amd64
-    ports:
-      - 2376:2376
-    volumes:
-      - builder-amd64:/var/lib/balena-engine
-      - certs:/certs:ro
-
-  builder-arm64v8:
-    <<: *builder-common
-    build: builder-arm64v8
-    ports:
-      - 2377:2376
-    volumes:
-      - builder-arm64v8:/var/lib/balena-engine
-      - certs:/certs:ro
-
-  builder-arm32v7:
-    <<: *builder-common
-    build: builder-arm32v7
-    ports:
-      - 2378:2376
-    volumes:
-      - builder-arm32v7:/var/lib/balena-engine
-      - certs:/certs:ro
-
-  builder-arm32v6:
-    <<: *builder-common
-    build: builder-arm32v6
-    ports:
-      - 2379:2376
-    volumes:
-      - builder-arm32v6:/var/lib/balena-engine
-      - certs:/certs:ro
 
   runner-jammy-1:
     <<: *runner-container
@@ -125,42 +61,9 @@ services:
     <<: *runner-vm
     image: ghcr.io/product-os/self-hosted-runners:3.8.87-focal-vm
 
-  # https://github.com/balenablocks/cert-manager
-  # https://certbot.eff.org/docs/using.html
-  # https://certbot-dns-cloudflare.readthedocs.io/
-  cert-manager:
-    build: cert-manager
-    restart: unless-stopped
-    volumes:
-      - cert-manager:/etc/letsencrypt
-      - certs:/certs
-    labels:
-      io.balena.features.balena-api: 1
-      io.balena.features.supervisor-api: 1
-
-  # https://github.com/tonistiigi/binfmt
-  # https://hub.docker.com/r/tonistiigi/binfmt
-  qemu-binfmt:
-    build: qemu-binfmt
-    command:
-      - --install
-      - arm64,arm
-    privileged: true
-    restart: no
-    labels:
-      io.balena.features.optional: '1'
-
   lock-manager:
     build: lock-manager
     labels:
       io.balena.features.balena-socket: 1
     environment:
       DOCKER_HOST: unix:///var/run/balena-engine.sock
-
-volumes:
-  builder-amd64: {}
-  builder-arm64v8: {}
-  builder-arm32v7: {}
-  builder-arm32v6: {}
-  cert-manager: {}
-  certs: {}

@@ -1,9 +1,8 @@
-# remote-workers
+# github-runners
 
-Remote balena builder workers and self-hosted GitHub runners for balena.io
+balena deployment of self-hosted GitHub runners
 
-## Supported Device Types
+Runners are deployed in two variants, `vm` and `container`, where `vm` is isolated and
+safe to use on public repositories.
 
-We are using [container contracts](https://docs.balena.io/learn/develop/container-contracts/#container-contracts) to control which services are deployed to different host architectures.
-
-Currently only `aarch64` and `amd64` OS architectures are supported, and Supervisor v14.11.0 or later is required.
+See [self-hosted-runners](https://github.com/product-os/self-hosted-runners) for image sources.

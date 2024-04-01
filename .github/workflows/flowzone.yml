@@ -23,5 +23,5 @@ jobs:
     secrets: inherit
     with:
       balena_slugs: |
-        balena/remote-workers-amd64,
-        balena/remote-workers-aarch64
+        balena/github-runners-amd64,
+        balena/github-runners-aarch64
