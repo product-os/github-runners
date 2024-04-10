@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.88
+      hash: f7f3de31c2d4776c6ecc9c2a1e81680933770efd
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.8.87 to 3.8.88
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 0.14.1
+  title: ""
+  date: 2024-04-10T19:12:49.428Z
+- commits:
     - subject: Limit VM memory to overprovisioned 8GB each
       hash: 6b791fe88730048a72fa69e04b6aa85a9ea658e1
       body: ""
