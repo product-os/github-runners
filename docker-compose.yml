@@ -11,6 +11,7 @@ x-runner-container:
     GITHUB_ENTERPRISE: balena
     # register to the internal-only self-hosted runner group
     ACTIONS_RUNNER_GROUP: self-hosted-internal
+    DOCKER_REGISTRY_MIRROR: https://nfs.product-os.io
 
 x-runner-vm:
   &runner-vm
@@ -24,6 +25,7 @@ x-runner-vm:
     GITHUB_ENTERPRISE: balena
     # register to the self-hosted runner group allowed on public repositories
     ACTIONS_RUNNER_GROUP: self-hosted
+    DOCKER_REGISTRY_MIRROR: https://nfs.product-os.io
     # limit VM memory to 8GB, or the host total memory, whichever is lower
     MEM_SIZE_MIB: 8192
 
