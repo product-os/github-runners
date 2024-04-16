@@ -35,71 +35,71 @@ services:
 
   jammy-1:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89
 
   jammy-2:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89
 
   focal-1:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-focal
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-focal
 
   focal-2:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-focal
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-focal
 
   # focal-vm is the equivalent of ubuntu-20.04
 
   focal-vm-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-focal-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-focal-vm
 
   focal-vm-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-focal-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-focal-vm
 
   focal-vm-3:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-focal-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-focal-vm
 
   focal-vm-4:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-focal-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-focal-vm
 
   # jammy-vm is the equivalent of ubuntu-22.04(-latest)
 
   jammy-vm-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-jammy-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-jammy-vm
 
   jammy-vm-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-jammy-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-jammy-vm
 
   jammy-vm-3:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-jammy-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-jammy-vm
 
   jammy-vm-4:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-jammy-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-jammy-vm
 
   jammy-vm-5:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-jammy-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-jammy-vm
 
   jammy-vm-6:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-jammy-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-jammy-vm
 
   jammy-vm-7:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-jammy-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-jammy-vm
 
   jammy-vm-8:
     <<: *runner-vm
-    image: ghcr.io/product-os/self-hosted-runners:3.8.88-jammy-vm
+    image: ghcr.io/product-os/self-hosted-runners:3.8.89-jammy-vm
 
   # inspects the runner logs and sets the supervisor lock if jobs are running
   lock-manager:
