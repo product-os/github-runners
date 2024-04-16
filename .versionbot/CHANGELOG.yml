@@ -1,4 +1,18 @@
 - commits:
+    - subject: Set environment variable for shared docker cache
+      hash: e0e08283e54001e72fb353224bdbe38bb9e7eea9
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.14.2
+  title: ""
+  date: 2024-04-16T14:18:32.641Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.8.88
       hash: f7f3de31c2d4776c6ecc9c2a1e81680933770efd
       body: |
