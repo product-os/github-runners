@@ -1,4 +1,18 @@
 - commits:
+    - subject: Use new registration slug variable for enterprises
+      hash: 54f3f7a95e98fc4f7b9e6fbb56ed6fe0477cff4c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.14.6
+  title: ""
+  date: 2024-04-23T23:35:46.790Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.9.1
       hash: 6ac619af514f2fef5d3835b4d6c688645df4116a
       body: |
