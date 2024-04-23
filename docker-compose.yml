@@ -8,7 +8,7 @@ x-runner-container:
     - /run
     - /scratch
   environment:
-    GITHUB_ENTERPRISE: balena
+    ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
     # register to the internal-only self-hosted runner group
     ACTIONS_RUNNER_GROUP: self-hosted-internal
     DOCKER_REGISTRY_MIRROR: https://nfs.product-os.io
@@ -22,7 +22,7 @@ x-runner-vm:
     - /run
     - /srv
   environment:
-    GITHUB_ENTERPRISE: balena
+    ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
     # register to the self-hosted runner group allowed on public repositories
     ACTIONS_RUNNER_GROUP: self-hosted
     DOCKER_REGISTRY_MIRROR: https://nfs.product-os.io
