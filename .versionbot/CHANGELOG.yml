@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update VM images to ghcr.io/product-os/github-runner-vm
+      hash: 570feb424fe9c97d65542284e4967395c9caf1cb
+      body: |
+        VM images are now being generated from a separate repo.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.14.7
+  title: ""
+  date: 2024-04-24T01:07:23.832Z
+- commits:
     - subject: Use new registration slug variable for enterprises
       hash: 54f3f7a95e98fc4f7b9e6fbb56ed6fe0477cff4c
       body: ""
