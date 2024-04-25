@@ -35,19 +35,19 @@ services:
 
   jammy-1:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.10.0
+    image: ghcr.io/product-os/self-hosted-runners:3.10.1
 
   jammy-2:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.10.0
+    image: ghcr.io/product-os/self-hosted-runners:3.10.1
 
   focal-1:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.10.0-focal
+    image: ghcr.io/product-os/self-hosted-runners:3.10.1-focal
 
   focal-2:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.10.0-focal
+    image: ghcr.io/product-os/self-hosted-runners:3.10.1-focal
 
   # focal-vm is the equivalent of ubuntu-20.04
 
