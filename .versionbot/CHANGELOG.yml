@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.14
+      hash: 58f3226b431ca948aebf9b96e56ad5d05ec8619a
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.2.13 to 0.2.14
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 0.14.20
+  title: ""
+  date: 2024-05-01T21:02:16.391Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.13
       hash: be6c0e00d791b335c581ea4deca4fb2fbdaf3b6f
       body: |
