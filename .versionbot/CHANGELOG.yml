@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.15
+      hash: 6f8a6646d39e6b163d51396995813a7ea61af1ca
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.2.14 to 0.2.15
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Enable embedded changelogs for upstream projects
+              hash: 47c7692aabc95fdcd8a84ca414f2027b4d6a0b38
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.2.15
+          title: ""
+          date: 2024-05-02T00:20:34.562Z
+  version: 0.14.22
+  title: ""
+  date: 2024-05-02T01:27:30.344Z
+- commits:
     - subject: Update repo.yml
       hash: f34208ab82d4d5a24adfb1a4f3f5a197093d753b
       body: ""
