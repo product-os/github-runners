@@ -1,4 +1,32 @@
 - commits:
+    - subject: Reduce the count of runners per server
+      hash: 912cf4c2484c11f4d4b57027a9483f583fd285fc
+      body: |
+        Specifically 2 container runners and 2 focal vm runners
+        should be enough.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Increase base memory for VM runners to 32GB
+      hash: 5093224355f2cd9d95a27d6e6d1800a52f092c3d
+      body: |
+        Runners with 8GB were unreliable and disconnected
+        from GitHub as soon as we gave them a big build.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.14.23
+  title: ""
+  date: 2024-05-07T18:15:13.679Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.15
       hash: 6f8a6646d39e6b163d51396995813a7ea61af1ca
       body: |
