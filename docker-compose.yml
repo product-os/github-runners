@@ -37,15 +37,7 @@ services:
     <<: *runner-container
     image: ghcr.io/product-os/self-hosted-runners:3.10.6
 
-  jammy-2:
-    <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.10.6
-
   focal-1:
-    <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.10.6-focal
-
-  focal-2:
     <<: *runner-container
     image: ghcr.io/product-os/self-hosted-runners:3.10.6-focal
 
@@ -56,14 +48,6 @@ services:
     image: ghcr.io/product-os/github-runner-vm:0.2.15-focal
 
   focal-vm-2:
-    <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.2.15-focal
-
-  focal-vm-3:
-    <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.2.15-focal
-
-  focal-vm-4:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.2.15-focal
 
