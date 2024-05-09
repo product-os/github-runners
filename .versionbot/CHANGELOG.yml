@@ -1,4 +1,40 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.11.0
+      hash: 5f5c999a5bcac84f6c72e2626942ac146c568332
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.10.6 to 3.11.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove container tools that are only available via opensuse mirrors
+              hash: 99fe29709cd7000cec6167507d5d84ece70595b0
+              body: >
+                These mirrors have proven unreliable, and are only really
+                required
+
+                for focal images.
+
+
+                Instead, we should install tools as part of the workflow.
+
+                See: https://github.com/product-os/setup-skopeo-action
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.11.0
+          title: ""
+          date: 2024-05-09T00:32:24.854Z
+  version: 0.14.24
+  title: ""
+  date: 2024-05-09T01:20:45.426Z
+- commits:
     - subject: Reduce the count of runners per server
       hash: 912cf4c2484c11f4d4b57027a9483f583fd285fc
       body: |
