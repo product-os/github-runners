@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.11.1
+      hash: e234a0921578e9a49f2df723a99787e266b75554
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.11.0 to 3.11.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Build and test images on Actuated runners
+              hash: 825a65927619e77232af1ce4c2eecfa762e12328
+              body: |
+                This avoids the chicken-egg effect where we can't merge
+                self-hosted runner changes when self-hosted runners are down.
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.11.1
+          title: ""
+          date: 2024-05-09T14:12:16.398Z
+  version: 0.14.25
+  title: ""
+  date: 2024-05-09T15:00:55.854Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.11.0
       hash: 5f5c999a5bcac84f6c72e2626942ac146c568332
       body: |
