@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.18
+      hash: 70e7c1ca3594f420750ebe581fc49082dca7e16b
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.2.17 to 0.2.18
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Test iptables features
+              hash: 2f7856de336f77693c113f3f730d052df34c5c7f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.2.18
+          title: ""
+          date: 2024-05-09T17:44:36.657Z
+  version: 0.14.27
+  title: ""
+  date: 2024-05-09T18:09:02.480Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.17
       hash: 26e500fee4c25692abb31df04831f29fc12100fa
       body: |
