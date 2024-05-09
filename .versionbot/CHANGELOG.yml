@@ -1,4 +1,111 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.17
+      hash: 26e500fee4c25692abb31df04831f29fc12100fa
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.2.15 to 0.2.17
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove checks for container tools that were removed from the image
+              hash: fa32a90647b5be739da6794a6ffe44dd4cca6c8e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.11.1
+              hash: f44f60ad8c283efecc1f0a5cb3a35b427820319f
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.10.6 to
+                3.11.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Build and test images on Actuated runners
+                      hash: 825a65927619e77232af1ce4c2eecfa762e12328
+                      body: >
+                        This avoids the chicken-egg effect where we can't merge
+
+                        self-hosted runner changes when self-hosted runners are
+                        down.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-3.11.1
+                  title: ""
+                  date: 2024-05-09T14:12:16.398Z
+                - commits:
+                    - subject: Remove container tools that are only available via opensuse mirrors
+                      hash: 99fe29709cd7000cec6167507d5d84ece70595b0
+                      body: >
+                        These mirrors have proven unreliable, and are only
+                        really required
+
+                        for focal images.
+
+
+                        Instead, we should install tools as part of the
+                        workflow.
+
+                        See: https://github.com/product-os/setup-skopeo-action
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-3.11.0
+                  title: ""
+                  date: 2024-05-09T00:32:24.854Z
+          version: github-runner-vm-0.2.17
+          title: ""
+          date: 2024-05-09T16:48:54.389Z
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.3.3
+              hash: e337f43097c8c4d672b4e87eaeb6debcfe9eccf2
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.3.2 to
+                0.3.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Enable netfilter comment matching
+                      hash: ef5a66951599dc64bf2920d896c36c6d9eda8df6
+                      body: >
+                        See:
+                        https://www.kernelconfig.io/config_ip_nf_match_comment
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: github-runner-kernel-0.3.3
+                  title: ""
+                  date: 2024-05-09T15:38:32.790Z
+          version: github-runner-vm-0.2.16
+          title: ""
+          date: 2024-05-09T16:21:00.050Z
+  version: 0.14.26
+  title: ""
+  date: 2024-05-09T17:05:30.710Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.11.1
       hash: e234a0921578e9a49f2df723a99787e266b75554
       body: |
