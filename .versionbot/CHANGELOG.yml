@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.21
+      hash: 26785bd9581f7531a27b7d1db6198d4d41c694d4
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.2.20 to 0.2.21
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: test vfat is enabled in kernel configuration
+              hash: 142be2989647b6a4b5d8993a4284106c3532c84a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: github-runner-vm-0.2.21
+          title: ""
+          date: 2024-05-10T18:09:16.305Z
+  version: 0.14.32
+  title: ""
+  date: 2024-05-10T19:04:43.364Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.20
       hash: 111df8d0aae7385d4b18ebdc9e6ea26f7225eacb
       body: |
