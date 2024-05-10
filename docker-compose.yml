@@ -35,7 +35,7 @@ services:
 
   jammy-1:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.11.1
+    image: ghcr.io/product-os/self-hosted-runners:3.11.2
 
   focal-1:
     <<: *runner-container
