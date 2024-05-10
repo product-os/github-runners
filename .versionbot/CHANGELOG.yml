@@ -1,4 +1,55 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.20
+      hash: 111df8d0aae7385d4b18ebdc9e6ea26f7225eacb
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.2.19 to 0.2.20
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.3.4
+              hash: c854392a338dc88fb395a3aa42d71af3ff81209f
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.3.3 to
+                0.3.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: enable us and euro codepages
+                      hash: d465dd69b3ea6edd7f49230831de7fa111649a51
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Ryan Cooke <ryan@balena.io>
+                        signed-off-by: Ryan Cooke <ryan@balena.io>
+                      author: rcooke-warwick
+                      nested: []
+                    - subject: enable vfat fs
+                      hash: a6ce0e7a38ccf11a2ddd45693f15b8d8d8169660
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Ryan Cooke <ryan@balena.io>
+                        signed-off-by: Ryan Cooke <ryan@balena.io>
+                      author: rcooke-warwick
+                      nested: []
+                  version: github-runner-kernel-0.3.4
+                  title: ""
+                  date: 2024-05-10T15:52:28.061Z
+          version: github-runner-vm-0.2.20
+          title: ""
+          date: 2024-05-10T16:18:50.811Z
+  version: 0.14.31
+  title: ""
+  date: 2024-05-10T17:01:57.203Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.11.2
       hash: cbd335547af9dc9c9d42f3c2468887771c18cc8b
       body: |
