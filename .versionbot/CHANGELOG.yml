@@ -1,4 +1,19 @@
 - commits:
+    - subject: Do not use tmpfs for root filesystem
+      hash: fab3c315ea2ff4e8837e5d6986a1f1b4487e0d08
+      body: |
+        The rootfs is rebuilt on every run anyway, so using
+        a tmpfs mount is not necessary and actually uses
+        way more memory than needed.
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 0.14.37
+  title: ""
+  date: 2024-05-13T14:08:52.228Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.22
       hash: 8dfcd6557e5577dbacfbe11ecc15dfc50fb52a45
       body: |
