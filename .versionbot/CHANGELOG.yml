@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.23
+      hash: 0ef4c146f8534d0255627356519d418b5fa076d7
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.2.22 to 0.2.23
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Test the runners without a tmpfs for the jailer root
+              hash: 8571bdaab164682cd5220548e4479372a56d65b1
+              body: |
+                The rootfs is recreated on every run anyway, so we
+                don't need to always run in tmpfs.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.2.23
+          title: ""
+          date: 2024-05-13T14:19:59.351Z
+  version: 0.14.38
+  title: ""
+  date: 2024-05-13T15:05:39.197Z
+- commits:
     - subject: Do not use tmpfs for root filesystem
       hash: fab3c315ea2ff4e8837e5d6986a1f1b4487e0d08
       body: |
