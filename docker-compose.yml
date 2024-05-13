@@ -20,7 +20,6 @@ x-runner-vm:
   tmpfs:
     - /tmp
     - /run
-    - /srv
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
     # register to the self-hosted runner group allowed on public repositories
