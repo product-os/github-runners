@@ -1,4 +1,45 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.26
+      hash: 9eca2ad0a3dea6013c4707e0091c748f0bcfa12a
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.2.25 to 0.2.26
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.3.5
+              hash: 52256f2215ddaec3504afa192a1e62694d9bde40
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.3.4 to
+                0.3.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update contributing guidelines in readme
+                      hash: 5e9fa1626eab8fd7f57e8690e6c3c3e9d0c15f58
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: github-runner-kernel-0.3.5
+                  title: ""
+                  date: 2024-05-15T15:00:58.768Z
+          version: github-runner-vm-0.2.26
+          title: ""
+          date: 2024-05-15T16:12:15.000Z
+  version: 0.14.43
+  title: ""
+  date: 2024-05-15T17:05:53.415Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.25
       hash: d82df588638ee44a38664314dcaff002595b8fd4
       body: |
