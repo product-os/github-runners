@@ -1,4 +1,57 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.2.29
+      hash: 0c8e23fedc8017b26e379fe27e03a582e2f8771c
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.2.28 to 0.2.29
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.11.10
+              hash: db7e3da6acc22b07045712357a41474fdff94aeb
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.11.8 to
+                3.11.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency cli/cli to v2.50.0
+                      hash: a5fc80db8f1a10e9efa7348ad29da649dd9984d2
+                      body: |
+                        Update cli/cli from 2.49.2 to 2.50.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.11.10
+                  title: ""
+                  date: 2024-05-29T17:11:50.799Z
+                - commits:
+                    - subject: Update dependency node to v20.14.0
+                      hash: e3d607120c002b7df7e2b9de30a1eeeb822cffbf
+                      body: |
+                        Update node from 20.13.1 to 20.14.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.11.9
+                  title: ""
+                  date: 2024-05-28T18:08:31.914Z
+          version: github-runner-vm-0.2.29
+          title: ""
+          date: 2024-05-29T18:07:51.002Z
+  version: 0.14.50
+  title: ""
+  date: 2024-05-29T19:08:29.171Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.11.10
       hash: e09a4ec665a10db58d3e8a49c9e0cbe7188a0f0f
       body: |
