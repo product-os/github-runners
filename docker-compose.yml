@@ -44,45 +44,45 @@ services:
 
   focal-vm-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.2.28-focal
+    image: ghcr.io/product-os/github-runner-vm:0.2.29-focal
 
   focal-vm-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.2.28-focal
+    image: ghcr.io/product-os/github-runner-vm:0.2.29-focal
 
   # jammy-vm is the equivalent of ubuntu-22.04(-latest)
 
   jammy-vm-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.2.28
+    image: ghcr.io/product-os/github-runner-vm:0.2.29
 
   jammy-vm-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.2.28
+    image: ghcr.io/product-os/github-runner-vm:0.2.29
 
   jammy-vm-3:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.2.28
+    image: ghcr.io/product-os/github-runner-vm:0.2.29
 
   jammy-vm-4:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.2.28
+    image: ghcr.io/product-os/github-runner-vm:0.2.29
 
   jammy-vm-5:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.2.28
+    image: ghcr.io/product-os/github-runner-vm:0.2.29
 
   jammy-vm-6:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.2.28
+    image: ghcr.io/product-os/github-runner-vm:0.2.29
 
   jammy-vm-7:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.2.28
+    image: ghcr.io/product-os/github-runner-vm:0.2.29
 
   jammy-vm-8:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.2.28
+    image: ghcr.io/product-os/github-runner-vm:0.2.29
 
   # inspects the runner logs and sets the supervisor lock if jobs are running
   lock-manager:
