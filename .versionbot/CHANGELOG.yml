@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.3.0
+      hash: d951fb65839c8ebd649ea3f94ea1f28281b619e9
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.2.31 to 0.3.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Use confd to configure firecracker
+              hash: 8baa3704770d4295414b9caceba22a102627c371
+              body: |
+                Also assume sane defaults for vCPU, Mem, and Rootfs size.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Remove stale references to data partition
+              hash: f63158540aca8cf09eee03ff1292f45ce2c61905
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.3.0
+          title: ""
+          date: 2024-06-03T19:47:11.955Z
+  version: 0.14.56
+  title: ""
+  date: 2024-06-04T13:15:27.908Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.11.14
       hash: b6e7cb659b6ec57c959563050ae13af4e963ad45
       body: |
