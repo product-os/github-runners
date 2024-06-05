@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.12.1
+      hash: 29a4e5b4c3fc9159a263b26c8cdeefcf7ee669f4
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.12.0 to 3.12.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Allow pre-registration of the runner
+              hash: 135383142854d478d38adc71a8cb031419e394b1
+              body: |
+                This should be no-op for the container runtime as we delete
+                any existing runner config on container init, but it will
+                allow the VM runtime to pre-register earlier in startup.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.12.1
+          title: ""
+          date: 2024-06-05T20:01:15.543Z
+  version: 0.14.60
+  title: ""
+  date: 2024-06-05T21:08:59.672Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.12.0
       hash: cacc69405c781f2f0602f9ef844cb4d537e58c76
       body: |
