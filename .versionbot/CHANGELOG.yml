@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.11.15
+      hash: 61e0ea56b7c13955d0929d1da431499f59413776
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.11.14 to 3.11.15
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Combine token generation and runner configuration
+              hash: 299a244bf574003944470a3911cf7d874e2a3531
+              body: |
+                Perform these steps isolated from the runner process
+                so VMs can attempt to register as part of initrd.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.11.15
+          title: ""
+          date: 2024-06-05T13:56:19.902Z
+  version: 0.14.57
+  title: ""
+  date: 2024-06-05T14:06:23.791Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.3.0
       hash: d951fb65839c8ebd649ea3f94ea1f28281b619e9
       body: |
