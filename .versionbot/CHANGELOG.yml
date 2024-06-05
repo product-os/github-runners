@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.12.2
+      hash: 61c03f38bf137f915a5bdc80692fee6f82cd2029
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.12.1 to 3.12.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Improve cleanup of secrets to include all supported keys
+              hash: f7a277b22349784b4b3b2e6dceb381084155ac2a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.12.2
+          title: ""
+          date: 2024-06-05T22:47:30.357Z
+  version: 0.14.61
+  title: ""
+  date: 2024-06-05T23:06:42.284Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.12.1
       hash: 29a4e5b4c3fc9159a263b26c8cdeefcf7ee669f4
       body: |
