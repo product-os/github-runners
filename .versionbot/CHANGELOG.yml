@@ -1,4 +1,45 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.3.4
+      hash: 96656298aa61c35a6dcd00b0b82277b796323b52
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.3.3 to 0.3.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Refactor sharing of env vars with guest OS
+              hash: 7f7c413b3703dd220e180405eb6cfcf9a808314d
+              body: |
+                Automatically filter out variables set by the OS profile
+                and only copy intentional env vars provided by Docker.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Remove default s6 services timeout
+              hash: 7828cf3713ca823ebbae7f6576380cb5626897ec
+              body: |
+                This feature causes more issues than it solves, and the
+                upstream project is changing the default to disabled.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.3.4
+          title: ""
+          date: 2024-06-06T17:20:10.899Z
+  version: 0.14.65
+  title: ""
+  date: 2024-06-06T18:04:33.947Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.3.3
       hash: 24fce43bc08e54c310e0f4570af225b4ae82bb0e
       body: |
