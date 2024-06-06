@@ -1,4 +1,44 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.3.3
+      hash: 24fce43bc08e54c310e0f4570af225b4ae82bb0e
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.3.2 to 0.3.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.12.3
+              hash: 93ecce5c4c83d2f4fc63a377b399c6a1a384c9a4
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.12.2 to
+                3.12.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update golang Docker tag to v1.22.4
+                      hash: 4e62d71c90f2e4d1b6a3859b5784bb951570bc3f
+                      body: |
+                        Update golang from 1.22.3 to 1.22.4
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.12.3
+                  title: ""
+                  date: 2024-06-06T01:19:42.971Z
+          version: github-runner-vm-0.3.3
+          title: ""
+          date: 2024-06-06T03:02:45.262Z
+  version: 0.14.64
+  title: ""
+  date: 2024-06-06T04:06:17.475Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.12.3
       hash: c4a0c07712d2edc98c72b601b742bd1d765f3c48
       body: |
