@@ -1,4 +1,49 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.13.1
+      hash: 423a187da8a3b09af217f53bb9872bdc8e2a1d81
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.12.3 to 3.13.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Add kvm tag if support detected at runtime
+              hash: deeff56ec75ff3785edc7dfab073b2d34b93468b
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.13.1
+          title: ""
+          date: 2024-06-08T01:28:52.402Z
+        - commits:
+            - subject: Allow propegating env vars to s6-services
+              hash: 12dc4cf57ef39cf20005e36bd1ca9786ae07bfeb
+              body: |
+                This is a revert of the previous change, but with
+                additional considerations to use 'exec su -' when replacing
+                the current process with long-running processes that could be
+                inspected at runtime.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.13.0
+          title: ""
+          date: 2024-06-06T18:15:47.530Z
+  version: 0.14.66
+  title: ""
+  date: 2024-06-08T02:36:25.639Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.3.4
       hash: 96656298aa61c35a6dcd00b0b82277b796323b52
       body: |
