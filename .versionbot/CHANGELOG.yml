@@ -1,4 +1,203 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.6.1
+      hash: e11ee21befdd24b3f558e94268429d70ce7c8dc4
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.3.4 to 0.6.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.13.1
+              hash: 87ff55042ac39d900616e9adcb7c746fa4535e26
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.13.0 to
+                3.13.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Add kvm tag if support detected at runtime
+                      hash: deeff56ec75ff3785edc7dfab073b2d34b93468b
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-3.13.1
+                  title: ""
+                  date: 2024-06-08T01:28:52.402Z
+          version: github-runner-vm-0.6.1
+          title: ""
+          date: 2024-06-08T02:33:38.139Z
+        - commits:
+            - subject: Set the default memory GiB to 4x the vCPU count
+              hash: a5bca96ffe0a987eda79352c8fb2883e2d06ab43
+              body: |
+                This aligns with AWS memory optimized instances.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.6.0
+          title: ""
+          date: 2024-06-08T01:52:49.561Z
+        - commits:
+            - subject: Update alpine Docker tag to v3.20
+              hash: 149752c6cec4d326176fbc77d7f836b23aa8a41e
+              body: |
+                Update alpine from 3.18 to 3.20
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: github-runner-vm-0.5.1
+          title: ""
+          date: 2024-06-08T01:30:32.765Z
+        - commits:
+            - subject: Use minimal busybox initrd for initial boot
+              hash: 66ef53b8945fde4b6efea3b7600ebcbe7c7e6468
+              body: |
+                Once booted we setup networking, the guest rootfs,
+                pre-register the runner and switch root.
+
+                This speeds up boot, while improving
+                security and keeping the kernel as read-only.
+
+                It also allows clearing of known secrets before
+                switching to the guest runtime.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.5.0
+          title: ""
+          date: 2024-06-08T00:33:32.968Z
+        - commits:
+            - subject: Stop the container if s6-overlay stage2 fails
+              hash: 98eb5b8730491a9b0172b3b01813da8d19f63908
+              body: |
+                If registration fails, we would rather exit than
+                hang indefinitely.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.4.3
+          title: ""
+          date: 2024-06-07T18:48:32.415Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.13.0
+              hash: 365949c23b18754ccfb219e90bc4c19301c8c729
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.12.3 to
+                3.13.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Allow propegating env vars to s6-services
+                      hash: 12dc4cf57ef39cf20005e36bd1ca9786ae07bfeb
+                      body: >
+                        This is a revert of the previous change, but with
+
+                        additional considerations to use 'exec su -' when
+                        replacing
+
+                        the current process with long-running processes that
+                        could be
+
+                        inspected at runtime.
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-3.13.0
+                  title: ""
+                  date: 2024-06-06T18:15:47.530Z
+          version: github-runner-vm-0.4.2
+          title: ""
+          date: 2024-06-06T23:11:35.212Z
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.3.7
+              hash: 1ff580164a0bbf1ef3649d1ac9d11d7c7e8db78f
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.3.6 to
+                0.3.7
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update zstd compression flags
+                      hash: acb080f3704e6dd2bae04f69ff30e9f834ef6fba
+                      body: |
+                        We are still using compression level 9 but we are
+                        suppressing the progress bar and removing source files.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: github-runner-kernel-0.3.7
+                  title: ""
+                  date: 2024-06-06T20:09:13.490Z
+          version: github-runner-vm-0.4.1
+          title: ""
+          date: 2024-06-06T22:42:54.691Z
+        - commits:
+            - subject: Generate rootfs.ext at build time
+              hash: ad24b8b2ceb28e121ff95edbd4903854520effe7
+              body: >
+                This reduces time from container start to VM boot,
+
+                and reduces the overall image size deployed to the registry
+
+                by packaging both the rootfs and vmlinux binaries as zstd
+                compressed.
+
+
+                The downside being that the rootfs maximum size can no longer
+
+                be configured at runtime and must be set at build time.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.4.0
+          title: ""
+          date: 2024-06-06T20:13:05.632Z
+  version: 0.14.67
+  title: ""
+  date: 2024-06-08T15:18:06.408Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.13.1
       hash: 423a187da8a3b09af217f53bb9872bdc8e2a1d81
       body: |
