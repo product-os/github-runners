@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.7.0
+      hash: 88513dff7454780585f4bdbdce41ff974689f1e7
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.6.1 to 0.7.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Use a hardcoded list of variables and secrets for the guest
+              hash: 002f07ce39d7a443ada5c57c93a2347c517981d2
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.7.0
+          title: ""
+          date: 2024-06-10T17:32:26.400Z
+  version: 0.14.68
+  title: ""
+  date: 2024-06-10T18:20:22.652Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.6.1
       hash: e11ee21befdd24b3f558e94268429d70ce7c8dc4
       body: |
