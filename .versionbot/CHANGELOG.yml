@@ -1,4 +1,62 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.7.2
+      hash: ec0800407c2df9dd3ed3add2c7f1b92a6428cd53
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.7.0 to 0.7.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.0
+              hash: 17cbfddefb2fe35da846a41a7f32f0520b073ba0
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.13.1 to
+                3.14.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Clean up additional runner tags
+                      hash: 88988d3661636949bf39ed162e675c687c18c624
+                      body: |
+                        Avoid adding tags when the value is unknown, and group
+                        logical keys together for readability.
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-3.14.0
+                  title: ""
+                  date: 2024-06-10T19:15:04.208Z
+          version: github-runner-vm-0.7.2
+          title: ""
+          date: 2024-06-10T20:52:21.562Z
+        - commits:
+            - subject: Allow configuring the vcpu to memory ratio
+              hash: abf088bb8bb024dcbf1fbd5d609e75254495e2b5
+              body: |
+                Also reduce the default 2x vcpu:gib
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.7.1
+          title: ""
+          date: 2024-06-10T19:37:06.647Z
+  version: 0.14.70
+  title: ""
+  date: 2024-06-10T21:02:18.337Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.0
       hash: ab7bd600d6590560c0b5a1587278b25622826491
       body: |
