@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.0
+      hash: ab7bd600d6590560c0b5a1587278b25622826491
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.13.1 to 3.14.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Clean up additional runner tags
+              hash: 88988d3661636949bf39ed162e675c687c18c624
+              body: |
+                Avoid adding tags when the value is unknown, and group
+                logical keys together for readability.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.14.0
+          title: ""
+          date: 2024-06-10T19:15:04.208Z
+  version: 0.14.69
+  title: ""
+  date: 2024-06-10T20:04:09.028Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.7.0
       hash: 88513dff7454780585f4bdbdce41ff974689f1e7
       body: |
