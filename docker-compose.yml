@@ -25,62 +25,52 @@ x-runner-vm:
     # register to the self-hosted runner group allowed on public repositories
     ACTIONS_RUNNER_GROUP: self-hosted
     DOCKER_REGISTRY_MIRROR: https://nfs.product-os.io
-    # limit VM memory to 32GB, or the host total memory, whichever is lower
-    MEM_SIZE_MIB: 32768
 
 services:
 
   # container runners are only suitable for private repositories
 
-  jammy-1:
+  runner-container:
     <<: *runner-container
     image: ghcr.io/product-os/self-hosted-runners:3.14.4
 
-  focal-1:
-    <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.14.4-focal
-
   # focal-vm is the equivalent of ubuntu-20.04
 
-  focal-vm-1:
-    <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.7.3-focal
-
-  focal-vm-2:
+  runner-focal:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.7.3-focal
 
   # jammy-vm is the equivalent of ubuntu-22.04(-latest)
 
-  jammy-vm-1:
+  runner-jammy-1:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.7.3
 
-  jammy-vm-2:
+  runner-jammy-2:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.7.3
 
-  jammy-vm-3:
+  runner-jammy-3:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.7.3
 
-  jammy-vm-4:
+  runner-jammy-4:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.7.3
 
-  jammy-vm-5:
+  runner-jammy-5:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.7.3
 
-  jammy-vm-6:
+  runner-jammy-6:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.7.3
 
-  jammy-vm-7:
+  runner-jammy-7:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.7.3
 
-  jammy-vm-8:
+  runner-jammy-8:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.7.3
 
