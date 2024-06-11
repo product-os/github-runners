@@ -32,7 +32,7 @@ services:
 
   runner-container:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.14.5
+    image: ghcr.io/product-os/self-hosted-runners:3.14.6
 
   # focal-vm is the equivalent of ubuntu-20.04
 
