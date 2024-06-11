@@ -7,11 +7,15 @@ x-runner-container:
     - /tmp
     - /run
     - /scratch
+  # limit container runners to 15% of CPU resources
+  cpu_quota: 15000
+  # limit container runners to 8g of RAM
+  mem_limit: 8g
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
-    # register to the internal-only self-hosted runner group
-    ACTIONS_RUNNER_GROUP: self-hosted-internal
     DOCKER_REGISTRY_MIRROR: https://nfs.product-os.io
+    # container runners are only suitable for private repositories
+    ACTIONS_RUNNER_GROUP: self-hosted-internal
 
 x-runner-vm:
   &runner-vm
@@ -20,58 +24,83 @@ x-runner-vm:
   tmpfs:
     - /tmp
     - /run
-  environment:
+  environment: &runner-env
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
-    # register to the self-hosted runner group allowed on public repositories
-    ACTIONS_RUNNER_GROUP: self-hosted
     DOCKER_REGISTRY_MIRROR: https://nfs.product-os.io
+    ACTIONS_RUNNER_GROUP: self-hosted
+
+# large runners with 2 vCPUs and 4GiB of memory
+x-runner-large: &runner-large
+  <<: *runner-vm
+  environment:
+    <<: *runner-env
+    VCPU_COUNT: 2
+    MEMORY_SIZE_GIB: 4
+
+# xlarge runners with 4 vCPUs and 8GiB of memory
+x-runner-xlarge: &runner-xlarge
+  <<: *runner-vm
+  environment:
+    <<: *runner-env
+    VCPU_COUNT: 4
+    MEMORY_SIZE_GIB: 8
+
+# xlarge runners with 8 vCPUs and 16GiB of memory
+x-runner-2xlarge: &runner-2xlarge
+  <<: *runner-vm
+  environment:
+    <<: *runner-env
+    VCPU_COUNT: 8
+    MEMORY_SIZE_GIB: 16
+
+# 4xlarge runners with 16 vCPUs and 32GiB of memory
+x-runner-4xlarge: &runner-4xlarge
+  <<: *runner-vm
+  environment:
+    <<: *runner-env
+    VCPU_COUNT: 16
+    MEMORY_SIZE_GIB: 32
 
 services:
-
-  # container runners are only suitable for private repositories
 
   runner-container:
     <<: *runner-container
     image: ghcr.io/product-os/self-hosted-runners:3.14.5
 
-  # focal-vm is the equivalent of ubuntu-20.04
-
   runner-focal:
-    <<: *runner-vm
+    <<: *runner-large
     image: ghcr.io/product-os/github-runner-vm:0.7.7-focal
 
-  # jammy-vm is the equivalent of ubuntu-22.04(-latest)
-
-  runner-jammy-1:
-    <<: *runner-vm
+  runner-large-1:
+    <<: *runner-large
     image: ghcr.io/product-os/github-runner-vm:0.7.7
 
-  runner-jammy-2:
-    <<: *runner-vm
+  runner-large-2:
+    <<: *runner-large
     image: ghcr.io/product-os/github-runner-vm:0.7.7
 
-  runner-jammy-3:
-    <<: *runner-vm
+  runner-xlarge-1:
+    <<: *runner-xlarge
     image: ghcr.io/product-os/github-runner-vm:0.7.7
 
-  runner-jammy-4:
-    <<: *runner-vm
+  runner-xlarge-2:
+    <<: *runner-xlarge
     image: ghcr.io/product-os/github-runner-vm:0.7.7
 
-  runner-jammy-5:
-    <<: *runner-vm
+  runner-4xlarge-1:
+    <<: *runner-4xlarge
     image: ghcr.io/product-os/github-runner-vm:0.7.7
 
-  runner-jammy-6:
-    <<: *runner-vm
+  runner-4xlarge-2:
+    <<: *runner-4xlarge
     image: ghcr.io/product-os/github-runner-vm:0.7.7
 
-  runner-jammy-7:
-    <<: *runner-vm
+  runner-4xlarge-3:
+    <<: *runner-4xlarge
     image: ghcr.io/product-os/github-runner-vm:0.7.7
 
-  runner-jammy-8:
-    <<: *runner-vm
+  runner-4xlarge-4:
+    <<: *runner-4xlarge
     image: ghcr.io/product-os/github-runner-vm:0.7.7
 
   # inspects the runner logs and sets the supervisor lock if jobs are running
