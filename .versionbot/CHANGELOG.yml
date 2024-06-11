@@ -1,4 +1,38 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.7.3
+      hash: ca7e89d6250ff94491d916dbce97764fc477d02d
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.7.2 to 0.7.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Build guest ext4 rootfs image at runtime
+              hash: d7544efcb9071a06dcde44b2bcf5da039686e830
+              body: |
+                The previous implementation was creating an ext2 filesystem,
+                not ext4, and this created issues at runtime.
+
+                Now we will compress the source rootfs at build time,
+                and unpack it directly onto a new ext4 rootfs mount at runtime.
+
+                This also restores the ability to set the desired rootfs size.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.7.3
+          title: ""
+          date: 2024-06-10T23:27:43.154Z
+  version: 0.14.72
+  title: ""
+  date: 2024-06-11T00:11:55.708Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.1
       hash: b2cf1ab5470d92a3b94b1546ce712fb161ab5551
       body: |
