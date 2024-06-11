@@ -1,4 +1,63 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.7.4
+      hash: ca25283ea6ad1735454563855f8521860c61584c
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.7.3 to 0.7.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.2
+              hash: d336a2197a9eab51a73565677c21467cbd074258
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.14.0 to
+                3.14.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency just-containers/s6-overlay to v3.2.0.0
+                      hash: 062b583d988768327e9f6003eeaa940df5f56daa
+                      body: >
+                        Update just-containers/s6-overlay from 3.1.4.2 to 3.2.0.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.14.2
+                  title: ""
+                  date: 2024-06-10T23:10:28.814Z
+                - commits:
+                    - subject: Enable loose versioning for s6-overlay releases
+                      hash: ddcdc1df64e1d28f32eea629960b5957ffef7e5b
+                      body: |
+                        This package is almost semver, with this format:
+                        `<major>.<minor>.<patch>.<build>`
+
+                        If loose versioning still does not find a match
+                        we can add a regex version scheme for this package.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-3.14.1
+                  title: ""
+                  date: 2024-06-10T22:33:15.173Z
+          version: github-runner-vm-0.7.4
+          title: ""
+          date: 2024-06-11T00:12:28.593Z
+  version: 0.14.75
+  title: ""
+  date: 2024-06-11T02:24:47.001Z
+- commits:
     - subject: Remove 2 focal runners
       hash: 51f141ebe48553ef1d2642839b798687401713eb
       body: |
