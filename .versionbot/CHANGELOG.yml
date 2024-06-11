@@ -1,4 +1,21 @@
 - commits:
+    - subject: Remove 2 focal runners
+      hash: 51f141ebe48553ef1d2642839b798687401713eb
+      body: |
+        There are no projects that require focal with kvm,
+        and projects that do still require focal can be queued
+        if necessary.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.14.74
+  title: ""
+  date: 2024-06-11T02:13:36.237Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.4
       hash: 329c7a711ef0b2ba7d069acd2cfaae6623b80793
       body: |
