@@ -1,4 +1,65 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.7.5
+      hash: 64866d34b82ca8ba0355b40951cfa7d79684cbd4
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.7.4 to 0.7.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.4
+              hash: 3b3b6d3c9c54498ace72d23075d315602e0477ce
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.14.2 to
+                3.14.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Use the github run_id to identify runners under test
+                      hash: 7409db502820fd7fc866eddcf8e7d85c18d84a35
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-3.14.4
+                  title: ""
+                  date: 2024-06-11T00:24:08.865Z
+                - commits:
+                    - subject: Revert the rounding of memory sizes for runner tags
+                      hash: c79d2267b3903447e1f0e9380b14717dc2edb06a
+                      body: |
+                        Instead just rely on the output of 'free -g' to avoid
+                        any weird results when rounding up from smaller sizes.
+
+                        This means that often the memory shown on the runner
+                        tag will be slightly less than the actual allocated,
+                        but at least it will be consistent.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-3.14.3
+                  title: ""
+                  date: 2024-06-11T00:05:58.621Z
+          version: github-runner-vm-0.7.5
+          title: ""
+          date: 2024-06-11T02:17:04.346Z
+  version: 0.14.76
+  title: ""
+  date: 2024-06-11T03:07:00.823Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.7.4
       hash: ca25283ea6ad1735454563855f8521860c61584c
       body: |
