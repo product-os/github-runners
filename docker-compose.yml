@@ -36,17 +36,9 @@ services:
     <<: *runner-container
     image: ghcr.io/product-os/self-hosted-runners:3.14.4
 
-  focal-1:
-    <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.14.4-focal
-
   # focal-vm is the equivalent of ubuntu-20.04
 
   focal-vm-1:
-    <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.7.3-focal
-
-  focal-vm-2:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.7.3-focal
 
