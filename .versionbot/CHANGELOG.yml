@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.8.0
+      hash: 8a289bb07e7e7ec3637de581a86eabc31a4f6bca
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.7.7 to 0.8.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Support assigning VM resources as fractions of host total
+              hash: 2afbe166a591f44cbe1e46fa9ee3ed344d16e56a
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.8.0
+          title: ""
+          date: 2024-06-11T20:01:47.550Z
+  version: 0.14.80
+  title: ""
+  date: 2024-06-11T23:10:43.712Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.6
       hash: 8baa65371b0e04424ca8718d47b22bc063185361
       body: |
