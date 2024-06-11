@@ -1,4 +1,64 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.4
+      hash: 329c7a711ef0b2ba7d069acd2cfaae6623b80793
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.14.1 to 3.14.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Use the github run_id to identify runners under test
+              hash: 7409db502820fd7fc866eddcf8e7d85c18d84a35
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.14.4
+          title: ""
+          date: 2024-06-11T00:24:08.865Z
+        - commits:
+            - subject: Revert the rounding of memory sizes for runner tags
+              hash: c79d2267b3903447e1f0e9380b14717dc2edb06a
+              body: |
+                Instead just rely on the output of 'free -g' to avoid
+                any weird results when rounding up from smaller sizes.
+
+                This means that often the memory shown on the runner
+                tag will be slightly less than the actual allocated,
+                but at least it will be consistent.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.14.3
+          title: ""
+          date: 2024-06-11T00:05:58.621Z
+        - commits:
+            - subject: Update dependency just-containers/s6-overlay to v3.2.0.0
+              hash: 062b583d988768327e9f6003eeaa940df5f56daa
+              body: |
+                Update just-containers/s6-overlay from 3.1.4.2 to 3.2.0.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-3.14.2
+          title: ""
+          date: 2024-06-10T23:10:28.814Z
+  version: 0.14.73
+  title: ""
+  date: 2024-06-11T01:20:31.124Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.7.3
       hash: ca7e89d6250ff94491d916dbce97764fc477d02d
       body: |
