@@ -1,4 +1,18 @@
 - commits:
+    - subject: Assign a fixed percentage of host resources to each VM
+      hash: aac33d2fbd9bcba157a3acdd23d59793d5893f9e
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.14.82
+  title: ""
+  date: 2024-06-12T12:56:30.203Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.8.1
       hash: 716ef2d991b70d17fd7ea2753628b2ef0923222e
       body: |
