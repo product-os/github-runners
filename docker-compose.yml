@@ -11,8 +11,8 @@ x-runner-container:
   # to increase or reduce the container's weight, and give it access to
   # a greater or lesser proportion of the host machine's CPU cycles.
   # This is only enforced when CPU cycles are constrained.
-  cpu_shares: 512
-  mem_limit: 8g
+  cpu_shares: 768
+  mem_limit: 16g
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
     DOCKER_REGISTRY_MIRROR: https://nfs.product-os.io
