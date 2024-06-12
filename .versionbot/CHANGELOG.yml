@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.8.1
+      hash: 716ef2d991b70d17fd7ea2753628b2ef0923222e
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.8.0 to 0.8.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.6
+              hash: d393cc1057fb5224192767c9aab707a8303eb99b
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.14.5 to
+                3.14.6
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Round up to the power of 2 when tagging memory size
+                      hash: 6774cbc33f423353a11a7a6bd91ac3559abd48b5
+                      body: |
+                        Memory is generally provisioned as a power of 2 so it's
+                        more useful to find matching runners this way.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-3.14.6
+                  title: ""
+                  date: 2024-06-11T19:50:48.547Z
+          version: github-runner-vm-0.8.1
+          title: ""
+          date: 2024-06-12T00:49:05.641Z
+  version: 0.14.81
+  title: ""
+  date: 2024-06-12T01:20:37.595Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.8.0
       hash: 8a289bb07e7e7ec3637de581a86eabc31a4f6bca
       body: |
