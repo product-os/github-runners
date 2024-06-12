@@ -7,11 +7,17 @@ x-runner-container:
     - /tmp
     - /run
     - /scratch
+  # Set this flag to a value greater or less than the default of 1024
+  # to increase or reduce the container's weight, and give it access to
+  # a greater or lesser proportion of the host machine's CPU cycles.
+  # This is only enforced when CPU cycles are constrained.
+  cpu_shares: 256
+  mem_limit: 4g
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
-    # register to the internal-only self-hosted runner group
-    ACTIONS_RUNNER_GROUP: self-hosted-internal
     DOCKER_REGISTRY_MIRROR: https://nfs.product-os.io
+    # container runners are only suitable for private repositories
+    ACTIONS_RUNNER_GROUP: self-hosted-internal
 
 x-runner-vm:
   &runner-vm
@@ -22,25 +28,30 @@ x-runner-vm:
     - /run
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
-    # register to the self-hosted runner group allowed on public repositories
-    ACTIONS_RUNNER_GROUP: self-hosted
     DOCKER_REGISTRY_MIRROR: https://nfs.product-os.io
+    ACTIONS_RUNNER_GROUP: self-hosted
+    # limit each VM runner to 1/10th of host CPU count, rounded up to ^2
+    CPU_PERCENT: 0.10
+    # limit each VM runner to 1/10th of host memory GiB, rounded up to ^2
+    MEMORY_PERCENT: 0.10
 
 services:
 
-  # container runners are only suitable for private repositories
-
-  runner-container:
+  runner-container-1:
     <<: *runner-container
     image: ghcr.io/product-os/self-hosted-runners:3.14.6
 
-  # focal-vm is the equivalent of ubuntu-20.04
+  runner-container-2:
+    <<: *runner-container
+    image: ghcr.io/product-os/self-hosted-runners:3.14.6
 
-  runner-focal:
+  runner-focal-1:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.8.1-focal
 
-  # jammy-vm is the equivalent of ubuntu-22.04(-latest)
+  runner-focal-2:
+    <<: *runner-vm
+    image: ghcr.io/product-os/github-runner-vm:0.8.1-focal
 
   runner-jammy-1:
     <<: *runner-vm
@@ -63,14 +74,6 @@ services:
     image: ghcr.io/product-os/github-runner-vm:0.8.1
 
   runner-jammy-6:
-    <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.8.1
-
-  runner-jammy-7:
-    <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.8.1
-
-  runner-jammy-8:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.8.1
 
