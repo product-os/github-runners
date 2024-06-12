@@ -1,4 +1,21 @@
 - commits:
+    - subject: Give more memory to container runners
+      hash: 2e6fbbb3c50135d1c79fcd87b9cff950391f5a96
+      body: |
+        Currently the container runners are required to build
+        self-hosted VMs on ARM, and they are running out of memory
+        during the Docker build.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.14.83
+  title: ""
+  date: 2024-06-12T15:01:15.221Z
+- commits:
     - subject: Assign a fixed percentage of host resources to each VM
       hash: aac33d2fbd9bcba157a3acdd23d59793d5893f9e
       body: ""
