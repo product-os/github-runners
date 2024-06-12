@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.8.2
+      hash: b61638a01ae3c7fc6b236df1c29c5efe72c3fc0f
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.8.1 to 0.8.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Fix percentage calculations to apply fractions of resources
+              hash: 5370f37a592152c3a087fa573cb41eb01e6b103a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.8.2
+          title: ""
+          date: 2024-06-12T15:52:54.138Z
+  version: 0.14.85
+  title: ""
+  date: 2024-06-12T16:08:36.060Z
+- commits:
     - subject: Increase container runner resources again
       hash: 781143c62ca2650c874cd5b24661688c96db05c0
       body: ""
