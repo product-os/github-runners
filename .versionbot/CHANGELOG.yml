@@ -1,4 +1,18 @@
 - commits:
+    - subject: Increase container runner resources again
+      hash: 781143c62ca2650c874cd5b24661688c96db05c0
+      body: ""
+      footer:
+        CHange-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.14.84
+  title: ""
+  date: 2024-06-12T15:47:23.296Z
+- commits:
     - subject: Give more memory to container runners
       hash: 2e6fbbb3c50135d1c79fcd87b9cff950391f5a96
       body: |
