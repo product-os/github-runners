@@ -22,7 +22,8 @@ x-runner-container:
 x-runner-vm:
   &runner-vm
   privileged: true
-  network_mode: host
+  sysctls:
+    - net.ipv4.ip_forward=1
   tmpfs:
     - /tmp
     - /run
