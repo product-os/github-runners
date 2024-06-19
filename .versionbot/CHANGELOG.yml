@@ -1,4 +1,143 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.11.0
+      hash: 1998e6e024950580e58ed196aeeb90bbc1856510
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.8.2 to 0.11.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Create the rootfs ext4 image at build time
+              hash: 135dd098be4fca6a2917a989b52c4e3e859680e5
+              body: |
+                This reduces some permissions required at runtime
+                by removing the mount commands.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.11.0
+          title: ""
+          date: 2024-06-19T14:21:49.465Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.9
+              hash: be2bcc1be4ebfbc39ec6e2f5fcf9e6f3c19dc727
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.14.8 to
+                3.14.9
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency actions/runner-container-hooks to v0.6.1
+                      hash: d3cc1f2c8800b1380b090c53245aeef626878231
+                      body: >
+                        Update actions/runner-container-hooks from 0.6.0 to 0.6.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.14.9
+                  title: ""
+                  date: 2024-06-19T12:10:33.952Z
+          version: github-runner-vm-0.10.3
+          title: ""
+          date: 2024-06-19T13:18:49.872Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.8
+              hash: 5cf4cc2a7c1f71f2df793543fc7ea503c4f1cb40
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.14.7 to
+                3.14.8
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency cli/cli to v2.51.0
+                      hash: acb32d570f0fc6dbe92778a25d98b281def41656
+                      body: |
+                        Update cli/cli from 2.50.0 to 2.51.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.14.8
+                  title: ""
+                  date: 2024-06-19T01:28:47.713Z
+          version: github-runner-vm-0.10.2
+          title: ""
+          date: 2024-06-19T02:25:27.128Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.7
+              hash: e8c69041d5e1f9d5bdc414f0f09b426097252f45
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.14.6 to
+                3.14.7
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency powershell/powershell to v7.4.3
+                      hash: 968d26bbf255d2137c55553f3df58a087fc7e78c
+                      body: |
+                        Update powershell/powershell from 7.4.2 to 7.4.3
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.14.7
+                  title: ""
+                  date: 2024-06-19T00:12:49.220Z
+          version: github-runner-vm-0.10.1
+          title: ""
+          date: 2024-06-19T01:27:37.843Z
+        - commits:
+            - subject: Remove host networking requirement and request specific caps
+              hash: 38cbbe9e4f3d4924ce89e0fcc21ee2fbe695212a
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.10.0
+          title: ""
+          date: 2024-06-18T21:09:34.300Z
+        - commits:
+            - subject: Create update locks while running jobs
+              hash: f1877b29b8baa4cb211175cf298e90c2d8dd5eec
+              body: |
+                This lock will be released when the container exits.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.9.0
+          title: ""
+          date: 2024-06-18T19:42:19.536Z
+  version: 0.14.90
+  title: ""
+  date: 2024-06-19T15:42:07.516Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.9
       hash: b51b36f0da531dbeae66a97e3827baebd01bc264
       body: |
