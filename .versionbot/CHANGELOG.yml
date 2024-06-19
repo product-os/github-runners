@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.7
+      hash: 1e21a879d03e8dfd2e9b07f8a12d046f83679032
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.14.6 to 3.14.7
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency powershell/powershell to v7.4.3
+              hash: 968d26bbf255d2137c55553f3df58a087fc7e78c
+              body: |
+                Update powershell/powershell from 7.4.2 to 7.4.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-3.14.7
+          title: ""
+          date: 2024-06-19T00:12:49.220Z
+  version: 0.14.86
+  title: ""
+  date: 2024-06-19T01:20:26.865Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.8.2
       hash: b61638a01ae3c7fc6b236df1c29c5efe72c3fc0f
       body: |
