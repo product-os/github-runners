@@ -15,7 +15,8 @@ x-runner-container:
   mem_limit: 16g
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
-    DOCKER_REGISTRY_MIRROR: https://nfs.product-os.io
+    DOCKER_REGISTRY_MIRROR: http://registry-cache:5000
+    INSECURE_REGISTRY: registry-cache:5000
     # container runners are only suitable for private repositories
     ACTIONS_RUNNER_GROUP: self-hosted-internal
 
@@ -29,7 +30,8 @@ x-runner-vm:
     - /run
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
-    DOCKER_REGISTRY_MIRROR: https://nfs.product-os.io
+    DOCKER_REGISTRY_MIRROR: http://registry-cache:5000
+    INSECURE_REGISTRY: registry-cache:5000
     ACTIONS_RUNNER_GROUP: self-hosted
     # limit each VM runner to 1/10th of host CPU count, rounded up to ^2
     CPU_PERCENT: 0.10
@@ -77,3 +79,33 @@ services:
   runner-jammy-6:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.11.0
+
+  # https://distribution.github.io/distribution/recipes/mirror/
+  registry-cache:
+    image: registry:2.8.3
+    volumes:
+      - registry-data:/var/lib/registry
+    tmpfs:
+      - /tmp
+      - /run
+    environment:
+      # Listen on the default bridge network on port 5000.
+      # Do not expose this unsecured port on the host network!
+      REGISTRY_HTTP_ADDR: 0.0.0.0:5000
+      REGISTRY_PROXY_REMOTEURL: https://registry-1.docker.io
+      # The proxy.ttl setting isn't supported until registry v3 but we can set it now and it will be ignored
+      # https://github.com/distribution/distribution/blob/5d5c60f77c01b143b22be9d62af3b32843fbcb0c/configuration/configuration.go#L643-L653
+      # https://github.com/distribution/distribution/blob/e1ec19ae60b8628b564d4fb01ce09ef81047987c/configuration/configuration.go#L628-L643
+      REGISTRY_PROXY_TTL: 168h
+      REGISTRY_STORAGE_DELETE_ENABLED: "true"
+      # REGISTRY_PROXY_USERNAME: changeme
+      # REGISTRY_PROXY_PASSWORD: changeme
+      # REGISTRY_LOG_LEVEL: debug
+    healthcheck:
+      test: curl --silent --fail http://localhost:5000/v2/_catalog
+      interval: 1m
+      timeout: 10s
+      retries: 3
+
+volumes:
+  registry-data: {}
