@@ -77,11 +77,3 @@ services:
   runner-jammy-6:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:0.11.0
-
-  # inspects the runner logs and sets the supervisor lock if jobs are running
-  lock-manager:
-    build: lock-manager
-    labels:
-      io.balena.features.balena-socket: 1
-    environment:
-      DOCKER_HOST: unix:///var/run/balena-engine.sock
