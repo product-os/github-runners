@@ -1,4 +1,21 @@
 - commits:
+    - subject: Use bridge networking for VM runners
+      hash: 59eecc77d93297270164ef6c787156d9790ff549
+      body: |
+        This removes the need for cleanup of old iptables rules
+        and potentially allows local-only services like a registry
+        mirror to be available on the VM bridge network.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.14.88
+  title: ""
+  date: 2024-06-19T10:26:44.019Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.8
       hash: 077b11b32e95b2493cc507634d8d5f5bc508eddb
       body: |
