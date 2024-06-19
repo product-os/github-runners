@@ -1,4 +1,19 @@
 - commits:
+    - subject: Remove lock manager service
+      hash: a8c382b2e69be0094e33e4b79de851a0b874d3b9
+      body: |
+        github-runner-vm v0.9.0 includes its own locking component
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.14.91
+  title: ""
+  date: 2024-06-19T16:20:46.072Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.11.0
       hash: 1998e6e024950580e58ed196aeeb90bbc1856510
       body: |
