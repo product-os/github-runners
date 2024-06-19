@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.9
+      hash: b51b36f0da531dbeae66a97e3827baebd01bc264
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.14.8 to 3.14.9
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency actions/runner-container-hooks to v0.6.1
+              hash: d3cc1f2c8800b1380b090c53245aeef626878231
+              body: |
+                Update actions/runner-container-hooks from 0.6.0 to 0.6.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-3.14.9
+          title: ""
+          date: 2024-06-19T12:10:33.952Z
+  version: 0.14.89
+  title: ""
+  date: 2024-06-19T13:14:33.277Z
+- commits:
     - subject: Use bridge networking for VM runners
       hash: 59eecc77d93297270164ef6c787156d9790ff549
       body: |
