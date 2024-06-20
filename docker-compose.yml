@@ -7,12 +7,6 @@ x-runner-container:
     - /tmp
     - /run
     - /scratch
-  # Set this flag to a value greater or less than the default of 1024
-  # to increase or reduce the container's weight, and give it access to
-  # a greater or lesser proportion of the host machine's CPU cycles.
-  # This is only enforced when CPU cycles are constrained.
-  cpu_shares: 768
-  mem_limit: 16g
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
     DOCKER_REGISTRY_MIRROR: http://registry-cache:5000
@@ -33,10 +27,6 @@ x-runner-vm:
     DOCKER_REGISTRY_MIRROR: http://registry-cache:5000
     INSECURE_REGISTRY: registry-cache:5000
     ACTIONS_RUNNER_GROUP: self-hosted
-    # limit each VM runner to 1/10th of host CPU count, rounded up to ^2
-    CPU_PERCENT: 0.10
-    # limit each VM runner to 1/10th of host memory GiB, rounded up to ^2
-    MEMORY_PERCENT: 0.10
 
 services:
 
