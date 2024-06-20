@@ -1,4 +1,55 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.11.1
+      hash: 91cde2fd225967b89cb59413f4605e810b47dc93
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.11.0 to 0.11.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Clean up networking configuration and customization
+              hash: 3f78777e4fe79b415b37aa3b3f119ae50b317dce
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Remove support for fractions of host resources
+              hash: bba550363493f08413869b4fdb0099f602c1d137
+              body: |
+                This functionality isn't as clear as hardcoding
+                values for vCPU count and memory GiB, as it wasn't
+                always obvious whether a percent increase from 10% to 12%
+                would change the runner sizes from 8cpu to 16cpu.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Update kernel boot args with recommended settings
+              hash: 09885c65a673350d947918d51457081fd8de032c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.11.1
+          title: ""
+          date: 2024-06-20T21:45:58.471Z
+  version: 0.14.95
+  title: ""
+  date: 2024-06-20T22:58:44.799Z
+- commits:
     - subject: Update readme
       hash: 2c33bf2a0e8ca4329d30051d2afb4712608d1a4b
       body: ""
