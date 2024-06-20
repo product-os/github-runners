@@ -91,11 +91,6 @@ services:
       # REGISTRY_PROXY_USERNAME: changeme
       # REGISTRY_PROXY_PASSWORD: changeme
       # REGISTRY_LOG_LEVEL: debug
-    healthcheck:
-      test: curl --silent --fail http://localhost:5000/v2/_catalog
-      interval: 1m
-      timeout: 10s
-      retries: 3
 
 volumes:
   registry-data: {}
