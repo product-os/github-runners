@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add a registry pull-through cache to the local bridge network
+      hash: 240f6278a532024ebd661fbb43dab988aafcd77b
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.14.92
+  title: ""
+  date: 2024-06-20T15:34:08.807Z
+- commits:
     - subject: Remove lock manager service
       hash: a8c382b2e69be0094e33e4b79de851a0b874d3b9
       body: |
