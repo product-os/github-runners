@@ -1,4 +1,21 @@
 - commits:
+    - subject: Remove the registry cache healthcheck for now
+      hash: 63a3b6a5a93991ebcf124fb139998ed4b8f3919d
+      body: |
+        Curl is not installed in the image so the healthcheck is
+        failing. We can add curl and restore the healthcheck in the
+        future if needed.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.14.96
+  title: ""
+  date: 2024-06-20T23:39:32.094Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.11.1
       hash: 91cde2fd225967b89cb59413f4605e810b47dc93
       body: |
