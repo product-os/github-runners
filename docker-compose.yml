@@ -32,11 +32,11 @@ services:
 
   runner-container-1:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.14.11
+    image: ghcr.io/product-os/self-hosted-runners:3.14.12
 
   runner-container-2:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:3.14.11
+    image: ghcr.io/product-os/self-hosted-runners:3.14.12
 
   runner-focal-1:
     <<: *runner-vm
