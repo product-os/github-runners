@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.10
+      hash: 6f66a41867419410c0e1a6450d89b4b093068264
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.14.9 to 3.14.10
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove hostname manual override
+              hash: 6754ef8d947544740a4b364c4fd6cc928ef7bde2
+              body: |
+                Both the VM and container runners have other
+                methods of setting hostnames and it does not need
+                to be done at runtime.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.14.10
+          title: ""
+          date: 2024-06-20T23:26:45.288Z
+  version: 0.14.97
+  title: ""
+  date: 2024-06-21T00:04:04.828Z
+- commits:
     - subject: Remove the registry cache healthcheck for now
       hash: 63a3b6a5a93991ebcf124fb139998ed4b8f3919d
       body: |
