@@ -1,4 +1,38 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.12.0
+      hash: 11f5e7e510f779f2554c20660feb35c717142835
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.11.1 to 0.12.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Run a dns forwarder for the tap interface
+              hash: f9544ab82c49ea9de79100b6536fa534079b565d
+              body: |
+                This gives the guest VM access to the Docker DNS proxy
+                mounted in the host container.
+
+                The advantages are the guest VM can now resolve
+                services by name, like the registry cache, and it
+                will use the Docker daemon upstream DNS settings rather
+                than hardcoding our own.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.12.0
+          title: ""
+          date: 2024-06-24T01:44:02.183Z
+  version: 0.14.104
+  title: ""
+  date: 2024-06-24T14:04:09.721Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.16
       hash: 0c29118a2909a4348db4f70a2556f1760f4d7f36
       body: |
