@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.12.1
+      hash: 16b342f1c4d096d6112261968c65716cc3b65d3f
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.12.0 to 0.12.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Allow guest VM to non-root to access /dev/net/tun and /dev/kvm
+              hash: cda3678993189e8bc2b4b1d1260ed9cf76832d88
+              body: |
+                We use this for testing firecracker features on x64 nested VMs.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.12.1
+          title: ""
+          date: 2024-06-24T19:40:56.092Z
+  version: 0.14.106
+  title: ""
+  date: 2024-06-24T20:05:59.532Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.17
       hash: 19421c88d94682551af8a2d583263ba69df9cfc1
       body: |
