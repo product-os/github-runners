@@ -16,12 +16,20 @@ x-runner-container:
 
 x-runner-vm:
   &runner-vm
-  privileged: true
+  cap_drop:
+    - ALL
+  cap_add:
+    - NET_RAW # Required for VM networking
+    - NET_ADMIN # Required for VM networking
+    - CHOWN # Required to change ownership of files
+    - DAC_OVERRIDE # Required by confd
+  devices:
+    - /dev/kvm # Required for Firecracker virtualization
+    - /dev/net/tun # Required to create TAP/TUN device
   sysctls:
-    - net.ipv4.ip_forward=1
+    - net.ipv4.ip_forward=1 # Required for VM networking
   tmpfs:
     - /tmp
-    - /run
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
     DOCKER_REGISTRY_MIRROR: http://registry-cache:5000
