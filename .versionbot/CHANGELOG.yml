@@ -1,4 +1,20 @@
 - commits:
+    - subject: Drop VM runner permissions to align with upstream
+      hash: 231fd83d7a5eb3d0e00119d5fca8c1f58f345392
+      body: |
+        Changes in github-runner-vm:0.13.0 allow running
+        without the jailer and minimum permissions.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.15.0
+  title: ""
+  date: 2024-06-25T15:26:42.254Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.13.0
       hash: dfda90e401a453a6eb51822282616f1e87b9ac6c
       body: |
