@@ -1,4 +1,58 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.13.0
+      hash: dfda90e401a453a6eb51822282616f1e87b9ac6c
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.12.1 to 0.13.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Determine if VM target state was reached on exit
+              hash: dbe6606b49262f0b0b417adf8897668c218a3272
+              body: |
+                This should help return an exit code when tests did not
+                pass, or the runner under test did not get picked up
+                for a job.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Drop jailer process and run as non-root user
+              hash: c07050e1a89e7e75b64a0d522b3ea5f2ff47a139
+              body: >
+                The jailer actually provides no additional protections
+
+                beyond what a container already does when running as non-root
+
+                with controlled caps.
+
+
+                The jailer itself actually requires far more capabilities
+
+                to be provided to the container.
+
+
+                See
+                https://github.com/firecracker-microvm/firecracker/issues/2785
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.13.0
+          title: ""
+          date: 2024-06-25T00:05:03.871Z
+  version: 0.14.108
+  title: ""
+  date: 2024-06-25T14:59:26.490Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.18
       hash: 85d5ab47cb6fe71623e626b632603bbaec001fc1
       body: |
