@@ -1,4 +1,23 @@
 - commits:
+    - subject: Allow containerized runners to load kernel modules on the host
+      hash: 32a58579365642cb07d3756228c945e24d70c84d
+      body: |
+        This unblocks CI testing of NFS server features where
+        the nfsd module is not loaded by default in balenaOS.
+
+        The containerized runners are already privileged, and only
+        enabled on private repos, so this is not a security change.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.15.1
+  title: ""
+  date: 2024-06-26T15:50:31.512Z
+- commits:
     - subject: Drop VM runner permissions to align with upstream
       hash: 231fd83d7a5eb3d0e00119d5fca8c1f58f345392
       body: |
