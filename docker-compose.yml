@@ -3,6 +3,9 @@ version: "2.4"
 x-runner-container:
   &runner-container
   privileged: true
+  labels:
+    # Allow CI pipelines to load kernel modules on the host
+    io.balena.features.kernel-modules: '1'
   tmpfs:
     - /tmp
     - /run
