@@ -1,4 +1,201 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.13.3
+      hash: 304173169ae652fa616bd10c8d551c6b164befed
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.13.0 to 0.13.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.18
+              hash: 0170f14b29b8c76651752ae2ef4cf62f6fd8ed36
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.14.9 to
+                3.14.18
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency cli/cli to v2.52.0
+                      hash: ff9bd9e6bc1f2a6511f4b6a8f152dab21b39ab1f
+                      body: |
+                        Update cli/cli from 2.51.0 to 2.52.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.14.18
+                  title: ""
+                  date: 2024-06-24T20:12:21.283Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v18.2.10
+                      hash: 3d415c2cfc5e2bdf37ba167e7f05814af90a0a67
+                      body: |
+                        Update balena-io/balena-cli from 18.2.9 to 18.2.10
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.14.17
+                  title: ""
+                  date: 2024-06-21T21:13:21.893Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v18.2.9
+                      hash: 5c7da5693470bb15717cbe02533b1c139920aeab
+                      body: |
+                        Update balena-io/balena-cli from 18.2.8 to 18.2.9
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.14.16
+                  title: ""
+                  date: 2024-06-21T20:13:42.257Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v18.2.8
+                      hash: 37e8b7203fd64f88b40d6f08581ea5f20cdeb645
+                      body: |
+                        Update balena-io/balena-cli from 18.2.7 to 18.2.8
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.14.15
+                  title: ""
+                  date: 2024-06-21T19:09:07.493Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v18.2.7
+                      hash: 7e67fc5f12aca66daf023e7d17811449ee38e920
+                      body: |
+                        Update balena-io/balena-cli from 18.2.6 to 18.2.7
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.14.14
+                  title: ""
+                  date: 2024-06-21T18:10:33.466Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v18.2.6
+                      hash: e7c9c508228698879c2035f3e8e5bf3061daf2ab
+                      body: |
+                        Update balena-io/balena-cli from 18.2.5 to 18.2.6
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.14.13
+                  title: ""
+                  date: 2024-06-21T16:12:24.322Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v18.2.5
+                      hash: 439caf49184f28f36a2ddbf00b0e2745eb60fcaa
+                      body: |
+                        Update balena-io/balena-cli from 18.2.2 to 18.2.5
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.14.12
+                  title: ""
+                  date: 2024-06-21T13:18:09.610Z
+                - commits:
+                    - subject: Update dependency node to v20.15.0
+                      hash: d13cc8b67cb059a55f078de0e922e224f4a4fa3d
+                      body: |
+                        Update node from 20.14.0 to 20.15.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-3.14.11
+                  title: ""
+                  date: 2024-06-21T00:06:24.213Z
+                - commits:
+                    - subject: Remove hostname manual override
+                      hash: 6754ef8d947544740a4b364c4fd6cc928ef7bde2
+                      body: |
+                        Both the VM and container runners have other
+                        methods of setting hostnames and it does not need
+                        to be done at runtime.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-3.14.10
+                  title: ""
+                  date: 2024-06-20T23:26:45.288Z
+          version: github-runner-vm-0.13.3
+          title: ""
+          date: 2024-06-26T19:47:39.310Z
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.3.8
+              hash: 3f3804ecc4c510ee1a91d6363faf18674cc682df
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.3.7 to
+                0.3.8
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Enable NFS server support
+                      hash: dc771c844c45733f5594c3395bbb3e2ebf3174e8
+                      body: >
+                        This is needed for CI of services that provide NFS
+                        servers as
+
+                        part of their compose stack.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: github-runner-kernel-0.3.8
+                  title: ""
+                  date: 2024-06-26T13:35:59.890Z
+          version: github-runner-vm-0.13.2
+          title: ""
+          date: 2024-06-26T14:20:45.709Z
+        - commits:
+            - subject: Add nested KVM runner tests for x64
+              hash: ea011c9f2609b201aecf02ca31b83a0eb697e656
+              body: |
+                This is the ultimate test of a runner being created
+                and then getting picked up by a workflow that follows
+                the same process to create another nested runner.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.13.1
+          title: ""
+          date: 2024-06-25T16:00:44.808Z
+  version: 0.15.2
+  title: ""
+  date: 2024-06-26T20:08:29.797Z
+- commits:
     - subject: Allow containerized runners to load kernel modules on the host
       hash: 32a58579365642cb07d3756228c945e24d70c84d
       body: |
