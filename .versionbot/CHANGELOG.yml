@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.13.4
+      hash: b3d2a1aa2a09f4760860dc6b27905a8a3fa20450
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.13.3 to 0.13.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Test workflows with a local NFS server
+              hash: 82ce80605082ce3474c776d507be5965eb4df8a6
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.13.4
+          title: ""
+          date: 2024-06-27T02:38:44.721Z
+  version: 0.15.3
+  title: ""
+  date: 2024-06-27T03:05:07.071Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.13.3
       hash: 304173169ae652fa616bd10c8d551c6b164befed
       body: |
