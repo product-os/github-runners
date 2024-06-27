@@ -1,4 +1,35 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.20
+      hash: 1f548dc4e8698cc9662c794d0693930f68ac9d94
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.14.19 to 3.14.20
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Improve dockerd entrypoint to avoid breaking /dev/console
+              hash: 2f33e3e32793a4190937232f6818035ba294ed37
+              body: >
+                Performing su - root while already running as root resulted
+
+                in resetting of permissions on /dev/console when running in a
+                VM.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.14.20
+          title: ""
+          date: 2024-06-27T17:06:52.233Z
+  version: 0.15.5
+  title: ""
+  date: 2024-06-27T18:10:16.292Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.19
       hash: ee96e687eaebebe24c1610af7c6e125b56c22347
       body: |
