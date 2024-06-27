@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.21
+      hash: b614c7d7cb558f759c63e0dbc502787e90ceec92
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.14.20 to 3.14.21
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Improve handling of s6 service exit codes
+              hash: 73e6eae26fa46b75a47c45e5d4e02abde49cdd7d
+              body: |
+                This should prevent services like dockerd from overwriting
+                the exit code if the runner service fails, for example.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.14.21
+          title: ""
+          date: 2024-06-27T18:54:00.481Z
+  version: 0.15.6
+  title: ""
+  date: 2024-06-27T20:03:38.107Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.20
       hash: 1f548dc4e8698cc9662c794d0693930f68ac9d94
       body: |
