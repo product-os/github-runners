@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.19
+      hash: ee96e687eaebebe24c1610af7c6e125b56c22347
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.14.18 to 3.14.19
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove registration from dockerd dependencies
+              hash: cf488f596b81bb323037e648a814992106b66b21
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-3.14.19
+          title: ""
+          date: 2024-06-27T04:02:39.171Z
+  version: 0.15.4
+  title: ""
+  date: 2024-06-27T05:03:12.960Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v0.13.4
       hash: b3d2a1aa2a09f4760860dc6b27905a8a3fa20450
       body: |
