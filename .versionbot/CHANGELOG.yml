@@ -1,4 +1,73 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4
+      hash: a016e03ab0d85c58486e273b31c539aea1b6c2c7
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 3.14.21 to 4.0.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update golang Docker tag to v1.22.5
+              hash: 1f34407d03e8c8b5e2677568fd36861ec36f082a
+              body: |
+                Update golang from 1.22.4 to 1.22.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-4.0.3
+          title: ""
+          date: 2024-07-04T01:18:41.316Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v18.2.17
+              hash: 5ff28f97e357148d9af565bb1417e9b4d3ea0787
+              body: |
+                Update balena-io/balena-cli from 18.2.10 to 18.2.17
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-4.0.2
+          title: ""
+          date: 2024-07-03T01:19:31.022Z
+        - commits:
+            - subject: Disable balena CLI analytics and sentry
+              hash: 4b40083e1c3a9967f82dc7e1701364550f8c34c2
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-4.0.1
+          title: ""
+          date: 2024-07-02T17:46:29.346Z
+        - commits:
+            - subject: Register runner via jitconfig API endpoint
+              hash: e6a476e5ee21214d0ffc6319be36d9f542284247
+              body: |
+                This method gives us more control over the authentication
+                process by removing the abstration provided by config.sh
+              footer:
+                Change-type: major
+                change-type: major
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-4.0.0
+          title: ""
+          date: 2024-07-02T14:46:58.325Z
+  version: 0.15.8
+  title: ""
+  date: 2024-07-07T19:59:25.911Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1
       hash: 3e09d8826917918c2d57f4a547abc27dfb8fc78b
       body: |
