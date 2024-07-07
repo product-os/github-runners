@@ -1,4 +1,332 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1
+      hash: 3e09d8826917918c2d57f4a547abc27dfb8fc78b
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 0.13.4 to 1.1.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update firecracker base to debian:bookworm
+              hash: f5bdbc5287fb93357d63498f6df841f7bf02f6cb
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-1.1.0
+          title: ""
+          date: 2024-07-05T15:52:26.765Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.0.3
+              hash: cd595891759c5b5594c4c9ccc492e2d888075c9c
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 4.0.2 to 4.0.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update golang Docker tag to v1.22.5
+                      hash: 1f34407d03e8c8b5e2677568fd36861ec36f082a
+                      body: |
+                        Update golang from 1.22.4 to 1.22.5
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.0.3
+                  title: ""
+                  date: 2024-07-04T01:18:41.316Z
+          version: github-runner-vm-1.0.5
+          title: ""
+          date: 2024-07-04T02:41:24.205Z
+        - commits:
+            - subject: Install firecracker and go-github-apps via eget
+              hash: 7888cb40cc0687c82831b9fe964c5bdbd3f20ad6
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Use log helpers where appropriate
+              hash: a7a63e92d8d18fee04cebdbc809b754300d63cd1
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-1.0.4
+          title: ""
+          date: 2024-07-03T19:13:24.545Z
+        - commits:
+            - subject: Use shunit2 for unit tests
+              hash: 00226a63bc6761434d26f370b11534c2151c646d
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Move unit tests out of the image overlay
+              hash: a5277791cf6ad71f474ef4a83bb040f7fed8a289
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-1.0.3
+          title: ""
+          date: 2024-07-03T16:00:03.151Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.0.2
+              hash: b231fbfdbe2469a086d3a07194dc2744b68987a3
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 4.0.1 to 4.0.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v18.2.17
+                      hash: 5ff28f97e357148d9af565bb1417e9b4d3ea0787
+                      body: |
+                        Update balena-io/balena-cli from 18.2.10 to 18.2.17
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.0.2
+                  title: ""
+                  date: 2024-07-03T01:19:31.022Z
+          version: github-runner-vm-1.0.2
+          title: ""
+          date: 2024-07-03T02:39:37.121Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.0.1
+              hash: 8dec087f896de24fd16a7559c94c889665bdb6e2
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 4.0.0 to 4.0.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Disable balena CLI analytics and sentry
+                      hash: 4b40083e1c3a9967f82dc7e1701364550f8c34c2
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-4.0.1
+                  title: ""
+                  date: 2024-07-02T17:46:29.346Z
+          version: github-runner-vm-1.0.1
+          title: ""
+          date: 2024-07-02T18:17:20.601Z
+        - commits:
+            - subject: Pre-register via the GitHub API jitconfig endpoint
+              hash: a10c6fddaff9d8bf0b856583881dde486f2492c7
+              body: ""
+              footer:
+                Change-type: major
+                change-type: major
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Install command-line tool to retrieve GH App Tokens
+              hash: 5fd2184738c6a5924795ca4436782e704479c127
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.0.0
+              hash: fcc4d57c791c1752c879bc665e6e6f1758a7d152
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.14.21 to
+                4.0.0
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested:
+                - commits:
+                    - subject: Register runner via jitconfig API endpoint
+                      hash: e6a476e5ee21214d0ffc6319be36d9f542284247
+                      body: >
+                        This method gives us more control over the
+                        authentication
+
+                        process by removing the abstration provided by config.sh
+                      footer:
+                        Change-type: major
+                        change-type: major
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-4.0.0
+                  title: ""
+                  date: 2024-07-02T14:46:58.325Z
+          version: github-runner-vm-1.0.0
+          title: ""
+          date: 2024-07-02T17:42:03.172Z
+        - commits:
+            - subject: Update ghcr.io/obeone/nfs-server Docker tag to v2.2.3
+              hash: 13d8b03196ae6af05f90ee2c0036078561aaeed5
+              body: |
+                Update ghcr.io/obeone/nfs-server from 2.2.2 to 2.2.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: github-runner-vm-0.14.1
+          title: ""
+          date: 2024-06-28T16:52:25.238Z
+        - commits:
+            - subject: Move tests to a common overlay script for local testing
+              hash: e19fd6519feddc14cade7ff387283fe0605030e2
+              body: |
+                This allows running the same tests locally via local mode
+                `balena push` or `docker compose up sut`.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-0.14.0
+          title: ""
+          date: 2024-06-28T14:14:39.809Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.21
+              hash: b1e1055b6c8413c665e474db15279612638fb5de
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.14.20 to
+                3.14.21
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Improve handling of s6 service exit codes
+                      hash: 73e6eae26fa46b75a47c45e5d4e02abde49cdd7d
+                      body: >
+                        This should prevent services like dockerd from
+                        overwriting
+
+                        the exit code if the runner service fails, for example.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-3.14.21
+                  title: ""
+                  date: 2024-06-27T18:54:00.481Z
+          version: github-runner-vm-0.13.7
+          title: ""
+          date: 2024-06-27T20:24:27.555Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.20
+              hash: b0ed7af2db929de01822abf0fab4dbeb3e2c2c2a
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.14.19 to
+                3.14.20
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Improve dockerd entrypoint to avoid breaking /dev/console
+                      hash: 2f33e3e32793a4190937232f6818035ba294ed37
+                      body: >
+                        Performing su - root while already running as root
+                        resulted
+
+                        in resetting of permissions on /dev/console when running
+                        in a VM.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-3.14.20
+                  title: ""
+                  date: 2024-06-27T17:06:52.233Z
+          version: github-runner-vm-0.13.6
+          title: ""
+          date: 2024-06-27T18:18:26.933Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.19
+              hash: 6e4e8a2d76fc04f36ca13027d882829bb0e7a7c1
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 3.14.18 to
+                3.14.19
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Remove registration from dockerd dependencies
+                      hash: cf488f596b81bb323037e648a814992106b66b21
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-3.14.19
+                  title: ""
+                  date: 2024-06-27T04:02:39.171Z
+          version: github-runner-vm-0.13.5
+          title: ""
+          date: 2024-06-27T05:16:15.255Z
+  version: 0.15.7
+  title: ""
+  date: 2024-07-07T19:27:02.265Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v3.14.21
       hash: b614c7d7cb558f759c63e0dbc502787e90ceec92
       body: |
