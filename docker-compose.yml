@@ -51,35 +51,35 @@ services:
 
   runner-focal-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.13.4-focal
+    image: ghcr.io/product-os/github-runner-vm:1.1.0-focal
 
   runner-focal-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.13.4-focal
+    image: ghcr.io/product-os/github-runner-vm:1.1.0-focal
 
   runner-jammy-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.13.4
+    image: ghcr.io/product-os/github-runner-vm:1.1.0
 
   runner-jammy-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.13.4
+    image: ghcr.io/product-os/github-runner-vm:1.1.0
 
   runner-jammy-3:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.13.4
+    image: ghcr.io/product-os/github-runner-vm:1.1.0
 
   runner-jammy-4:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.13.4
+    image: ghcr.io/product-os/github-runner-vm:1.1.0
 
   runner-jammy-5:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.13.4
+    image: ghcr.io/product-os/github-runner-vm:1.1.0
 
   runner-jammy-6:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:0.13.4
+    image: ghcr.io/product-os/github-runner-vm:1.1.0
 
   # https://distribution.github.io/distribution/recipes/mirror/
   registry-cache:
