@@ -1,4 +1,46 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.1.2
+      hash: 6377ce625ecd72eb50a10f11b11bbad794871188
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 1.1.0 to 1.1.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update golang Docker tag to v1.22.5
+              hash: 2211f1ad693fb5061dc974559447239ab7c2b0d1
+              body: |
+                Update golang from 1.22.4 to 1.22.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: github-runner-vm-1.1.2
+          title: ""
+          date: 2024-07-08T15:26:46.186Z
+        - commits:
+            - subject: Remove the .jitconfig before preregistration
+              hash: 7783b5984fe5f0efdb5e0817dd8053eba5d46781
+              body: |
+                Otherwise if the .jitconfig already exists the registration
+                script will exit.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-1.1.1
+          title: ""
+          date: 2024-07-08T14:11:53.706Z
+  version: 0.15.9
+  title: ""
+  date: 2024-07-08T19:06:15.104Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4
       hash: a016e03ab0d85c58486e273b31c539aea1b6c2c7
       body: |
