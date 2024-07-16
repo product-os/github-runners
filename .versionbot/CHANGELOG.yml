@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.0.12
+      hash: 145bdec24a9ddf12fa3368308125afec384b86ab
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 4.0.11 to 4.0.12
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Support ACTIONS_RUNNER_PRINT_LOG_TO_STDOUT env var at runtime
+              hash: e119533293900de50a431dc16f2583d03bc598aa
+              body: |
+                This flag is very verbose when enabled, it would be nice
+                to turn it on/off via env vars.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-4.0.12
+          title: ""
+          date: 2024-07-16T16:55:49.421Z
+  version: 0.15.18
+  title: ""
+  date: 2024-07-16T18:01:16.846Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.0.11
       hash: b5cdf17df4817c4cfb25267a414f075ad18c870a
       body: |
