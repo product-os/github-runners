@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.1.8
+      hash: 48083bc66a2b1477ea38802a99f47e350be3aac3
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 1.1.7 to 1.1.8
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Re-enable guest IPv6
+              hash: 15dac5024f493ac5ceec4b0d4d48584b9864431e
+              body: |
+                Some test suites expect both IPv4 and IPv6 to be
+                supported by the kernel.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-1.1.8
+          title: ""
+          date: 2024-07-17T23:13:42.969Z
+  version: 0.15.22
+  title: ""
+  date: 2024-07-17T23:59:36.768Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.1.7
       hash: 9dced751055523e5d25a440bf91f2b11e2c188fc
       body: |
