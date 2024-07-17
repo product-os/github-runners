@@ -1,4 +1,196 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.1.6
+      hash: 6b1d1d5365fb13f880a33a1373f1d03440da1bdf
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 1.1.2 to 1.1.6
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove nested workflow and move nested test to custom actions
+              hash: 184bf7e582c5247beffa2296ce5ae98bd2799001
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-1.1.6
+          title: ""
+          date: 2024-07-17T19:39:18.751Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.0.12
+              hash: d53cc25b498f6a08c36bc0ec6b72e94bb2241942
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 4.0.11 to
+                4.0.12
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Support ACTIONS_RUNNER_PRINT_LOG_TO_STDOUT env var at runtime
+                      hash: e119533293900de50a431dc16f2583d03bc598aa
+                      body: |
+                        This flag is very verbose when enabled, it would be nice
+                        to turn it on/off via env vars.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-4.0.12
+                  title: ""
+                  date: 2024-07-16T16:55:49.421Z
+          version: github-runner-vm-1.1.5
+          title: ""
+          date: 2024-07-17T14:54:33.357Z
+        - commits:
+            - subject: Disable cache in dnsmasq forwarder
+              hash: 17b4cfe407a2c22438fcea9041182b5bc3f2d070
+              body: |
+                We want to avoid stale DNS entries for local
+                services like registry-cache.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-1.1.4
+          title: ""
+          date: 2024-07-16T21:06:22.745Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.0.11
+              hash: 531696a95ee59551aae864ba439494f857ba1245
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 4.0.3 to
+                4.0.11
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v18.2.29
+                      hash: f287be4d53b18b63555fa9a385d23cc760ac4999
+                      body: |
+                        Update balena-io/balena-cli from 18.2.28 to 18.2.29
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.0.11
+                  title: ""
+                  date: 2024-07-12T16:14:17.896Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v18.2.28
+                      hash: 64f1086e09d750ad8372e62cdba5cf013d82384d
+                      body: |
+                        Update balena-io/balena-cli from 18.2.27 to 18.2.28
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.0.10
+                  title: ""
+                  date: 2024-07-12T14:10:23.972Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v18.2.27
+                      hash: d52f4c1b209437e4da6a3f427032f00bbd210528
+                      body: |
+                        Update balena-io/balena-cli from 18.2.25 to 18.2.27
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.0.9
+                  title: ""
+                  date: 2024-07-12T13:19:56.555Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v18.2.25
+                      hash: fb189f240347988c66973d12fffdd5c64f6a161c
+                      body: |
+                        Update balena-io/balena-cli from 18.2.20 to 18.2.25
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.0.8
+                  title: ""
+                  date: 2024-07-12T01:19:58.282Z
+                - commits:
+                    - subject: Update dotnet monorepo
+                      hash: a369f374b4e90637d52039cdbc9d9c707180322a
+                      body: >
+                        Update mcr.microsoft.com/dotnet/runtime-deps from 6.0.31
+                        to 6.0.32
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.0.7
+                  title: ""
+                  date: 2024-07-10T19:07:49.818Z
+                - commits:
+                    - subject: Update dependency npm to v10.8.2
+                      hash: 1653870c3f751f7dda441ffce57d745ebf88bf7a
+                      body: |
+                        Update npm from 10.8.1 to 10.8.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.0.6
+                  title: ""
+                  date: 2024-07-10T18:07:35.585Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v18.2.20
+                      hash: 11844c48824554175ffae58236c4ab03e7c4bd29
+                      body: |
+                        Update balena-io/balena-cli from 18.2.17 to 18.2.20
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.0.5
+                  title: ""
+                  date: 2024-07-08T20:05:54.450Z
+                - commits:
+                    - subject: Update dependency node to v20.15.1
+                      hash: 369b1ac00ad859ac824da6e7d882a908d260f5f7
+                      body: |
+                        Update node from 20.15.0 to 20.15.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.0.4
+                  title: ""
+                  date: 2024-07-08T19:13:36.690Z
+          version: github-runner-vm-1.1.3
+          title: ""
+          date: 2024-07-12T20:28:18.863Z
+  version: 0.15.19
+  title: ""
+  date: 2024-07-17T20:01:15.287Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.0.12
       hash: 145bdec24a9ddf12fa3368308125afec384b86ab
       body: |
