@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add two more Jammy VM runners
+      hash: 8088bb9f5cd0488676da0d0d32f8d454b55bde72
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.15.24
+  title: ""
+  date: 2024-07-18T13:06:02.207Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.1.9
       hash: b8055bc8aad6b216ec1d83a47c8cc80e8c400d8d
       body: |
