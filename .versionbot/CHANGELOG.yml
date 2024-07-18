@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.2.0
+      hash: 49991f393b494edc068cd310d02a7f3b26307231
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 1.1.9 to 1.2.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Change guest subnet to 10.10.0.0/24 by default
+              hash: 7c0ed5e5b6ee51a4c83aced79d7a7ec7a0c393c6
+              body: |
+                This subnet is less likely to clash with Docker networks
+                on the host or the guest.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-1.2.0
+          title: ""
+          date: 2024-07-18T15:21:57.288Z
+  version: 0.15.25
+  title: ""
+  date: 2024-07-18T16:01:49.888Z
+- commits:
     - subject: Add two more Jammy VM runners
       hash: 8088bb9f5cd0488676da0d0d32f8d454b55bde72
       body: ""
