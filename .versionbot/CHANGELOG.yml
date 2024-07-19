@@ -1,4 +1,18 @@
 - commits:
+    - subject: Provide multiple registry mirrors for now
+      hash: e9cb94f9f38eacaef0c1065f129adcd14da9631f
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.15.30
+  title: ""
+  date: 2024-07-19T13:04:22.464Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.2.3
       hash: e8a7809e378e1f8af824900db19d37215824be73
       body: |
