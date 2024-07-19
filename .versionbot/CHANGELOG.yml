@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.1.2
+      hash: 6cf198abb6bd551fc9f3c9804825dabc7af4922c
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 4.1.1 to 4.1.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Avoid dockerd flags that are already in the daemon.json
+              hash: 633ec3cf2ec11470293e304e2d4ee415c73df6c8
+              body: |
+                Providing both at runtime will prevent the docker daemon
+                from starting.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-4.1.2
+          title: ""
+          date: 2024-07-19T13:05:39.260Z
+  version: 0.15.31
+  title: ""
+  date: 2024-07-19T14:01:06.523Z
+- commits:
     - subject: Provide multiple registry mirrors for now
       hash: e9cb94f9f38eacaef0c1065f129adcd14da9631f
       body: ""
