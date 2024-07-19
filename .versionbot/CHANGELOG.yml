@@ -1,4 +1,71 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.2.3
+      hash: e8a7809e378e1f8af824900db19d37215824be73
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 1.2.1 to 1.2.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.1.1
+              hash: 344f81bc2c225940444d2582972e5132ba020cc1
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 4.1.0 to 4.1.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency nabeken/go-github-apps to v0.1.16
+                      hash: 7f213aa88334f523d83bdefc39a31965507154a8
+                      body: |
+                        Update nabeken/go-github-apps from 0.1.15 to 0.1.16
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.1.1
+                  title: ""
+                  date: 2024-07-19T03:13:46.146Z
+          version: github-runner-vm-1.2.3
+          title: ""
+          date: 2024-07-19T04:27:46.869Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.1.0
+              hash: e67cacd99d397af21835418f431f3f47da437969
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 4.0.14 to
+                4.1.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Use remco to configure dockerd via templates
+                      hash: 775212efc1b3ec765f559c2ea9db3274027a52b6
+                      body: ""
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-4.1.0
+                  title: ""
+                  date: 2024-07-19T02:31:33.216Z
+          version: github-runner-vm-1.2.2
+          title: ""
+          date: 2024-07-19T03:24:54.034Z
+  version: 0.15.29
+  title: ""
+  date: 2024-07-19T05:09:12.884Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.1.1
       hash: f00acc06405000657209279bd4167c714cf53de2
       body: |
