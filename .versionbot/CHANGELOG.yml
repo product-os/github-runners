@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.2.4
+      hash: 898da5a01bdc5ff0650a97ba8eaea2fccbf8ca51
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 1.2.3 to 1.2.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update the list of allowed Docker variables at runtime
+              hash: 4d74b6645e6e32fdaf5c45217d7b80ca34f7470b
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-1.2.4
+          title: ""
+          date: 2024-07-19T14:24:03.573Z
+  version: 0.15.34
+  title: ""
+  date: 2024-07-19T17:07:46.984Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.1.4
       hash: 2d3bfbd86b07e6597ccdfe0193d89d96e12d757a
       body: |
