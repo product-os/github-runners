@@ -12,8 +12,8 @@ x-runner-container:
     - /scratch
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
-    DOCKER_REGISTRY_MIRROR: http://registry-cache:5000
-    INSECURE_REGISTRY: registry-cache:5000
+    REGISTRY_MIRRORS: http://registry-cache:5000 https://nfs.product-os.io
+    INSECURE_REGISTRIES: registry-cache:5000
     # container runners are only suitable for private repositories
     ACTIONS_RUNNER_GROUP: self-hosted-internal
 
@@ -35,8 +35,8 @@ x-runner-vm:
     - /tmp
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
-    DOCKER_REGISTRY_MIRROR: http://registry-cache:5000
-    INSECURE_REGISTRY: registry-cache:5000
+    REGISTRY_MIRRORS: http://registry-cache:5000 https://nfs.product-os.io
+    INSECURE_REGISTRIES: registry-cache:5000
     ACTIONS_RUNNER_GROUP: self-hosted
 
 services:
