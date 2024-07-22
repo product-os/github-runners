@@ -81,14 +81,6 @@ services:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:1.2.4
 
-  runner-jammy-7:
-    <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:1.2.4
-
-  runner-jammy-8:
-    <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:1.2.4
-
   # https://distribution.github.io/distribution/recipes/mirror/
   registry-cache:
     image: registry:2.8.3
