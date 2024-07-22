@@ -1,4 +1,20 @@
 - commits:
+    - subject: Remove extra jammy runners
+      hash: f933a1b8cb9de944efa23faf9b89947a9693f2c1
+      body: |
+        The current hardware specs have 125G and 250G memory
+        and it splits much more nicely 8 ways instead of 10.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.15.35
+  title: ""
+  date: 2024-07-22T19:35:01.848Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.2.4
       hash: 898da5a01bdc5ff0650a97ba8eaea2fccbf8ca51
       body: |
