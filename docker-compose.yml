@@ -10,6 +10,10 @@ x-runner-container:
     - /tmp
     - /run
     - /scratch
+  networks:
+    - runners
+  extra_hosts:
+    - registry-cache:172.31.0.99
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
     REGISTRY_MIRRORS: http://registry-cache:5000 https://nfs.product-os.io
@@ -33,6 +37,10 @@ x-runner-vm:
     - net.ipv4.ip_forward=1 # Required for VM networking
   tmpfs:
     - /tmp
+  networks:
+    - runners
+  extra_hosts:
+    - registry-cache:172.31.0.99
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
     REGISTRY_MIRRORS: http://registry-cache:5000 https://nfs.product-os.io
@@ -89,6 +97,12 @@ services:
     tmpfs:
       - /tmp
       - /run
+    networks:
+      # Use a fixed ip for the registry-cache service to prevent
+      # the bridge from having an out-of-date ip address
+      # See https://github.com/product-os/github-runner-vm/issues/115
+      runners:
+        ipv4_address: 172.31.0.99
     environment:
       # Listen on the default bridge network on port 5000.
       # Do not expose this unsecured port on the host network!
@@ -274,6 +288,13 @@ services:
       ENABLED: true
       CLOUDFLARE_DNS_ZONE: product-os.io
       ROBOT_API: https://robot-ws.your-server.de
+
+networks:
+  runners:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.31.0.0/16
 
 volumes:
   registry-data: {}
