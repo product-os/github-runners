@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add provisioning steps for Hetzner
+      hash: c19f0b42a5edcb5810251f549a4744a4503d74a2
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.15.40
+  title: ""
+  date: 2024-08-01T16:45:58.369Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.1.8
       hash: 496347e176084cfd25ead3e6eee8c34c764ec73c
       body: |
