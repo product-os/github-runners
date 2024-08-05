@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.1.10
+      hash: fe338e610cd5a35d97d98cae25c738d722ddcaaf
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 4.1.8 to 4.1.10
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency mikefarah/yq to v4.44.3
+              hash: 3197fa41bedff3536efab51898037e6a0338cff9
+              body: |
+                Update mikefarah/yq from 4.44.2 to 4.44.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-4.1.10
+          title: ""
+          date: 2024-08-05T08:10:51.006Z
+        - commits:
+            - subject: Update dependency cli/cli to v2.54.0
+              hash: 6323bbb3985521b300bba706004ba7b160afea73
+              body: |
+                Update cli/cli from 2.53.0 to 2.54.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-4.1.9
+          title: ""
+          date: 2024-08-01T18:11:35.648Z
+  version: 0.15.41
+  title: ""
+  date: 2024-08-05T09:03:11.287Z
+- commits:
     - subject: Add provisioning steps for Hetzner
       hash: c19f0b42a5edcb5810251f549a4744a4503d74a2
       body: ""
