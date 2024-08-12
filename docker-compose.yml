@@ -103,5 +103,177 @@ services:
       # REGISTRY_PROXY_PASSWORD: changeme
       # REGISTRY_LOG_LEVEL: debug
 
+  # tag devices
+  tag-sidecar:
+    image: bash:alpine3.14
+    restart: no
+    entrypoint: ["/usr/local/bin/bash", "-c"]
+    command:
+      - |
+          set -eu
+
+          [[ "${VERBOSE}" =~ on|On|Yes|yes|true|True ]] && set -x
+
+          [[ $ENABLED == 'true' ]] || exit
+
+          curl_with_opts() {
+              curl --fail --silent --retry 3 --connect-timeout 3 --compressed "$@"
+          }
+
+          function get_robot() {
+              local robot_json
+              robot_json="$(curl_with_opts -u "${ROBOT_USER}:${ROBOT_PASS}" "${ROBOT_API}")"
+              echo "${robot_json}"
+          }
+
+          which curl || apk add curl --no-cache
+          which jq || apk add jq --no-cache
+
+          device_id="$(curl_with_opts \
+            "${BALENA_API_URL}/v6/device?\$filter=uuid%20eq%20'${BALENA_DEVICE_UUID}'" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${BALENA_API_KEY}" | jq -r .d[].id)"
+
+          myip="$(curl_with_opts https://ipinfo.io/ip)"
+
+          flat_json="$(get_robot | jq -rc --arg ip "${myip}" '.[].server | select(.server_ip==$ip)' | sed 's/"/\\"/g')"
+
+          if [[ -n $flat_json ]]; then
+              curl_with_opts "${BALENA_API_URL}/v6/device_tag" \
+                -H "Content-Type: application/json" \
+                -H "Authorization: Bearer ${BALENA_API_KEY}" \
+                --data "{\"device\":\"${device_id}\",\"tag_key\":\"hetzner-robot\",\"value\":\"${flat_json}\"}"
+          fi
+
+    environment:
+      ENABLED: true
+      ROBOT_API: https://robot-ws.your-server.de/server
+    labels:
+      io.balena.features.balena-api: '1'
+
+  # enable IPv6
+  enable-ipv6:
+    image: bash:alpine3.14
+    restart: no
+    entrypoint: ["/usr/local/bin/bash", "-c"]
+    command:
+      - |
+          set -eu
+
+          [[ "${VERBOSE}" =~ on|On|Yes|yes|true|True ]] && set -x
+
+          [[ $ENABLED == 'true' ]] || exit
+
+          curl_with_opts() {
+              curl --fail --silent --retry 3 --connect-timeout 3 --compressed "$@"
+          }
+
+          function get_robot() {
+              local robot_json
+              robot_json="$(curl_with_opts -u "${ROBOT_USER}:${ROBOT_PASS}" "${ROBOT_API}")"
+              echo "${robot_json}"
+          }
+
+          which curl || apk add curl --no-cache
+          which jq || apk add jq --no-cache
+          which nmcli || apk add networkmanager --no-cache
+
+          myip="$(curl_with_opts https://ipinfo.io/ip)"
+          flat_json="$(get_robot | jq -rc --arg ip "${myip}" '.[].server | select(.server_ip==$ip)')"
+          ipv6_addresses="$(nmcli -f ipv6.addresses c s 'Wired connection 1' | awk '{print $2}')"
+
+          if [[ -z $ipv6_addresses ]] || [[ $ipv6_addresses == '--' ]]; then
+              ip="$(echo "${flat_json}" | jq -r '.subnet[].ip')"
+              mask="$(echo "${flat_json}" | jq -r '.subnet[].mask')"
+              ipv6_addresses="${ip}/${mask}"
+              nmcli connection modify 'Wired connection 1' ipv6.addresses "${ipv6_addresses}"
+              nmcli connection modify 'Wired connection 1' ipv6.gateway fe80::1
+              nmcli connection modify 'Wired connection 1' ipv6.dns '2001:4860:4860::8888 2001:4860:4860::8844'
+              nmcli connection modify 'Wired connection 1' ipv6.method manual
+              nmcli connection up 'Wired connection 1'
+          fi
+
+    environment:
+      ENABLED: true
+      ROBOT_API: https://robot-ws.your-server.de/server
+      DBUS_SYSTEM_BUS_ADDRESS: unix:path=/host/run/dbus/system_bus_socket
+    labels:
+      io.balena.features.dbus: '1'
+
+  # create DNS record
+  upsert-dns:
+    image: bash:alpine3.14
+    restart: no
+    entrypoint: ["/usr/local/bin/bash", "-c"]
+    command:
+      - |
+          set -eu
+
+          [[ "${VERBOSE}" =~ on|On|Yes|yes|true|True ]] && set -x
+
+          [[ $ENABLED == 'true' ]] || exit
+
+          curl_with_opts() {
+              curl --fail --silent --retry 3 --connect-timeout 3 --compressed "$@"
+          }
+
+          function get_robot() {
+              local robot_json
+              robot_json="$(curl_with_opts -u "${ROBOT_USER}:${ROBOT_PASS}" "${ROBOT_API}/$1")"
+              echo "${robot_json}"
+          }
+
+          function post_robot() {
+              curl_with_opts -u "${ROBOT_USER}:${ROBOT_PASS}" "${ROBOT_API}/$1" -d "$2"
+          }
+
+          which curl || apk add curl --no-cache
+          which jq || apk add jq --no-cache
+          which dig || apk add bind-tools --no-cache
+
+          myip="$(curl_with_opts https://ipinfo.io/ip)"
+          flat_json="$(get_robot server | jq -rc --arg ip "${myip}" '.[].server | select(.server_ip==$ip)')"
+          ipv4="$(echo "${flat_json}" | jq -r '.server_ip')"
+          ipv6="$(echo "${flat_json}" | jq -r '.server_ipv6_net')"
+
+          if curl_with_opts "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+            -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+            -H "Content-Type:application/json"; then
+
+              zone_id="$(curl_with_opts "https://api.cloudflare.com/client/v4/zones?name=${CLOUDFLARE_DNS_ZONE}&status=active&account.id" \
+                -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+                -H "Content-Type:application/json" | jq -r '.result[].id')"
+
+              if [[ -n $zone_id ]]; then
+                  dns_name="${BALENA_DEVICE_UUID::7}.runners"
+
+                  if [[ -z "$(dig +short A "${dns_name}.${CLOUDFLARE_DNS_ZONE}")" ]]; then
+                      curl_with_opts "https://api.cloudflare.com/client/v4/zones/${zone_id}/dns_records" \
+                        -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+                        -H "Content-Type:application/json" \
+                        --data "{\"type\":\"A\",\"name\":\"${dns_name}\",\"content\":\"${ipv4}\",\"ttl\":120,\"priority\":10,\"proxied\":false}"
+                  fi
+
+                  if [[ -z "$(dig +short AAAA "${dns_name}.${CLOUDFLARE_DNS_ZONE}")" ]]; then
+                      curl_with_opts "https://api.cloudflare.com/client/v4/zones/${zone_id}/dns_records" \
+                        -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+                        -H "Content-Type:application/json" \
+                        --data "{\"type\":\"AAAA\",\"name\":\"${dns_name}\",\"content\":\"${ipv6}\",\"ttl\":120,\"priority\":10,\"proxied\":false}"
+                  fi
+
+                  server_number="$(get_robot "ip?server_ip=${myip}" | jq -r .[].ip.server_number)"
+                  server_name="${dns_name}.${CLOUDFLARE_DNS_ZONE}"
+
+                  if [[ -n $server_number ]]; then
+                      post_robot "server/${server_number}" "server_name=${server_name}"
+                  fi
+              fi
+          fi
+
+    environment:
+      ENABLED: true
+      CLOUDFLARE_DNS_ZONE: product-os.io
+      ROBOT_API: https://robot-ws.your-server.de
+
 volumes:
   registry-data: {}
