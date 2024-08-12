@@ -112,7 +112,7 @@ services:
       - |
           set -eu
 
-          [[ "${VERBOSE}" =~ on|On|Yes|yes|true|True ]] && set -x
+          [[ "${VERBOSE:-false}" =~ on|On|Yes|yes|true|True ]] && set -x
 
           [[ $ENABLED == 'true' ]] || exit
 
@@ -160,7 +160,7 @@ services:
       - |
           set -eu
 
-          [[ "${VERBOSE}" =~ on|On|Yes|yes|true|True ]] && set -x
+          [[ "${VERBOSE:-false}" =~ on|On|Yes|yes|true|True ]] && set -x
 
           [[ $ENABLED == 'true' ]] || exit
 
@@ -209,7 +209,7 @@ services:
       - |
           set -eu
 
-          [[ "${VERBOSE}" =~ on|On|Yes|yes|true|True ]] && set -x
+          [[ "${VERBOSE:-false}" =~ on|On|Yes|yes|true|True ]] && set -x
 
           [[ $ENABLED == 'true' ]] || exit
 
