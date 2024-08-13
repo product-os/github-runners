@@ -1,4 +1,36 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.2.0
+      hash: 2c42275f7d0c29957d9dc4b8200c437bd31f9f22
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 4.1.13 to 4.2.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Install packages used for testing runners
+              hash: 34c75ed88fb5d5a45235cb5ab261cb1372426eef
+              body: |
+                Some of these packages are used for unit tests
+                of the VM-based runners.
+
+                Also some of these packages are included in
+                the hosted GitHub runner images anyway.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-4.2.0
+          title: ""
+          date: 2024-08-13T22:04:38.330Z
+  version: 0.15.46
+  title: ""
+  date: 2024-08-13T23:05:24.186Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.1.13
       hash: bc2474236f9b61604a3c0350b8433dfbfe8f9830
       body: |
