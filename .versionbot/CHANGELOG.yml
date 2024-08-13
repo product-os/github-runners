@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.1.11
+      hash: a2d47d20c48a13b03e8db4c5e2ea1a830740b367
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 4.1.10 to 4.1.11
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency actions/runner to v2.319.1
+              hash: 534a575824a0a05d05eb2c085ab606927a51d31b
+              body: |
+                Update actions/runner from 2.318.0 to 2.319.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-4.1.11
+          title: ""
+          date: 2024-08-13T17:15:48.005Z
+  version: 0.15.43
+  title: ""
+  date: 2024-08-13T18:09:52.129Z
+- commits:
     - subject: Enable IPv6 config and tagging from Hetzner Robot API
       hash: bb728a38903336cd35e712b307607b3f7b878e21
       body: >
