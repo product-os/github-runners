@@ -1,4 +1,19 @@
 - commits:
+    - subject: Enable IPv6 config and tagging from Hetzner Robot API
+      hash: bb728a38903336cd35e712b307607b3f7b878e21
+      body: >
+        All Hetzner machines require to have manually configured IPv6 in order
+        to be dualstack. IPv6 may help route around IPv4 congestion.
+        Disabling/not configuring IPv6 on backend infrastructure where it is
+        supported, should not be allowed in 2024+.
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.15.42
+  title: ""
+  date: 2024-08-13T13:44:09.341Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.1.10
       hash: fe338e610cd5a35d97d98cae25c738d722ddcaaf
       body: |
