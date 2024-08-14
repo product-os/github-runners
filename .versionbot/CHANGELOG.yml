@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.2.9
+      hash: 760cb79f02070404f7509b5c5d9e0384ceb4ac7f
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 1.2.8 to 1.2.9
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.3.9
+              hash: dc36ddb8920c5362c0fdac30e3dbc584bbeb97cb
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.3.8 to
+                0.3.9
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Switch to self-hosted
+                      hash: f32e0f81d74c95587db3d0768f239985721ac79d
+                      body: ""
+                      footer:
+                        change-type: patch
+                      author: Anton Belodedenko
+                      nested: []
+                  version: github-runner-kernel-0.3.9
+                  title: ""
+                  date: 2024-07-23T16:50:56.041Z
+          version: github-runner-vm-1.2.9
+          title: ""
+          date: 2024-08-14T01:43:26.068Z
+  version: 0.15.49
+  title: ""
+  date: 2024-08-14T02:19:59.524Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.2.8
       hash: ce2d79d478999ee2f451369dc37738e45e7adb72
       body: |
