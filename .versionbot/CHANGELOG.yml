@@ -1,4 +1,218 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.2.12
+      hash: 49a31fd243acfd8e56ae5152d0b76f9dc15b848a
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 1.2.9 to 1.2.12
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Remove packages install from unit-tests
+              hash: 3a2100979032f40323f624e3bcbbbac5aea458d8
+              body: |
+                These tests are meant to provide ping results
+                and dns lookups before verifying internet access.
+
+                Starting the tests with an apt-get that may
+                fail for any number of reasons makes troubleshooting
+                the root cause difficult.
+
+                So the required packages have been made available
+                in the guest images upstream.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-1.2.12
+          title: ""
+          date: 2024-08-14T16:47:35.006Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.2.1
+              hash: 6a33281eb8dbae188c54d4dc4c65f16ecb20c5b2
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 4.1.13 to
+                4.2.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency nabeken/go-github-apps to v0.1.16
+                      hash: dd1c7f1546869b1db72ac7a7e15c1f0203d9497e
+                      body: |
+                        Update nabeken/go-github-apps from 0.1.15 to 0.1.16
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.2.1
+                  title: ""
+                  date: 2024-08-13T23:39:15.349Z
+                - commits:
+                    - subject: Install packages used for testing runners
+                      hash: 34c75ed88fb5d5a45235cb5ab261cb1372426eef
+                      body: |
+                        Some of these packages are used for unit tests
+                        of the VM-based runners.
+
+                        Also some of these packages are included in
+                        the hosted GitHub runner images anyway.
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-4.2.0
+                  title: ""
+                  date: 2024-08-13T22:04:38.330Z
+          version: github-runner-vm-1.2.11
+          title: ""
+          date: 2024-08-14T15:22:00.649Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.1.13
+              hash: 6942afd3a2fc7c07f0fe51cf4d52dd7e750d5df4
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 4.1.4 to
+                4.1.13
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update golang Docker tag to v1.22.6
+                      hash: c1d5f40ce09b60444d5cd65a48915f85d53be21c
+                      body: |
+                        Update golang from 1.22.5 to 1.22.6
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.1.13
+                  title: ""
+                  date: 2024-08-13T19:15:48.545Z
+                - commits:
+                    - subject: Update dotnet monorepo
+                      hash: 3803b88579757033c824b369ec5a47fb3e3c5009
+                      body: >
+                        Update mcr.microsoft.com/dotnet/runtime-deps from 6.0.32
+                        to 6.0.33
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.1.12
+                  title: ""
+                  date: 2024-08-13T18:15:43.627Z
+                - commits:
+                    - subject: Update dependency actions/runner to v2.319.1
+                      hash: 534a575824a0a05d05eb2c085ab606927a51d31b
+                      body: |
+                        Update actions/runner from 2.318.0 to 2.319.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.1.11
+                  title: ""
+                  date: 2024-08-13T17:15:48.005Z
+                - commits:
+                    - subject: Update dependency mikefarah/yq to v4.44.3
+                      hash: 3197fa41bedff3536efab51898037e6a0338cff9
+                      body: |
+                        Update mikefarah/yq from 4.44.2 to 4.44.3
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.1.10
+                  title: ""
+                  date: 2024-08-05T08:10:51.006Z
+                - commits:
+                    - subject: Update dependency cli/cli to v2.54.0
+                      hash: 6323bbb3985521b300bba706004ba7b160afea73
+                      body: |
+                        Update cli/cli from 2.53.0 to 2.54.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.1.9
+                  title: ""
+                  date: 2024-08-01T18:11:35.648Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v18.2.34
+                      hash: 7e89d75d9037b89d8a4ef4366925678042e0c96a
+                      body: |
+                        Update balena-io/balena-cli from 18.2.33 to 18.2.34
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.1.8
+                  title: ""
+                  date: 2024-07-29T12:08:52.495Z
+                - commits:
+                    - subject: Update dependency actions/runner to v2.318.0
+                      hash: 2d6687f6f7cdca141a8081f4b7fc4fb7c8172caa
+                      body: |
+                        Update actions/runner from 2.317.0 to 2.318.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.1.7
+                  title: ""
+                  date: 2024-07-26T16:10:09.644Z
+                - commits:
+                    - subject: Update dependency node to v20.16.0
+                      hash: eab55da852fb788b3427e105ff5a07ff277f2e11
+                      body: |
+                        Update node from 20.15.1 to 20.16.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.1.6
+                  title: ""
+                  date: 2024-07-24T13:18:53.888Z
+                - commits:
+                    - subject: Update dependency powershell/powershell to v7.4.4
+                      hash: c7d74b19158db5dabb7a20b5dfa41a804aaffc3f
+                      body: |
+                        Update powershell/powershell from 7.4.3 to 7.4.4
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-4.1.5
+                  title: ""
+                  date: 2024-07-23T20:09:22.922Z
+          version: github-runner-vm-1.2.10
+          title: ""
+          date: 2024-08-14T14:43:01.183Z
+  version: 0.15.51
+  title: ""
+  date: 2024-08-14T17:04:34.088Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v4.2.1
       hash: d2c6f71f1c42f1cbc1fafe16c4426404f1c5978a
       body: |
