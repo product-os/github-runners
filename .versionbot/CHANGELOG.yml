@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add two Ubuntu 24.04 (noble) VM runners per instance
+      hash: 790d2d207e9b840b094523554f1eb61aac422d14
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.16.0
+  title: ""
+  date: 2024-08-15T22:32:29.124Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v1.2.12
       hash: 49a31fd243acfd8e56ae5152d0b76f9dc15b848a
       body: |
