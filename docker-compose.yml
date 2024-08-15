@@ -43,43 +43,43 @@ services:
 
   runner-container-1:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:4.2.1
+    image: ghcr.io/product-os/self-hosted-runners:6.1.1-jammy
 
   runner-container-2:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:4.2.1
+    image: ghcr.io/product-os/self-hosted-runners:6.1.1-jammy
 
   runner-focal-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:1.2.12-focal
+    image: ghcr.io/product-os/github-runner-vm:2.0.2-focal
 
   runner-focal-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:1.2.12-focal
+    image: ghcr.io/product-os/github-runner-vm:2.0.2-focal
 
   runner-jammy-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:1.2.12
+    image: ghcr.io/product-os/github-runner-vm:2.0.2-jammy
 
   runner-jammy-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:1.2.12
+    image: ghcr.io/product-os/github-runner-vm:2.0.2-jammy
 
   runner-jammy-3:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:1.2.12
+    image: ghcr.io/product-os/github-runner-vm:2.0.2-jammy
 
   runner-jammy-4:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:1.2.12
+    image: ghcr.io/product-os/github-runner-vm:2.0.2-jammy
 
-  runner-jammy-5:
+  runner-noble-5:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:1.2.12
+    image: ghcr.io/product-os/github-runner-vm:2.0.2-noble
 
-  runner-jammy-6:
+  runner-noble-6:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:1.2.12
+    image: ghcr.io/product-os/github-runner-vm:2.0.2-noble
 
   # https://distribution.github.io/distribution/recipes/mirror/
   registry-cache:
