@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.2
+      hash: c0144180629f2eca13096f58a698e3f4d29c8829
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.1 to 6.1.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Add more network-related dockerd config options
+              hash: 1e7a323531596bc94f97496554310fc4bba9f63f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.1.2
+          title: ""
+          date: 2024-08-16T12:51:03.021Z
+  version: 0.16.1
+  title: ""
+  date: 2024-08-16T13:09:04.156Z
+- commits:
     - subject: Add two Ubuntu 24.04 (noble) VM runners per instance
       hash: 790d2d207e9b840b094523554f1eb61aac422d14
       body: ""
