@@ -1,4 +1,41 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.0.3
+      hash: 54d174a6b90606e1d989a06b00f8ce5d7ace11df
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.0.2 to 2.0.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Increase default runner size to 4cpu/16gb
+              hash: 440c899a8c15dee096f49db27f9b74c0903d2ee5
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Expose missing docker config env vars
+              hash: ba871e5c69fbd795bc650c8bb574213ad1772d1c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.0.3
+          title: ""
+          date: 2024-08-16T14:52:50.130Z
+  version: 0.16.2
+  title: ""
+  date: 2024-08-16T15:01:26.694Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.2
       hash: c0144180629f2eca13096f58a698e3f4d29c8829
       body: |
