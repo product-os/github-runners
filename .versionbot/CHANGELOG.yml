@@ -1,4 +1,49 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.0
+      hash: e6179a4236abc99ac5b5a257219614a17a174731
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.0.4 to 2.1.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Assign random subnets for guest docker network pools
+              hash: 21e5030c324961e3492bbfe6e5976b496f6b78f4
+              body: |
+                We want to prevent the guest docker daemon from using the
+                same default subnets as the host docker bridge, as that is how
+                we currently access local services like registry cache.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Restore randomness to the guest subnet
+              hash: 41afea1329bcd06195489c1a04dcfa293e52682d
+              body: |
+                This is simpler to implement nested virtualization
+                as we don't need to assign a subnet to every layer.
+
+                It also frees up some space in the 10.[64-127].x.x subnet
+                for docker address pools in a future change.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.1.0
+          title: ""
+          date: 2024-08-16T18:35:57.628Z
+  version: 0.16.4
+  title: ""
+  date: 2024-08-16T20:04:23.002Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.0.4
       hash: eb95bfc34f18a824820f00ca89b00f76ea201c89
       body: |
