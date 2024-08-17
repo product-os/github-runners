@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.3
+      hash: 8ccd7ab5232e7380bf314a64dcdc7e922be879c0
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.2 to 6.1.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Fix logging of GitHub API error responses
+              hash: add0194e0fd860fe399b4914a78798029659893e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.1.3
+          title: ""
+          date: 2024-08-17T00:25:35.231Z
+  version: 0.16.5
+  title: ""
+  date: 2024-08-17T01:22:34.796Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.0
       hash: e6179a4236abc99ac5b5a257219614a17a174731
       body: |
