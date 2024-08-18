@@ -1,4 +1,40 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.4
+      hash: eccc3985f1eb680ec162b894154a6872766fa79e
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.3 to 6.1.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Move runtime label generation out of register script
+              hash: b48e43adb0d8cfb2f85f3c9106618bc43bf885b6
+              body: >
+                The register script is shared by the VM runtime
+
+                but both runtimes have different label requirements.
+
+
+                With this change each runtime can set
+                ACTIONS_RUNNER_RUNTIME_LABELS
+
+                during init with whatever functions are appropriate.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.1.4
+          title: ""
+          date: 2024-08-18T20:15:33.507Z
+  version: 0.16.8
+  title: ""
+  date: 2024-08-18T21:04:21.656Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.2
       hash: 28339f3fa00b8f824bd65e51672e8eb98b25710c
       body: |
