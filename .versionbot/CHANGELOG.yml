@@ -1,4 +1,66 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.3
+      hash: 4f255a28787c7e0e18610f389893df10c5713ce1
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.2 to 2.1.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.5
+              hash: 0ac3ae4adaf609dfb9e1ee72f714e3a60749a751
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.1.3 to 6.1.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.17.32
+                      hash: 0194d8c8a7117ab58a26a969a5938474e3614df8
+                      body: |
+                        Update aws/aws-cli from 2.17.31 to 2.17.32
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.5
+                  title: ""
+                  date: 2024-08-18T21:17:13.633Z
+                - commits:
+                    - subject: Move runtime label generation out of register script
+                      hash: b48e43adb0d8cfb2f85f3c9106618bc43bf885b6
+                      body: >
+                        The register script is shared by the VM runtime
+
+                        but both runtimes have different label requirements.
+
+
+                        With this change each runtime can set
+                        ACTIONS_RUNNER_RUNTIME_LABELS
+
+                        during init with whatever functions are appropriate.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-6.1.4
+                  title: ""
+                  date: 2024-08-18T20:15:33.507Z
+          version: github-runner-vm-2.1.3
+          title: ""
+          date: 2024-08-18T23:58:41.357Z
+  version: 0.16.10
+  title: ""
+  date: 2024-08-19T01:23:55.408Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.5
       hash: 361365541e3b4a1854d19f6c6628ece7e6847437
       body: |
