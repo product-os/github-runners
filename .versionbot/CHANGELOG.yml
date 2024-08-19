@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.4
+      hash: 02157ca64c4ec8457591a64b73950ac8d1d4472f
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.3 to 2.1.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Export new var for actions runtime labels
+              hash: ef9088962dbe2c114eeadeea6fecc76d465bdece
+              body: |
+                The shared registration script has cleaned up
+                the labels logic and allows a separate env
+                var to set runtime labels like this.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.1.4
+          title: ""
+          date: 2024-08-19T14:15:51.734Z
+  version: 0.16.11
+  title: ""
+  date: 2024-08-19T15:06:47.035Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.3
       hash: 4f255a28787c7e0e18610f389893df10c5713ce1
       body: |
