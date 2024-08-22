@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.11
+      hash: f8d4c351efb811a0daa2f3a559465ec29b041552
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.10 to 6.1.11
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.17.36
+              hash: 07fc479b55dc3eeac96caede8645b09cbc95a69b
+              body: |
+                Update aws/aws-cli from 2.17.35 to 2.17.36
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-6.1.11
+          title: ""
+          date: 2024-08-22T20:13:07.595Z
+  version: 0.16.19
+  title: ""
+  date: 2024-08-22T21:01:23.555Z
+- commits:
     - subject: Remove legacy registry cache and use local service
       hash: 5279b90f78b30ed6dc2d8a2a455075a742bb5492
       body: |
