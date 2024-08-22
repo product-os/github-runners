@@ -1,4 +1,22 @@
 - commits:
+    - subject: Remove legacy registry cache and use local service
+      hash: 5279b90f78b30ed6dc2d8a2a455075a742bb5492
+      body: |
+        Since github-runner-vm v2.1.0 we are assigning random
+        IP subnets to the guest Docker daemon and no longer
+        see any routing issues reaching the local registry-cache
+        service.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.16.18
+  title: ""
+  date: 2024-08-22T16:12:15.509Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.10
       hash: 3bd4cce33ac77741e92f764b5e70650bfacd174f
       body: |
