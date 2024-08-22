@@ -1,4 +1,69 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.5
+      hash: 5f95af350e2eaa78621912c1d474bdb462afa6f0
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.4 to 2.1.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.8
+              hash: bbcc86f522e53c1d0a71bea736d6bb0ef20850dc
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.1.5 to 6.1.8
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency node to v20.17.0
+                      hash: 13dada762ddabfb5b7e160eb1e22e7e88d7b61a7
+                      body: |
+                        Update node from 20.16.0 to 20.17.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.8
+                  title: ""
+                  date: 2024-08-21T18:16:49.225Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.17.34
+                      hash: c98dec5cd5823bb061a49451643e21aab365d693
+                      body: |
+                        Update aws/aws-cli from 2.17.32 to 2.17.34
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.7
+                  title: ""
+                  date: 2024-08-21T01:19:40.992Z
+                - commits:
+                    - subject: Update dependency powershell/powershell to v7.4.5
+                      hash: b74157f6dfa9753de84423ba4b976bae4e792463
+                      body: |
+                        Update powershell/powershell from 7.4.4 to 7.4.5
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.6
+                  title: ""
+                  date: 2024-08-20T21:14:24.408Z
+          version: github-runner-vm-2.1.5
+          title: ""
+          date: 2024-08-22T01:50:27.823Z
+  version: 0.16.16
+  title: ""
+  date: 2024-08-22T03:07:26.627Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.9
       hash: 53d1fb466052ff663b97f08fda4152c5a5265b19
       body: |
