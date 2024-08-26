@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.14
+      hash: e6cb638de91e0ce8c91660e16a6e35eb92859fad
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.13 to 6.1.14
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency nabeken/go-github-apps to v0.1.17
+              hash: 5af6e13e1c89d3d6630704481512e141cf52558e
+              body: |
+                Update nabeken/go-github-apps from 0.1.16 to 0.1.17
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-6.1.14
+          title: ""
+          date: 2024-08-26T21:13:26.449Z
+  version: 0.16.23
+  title: ""
+  date: 2024-08-26T22:05:17.301Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.13
       hash: d69a48cf3de21bd75a6ff66a58a18ed36f781461
       body: |
