@@ -1,4 +1,35 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.7
+      hash: 8565b73a1c9871e4b5ab43d643f7573842ae79fe
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.6 to 2.1.7
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Use the device UUID and service name for the guest hostname
+              hash: 292aed77749aee4fb911989ac2025f6f92d4636a
+              body: >
+                This makes it easier to identify runners from job logs
+
+                as the guest hostname is used for the Machine field in runner
+                setup.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.1.7
+          title: ""
+          date: 2024-08-28T20:54:39.444Z
+  version: 0.16.26
+  title: ""
+  date: 2024-08-28T22:05:35.542Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.16
       hash: 1d26932198b39318e6ee10651c19112c59af3915
       body: |
