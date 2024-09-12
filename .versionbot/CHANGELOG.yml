@@ -1,4 +1,23 @@
 - commits:
+    - subject: Disable the blob descriptor cache
+      hash: adacf425511710801dea360a179c9700d2e3223e
+      body: >
+        We are starting to see images fail to pull with the error
+
+        `failed to solve: failed to read expected number of bytes: unexpected
+        EOF`.
+
+
+        This change is reported to be a workaround for that issue.
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 0.16.34
+  title: ""
+  date: 2024-09-12T18:08:54.140Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.21
       hash: a6f438d522c9e9ef544b1c2e4d6921eab3e03af6
       body: |
