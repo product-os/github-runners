@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.22
+      hash: 87a3aa39f826a68d7602042defe6d5f41aaa9ab9
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.21 to 6.1.22
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency nabeken/go-github-apps to v0.2.1
+              hash: 2d10df492956a2ddf4d11db433daa17d488ec12a
+              body: |
+                Update nabeken/go-github-apps from 0.1.17 to 0.2.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-6.1.22
+          title: ""
+          date: 2024-09-17T18:44:46.918Z
+  version: 0.16.35
+  title: ""
+  date: 2024-09-17T19:12:13.984Z
+- commits:
     - subject: Disable the blob descriptor cache
       hash: adacf425511710801dea360a179c9700d2e3223e
       body: >
