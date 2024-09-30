@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.31
+      hash: 9026f37e51dd3165a8e128179d7324291d5600e7
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.29 to 6.1.31
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Replace spaces in labels with underscores
+              hash: 0d0af80e5672d80930ece0a80f23a082ac670437
+              body: |
+                Currently if a provided label has whitespace it
+                will be treated as two labels, and this often happens
+                when processing the board_name from sys.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.1.31
+          title: ""
+          date: 2024-09-28T18:48:57.828Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.17.56
+              hash: 590c793661e2c56d4e55663f86645432ac70d96f
+              body: |
+                Update aws/aws-cli from 2.17.55 to 2.17.56
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-6.1.30
+          title: ""
+          date: 2024-09-23T13:23:42.130Z
+  version: 0.16.44
+  title: ""
+  date: 2024-09-30T23:13:18.562Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.29
       hash: 0026be517549d998596c298042e0c8fcdcdfa313
       body: |
