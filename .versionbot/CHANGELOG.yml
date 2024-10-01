@@ -1,4 +1,22 @@
 - commits:
+    - subject: Replace one containerized runner with a noble VM
+      hash: dacbe789e956661eb5616935d7234ada9b4bbada
+      body: |
+        We have a lot more runner servers available now, and
+        we don't have the need for containerized runners as
+        much as VMs. The former is only enabled on a small set
+        of private repos since they are insecure.
+      footer:
+        CHange-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.17.0
+  title: ""
+  date: 2024-10-01T14:00:47.369Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.33
       hash: b50c2b8b8eae2335bd9d88932dd717ffdcdb8cf5
       body: |
