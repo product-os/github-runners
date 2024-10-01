@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.35
+      hash: 0af660e72542f269677ed210280cf19b7c612525
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.34 to 6.1.35
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency cli/cli to v2.58.0
+              hash: 2c139aaa2bd84d6ab44aec559246240da7b6ef0c
+              body: |
+                Update cli/cli from 2.57.0 to 2.58.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-6.1.35
+          title: ""
+          date: 2024-10-01T21:20:54.601Z
+  version: 0.17.3
+  title: ""
+  date: 2024-10-01T22:05:19.104Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.34
       hash: 6fc3fe8bed52f726447ddedbf39d67f5136b3c34
       body: |
