@@ -45,10 +45,6 @@ services:
     <<: *runner-container
     image: ghcr.io/product-os/self-hosted-runners:6.1.33-jammy
 
-  runner-container-2:
-    <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:6.1.33-jammy
-
   runner-focal-1:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:2.1.10-focal
@@ -73,11 +69,15 @@ services:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:2.1.10-jammy
 
-  runner-noble-5:
+  runner-noble-1:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:2.1.10-noble
 
-  runner-noble-6:
+  runner-noble-2:
+    <<: *runner-vm
+    image: ghcr.io/product-os/github-runner-vm:2.1.10-noble
+
+  runner-noble-3:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:2.1.10-noble
 
