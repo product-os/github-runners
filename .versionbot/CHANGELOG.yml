@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.11
+      hash: ed9e9ed27fdf315c06f50b4746cddee88516133d
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.10 to 2.1.11
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Replace whitespace in labels with underscores
+              hash: 4a087b36449cb6ee7eeae080efca685edc2677c0
+              body: |
+                Otherwise labels like the board series will get split
+                into two labels.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.1.11
+          title: ""
+          date: 2024-10-01T13:43:49.465Z
+  version: 0.17.1
+  title: ""
+  date: 2024-10-01T14:08:10.053Z
+- commits:
     - subject: Replace one containerized runner with a noble VM
       hash: dacbe789e956661eb5616935d7234ada9b4bbada
       body: |
