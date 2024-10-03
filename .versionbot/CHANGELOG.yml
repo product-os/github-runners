@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.38
+      hash: 0eae77059d093d592921e24a3f673cc2a66e25f7
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.37 to 6.1.38
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency npm to v10.9.0
+              hash: f8aa4ee5c1ca478e91891af07060680cb66c7978
+              body: |
+                Update npm from 10.8.3 to 10.9.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-6.1.38
+          title: ""
+          date: 2024-10-03T19:25:12.672Z
+  version: 0.17.6
+  title: ""
+  date: 2024-10-03T20:07:32.364Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.37
       hash: be6ecb8b1748ef008ba2c422c61478e972d908a5
       body: |
