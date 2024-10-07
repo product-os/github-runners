@@ -1,4 +1,230 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.12
+      hash: 5f565d7e5c80bf4aaa2397558b7a9bbdeec7d6ed
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.11 to 2.1.12
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.43
+              hash: d63da1ef093df04f9c1ba14448eec4073cb4ff29
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.1.28 to
+                6.1.43
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.18.1
+                      hash: 100463188984d393694aa6888042f4cd83aca339
+                      body: |
+                        Update aws/aws-cli from 2.18.0 to 2.18.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.43
+                  title: ""
+                  date: 2024-10-07T20:16:34.786Z
+                - commits:
+                    - subject: Update dependency node to v20.18.0
+                      hash: d5fb3d8f32ee7df7fa86f02a3cda535c171f9b09
+                      body: |
+                        Update node from 20.17.0 to 20.18.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.42
+                  title: ""
+                  date: 2024-10-05T04:18:54.471Z
+                - commits:
+                    - subject: Update dependency actions/runner to v2.320.0
+                      hash: bf4e9500d71fb327869a8be5b60a546f8f8eedab
+                      body: |
+                        Update actions/runner from 2.319.1 to 2.320.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.41
+                  title: ""
+                  date: 2024-10-05T03:26:10.682Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.18.0
+                      hash: 89e9d60374c7a8ee4f0550a35830e82b15db8030
+                      body: |
+                        Update aws/aws-cli from 2.17.65 to 2.18.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.40
+                  title: ""
+                  date: 2024-10-05T02:39:59.577Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.17.65
+                      hash: 4ed563c91b231a477a1406e5af0dbbbe81e5cac1
+                      body: |
+                        Update aws/aws-cli from 2.17.64 to 2.17.65
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.39
+                  title: ""
+                  date: 2024-10-05T01:26:26.009Z
+                - commits:
+                    - subject: Update dependency npm to v10.9.0
+                      hash: f8aa4ee5c1ca478e91891af07060680cb66c7978
+                      body: |
+                        Update npm from 10.8.3 to 10.9.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.38
+                  title: ""
+                  date: 2024-10-03T19:25:12.672Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.17.64
+                      hash: 86b26552a914a6047bf9199e293ee01f0121903b
+                      body: |
+                        Update aws/aws-cli from 2.17.63 to 2.17.64
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.37
+                  title: ""
+                  date: 2024-10-02T20:16:46.705Z
+                - commits:
+                    - subject: Update golang Docker tag to v1.23.2
+                      hash: 8ec359a10a3d6fcf879d95d5e5810ee4829edc4b
+                      body: |
+                        Update golang from 1.23.1 to 1.23.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.36
+                  title: ""
+                  date: 2024-10-02T00:20:39.013Z
+                - commits:
+                    - subject: Update dependency cli/cli to v2.58.0
+                      hash: 2c139aaa2bd84d6ab44aec559246240da7b6ef0c
+                      body: |
+                        Update cli/cli from 2.57.0 to 2.58.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.35
+                  title: ""
+                  date: 2024-10-01T21:20:54.601Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.17.63
+                      hash: 9f801f1e3124e188c34fda7108e779397a9c9706
+                      body: |
+                        Update aws/aws-cli from 2.17.62 to 2.17.63
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.34
+                  title: ""
+                  date: 2024-10-01T20:20:51.983Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.17.62
+                      hash: b970afa24c36effb7c0642dd879ada292266ed88
+                      body: |
+                        Update aws/aws-cli from 2.17.61 to 2.17.62
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.33
+                  title: ""
+                  date: 2024-10-01T04:21:57.077Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.17.61
+                      hash: 01ef4b79f85d4e938848c822f2e384911109c448
+                      body: |
+                        Update aws/aws-cli from 2.17.56 to 2.17.61
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.32
+                  title: ""
+                  date: 2024-09-30T23:21:52.329Z
+                - commits:
+                    - subject: Replace spaces in labels with underscores
+                      hash: 0d0af80e5672d80930ece0a80f23a082ac670437
+                      body: |
+                        Currently if a provided label has whitespace it
+                        will be treated as two labels, and this often happens
+                        when processing the board_name from sys.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-6.1.31
+                  title: ""
+                  date: 2024-09-28T18:48:57.828Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.17.56
+                      hash: 590c793661e2c56d4e55663f86645432ac70d96f
+                      body: |
+                        Update aws/aws-cli from 2.17.55 to 2.17.56
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.30
+                  title: ""
+                  date: 2024-09-23T13:23:42.130Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v19.0.13
+                      hash: 6bdb94772a848f7fbcfc3ae38a1371dbced13c49
+                      body: |
+                        Update balena-io/balena-cli from 19.0.12 to 19.0.13
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.29
+                  title: ""
+                  date: 2024-09-23T12:14:19.053Z
+          version: github-runner-vm-2.1.12
+          title: ""
+          date: 2024-10-07T21:30:34.511Z
+  version: 0.17.12
+  title: ""
+  date: 2024-10-07T22:12:37.285Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.43
       hash: 70193d85a48d26cb6009c20e060a60b40bab7d25
       body: |
