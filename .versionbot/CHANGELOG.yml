@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.48
+      hash: 3f9df08bfa80a48dc1ba288270bcdeed15c43762
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.47 to 6.1.48
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.18.2
+              hash: 04b1f9b086f78eeae93daa01eca7b2369ba9126d
+              body: |
+                Update aws/aws-cli from 2.18.1 to 2.18.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-6.1.48
+          title: ""
+          date: 2024-10-08T20:14:15.491Z
+  version: 0.17.19
+  title: ""
+  date: 2024-10-08T21:08:39.063Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.15
       hash: 817d81adc92a45a122f3c84da8575a4a57fcc26c
       body: |
