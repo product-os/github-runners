@@ -43,7 +43,7 @@ services:
 
   runner-container-1:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:6.1.54-jammy
+    image: ghcr.io/product-os/self-hosted-runners:6.1.55-jammy
 
   runner-focal-1:
     <<: *runner-vm
