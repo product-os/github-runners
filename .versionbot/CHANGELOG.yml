@@ -1,4 +1,135 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.16
+      hash: fbeacd30c415b1c9489435e494fec2a82357c69a
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.15 to 2.1.16
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.55
+              hash: d716b747f196fa30683902d96ec7c0cdef44ad71
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.1.47 to
+                6.1.55
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v19.1.2
+                      hash: 35bf21795224762dba88390a37ba3bbc486e7d7a
+                      body: |
+                        Update balena-io/balena-cli from 19.1.0 to 19.1.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.55
+                  title: ""
+                  date: 2024-10-16T14:20:30.202Z
+                - commits:
+                    - subject: Update dependency cli/cli to v2.59.0
+                      hash: 055c494721ab5e5ef818bd016d3ea279d0766035
+                      body: |
+                        Update cli/cli from 2.58.0 to 2.59.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.54
+                  title: ""
+                  date: 2024-10-16T13:27:28.318Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.18.5
+                      hash: 73ade5289e21cc5bef0367af3fd6be26f3a23133
+                      body: |
+                        Update aws/aws-cli from 2.18.4 to 2.18.5
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.53
+                  title: ""
+                  date: 2024-10-11T20:18:16.181Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v19.1.0
+                      hash: f89b659e1b5c6af7018fb3ddcd7941384b34e4ba
+                      body: |
+                        Update balena-io/balena-cli from 19.0.20 to 19.1.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.52
+                  title: ""
+                  date: 2024-10-11T18:15:43.654Z
+                - commits:
+                    - subject: Update dependency just-containers/s6-overlay to v3.2.0.2
+                      hash: 7f42003d91c305bf00d1a9d40826239fcc2bb0f0
+                      body: >
+                        Update just-containers/s6-overlay from 3.2.0.0 to 3.2.0.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.51
+                  title: ""
+                  date: 2024-10-11T13:27:38.050Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v19.0.20
+                      hash: 3c1c353cf1962b95eaa3766941b6c519738da200
+                      body: |
+                        Update balena-io/balena-cli from 19.0.18 to 19.0.20
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.50
+                  title: ""
+                  date: 2024-10-11T12:13:41.129Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.18.4
+                      hash: 1ce9cf8a068ca7e4b8d98913e92f9aeb4431debb
+                      body: |
+                        Update aws/aws-cli from 2.18.2 to 2.18.4
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.49
+                  title: ""
+                  date: 2024-10-10T20:18:04.132Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.18.2
+                      hash: 04b1f9b086f78eeae93daa01eca7b2369ba9126d
+                      body: |
+                        Update aws/aws-cli from 2.18.1 to 2.18.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.48
+                  title: ""
+                  date: 2024-10-08T20:14:15.491Z
+          version: github-runner-vm-2.1.16
+          title: ""
+          date: 2024-10-16T15:31:35.035Z
+  version: 0.17.29
+  title: ""
+  date: 2024-10-16T18:06:37.131Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.57
       hash: 20292ad1824d2a40c1fc7037d52a2d4c2f912445
       body: |
