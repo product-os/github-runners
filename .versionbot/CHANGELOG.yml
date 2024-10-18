@@ -1,4 +1,56 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.66
+      hash: b1b7e44aaaa1fdc31b41e899dfe9305133993ed6
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.63 to 6.1.66
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v19.9.0
+              hash: e8ce8a79f88833f100cdd9892addf20f73a07a9a
+              body: |
+                Update balena-io/balena-cli from 19.8.0 to 19.9.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-6.1.66
+          title: ""
+          date: 2024-10-18T15:25:12.068Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v19.8.0
+              hash: e511689ea7626275732b70a4d70220ac7e6afbec
+              body: |
+                Update balena-io/balena-cli from 19.7.0 to 19.8.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-6.1.65
+          title: ""
+          date: 2024-10-18T14:20:18.012Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v19.7.0
+              hash: a38509b03943ee0bf475a27f6582205028ae6bcd
+              body: |
+                Update balena-io/balena-cli from 19.6.0 to 19.7.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: self-hosted-runners-6.1.64
+          title: ""
+          date: 2024-10-18T13:27:45.507Z
+  version: 0.17.40
+  title: ""
+  date: 2024-10-18T16:09:15.481Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.20
       hash: 17f4744650a156ce61d3e764cb4004318aa84071
       body: |
