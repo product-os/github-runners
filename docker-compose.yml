@@ -41,6 +41,33 @@ x-runner-vm:
 
 services:
 
+  # https://github.com/balenablocks/cert-manager
+  # https://certbot.eff.org/docs/using.html
+  # https://certbot-dns-cloudflare.readthedocs.io/
+  cert-manager:
+    build: cert-manager
+    restart: unless-stopped
+    volumes:
+      - cert-manager:/etc/letsencrypt
+      - certs:/certs
+    labels:
+      io.balena.features.balena-api: 1
+      io.balena.features.supervisor-api: 1
+
+  # https://github.com/balena-io/metrics-agent
+  metrics-agent:
+    image: ghcr.io/balena-io/metrics-agent:v1.0.0
+    volumes:
+      - certs:/certs:ro
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:9273/metrics"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    labels:
+      io.resin.features.balena-socket: '1'
+    privileged: true
+
   runner-container-1:
     <<: *runner-container
     image: ghcr.io/product-os/self-hosted-runners:6.1.62-jammy
@@ -279,4 +306,6 @@ services:
       ROBOT_API: https://robot-ws.your-server.de
 
 volumes:
+  certs: {}
+  cert-manager: {}
   registry-data: {}
