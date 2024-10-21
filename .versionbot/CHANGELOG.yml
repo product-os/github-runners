@@ -1,4 +1,30 @@
 - commits:
+    - subject: Add metrics-agent for collecting server metrics.
+      hash: 8be52e18cb3563e8df52775245104d6943fbe94f
+      body: >
+        The metrics are sent to a metrics proxy backend where it can be
+
+        scraped by the balena-monitor.
+
+
+        The metrics-agent requires cert-manager to generate the self-signed
+
+        client certificate for authenticating to the backend.
+
+
+        Related Project:
+        https://balena.fibery.io/favorites/Work/Projects-917#Work/Project/Add-node-exporter-metrics-to-builder-worker-fleets-600
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Carlo Miguel F. Cruz <carloc@balena.io>
+        signed-off-by: Carlo Miguel F. Cruz <carloc@balena.io>
+      author: Carlo Miguel F. Cruz
+      nested: []
+  version: 0.18.0
+  title: ""
+  date: 2024-10-21T16:04:52.348Z
+- commits:
     - subject: Add capability to send logs to Loki
       hash: 0fb2519b8897a3192d50ac3165eb78836b4eb5a4
       body: |
