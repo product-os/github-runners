@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add capability to send logs to Loki
+      hash: 0fb2519b8897a3192d50ac3165eb78836b4eb5a4
+      body: |
+        * adds logs-to-vector and cert-manager components
+        * obtains certs from common balena-ca in AWS/EKS via static IP ACLs
+      footer:
+        change-type: patch
+      author: Anton Belodedenko
+      nested: []
+  version: 0.17.44
+  title: ""
+  date: 2024-10-21T14:30:03.853Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.69
       hash: fd3a5a7c0e6647d3bd43fbe6260ad6c969447b31
       body: |
