@@ -1,4 +1,44 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.22
+      hash: 3c95845c5b4a576dd89416c0167a68d667dbd45e
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.21 to 2.1.22
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.81
+              hash: d142fdeedcfafdcda464fad8087832c70dca968d
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.1.80 to
+                6.1.81
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update dependency cli/cli to v2.60.1
+                      hash: aa6942a0042f81d9576d7733cc96dff497de7b7d
+                      body: |
+                        Update cli/cli from 2.60.0 to 2.60.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: self-hosted-runners-6.1.81
+                  title: ""
+                  date: 2024-10-25T18:19:49.596Z
+          version: github-runner-vm-2.1.22
+          title: ""
+          date: 2024-10-25T19:33:00.391Z
+  version: 0.18.14
+  title: ""
+  date: 2024-10-25T20:07:44.771Z
+- commits:
     - subject: Use multi-arch version of logs-to-vector.
       hash: bbd84f81c4bf46127541a4a3e1c707e03f4b3d8a
       body: ""
