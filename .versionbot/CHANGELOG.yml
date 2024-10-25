@@ -1,4 +1,18 @@
 - commits:
+    - subject: Use multi-arch version of logs-to-vector.
+      hash: bbd84f81c4bf46127541a4a3e1c707e03f4b3d8a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Carlo Miguel F. Cruz <carloc@balena.io>
+        signed-off-by: Carlo Miguel F. Cruz <carloc@balena.io>
+      author: Carlo Miguel F. Cruz
+      nested: []
+  version: 0.18.13
+  title: ""
+  date: 2024-10-25T19:07:06.450Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.21
       hash: 3bc2267dcc82ebcd4c6202e8065bf401f21f76bc
       body: |
