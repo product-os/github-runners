@@ -284,6 +284,48 @@ services:
       CLOUDFLARE_DNS_ZONE: product-os.io
       ROBOT_API: https://robot-ws.your-server.de
 
+  zram:
+    image: docker:27.3.1-cli-alpine3.20
+    restart: no
+    labels:
+      io.balena.features.balena-socket: '1'
+    entrypoint:
+      - /bin/sh
+      - -c
+    environment:
+      ENABLED: true
+      ZRAM_PCT: 50
+      ZRAM_ALGO: lz4
+    command:
+      - |
+        set -e
+        [[ $ENABLED == 'true' ]] || exit
+
+        HOST_CONTAINER_NAME=host-chroot
+        stop_container() { docker stop "$(docker ps -qf "NAME=$HOST_CONTAINER_NAME")"; }
+        trap stop_container EXIT
+
+        host_cmd() {
+          if [ -z "$(docker ps -qf "NAME=$HOST_CONTAINER_NAME")" ]; then
+            docker run \
+              --interactive \
+              --tty=true \
+              --detach \
+              --rm \
+              --name="$HOST_CONTAINER_NAME" \
+              --volume=/:/host \
+              --privileged \
+              alpine:3.20.3
+          fi
+
+          HOST_CONTAINER_ID="$(docker ps -qf "NAME=$HOST_CONTAINER_NAME")"
+          docker exec "$HOST_CONTAINER_ID" chroot /host bash -c "$*"
+        }
+
+        host_cmd "swaps=\$(awk 'NR>1 { print \$1 }' /proc/swaps); if [ -n \"\$swaps\" ]; then swapoff \$swaps; fi"
+        host_cmd "zrams=\$(find /dev -name \"zram*\"); if [ -n \"\$zrams\" ]; then for d in \$zrams; do zramctl -r \$d; done; fi"
+        zram_dev=$(host_cmd "memtotal=\$(grep MemTotal /proc/meminfo | awk '{ print \$2 }'); zramctl --find --size \$((memtotal * $ZRAM_PCT / 100))K --algorithm $ZRAM_ALGO")
+        host_cmd "mkswap $zram_dev && swapon $zram_dev"
   # https://github.com/balenablocks/cert-manager
   # https://certbot.eff.org/docs/using.html
   # https://certbot-dns-cloudflare.readthedocs.io/
