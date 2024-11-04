@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update RAID 1 instructions and link to meta-balena docs
+      hash: 8533cc0bb7177276b878a7ca01a8c383ccaf4803
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.18.22
+  title: ""
+  date: 2024-11-04T22:51:58.752Z
+- commits:
     - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.11
       hash: 38fdd4e57b1b52ff7c4754e1d4529d6ef1164f01
       body: |
