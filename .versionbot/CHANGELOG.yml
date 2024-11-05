@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add pre-commit configuration and format files
+      hash: 5437d617fd05da8dad7c1998148168a23b8ba1c9
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.18.23
+  title: ""
+  date: 2024-11-05T19:11:30.660Z
+- commits:
     - subject: Update RAID 1 instructions and link to meta-balena docs
       hash: 8533cc0bb7177276b878a7ca01a8c383ccaf4803
       body: ""
