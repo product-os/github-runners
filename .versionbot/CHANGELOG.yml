@@ -1,4 +1,57 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.24
+      hash: 3bc986e0446a354e1e13019d4bb665c1f41f3666
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.23 to 2.1.24
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.86
+              hash: c8a225e3190f13f6447770db227077e07e0638cc
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.1.84 to
+                6.1.86
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.19.0
+                      hash: f75cf37770d217a61fe850e82155b05d907cb45f
+                      body: |
+                        Update aws/aws-cli from 2.18.18 to 2.19.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.1.86
+                  title: ""
+                  date: 2024-10-31T20:14:05.772Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.18.18
+                      hash: ac2fa91e71940457138382fbbfe8e834ed4ba93a
+                      body: |
+                        Update aws/aws-cli from 2.18.17 to 2.18.18
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.1.85
+                  title: ""
+                  date: 2024-10-30T20:17:58.286Z
+          version: github-runner-vm-2.1.24
+          title: ""
+          date: 2024-11-05T22:39:59.925Z
+  version: 0.18.25
+  title: ""
+  date: 2024-11-05T23:08:15.967Z
+- commits:
     - subject: Update actions/setup-python action to v4
       hash: be4ea297eaa7f95467791bd0533b5ed51d550122
       body: |
