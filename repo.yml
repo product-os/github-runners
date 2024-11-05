@@ -5,4 +5,3 @@ upstream:
   url: https://github.com/product-os/github-runner-vm
 - repo: ghcr.io/product-os/self-hosted-runners
   url: https://github.com/product-os/self-hosted-runners
-  
