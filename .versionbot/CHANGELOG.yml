@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update actions/setup-python action to v5
+      hash: e1f17526c4a4d5a9f7bbb7fdacf3409250612f18
+      body: |
+        Update actions/setup-python from 4 to 5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.18.26
+  title: ""
+  date: 2024-11-07T17:23:34.385Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.24
       hash: 3bc986e0446a354e1e13019d4bb665c1f41f3666
       body: |
