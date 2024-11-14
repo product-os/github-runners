@@ -1,4 +1,32 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.26
+      hash: e991dee9af5d8c4905ef160ea3bc1b9439435311
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.25 to 2.1.26
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Fix Renovate detection of Dockerfile packages
+              hash: 1bc6a6beae7415fbb3dc43452d7ab2b846351ca4
+              body: |
+                The regex requires *_VERSION in order to match.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.1.26
+          title: ""
+          date: 2024-11-14T20:54:21.419Z
+  version: 0.18.29
+  title: ""
+  date: 2024-11-14T21:09:28.189Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.25
       hash: c141003da56440b613e68f4470a52901b52c5789
       body: |
