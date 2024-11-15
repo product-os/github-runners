@@ -1,4 +1,53 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.28
+      hash: ee2b5109721b54cc9a84636dddc7f0c27cb65862
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.26 to 2.1.28
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update golang Docker tag to v1.23.3
+              hash: f1e5bd24156b9944b77d7e2b10992aea8f4e0c6d
+              body: |
+                Update golang from 1.23.2 to 1.23.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-2.1.28
+          title: ""
+          date: 2024-11-15T17:37:33.404Z
+        - commits:
+            - subject: Disable acpi via boot args to fix x86 boot
+              hash: 51e272454de340f6e69031388e535b0e935eb199
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Update dependency firecracker-microvm/firecracker to v1.10.1
+              hash: b3bc6678c22cf644f062d8f5578e16d43cbcdb3f
+              body: |
+                Update firecracker-microvm/firecracker from 1.7.0 to 1.10.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-2.1.27
+          title: ""
+          date: 2024-11-15T17:07:34.466Z
+  version: 0.18.30
+  title: ""
+  date: 2024-11-15T18:10:21.251Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.26
       hash: e991dee9af5d8c4905ef160ea3bc1b9439435311
       body: |
