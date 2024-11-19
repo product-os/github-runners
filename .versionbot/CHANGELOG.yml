@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/metrics-agent Docker tag to v1.0.1
+      hash: fbcbd9dfcc8a684d9bbd65660f248cf8f8fce564
+      body: |
+        Update ghcr.io/balena-io/metrics-agent from 1.0.0 to 1.0.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.18.33
+  title: ""
+  date: 2024-11-19T00:04:46.230Z
+- commits:
     - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.12
       hash: 02bd1ec0d84570bdb29a6618ba7505e61d131505
       body: |
