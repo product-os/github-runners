@@ -1,4 +1,71 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.32
+      hash: f1d480b8ceb30a982877afc00ebcf62592122b74
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.31 to 2.1.32
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.92
+              hash: eb5523f3e76310200b9d737770f0b0583b84d8a4
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.1.89 to
+                6.1.92
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dotnet monorepo
+                      hash: 9860071a1a726f81156f88408e0dbdb3eee81be8
+                      body: >
+                        Update mcr.microsoft.com/dotnet/runtime-deps from 8.0.10
+                        to 8.0.11
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.1.92
+                  title: ""
+                  date: 2024-11-19T01:35:06.281Z
+                - commits:
+                    - subject: Update dependency mikefarah/yq to v4.44.5
+                      hash: d54430acdc11c9aee47dd73054297363612fb61b
+                      body: |
+                        Update mikefarah/yq from 4.44.3 to 4.44.5
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.1.91
+                  title: ""
+                  date: 2024-11-19T00:12:17.906Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.19.5
+                      hash: d0034d636a340aafa935869d00461ea73b5e0b9b
+                      body: |
+                        Update aws/aws-cli from 2.19.3 to 2.19.5
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.1.90
+                  title: ""
+                  date: 2024-11-18T23:16:12.789Z
+          version: github-runner-vm-2.1.32
+          title: ""
+          date: 2024-11-19T03:00:39.246Z
+  version: 0.18.37
+  title: ""
+  date: 2024-11-19T04:13:02.065Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.92
       hash: 498c4e08fb18be4a1cd6e969c21bd1d4cfad6cdb
       body: |
