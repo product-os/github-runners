@@ -1,4 +1,67 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.91
+      hash: 665291afbca6078ac84ea65bb254d6fc6f4a8c19
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.87 to 6.1.91
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency mikefarah/yq to v4.44.5
+              hash: d54430acdc11c9aee47dd73054297363612fb61b
+              body: |
+                Update mikefarah/yq from 4.44.3 to 4.44.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.1.91
+          title: ""
+          date: 2024-11-19T00:12:17.906Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.19.5
+              hash: d0034d636a340aafa935869d00461ea73b5e0b9b
+              body: |
+                Update aws/aws-cli from 2.19.3 to 2.19.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.1.90
+          title: ""
+          date: 2024-11-18T23:16:12.789Z
+        - commits:
+            - subject: Update dependency actions/runner-container-hooks to v0.6.2
+              hash: 4d7d8d9556c0d984f2f188ebbd1ffe32f6124eb0
+              body: |
+                Update actions/runner-container-hooks from 0.6.1 to 0.6.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.1.89
+          title: ""
+          date: 2024-11-18T22:19:33.517Z
+        - commits:
+            - subject: Explicitly set GH_TOKEN permissions
+              hash: 716f85c326c6ed54fa1aec1fb1849a8847a47bc7
+              body: ""
+              footer:
+                change-type: patch
+              author: Anton Belodedenko
+              nested: []
+          version: self-hosted-runners-6.1.88
+          title: ""
+          date: 2024-11-18T21:18:27.854Z
+  version: 0.18.34
+  title: ""
+  date: 2024-11-19T01:26:55.092Z
+- commits:
     - subject: Update ghcr.io/balena-io/metrics-agent Docker tag to v1.0.1
       hash: fbcbd9dfcc8a684d9bbd65660f248cf8f8fce564
       body: |
