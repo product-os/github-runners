@@ -1,4 +1,80 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.31
+      hash: eed389bb77e1fd995b94f1ea262d4c0ba8113493
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.28 to 2.1.31
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.89
+              hash: 4c0d040c8d701c38f246cbe2fceef8a89f203418
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.1.87 to
+                6.1.89
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency actions/runner-container-hooks to v0.6.2
+                      hash: 4d7d8d9556c0d984f2f188ebbd1ffe32f6124eb0
+                      body: >
+                        Update actions/runner-container-hooks from 0.6.1 to 0.6.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.1.89
+                  title: ""
+                  date: 2024-11-18T22:19:33.517Z
+                - commits:
+                    - subject: Explicitly set GH_TOKEN permissions
+                      hash: 716f85c326c6ed54fa1aec1fb1849a8847a47bc7
+                      body: ""
+                      footer:
+                        change-type: patch
+                      author: Anton Belodedenko
+                      nested: []
+                  version: self-hosted-runners-6.1.88
+                  title: ""
+                  date: 2024-11-18T21:18:27.854Z
+          version: github-runner-vm-2.1.31
+          title: ""
+          date: 2024-11-18T23:34:28.180Z
+        - commits:
+            - subject: Update ghcr.io/balena-io-modules/confd-releases Docker tag to v0.0.6
+              hash: 9b679e9bc3190c662d8adb3ae7d700678bb03cc1
+              body: >
+                Update ghcr.io/balena-io-modules/confd-releases from 0.0.5 to
+                0.0.6
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-2.1.30
+          title: ""
+          date: 2024-11-18T22:29:30.291Z
+        - commits:
+            - subject: Explicitly set GH_TOKEN permissions
+              hash: 3ffe2e229ebf0d14e30140d6975a8d9a272d30ff
+              body: ""
+              footer:
+                change-type: patch
+              author: Anton Belodedenko
+              nested: []
+          version: github-runner-vm-2.1.29
+          title: ""
+          date: 2024-11-18T21:19:39.339Z
+  version: 0.18.35
+  title: ""
+  date: 2024-11-19T02:39:46.407Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.91
       hash: 665291afbca6078ac84ea65bb254d6fc6f4a8c19
       body: |
