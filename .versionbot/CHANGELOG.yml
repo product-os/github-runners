@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.93
+      hash: 179d5498ddcc1245774614af99284068d6c3ac6a
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.92 to 6.1.93
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v20
+              hash: a28dcfd1325821151abead532b069fe7814e4b7b
+              body: |
+                Update balena-io/balena-cli from 19.16.0 to 20.0.7
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.1.93
+          title: ""
+          date: 2024-12-02T17:09:46.756Z
+  version: 0.18.38
+  title: ""
+  date: 2024-12-02T18:14:53.475Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.32
       hash: f1d480b8ceb30a982877afc00ebcf62592122b74
       body: |
@@ -1320,19 +1346,14 @@
 - commits:
     - subject: Add metrics-agent for collecting server metrics.
       hash: 8be52e18cb3563e8df52775245104d6943fbe94f
-      body: >
+      body: |
         The metrics are sent to a metrics proxy backend where it can be
-
         scraped by the balena-monitor.
 
-
         The metrics-agent requires cert-manager to generate the self-signed
-
         client certificate for authenticating to the backend.
 
-
-        Related Project:
-        https://balena.fibery.io/favorites/Work/Projects-917#Work/Project/Add-node-exporter-metrics-to-builder-worker-fleets-600
+        Related Project: https://balena.fibery.io/favorites/Work/Projects-917#Work/Project/Add-node-exporter-metrics-to-builder-worker-fleets-600
       footer:
         Change-type: minor
         change-type: minor
