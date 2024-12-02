@@ -1,4 +1,97 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.34
+      hash: a6b4191160fcee2e1506be9de0189fa52df907d4
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.32 to 2.1.34
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.96
+              hash: 2678b588a8ab6d9ec7d82d0b47ec1f5690845a1e
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.1.95 to
+                6.1.96
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.22.8
+                      hash: c0681d18118c34cf24232eda570cb1424b7a4232
+                      body: |
+                        Update aws/aws-cli from 2.19.5 to 2.22.8
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.1.96
+                  title: ""
+                  date: 2024-12-02T20:18:54.851Z
+          version: github-runner-vm-2.1.34
+          title: ""
+          date: 2024-12-02T21:31:21.295Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.95
+              hash: 306c2b2e580dbef5010a408e45899ba65afe900a
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.1.92 to
+                6.1.95
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update Node.js to v20.18.1
+                      hash: 55b544bf5621d934149d3db858ee4166f5a8ca02
+                      body: |
+                        Update node from 20.18.0 to 20.18.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.1.95
+                  title: ""
+                  date: 2024-12-02T19:31:42.957Z
+                - commits:
+                    - subject: Update golang Docker tag to v1.23.3
+                      hash: 07cd6fc861df2a845b7b4879489cbd7b2e9508cb
+                      body: |
+                        Update golang from 1.23.2 to 1.23.3
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.1.94
+                  title: ""
+                  date: 2024-12-02T18:18:42.780Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v20
+                      hash: a28dcfd1325821151abead532b069fe7814e4b7b
+                      body: |
+                        Update balena-io/balena-cli from 19.16.0 to 20.0.7
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.1.93
+                  title: ""
+                  date: 2024-12-02T17:09:46.756Z
+          version: github-runner-vm-2.1.33
+          title: ""
+          date: 2024-12-02T20:31:07.734Z
+  version: 0.18.42
+  title: ""
+  date: 2024-12-02T22:13:19.879Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.96
       hash: 4fb215b4f63e4ebf48b83fa41103476d3e9b0396
       body: |
