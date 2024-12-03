@@ -1,4 +1,57 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.37
+      hash: f06b43597c9890525c8de712982cb2dd91623c1e
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.36 to 2.1.37
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.99
+              hash: c3eb542003dbf51e080ad8f41b705e5cda90b8e9
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.1.97 to
+                6.1.99
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency cli/cli to v2.63.0
+                      hash: fc251084826e98f066dccb57311c04744cbc34d2
+                      body: |
+                        Update cli/cli from 2.60.1 to 2.63.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.1.99
+                  title: ""
+                  date: 2024-12-02T23:12:25.688Z
+                - commits:
+                    - subject: Update dependency npm to v10.9.1
+                      hash: ac26d6d4b0ab76a225e0e3bd4c5cade62d3ed852
+                      body: |
+                        Update npm from 10.9.0 to 10.9.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.1.98
+                  title: ""
+                  date: 2024-12-02T22:17:33.031Z
+          version: github-runner-vm-2.1.37
+          title: ""
+          date: 2024-12-03T00:30:00.876Z
+  version: 0.18.46
+  title: ""
+  date: 2024-12-03T02:38:38.175Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.99
       hash: e08efa2254f67c3fadcf4a5ef2be9be09b033a3b
       body: |
