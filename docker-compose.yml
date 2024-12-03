@@ -47,39 +47,39 @@ services:
 
   runner-focal-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:2.1.36-focal
+    image: ghcr.io/product-os/github-runner-vm:2.1.37-focal
 
   runner-focal-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:2.1.36-focal
+    image: ghcr.io/product-os/github-runner-vm:2.1.37-focal
 
   runner-jammy-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:2.1.36-jammy
+    image: ghcr.io/product-os/github-runner-vm:2.1.37-jammy
 
   runner-jammy-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:2.1.36-jammy
+    image: ghcr.io/product-os/github-runner-vm:2.1.37-jammy
 
   runner-jammy-3:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:2.1.36-jammy
+    image: ghcr.io/product-os/github-runner-vm:2.1.37-jammy
 
   runner-jammy-4:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:2.1.36-jammy
+    image: ghcr.io/product-os/github-runner-vm:2.1.37-jammy
 
   runner-noble-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:2.1.36-noble
+    image: ghcr.io/product-os/github-runner-vm:2.1.37-noble
 
   runner-noble-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:2.1.36-noble
+    image: ghcr.io/product-os/github-runner-vm:2.1.37-noble
 
   runner-noble-3:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:2.1.36-noble
+    image: ghcr.io/product-os/github-runner-vm:2.1.37-noble
 
   # https://distribution.github.io/distribution/recipes/mirror/
   registry-cache:
