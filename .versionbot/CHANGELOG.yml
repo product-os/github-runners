@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.36
+      hash: 1c811991f9a9102dddc2de9766d4f096d65e9256
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.35 to 2.1.36
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.3.10
+              hash: 20cae7b55dbbbf726229821a83e8842eaf138953
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.3.9 to
+                0.3.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Explicitly set GH_TOKEN permissions
+                      hash: f61ca23e2d3e5015c3241b7be8c5d8f88d1fa09f
+                      body: ""
+                      footer:
+                        change-type: patch
+                      author: Anton Belodedenko
+                      nested: []
+                  version: github-runner-kernel-0.3.10
+                  title: ""
+                  date: 2024-12-01T18:38:54.381Z
+          version: github-runner-vm-2.1.36
+          title: ""
+          date: 2024-12-02T23:27:10.110Z
+  version: 0.18.44
+  title: ""
+  date: 2024-12-03T00:08:55.212Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.35
       hash: 67c24a4125c2e08cbe8886d79c5b073b2e37eff6
       body: |
