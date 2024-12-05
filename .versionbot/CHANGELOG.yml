@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.39
+      hash: b8d486453234d8b8ca7303b14a01f4913009945b
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.38 to 2.1.39
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add local S3 cache tests with minio
+              hash: 0c6129c7a2d4a540f02076a46915726f1fb3b060
+              body: |
+                This is a non-functional change to add some S3 cache
+                examples to the compose stack and custom action.yml.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.1.39
+          title: ""
+          date: 2024-12-05T16:15:45.174Z
+  version: 0.18.51
+  title: ""
+  date: 2024-12-05T17:18:14.328Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.1.102
       hash: 2c76554e8aed7912c2a3e24ccc9b95e36e62da37
       body: |
