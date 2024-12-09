@@ -1,4 +1,18 @@
 - commits:
+    - subject: Deploy an S3 actions cache service
+      hash: ddf10593876ce7e15e23591273be1a6c3382b0eb
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.19.0
+  title: ""
+  date: 2024-12-09T16:42:49.497Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.43
       hash: 7771eb878eabd2a6658538a62c5d9bffdfc87da6
       body: |
