@@ -1,0 +1,11 @@
+{
+  "Rules": [
+    {
+      "ID": "expiration-7-days",
+      "Status": "Enabled",
+      "Expiration": {
+        "Days": 7
+      }
+    }
+  ]
+}

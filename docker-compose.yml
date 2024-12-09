@@ -10,6 +10,8 @@ x-runner-container:
     - /tmp
     - /run
     - /scratch
+  networks:
+    - runner-network
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
     REGISTRY_MIRRORS: http://registry-cache:5000
@@ -33,6 +35,8 @@ x-runner-vm:
     - net.ipv4.ip_forward=1 # Required for VM networking
   tmpfs:
     - /tmp
+  networks:
+    - runner-network
   environment:
     ACTIONS_RUNNER_REGISTRATION_SLUG: enterprises/balena
     REGISTRY_MIRRORS: http://registry-cache:5000
@@ -89,6 +93,8 @@ services:
     tmpfs:
       - /tmp
       - /run
+    networks:
+      - runner-network
     environment:
       # Listen on the default bridge network on port 5000.
       # Do not expose this unsecured port on the host network!
@@ -322,8 +328,58 @@ services:
       io.resin.features.balena-socket: '1'
     privileged: true
 
+  minio:
+    image: minio/minio:RELEASE.2024-10-29T16-01-48Z
+    command: server /data --console-address ""
+    environment:
+      MINIO_BROWSER: off
+      MINIO_ROOT_USER: minioadmin
+      # Secret key minimum length is 8 characters so this will force us to set
+      # new value(s) via fleet variables.
+      # Secret keys can be generated with:
+      # openssl rand -base64 30 | tr '+/' 'xx' | cut -c1-40
+      MINIO_ROOT_PASSWORD: x
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/ready"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - runner-network
+      - minio-network
+    volumes:
+      - minio-data:/data
+    tmpfs:
+      - /tmp
+
+  minio-init:
+    build: minio-init
+    restart: on-failure
+    environment:
+      MINIO_SERVER_URL: http://minio:9000
+      # These must match the root user credentials on minio
+      MINIO_ROOT_USER: minioadmin
+      # Secret key minimum length is 8 characters so this will force us to set
+      # new value(s) via fleet variables.
+      # Secret keys can be generated with:
+      # openssl rand -base64 30 | tr '+/' 'xx' | cut -c1-40
+      MINIO_ROOT_PASSWORD: x
+      ACTIONS_CACHE_SECRET_KEY: x
+      YOCTO_CACHE_SECRET_KEY: x
+    networks:
+      - minio-network
+    depends_on:
+      - minio
+    tmpfs:
+      - /tmp
+
 volumes:
   cert-manager:
   certs:
   logs-to-vector:
   registry-data:
+  minio-data:
+
+networks:
+  runner-network: {}
+  minio-network: {}

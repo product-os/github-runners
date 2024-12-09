@@ -9,6 +9,10 @@ See [github-runner-vm](https://github.com/product-os/github-runner-vm) and
 [self-hosted-runners](https://github.com/product-os/self-hosted-runners) for
 image sources.
 
+## Environment Variables
+
+See `docker-compose.yml` for environment variables used by the runner services.
+
 ## VM Runner Sizes
 
 Firecracker allows overprovisioning or oversubscribing of both CPU and memory
