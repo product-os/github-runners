@@ -1,0 +1,67 @@
+services:
+  minio:
+    image: minio/minio:RELEASE.2024-10-29T16-01-48Z
+    command: server /data --console-address ""
+    environment:
+      MINIO_BROWSER: off
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:9000/minio/health/ready']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - minio-network
+    volumes:
+      - minio-data:/data
+    tmpfs:
+      - /tmp
+      # - /data
+
+  sut:
+    image: sut
+    build: ../
+    networks:
+      - minio-network
+    depends_on:
+      - minio
+    tmpfs:
+      - /tmp
+    # volumes:
+    #   - ../config:/config:ro
+    environment:
+      MINIO_SERVER_URL: http://minio:9000
+      # These must match the root user credentials on minio
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+      ACTIONS_CACHE_SECRET_KEY: GkZe6zWARpbmkrxRYVXgfnDpVr8grto9FPaqB4BZ
+      YOCTO_CACHE_SECRET_KEY: oDJpKOMNlxiSQ07XxivRFOkzTz3K292xi3WeRUgm
+    entrypoint:
+      - /bin/sh
+      - -c
+    command:
+      - |
+        set -ex
+        ansible-playbook playbooks/main.yml --inventory /config/inventory.ini
+
+        mkdir -p /data/
+
+        # generate a +5GB file
+        dd if=/dev/urandom of=/data/5gb.bin bs=1M count=10240
+
+        # upload the file to minio
+        mc alias set minio http://minio:9000 actions-svcacct "$${ACTIONS_CACHE_SECRET_KEY}"
+        mc cp /data/5gb.bin minio/actions-cache/
+
+        # download the file from minio
+        mc cp minio/actions-cache/5gb.bin /data/5gb.new
+
+        # verify the file is the same
+        diff /data/5gb.new /data/5gb.bin
+
+volumes:
+  minio-data: {}
+
+networks:
+  minio-network: {}

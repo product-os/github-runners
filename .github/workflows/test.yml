@@ -1,0 +1,58 @@
+# This workflow runs on existing self-hosted runners with production releases,
+# so if the tests fail it's not due to changes in this PR but is a reflection of the
+# current state of the production runners.
+
+name: Test
+on:
+  pull_request:
+    branches: [main, master]
+jobs:
+  test:
+    name: Test
+    runs-on: ["self-hosted"]
+
+    steps:
+      - name: Generate a large test file
+        run: dd if=/dev/urandom of=large-file.bin bs=1M count=10240
+
+      # https://github.com/tespkg/actions-cache
+      - name: Save to actions cache
+        uses: tespkg/actions-cache/save@cba095d7af782a955b8f4fa13396fbf0ab62bd4b # v1.7.1
+        with:
+          endpoint: minio
+          port: 9000
+          insecure: "true"
+          accessKey: actions-svcacct
+          secretKey: ${{ secrets.ACTIONS_CACHE_SECRET_KEY }}
+          bucket: actions-cache
+          region: local
+          use-fallback: false
+          key: test-${{ runner.os }}-${{ github.run_id }}
+          path: |
+            large-file.bin
+
+      - name: Remove large file
+        shell: bash --noprofile --norc -eo pipefail -x {0}
+        run: rm large-file.bin
+
+      # https://github.com/tespkg/actions-cache
+      - name: Restore actions cache
+        uses: tespkg/actions-cache/restore@cba095d7af782a955b8f4fa13396fbf0ab62bd4b # v1.7.1
+        with:
+          endpoint: minio
+          port: 9000
+          insecure: "true"
+          accessKey: actions-svcacct
+          secretKey: ${{ secrets.ACTIONS_CACHE_SECRET_KEY }}
+          bucket: actions-cache
+          region: local
+          use-fallback: false
+          key: test-${{ runner.os }}-${{ github.run_id }}
+          path: |
+            large-file.bin
+          restore-keys: |
+            test-${{ runner.os }}-
+
+      - name: Verify restored file
+        shell: bash --noprofile --norc -eo pipefail -x {0}
+        run: test -f large-file.bin
