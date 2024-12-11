@@ -1,4 +1,18 @@
 - commits:
+    - subject: "MinIO: Add multipart permissions to readwrite policies"
+      hash: c6a7a2afd7208cf7732a845c0a358413d6cbe417
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.19.2
+  title: ""
+  date: 2024-12-11T15:43:15.895Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.44
       hash: d4689230c895062e241d021b53667d14ad6f3108
       body: |
