@@ -4,9 +4,12 @@
         {
             "Effect": "Allow",
             "Action": [
+                "s3:PutObject",
                 "s3:GetObject",
                 "s3:ListBucket",
-                "s3:PutObject"
+                "s3:GetBucketLocation",
+                "s3:ListBucketMultipartUploads",
+                "s3:ListMultipartUploadParts"
             ],
             "Resource": [
                 "arn:aws:s3:::actions-cache",
