@@ -1,4 +1,41 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.1.44
+      hash: d4689230c895062e241d021b53667d14ad6f3108
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.43 to 2.1.44
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "MinIO: Add multipart permissions to readwrite policies"
+              hash: 17f2d2f76ac0276fa17324505cd5dac16e9bf8f2
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Test actions cache with a large file
+              hash: c1ee1b52f6581219adf228eee5bb25e6d865d499
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.1.44
+          title: ""
+          date: 2024-12-11T06:52:32.598Z
+  version: 0.19.1
+  title: ""
+  date: 2024-12-11T07:24:35.511Z
+- commits:
     - subject: Deploy an S3 actions cache service
       hash: ddf10593876ce7e15e23591273be1a6c3382b0eb
       body: ""
