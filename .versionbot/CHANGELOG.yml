@@ -1,4 +1,20 @@
 - commits:
+    - subject: Reduce the yocto-cache lifecycle policy from 7 days to 3
+      hash: 2f5e7b894b2a58120923037fc42eacb5447afe10
+      body: |
+        Currently we are caching both downloads and sstate which
+        is often ~12GB per cache key, and they add up fast.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.19.3
+  title: ""
+  date: 2024-12-13T21:13:13.528Z
+- commits:
     - subject: "MinIO: Add multipart permissions to readwrite policies"
       hash: c6a7a2afd7208cf7732a845c0a358413d6cbe417
       body: ""
