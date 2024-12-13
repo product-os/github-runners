@@ -14,7 +14,7 @@ minio_buckets:
   - name: "yocto-cache"
     state: present
     versioning: suspend
-    lifecycle_file: "/config/lifecycles/expiration-7-days.json"
+    lifecycle_file: "/config/lifecycles/expiration-3-days.json"
 
 minio_users:
   - name: "actions-user"
