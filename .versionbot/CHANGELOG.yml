@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/product-os/minio-init Docker tag to v0.0.4
+      hash: cbaf3ae70893782139a68d19e535e78f2a244d29
+      body: |
+        Update ghcr.io/product-os/minio-init from 0.0.3 to 0.0.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.19.5
+  title: ""
+  date: 2024-12-19T19:10:38.014Z
+- commits:
     - subject: Reduce the yocto-cache lifecycle from 3 days to 1
       hash: 1757f2cefacd67ce6ffd8cadbf5e855b2f62b18f
       body: |
