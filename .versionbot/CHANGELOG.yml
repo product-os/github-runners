@@ -1,4 +1,19 @@
 - commits:
+    - subject: Expose bucket expire days lifecycle rules as env vars
+      hash: e4184e418faa26294618717415afaad1b42f525e
+      body: |
+        This allows us to reduce the expire days policy at runtime.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.19.6
+  title: ""
+  date: 2024-12-19T19:17:24.620Z
+- commits:
     - subject: Update ghcr.io/product-os/minio-init Docker tag to v0.0.4
       hash: cbaf3ae70893782139a68d19e535e78f2a244d29
       body: |
