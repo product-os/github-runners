@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/product-os/minio-init Docker tag to v0.0.5
+      hash: d092d2261d2417dfce96de55f5c7a4cab4a78c27
+      body: |
+        Update ghcr.io/product-os/minio-init from 0.0.4 to 0.0.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.19.7
+  title: ""
+  date: 2024-12-19T20:09:23.605Z
+- commits:
     - subject: Expose bucket expire days lifecycle rules as env vars
       hash: e4184e418faa26294618717415afaad1b42f525e
       body: |
