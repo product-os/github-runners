@@ -10,11 +10,11 @@ minio_buckets:
   - name: "actions-cache"
     state: present
     versioning: suspend
-    lifecycle_file: "/config/lifecycles/expiration-7-days.json"
+    expire_days: "{{ lookup('ansible.builtin.env', 'ACTIONS_CACHE_EXPIRE_DAYS') }}"
   - name: "yocto-cache"
     state: present
     versioning: suspend
-    lifecycle_file: "/config/lifecycles/expiration-1-days.json"
+    expire_days: "{{ lookup('ansible.builtin.env', 'YOCTO_CACHE_EXPIRE_DAYS') }}"
 
 minio_users:
   - name: "actions-user"

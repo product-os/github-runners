@@ -366,6 +366,8 @@ services:
       MINIO_ROOT_PASSWORD: x
       ACTIONS_CACHE_SECRET_KEY: x
       YOCTO_CACHE_SECRET_KEY: x
+      ACTIONS_CACHE_EXPIRE_DAYS: 7
+      YOCTO_CACHE_EXPIRE_DAYS: 1
     networks:
       - minio-network
     depends_on:

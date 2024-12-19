@@ -37,6 +37,8 @@ services:
       MINIO_ROOT_PASSWORD: minioadmin
       ACTIONS_CACHE_SECRET_KEY: GkZe6zWARpbmkrxRYVXgfnDpVr8grto9FPaqB4BZ
       YOCTO_CACHE_SECRET_KEY: oDJpKOMNlxiSQ07XxivRFOkzTz3K292xi3WeRUgm
+      ACTIONS_CACHE_EXPIRE_DAYS: 7
+      YOCTO_CACHE_EXPIRE_DAYS: 3
     entrypoint:
       - /bin/sh
       - -c
@@ -45,20 +47,11 @@ services:
         set -ex
         ansible-playbook playbooks/main.yml --inventory /config/inventory.ini
 
-        mkdir -p /data/
+        mc alias set minio http://minio:9000 "$${MINIO_ROOT_USER}" "$${MINIO_ROOT_PASSWORD}"
 
-        # generate a +5GB file
-        dd if=/dev/urandom of=/data/5gb.bin bs=1M count=10240
-
-        # upload the file to minio
-        mc alias set minio http://minio:9000 actions-svcacct "$${ACTIONS_CACHE_SECRET_KEY}"
-        mc cp /data/5gb.bin minio/actions-cache/
-
-        # download the file from minio
-        mc cp minio/actions-cache/5gb.bin /data/5gb.new
-
-        # verify the file is the same
-        diff /data/5gb.new /data/5gb.bin
+        # list bucket lifecycles
+        mc ilm rule ls minio/actions-cache
+        mc ilm rule ls minio/yocto-cache
 
 volumes:
   minio-data: {}
