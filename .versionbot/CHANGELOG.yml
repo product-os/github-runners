@@ -1,4 +1,23 @@
 - commits:
+    - subject: Reduce the yocto-cache lifecycle from 3 days to 1
+      hash: 1757f2cefacd67ce6ffd8cadbf5e855b2f62b18f
+      body: |
+        Currently we are exceeding 1TB in under 3 days because
+        we are caching yocto sources in addition to sstate cache.
+
+        Once we start mirroring yocto sources to AWS S3 we can
+        revert this change.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.19.4
+  title: ""
+  date: 2024-12-19T12:43:52.488Z
+- commits:
     - subject: Reduce the yocto-cache lifecycle policy from 7 days to 3
       hash: 2f5e7b894b2a58120923037fc42eacb5447afe10
       body: |
