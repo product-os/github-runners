@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.2.0
+      hash: 7f6ca083e0c729d7310b84ac88ada44b2dca78aa
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.1.102 to 6.2.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add CPU model name to automatic runner labels
+              hash: 13aa897443450e27429af5174c17c8f1a5ee724c
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.2.0
+          title: ""
+          date: 2024-12-28T23:50:58.682Z
+  version: 0.19.8
+  title: ""
+  date: 2024-12-29T00:13:36.031Z
+- commits:
     - subject: Update ghcr.io/product-os/minio-init Docker tag to v0.0.5
       hash: d092d2261d2417dfce96de55f5c7a4cab4a78c27
       body: |
