@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.2.0
+      hash: 330f6fe236dc075439f73f6cb4b263f0b69e4bf8
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.1.44 to 2.2.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add CPU model name to automatic runner labels
+              hash: 9704446475ecea170ca1866c29bd301f0c1b0eac
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.2.0
+          title: ""
+          date: 2024-12-28T23:51:45.739Z
+  version: 0.19.10
+  title: ""
+  date: 2024-12-29T02:39:44.832Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.2.1
       hash: 967374a6374f3a352ab70756376b2620363ff94d
       body: |
