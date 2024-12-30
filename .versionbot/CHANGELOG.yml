@@ -1,4 +1,130 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.2.2
+      hash: 04b015315b795b34cdf3213fa9f997d38c5b54c1
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.2.0 to 2.2.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.2.4
+              hash: df14a2c6f6efd418377d93001d3f0310a10d8c71
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.1.102 to
+                6.2.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency npm to v10.9.2
+                      hash: 39705b0f204f388f4bd8b3c561eb59e0a39369b9
+                      body: |
+                        Update npm from 10.9.1 to 10.9.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.2.4
+                  title: ""
+                  date: 2024-12-30T16:30:39.358Z
+                - commits:
+                    - subject: Update dependency mikefarah/yq to v4.44.6
+                      hash: 3b4c92c03b33afbe4c155b7ea16948784e68be53
+                      body: |
+                        Update mikefarah/yq from 4.44.5 to 4.44.6
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.2.3
+                  title: ""
+                  date: 2024-12-30T15:24:59.748Z
+                - commits:
+                    - subject: Pin docker compose to 2.29.7 to avoid regression bug
+                      hash: 05019a31c7859b63fe1e77ea00513bd0c12e2163
+                      body: >
+                        In v2.32.1 there is an issue with depends_on not being
+
+                        propagated when two compose files are merged via the
+                        config command
+
+                        and one extends the other.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                    - subject: Test docker compose service dependencies
+                      hash: 321d9787140af96de1df8c48d51fbebb219392b4
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-6.2.2
+                  title: ""
+                  date: 2024-12-30T12:19:18.487Z
+                - commits:
+                    - subject: Update golang Docker tag to v1.23.4
+                      hash: de876936e2e8721302006101ac654f04b9f2beb4
+                      body: |
+                        Update golang from 1.23.3 to 1.23.4
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.2.1
+                  title: ""
+                  date: 2024-12-29T00:17:02.507Z
+                - commits:
+                    - subject: Add CPU model name to automatic runner labels
+                      hash: 13aa897443450e27429af5174c17c8f1a5ee724c
+                      body: ""
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-6.2.0
+                  title: ""
+                  date: 2024-12-28T23:50:58.682Z
+          version: github-runner-vm-2.2.2
+          title: ""
+          date: 2024-12-30T18:02:45.549Z
+        - commits:
+            - subject: Allow the runner container to be disabled via env var
+              hash: 23430e1abeec88477bf09a4e9e0fa43b854b1b5a
+              body: |
+                This is common practice to allow granular control over
+                which services are enabled at runtime.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.2.1
+          title: ""
+          date: 2024-12-30T16:42:48.238Z
+  version: 0.19.18
+  title: ""
+  date: 2024-12-30T21:13:06.667Z
+- commits:
     - subject: Update ghcr.io/product-os/minio-init Docker tag to v0.0.8
       hash: 2f88340d194c5e1a49c8ae9bb66c21bd76750a83
       body: |
