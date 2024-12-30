@@ -1,5 +1,5 @@
 # https://github.com/product-os/minio-init
-FROM ghcr.io/product-os/minio-init:0.0.7
+FROM ghcr.io/product-os/minio-init:0.0.8
 
 # Install our custom ansible settings
 COPY config/ /config/
