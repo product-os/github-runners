@@ -53,10 +53,6 @@ services:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:2.2.0-focal
 
-  runner-focal-2:
-    <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:2.2.0-focal
-
   runner-jammy-1:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:2.2.0-jammy
@@ -66,10 +62,6 @@ services:
     image: ghcr.io/product-os/github-runner-vm:2.2.0-jammy
 
   runner-jammy-3:
-    <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:2.2.0-jammy
-
-  runner-jammy-4:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:2.2.0-jammy
 
