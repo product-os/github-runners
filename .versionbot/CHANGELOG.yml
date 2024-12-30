@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.2.2
+      hash: d15684a7169829dc61daedb5538373f2e2bce199
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.2.1 to 6.2.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Pin docker compose to 2.29.7 to avoid regression bug
+              hash: 05019a31c7859b63fe1e77ea00513bd0c12e2163
+              body: >
+                In v2.32.1 there is an issue with depends_on not being
+
+                propagated when two compose files are merged via the config
+                command
+
+                and one extends the other.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Test docker compose service dependencies
+              hash: 321d9787140af96de1df8c48d51fbebb219392b4
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.2.2
+          title: ""
+          date: 2024-12-30T12:19:18.487Z
+  version: 0.19.12
+  title: ""
+  date: 2024-12-30T13:19:50.459Z
+- commits:
     - subject: Remove 2 runners to bring the total to 8 per server.
       hash: ff653987f6529ff15cd91396ef9982e5d43e2b47
       body: |
