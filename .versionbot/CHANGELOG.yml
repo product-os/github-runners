@@ -1,4 +1,20 @@
 - commits:
+    - subject: Remove 2 runners to bring the total to 8 per server.
+      hash: ff653987f6529ff15cd91396ef9982e5d43e2b47
+      body: |
+        This allows for better dividing of total resources between
+        each VM as they are always powers of 2.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.19.11
+  title: ""
+  date: 2024-12-30T07:23:11.661Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.2.0
       hash: 330f6fe236dc075439f73f6cb4b263f0b69e4bf8
       body: |
