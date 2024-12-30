@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/product-os/minio-init Docker tag to v0.0.6
+      hash: 619dc6dfa048dff0046c228da89cf3e236d5f1aa
+      body: |
+        Update ghcr.io/product-os/minio-init from 0.0.5 to 0.0.6
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.19.15
+  title: ""
+  date: 2024-12-30T18:11:08.114Z
+- commits:
     - subject: Update pre-commit hook crate-ci/typos to v1.27.3
       hash: 4071e0c7e448bf995457e6387640545a1352535b
       body: |
