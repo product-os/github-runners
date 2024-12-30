@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update pre-commit hook crate-ci/typos to v1.28.4
+      hash: 68ecfe2b2f88ae4f051bfa2398334aacb6ec9a85
+      body: |
+        Update crate-ci/typos from 1.27.3 to 1.28.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.19.20
+  title: ""
+  date: 2024-12-30T23:09:46.522Z
+- commits:
     - subject: Update pre-commit hook rhysd/actionlint to v1.7.5
       hash: ef28ba1a736f32c0e70fe159420c31d05f8a7a33
       body: |
