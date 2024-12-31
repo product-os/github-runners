@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.2.10
+      hash: 10ef8e5f06b8fdc59154d9077c1b81e4b48a4444
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.2.9 to 2.2.10
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update pre-commit hook igorshubovych/markdownlint-cli to v0.43.0
+              hash: 4068824324d78b8d977523b626d72df8562489ac
+              body: |
+                Update igorshubovych/markdownlint-cli from 0.42.0 to 0.43.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-2.2.10
+          title: ""
+          date: 2024-12-31T12:50:56.205Z
+  version: 0.19.33
+  title: ""
+  date: 2024-12-31T13:20:05.371Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.2.9
       hash: 19c6e67e224382a065eaede5f278ae9206b82f4a
       body: |
