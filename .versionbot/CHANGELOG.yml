@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update pre-commit hook igorshubovych/markdownlint-cli to v0.43.0
+      hash: 4224932dbe3fab71344c136bd142860119c0caba
+      body: |
+        Update igorshubovych/markdownlint-cli from 0.42.0 to 0.43.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.19.24
+  title: ""
+  date: 2024-12-31T03:20:42.519Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.2.5
       hash: 2e342464f620eec664502975179bda98b5fdd971
       body: |
