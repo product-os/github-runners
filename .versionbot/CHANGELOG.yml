@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.2.13
+      hash: 5f24121f1de8c39ba804d348780fde9d4f4c047e
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.2.12 to 6.2.13
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Allow the runner container to be disabled via env var
+              hash: 13f109a782a0db88249724e5a88c5aad626932e1
+              body: |
+                This is common practice to allow granular control over
+                which services are enabled at runtime.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.2.13
+          title: ""
+          date: 2025-01-02T05:58:00.983Z
+  version: 0.19.36
+  title: ""
+  date: 2025-01-02T06:13:12.105Z
+- commits:
     - subject: Update pre-commit hook crate-ci/typos to v1.29.0
       hash: f228c972c8809b9004892de124ac7177d9f6559c
       body: |
