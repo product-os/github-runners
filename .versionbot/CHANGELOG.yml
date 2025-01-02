@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.2.14
+      hash: 4038df2842b95804cc85fd4e06c10bbf5e6c3f7d
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.2.13 to 6.2.14
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update pre-commit hook rhysd/actionlint to v1.7.5
+              hash: 290daa2908dd09496266307ba9f3b66607d4bdc4
+              body: |
+                Update rhysd/actionlint from 1.7.3 to 1.7.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.2.14
+          title: ""
+          date: 2025-01-02T06:23:45.274Z
+  version: 0.19.37
+  title: ""
+  date: 2025-01-02T07:14:14.195Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.2.13
       hash: 5f24121f1de8c39ba804d348780fde9d4f4c047e
       body: |
