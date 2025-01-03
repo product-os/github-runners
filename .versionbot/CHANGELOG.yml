@@ -1,4 +1,18 @@
 - commits:
+    - subject: Allow runners to be stopped manually
+      hash: 71b9d0c1c278dee55d086da1b183f34a8429b155
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.19.44
+  title: ""
+  date: 2025-01-03T16:32:58.402Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.2.17
       hash: 9e2cf50ab435f6b195250cee8b24fc42b53edb93
       body: |
