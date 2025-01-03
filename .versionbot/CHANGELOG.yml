@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.2.17
+      hash: 9e2cf50ab435f6b195250cee8b24fc42b53edb93
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.2.16 to 6.2.17
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update pre-commit hook pre-commit/pre-commit-hooks to v4
+              hash: 426b90465214599a8b563f266009a13520974a06
+              body: |
+                Update pre-commit/pre-commit-hooks from 3.4.0 to 4.6.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.2.17
+          title: ""
+          date: 2025-01-03T14:14:11.319Z
+  version: 0.19.43
+  title: ""
+  date: 2025-01-03T16:09:25.364Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.2.11
       hash: 565c0e3570f1d18fc26564db6fa82869979c9b13
       body: |
