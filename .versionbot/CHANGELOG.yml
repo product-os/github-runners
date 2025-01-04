@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update pre-commit hook rhysd/actionlint to v1.7.6
+      hash: 19d74410b77738abba009269cde799998aeebe3c
+      body: |
+        Update rhysd/actionlint from 1.7.5 to 1.7.6
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.19.45
+  title: ""
+  date: 2025-01-04T16:09:31.392Z
+- commits:
     - subject: Allow runners to be stopped manually
       hash: 71b9d0c1c278dee55d086da1b183f34a8429b155
       body: ""
