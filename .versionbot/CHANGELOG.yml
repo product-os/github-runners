@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.13
+      hash: ab0c437316549ddb94f126069f828bf37b3d989a
+      body: |
+        Update ghcr.io/balena-io/logs-to-vector from 1.10.12 to 1.10.13
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.19.46
+  title: ""
+  date: 2025-01-06T16:11:43.282Z
+- commits:
     - subject: Update pre-commit hook rhysd/actionlint to v1.7.6
       hash: 19d74410b77738abba009269cde799998aeebe3c
       body: |
