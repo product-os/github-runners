@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update pre-commit hook pre-commit/pre-commit-hooks to v5
+      hash: a52d543c11568f906352fb4396e713ab56717293
+      body: |
+        Update pre-commit/pre-commit-hooks from 3.4.0 to 5.0.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.19.47
+  title: ""
+  date: 2025-01-06T20:32:51.305Z
+- commits:
     - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.13
       hash: ab0c437316549ddb94f126069f828bf37b3d989a
       body: |
