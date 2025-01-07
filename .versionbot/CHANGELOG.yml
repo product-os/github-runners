@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.2.12
+      hash: e9577cdd4c1a4f5f36ce37fec09d6dc760d7d5b4
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.2.11 to 2.2.12
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Limit jobs to one hour to prevent hung apt-gets, etc.
+              hash: e3962631f529bdc07a3df68e45f4cd91d09fc502
+              body: |
+                > https://github.com/product-os/github-runner-vm/actions/runs/12599651187/job/35117087835?pr=185#step:17:1249
+
+                avoid tying up runners for 6 hours
+              footer:
+                change-type: patch
+              author: Anton Belodedenko
+              nested: []
+          version: github-runner-vm-2.2.12
+          title: ""
+          date: 2025-01-06T23:11:08.866Z
+  version: 0.19.51
+  title: ""
+  date: 2025-01-07T01:26:50.689Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.2.20
       hash: 1480507407fa00ae4c4bb8fbe7b21ea4d258e689
       body: |
