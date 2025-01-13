@@ -313,7 +313,7 @@ services:
     volumes:
       - certs:/certs:ro
     healthcheck:
-      test: ["CMD", "curl", "--fail", "http://localhost:9273/metrics"]
+      test: ["CMD", "curl", "--fail", "http://localhost:9274"]
       interval: 30s
       timeout: 10s
       retries: 3
