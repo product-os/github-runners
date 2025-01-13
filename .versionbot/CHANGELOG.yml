@@ -1,4 +1,36 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.3.0
+      hash: 525a7060a06c1f26498a17fb5f30209e0212b129
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.2.12 to 2.3.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Start an SSH daemon in the guest VM for debugging
+              hash: cc87b199a82b346bcd2160e824f9abcdbb648530
+              body: >
+                This daemon is not exposed outside the single container network
+                namespace,
+
+                it can only communicate between the wrapper container and the
+                VM.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.3.0
+          title: ""
+          date: 2025-01-13T15:52:16.766Z
+  version: 0.19.53
+  title: ""
+  date: 2025-01-13T16:09:33.307Z
+- commits:
     - subject: Update ghcr.io/balena-io/metrics-agent Docker tag to v1.0.2
       hash: 80df23015c05cb56e31816774f1c2182704849d1
       body: |
