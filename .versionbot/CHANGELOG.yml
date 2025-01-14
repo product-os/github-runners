@@ -1,4 +1,22 @@
 - commits:
+    - subject: Update metrics-agent and use healthcheck endpoint.
+      hash: d076c4eb7de8bfc4c6a5f5ae132f1610f105f187
+      body: |
+        This makes the engine healthcheck to use the /health endpoint which
+        provides a faster response and is more efficient.
+
+        Requires balena-io/metrics-agent#3 to be merged.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Carlo Miguel F. Cruz <carloc@balena.io>
+        signed-off-by: Carlo Miguel F. Cruz <carloc@balena.io>
+      author: Carlo Miguel F. Cruz
+      nested: []
+  version: 0.19.54
+  title: ""
+  date: 2025-01-14T15:03:26.294Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.3.0
       hash: 525a7060a06c1f26498a17fb5f30209e0212b129
       body: |
