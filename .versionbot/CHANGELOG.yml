@@ -1,4 +1,48 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.3.1
+      hash: 781e1344173617e56383b151e51f3e81e664bd28
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.2.20 to 6.3.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency cli/cli to v2.65.0
+              hash: 6ff02bea2a3222b99319fbe006a61681ecd034df
+              body: |
+                Update cli/cli from 2.64.0 to 2.65.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.3.1
+          title: ""
+          date: 2025-01-14T17:13:08.213Z
+        - commits:
+            - subject: Add optional s6-overlay symlink packages
+              hash: d266242eafaa37bbfd46b1581c3eb7d62cc8167e
+              body: |
+                These packages create symlinks to various s6-overlay
+                tools in /usr/bin for convenience.
+
+                See: https://github.com/just-containers/s6-overlay?tab=readme-ov-file#releases
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.3.0
+          title: ""
+          date: 2025-01-14T16:20:31.714Z
+  version: 0.19.56
+  title: ""
+  date: 2025-01-14T18:10:57.838Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.4.0
       hash: f8abedc8979120d0e5a4ead869fceff0db7f85c9
       body: |
