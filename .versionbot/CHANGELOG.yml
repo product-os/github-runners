@@ -1,4 +1,151 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.4.1
+      hash: 75932f14d299b1fdf7cc943cd265b636f3c0fb7c
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.4.0 to 2.4.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.2.20
+              hash: 5ef477d2ee7aa0a6334dfb165e68bcc71976e79f
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.2.11 to
+                6.2.20
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update pre-commit hook rhysd/actionlint to v1.7.6
+                      hash: 9f3f2a2a94143c3a4dcde1ed18887ab97d7a2da1
+                      body: |
+                        Update rhysd/actionlint from 1.7.5 to 1.7.6
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.2.20
+                  title: ""
+                  date: 2025-01-06T23:15:24.117Z
+                - commits:
+                    - subject: Update dependency nabeken/go-github-apps to v0.2.2
+                      hash: 1782b52f2a5dfec69035962242cd314f464f90e8
+                      body: |
+                        Update nabeken/go-github-apps from 0.2.1 to 0.2.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.2.19
+                  title: ""
+                  date: 2025-01-06T22:12:13.317Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.22.29
+                      hash: 8602cbc4018282cd4afc1de32d342f63447a265a
+                      body: |
+                        Update aws/aws-cli from 2.22.26 to 2.22.29
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.2.18
+                  title: ""
+                  date: 2025-01-06T21:16:53.091Z
+                - commits:
+                    - subject: Update pre-commit hook pre-commit/pre-commit-hooks to v4
+                      hash: 426b90465214599a8b563f266009a13520974a06
+                      body: |
+                        Update pre-commit/pre-commit-hooks from 3.4.0 to 4.6.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.2.17
+                  title: ""
+                  date: 2025-01-03T14:14:11.319Z
+                - commits:
+                    - subject: Update pre-commit hook pre-commit/pre-commit-hooks to v3.4.0
+                      hash: 09d10a18bdb5065a1f7bda6bd1c6876b4d85ddc4
+                      body: |
+                        Update pre-commit/pre-commit-hooks from 3.2.0 to 3.4.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.2.16
+                  title: ""
+                  date: 2025-01-02T08:24:01.905Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v20.2.1
+                      hash: 8923379dd697425f88a249445e0bf78cf74344d3
+                      body: |
+                        Update balena-io/balena-cli from 20.1.6 to 20.2.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.2.15
+                  title: ""
+                  date: 2025-01-02T07:19:16.384Z
+                - commits:
+                    - subject: Update pre-commit hook rhysd/actionlint to v1.7.5
+                      hash: 290daa2908dd09496266307ba9f3b66607d4bdc4
+                      body: |
+                        Update rhysd/actionlint from 1.7.3 to 1.7.5
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.2.14
+                  title: ""
+                  date: 2025-01-02T06:23:45.274Z
+                - commits:
+                    - subject: Allow the runner container to be disabled via env var
+                      hash: 13f109a782a0db88249724e5a88c5aad626932e1
+                      body: |
+                        This is common practice to allow granular control over
+                        which services are enabled at runtime.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-6.2.13
+                  title: ""
+                  date: 2025-01-02T05:58:00.983Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v20.1.6
+                      hash: 2598698c7d204ef3ed24e10ed804d766264b7eba
+                      body: |
+                        Update balena-io/balena-cli from 20.1.5 to 20.1.6
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.2.12
+                  title: ""
+                  date: 2024-12-31T10:19:32.667Z
+          version: github-runner-vm-2.4.1
+          title: ""
+          date: 2025-01-14T22:48:20.028Z
+  version: 0.19.63
+  title: ""
+  date: 2025-01-15T01:29:52.792Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.3.7
       hash: 764fc1d9a3e045057b0254000bf0cd759fec6904
       body: |
