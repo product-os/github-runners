@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.3.8
+      hash: 1b89a9bce6830db28d8931c2a4a219af582475ac
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.3.7 to 6.3.8
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency mikefarah/yq to v4.45.1
+              hash: 189c3142640faad42fa3b5bb5c092219b0a442ee
+              body: |
+                Update mikefarah/yq from 4.44.6 to 4.45.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.3.8
+          title: ""
+          date: 2025-01-15T00:14:43.412Z
+  version: 0.19.64
+  title: ""
+  date: 2025-01-15T02:32:01.431Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.4.1
       hash: 75932f14d299b1fdf7cc943cd265b636f3c0fb7c
       body: |
