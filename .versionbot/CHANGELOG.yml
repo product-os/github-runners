@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.4.3
+      hash: 879e612f66225e925e63526d1aeb3ea61821d8ed
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.4.2 to 2.4.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update golang Docker tag to v1.23.5
+              hash: c5717d289b3b3e71659fc0bf3f48a7000bb55b5d
+              body: |
+                Update golang from 1.23.4 to 1.23.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-2.4.3
+          title: ""
+          date: 2025-01-19T14:42:48.798Z
+  version: 0.19.68
+  title: ""
+  date: 2025-01-19T15:07:50.925Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.4.2
       hash: 0f621a417281015b7ec999792d0e8a96b179b7b6
       body: |
