@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.4.5
+      hash: b55bcbf6c24dcd075617b2235e32534cbdfd2874
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.4.4 to 2.4.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update tespkg/actions-cache action to v1.7.2
+              hash: 321f2ef613f3bf7a67b84b39c0d1ea632d5ccb76
+              body: |
+                Update tespkg/actions-cache from 1.7.1 to 1.7.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-2.4.5
+          title: ""
+          date: 2025-01-19T16:42:30.959Z
+  version: 0.19.70
+  title: ""
+  date: 2025-01-19T17:09:14.150Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.4.4
       hash: d621b1427a2b2407cdd9d54cccda490786bdbded
       body: |
