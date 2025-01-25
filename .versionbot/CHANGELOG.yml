@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update pre-commit hook igorshubovych/markdownlint-cli to v0.44.0
+      hash: 04fc8f8983a151a054f9511b2c7357c9c99e3761
+      body: |
+        Update igorshubovych/markdownlint-cli from 0.43.0 to 0.44.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.19.75
+  title: ""
+  date: 2025-01-25T02:27:34.937Z
+- commits:
     - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.14
       hash: 5d0371eae1ca89880a423d5650a05d7f7c477618
       body: |
