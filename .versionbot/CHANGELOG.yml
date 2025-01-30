@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update pre-commit hook crate-ci/typos to v1.29.5
+      hash: 1f6ace8728e91d8775d17223dbc11e26a3a6da6a
+      body: |
+        Update crate-ci/typos from 1.29.4 to 1.29.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.19.76
+  title: ""
+  date: 2025-01-30T22:12:20.154Z
+- commits:
     - subject: Update pre-commit hook igorshubovych/markdownlint-cli to v0.44.0
       hash: 04fc8f8983a151a054f9511b2c7357c9c99e3761
       body: |
