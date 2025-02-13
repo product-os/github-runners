@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update pre-commit hook crate-ci/typos to v1.29.7
+      hash: f36a7a3bc2db72ff708a400567f5d1d59a55b747
+      body: |
+        Update crate-ci/typos from 1.29.6 to 1.29.7
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.19.78
+  title: ""
+  date: 2025-02-13T17:15:26.121Z
+- commits:
     - subject: Update pre-commit hook crate-ci/typos to v1.29.6
       hash: d10a8e92e7f535873f99e3561789b6da0dd8e180
       body: |
