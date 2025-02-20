@@ -1,4 +1,20 @@
 - commits:
+    - subject: Replace Focal runner with another Noble
+      hash: a0c14876866c953e469bbba22140b26d6c8a8759
+      body: |
+        GitHub is ending support for Ubuntu 20.04 runners
+        on April 1, 2025 and we should follow suit.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.20.0
+  title: ""
+  date: 2025-02-20T15:53:02.216Z
+- commits:
     - subject: Update pre-commit hook crate-ci/typos to v1.29.9
       hash: 03e28a2bf2f91a94b06703d13225bc1b7c2e2a25
       body: |
