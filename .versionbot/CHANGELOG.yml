@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.0
+      hash: 06f3ef30bb599f458c86ac2e351cb38bc205bb61
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.4.7 to 2.5.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Disable building of Focal runner images
+              hash: 218962be3381ac65654703281a9d5cbb7a642d1d
+              body: |
+                Ubuntu 20.04 runners are being discontinued
+                by GitHub on April 1, 2025 so we will follow suit.
+              footer:
+                CHange-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.5.0
+          title: ""
+          date: 2025-02-22T16:45:53.257Z
+  version: 0.20.1
+  title: ""
+  date: 2025-02-22T17:12:56.342Z
+- commits:
     - subject: Replace Focal runner with another Noble
       hash: a0c14876866c953e469bbba22140b26d6c8a8759
       body: |
