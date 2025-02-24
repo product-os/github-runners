@@ -1,4 +1,77 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.6.0
+      hash: 3c17e12be05f079e5c118b6ae72242fb8308cbe7
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.4.0 to 6.6.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Remove support for Ubuntu Focal images
+              hash: a03125c78a20939badb276cf69e9b20b34db6edf
+              body: |
+                GitHub is removing support for Ubuntu 20.04 on April 1, 2025
+                so we will follow suit.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.6.0
+          title: ""
+          date: 2025-02-24T16:55:39.590Z
+        - commits:
+            - subject: Reset the container by deleting the upper layer
+              hash: c45c85657f1f9f892c1d0a79070ba5ff9ecbbc7e
+              body: |
+                This is the cleanest way to "reset" the container
+                filesystem as if it were recreated from the source image.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Update entrypoint to relaunch as an ephemeral container
+              hash: 9cd2160659c407a1a8c8ec7250aa28a2b06875fa
+              body: |
+                This allows the runner to be properly ephemeral without
+                having to create special mounts or chroot enviroments.
+
+                When provided with an engine socket, the entrypoint will
+                clone itself into another container that is destroyed on exit.
+
+                When the main container service restarts the process repeats
+                itself.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Add test of buildkit setup at runtime
+              hash: f2a4e13b94f6867e60d0107131583cbeb8ad4b45
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.5.0
+          title: ""
+          date: 2025-02-24T16:04:29.250Z
+  version: 0.20.5
+  title: ""
+  date: 2025-02-24T17:08:53.784Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.3
       hash: c9f0f968482568edfad180e84a54957be74bbc39
       body: |
