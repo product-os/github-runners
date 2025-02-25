@@ -1,4 +1,114 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.4
+      hash: 06b8774c4e90b280d992d87e2982d06ea5711975
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.5.3 to 2.5.4
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.6.1
+              hash: 4638e78645f57678b2fdcf96e9ac9f5e0025b81f
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.4.0 to 6.6.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency docker/compose to v2.32.4
+                      hash: 20e9fbbe8a445049dc47454b21afa0f6d2e668b9
+                      body: |
+                        Update docker/compose from 2.32.3 to 2.32.4
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.6.1
+                  title: ""
+                  date: 2025-02-24T17:18:52.163Z
+                - commits:
+                    - subject: Remove support for Ubuntu Focal images
+                      hash: a03125c78a20939badb276cf69e9b20b34db6edf
+                      body: >
+                        GitHub is removing support for Ubuntu 20.04 on April 1,
+                        2025
+
+                        so we will follow suit.
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-6.6.0
+                  title: ""
+                  date: 2025-02-24T16:55:39.590Z
+                - commits:
+                    - subject: Reset the container by deleting the upper layer
+                      hash: c45c85657f1f9f892c1d0a79070ba5ff9ecbbc7e
+                      body: >
+                        This is the cleanest way to "reset" the container
+
+                        filesystem as if it were recreated from the source
+                        image.
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                    - subject: Update entrypoint to relaunch as an ephemeral container
+                      hash: 9cd2160659c407a1a8c8ec7250aa28a2b06875fa
+                      body: >
+                        This allows the runner to be properly ephemeral without
+
+                        having to create special mounts or chroot enviroments.
+
+
+                        When provided with an engine socket, the entrypoint will
+
+                        clone itself into another container that is destroyed on
+                        exit.
+
+
+                        When the main container service restarts the process
+                        repeats
+
+                        itself.
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                    - subject: Add test of buildkit setup at runtime
+                      hash: f2a4e13b94f6867e60d0107131583cbeb8ad4b45
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-6.5.0
+                  title: ""
+                  date: 2025-02-24T16:04:29.250Z
+          version: github-runner-vm-2.5.4
+          title: ""
+          date: 2025-02-25T00:44:20.806Z
+  version: 0.20.7
+  title: ""
+  date: 2025-02-25T01:27:28.470Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.6.1
       hash: a130c3f449cc3e0564aa4b9c6e5d68c5c6150056
       body: |
