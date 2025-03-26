@@ -1,4 +1,35 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.9
+      hash: 928cc1006c22e9f51c6c8f995701146e0d43f6dc
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.5.8 to 2.5.9
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Remove 16cpu runner label
+              hash: 6846f4ae111012235dcb757b470746bd429f35e2
+              body: >
+                This label prevents the job from running on containerized
+                runners,
+
+                which during an incident may be all that is available.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.5.9
+          title: ""
+          date: 2025-03-26T00:29:08.106Z
+  version: 0.20.50
+  title: ""
+  date: 2025-03-26T01:26:04.390Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.8
       hash: 7f62a024c6318c1393becc995d43b5a71843f74a
       body: |
