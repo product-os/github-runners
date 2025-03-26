@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.6.40
+      hash: 7de5528637ea046c0a5c4979f1db7e9b48269f3f
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.6.39 to 6.6.40
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update mcr.microsoft.com/dotnet/runtime-deps Docker tag to v9
+              hash: 2cb007b697618386b42283a00fac59eed574f7e6
+              body: >
+                Update mcr.microsoft.com/dotnet/runtime-deps from 8.0.14 to 9.0.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.6.40
+          title: ""
+          date: 2025-03-26T17:55:55.025Z
+  version: 0.20.55
+  title: ""
+  date: 2025-03-26T18:08:48.721Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.6.39
       hash: 30a0e9801a230eb2c820bffc76d00e45a928af86
       body: |
