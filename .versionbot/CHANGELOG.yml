@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.10
+      hash: 5ef6fcb19928e22d1f23f2357918ffc49eee41ae
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.5.9 to 2.5.10
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Use yocto tag for larger runners capable of nested virt
+              hash: 04254411136577f27aff37fedd5429b2f257e9d1
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.5.10
+          title: ""
+          date: 2025-03-26T18:13:12.814Z
+  version: 0.20.56
+  title: ""
+  date: 2025-03-26T19:13:29.455Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.6.40
       hash: 7de5528637ea046c0a5c4979f1db7e9b48269f3f
       body: |
