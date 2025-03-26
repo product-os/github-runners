@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.6.39
+      hash: 30a0e9801a230eb2c820bffc76d00e45a928af86
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.6.38 to 6.6.39
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Use free hosted runners
+              hash: 96b81c3d300f2f54f11253a27c40ff3a9859d06c
+              body: |
+                These will be slower, but free is good and avoids depending
+                on our self-hosted fleet in case of an outage if we need
+                to build a new image.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.6.39
+          title: ""
+          date: 2025-03-26T16:08:53.428Z
+  version: 0.20.54
+  title: ""
+  date: 2025-03-26T17:15:37.494Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.6.38
       hash: 13d2a22499f4234ce55a8fe0f41a747154eb30de
       body: |
