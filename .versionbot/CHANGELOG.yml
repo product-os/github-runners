@@ -1,4 +1,117 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.12
+      hash: 15cdc324181cc821b4b1340176f8476cb2d2f579
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.5.11 to 2.5.12
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.6.40
+              hash: f92b329a7839f8025bf5c2817e4e75a290f06cb9
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.6.34 to
+                6.6.40
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update mcr.microsoft.com/dotnet/runtime-deps Docker tag to v9
+                      hash: 2cb007b697618386b42283a00fac59eed574f7e6
+                      body: >
+                        Update mcr.microsoft.com/dotnet/runtime-deps from 8.0.14
+                        to 9.0.3
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.6.40
+                  title: ""
+                  date: 2025-03-26T17:55:55.025Z
+                - commits:
+                    - subject: Use free hosted runners
+                      hash: 96b81c3d300f2f54f11253a27c40ff3a9859d06c
+                      body: >
+                        These will be slower, but free is good and avoids
+                        depending
+
+                        on our self-hosted fleet in case of an outage if we need
+
+                        to build a new image.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-6.6.39
+                  title: ""
+                  date: 2025-03-26T16:08:53.428Z
+                - commits:
+                    - subject: Update dependency cli/cli to v2.69.0
+                      hash: 28d8bb431a930360f22c58ece916b72a096c012d
+                      body: |
+                        Update cli/cli from 2.68.1 to 2.69.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.6.38
+                  title: ""
+                  date: 2025-03-26T03:30:23.425Z
+                - commits:
+                    - subject: Update dependency docker/compose to v2.34.0
+                      hash: 14784150e13c8db09552a739313a653efed2657c
+                      body: |
+                        Update docker/compose from 2.33.1 to 2.34.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.6.37
+                  title: ""
+                  date: 2025-03-26T02:39:47.674Z
+                - commits:
+                    - subject: Update dependency docker/buildx to v0.22.0
+                      hash: ba54f63ffcfe8e4672e877abd25eab9e6036f6b9
+                      body: |
+                        Update docker/buildx from 0.21.3 to 0.22.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.6.36
+                  title: ""
+                  date: 2025-03-26T01:27:12.687Z
+                - commits:
+                    - subject: Update dependency docker/buildx to v0.21.3
+                      hash: f368f92f44253a1574d6bc80fd26a55074328e08
+                      body: |
+                        Update docker/buildx from 0.21.2 to 0.21.3
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.6.35
+                  title: ""
+                  date: 2025-03-26T00:12:58.792Z
+          version: github-runner-vm-2.5.12
+          title: ""
+          date: 2025-03-26T21:46:45.783Z
+  version: 0.20.58
+  title: ""
+  date: 2025-03-26T22:06:33.567Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.11
       hash: 976fef5bb7581391a07f3eac7f0bcb28aa6c1b66
       body: |
