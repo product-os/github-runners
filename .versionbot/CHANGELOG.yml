@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.13
+      hash: 0d87ac1a7b0c0347731c72a02a546152e73f1f6a
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.5.12 to 2.5.13
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Adjust the resources of nested VM tests on X64
+              hash: c77bb220ac20bab04ecd73abf038e6a56928d43d
+              body: |
+                We want to avoid resource starvation causing the nested VM
+                tests to become increasingly unreliable.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.5.13
+          title: ""
+          date: 2025-03-27T15:21:59.144Z
+  version: 0.20.61
+  title: ""
+  date: 2025-03-27T16:09:30.823Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.6.43
       hash: 98a4be038927c00fd00004c530160d498329573b
       body: |
