@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.17
+      hash: f487aee25a2bfc42ffd5a0c3a95a453bd0071467
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.5.16 to 2.5.17
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Remove NFS server and client tests
+              hash: 4b38b4a22bf4d206ec13d86dbb320bcbba4645df
+              body: |
+                The Jenkins NFS has been shut down and we no longer
+                use the NFS features on the GitHub runners.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-2.5.17
+          title: ""
+          date: 2025-03-28T23:31:59.411Z
+  version: 0.20.70
+  title: ""
+  date: 2025-03-29T00:05:39.529Z
+- commits:
     - subject: Update balena/cert-manager Docker tag to v0.3.3
       hash: 4cf7f5b6dffd123f752312a41a0e89fdcf367c47
       body: |
