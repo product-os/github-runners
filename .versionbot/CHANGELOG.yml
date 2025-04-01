@@ -1,4 +1,39 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.7.0
+      hash: 61193dcb284390d49b395b76d5f9d9bffcd8d980
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.6.47 to 6.7.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Use pivot_root and read_only for ephemeral rootfs
+              hash: 458ff1f22a7344d1e5da03259e6534de54f1e1e0
+              body: |
+                The previous method was resulting in corruption
+                of the underlying overlayfs and resulted in unwritable
+                directories like /usr
+
+                Instead create a new rootfs in a volume and use pivot_root
+                to switch to it on container start.
+
+                This allows the original container root to be set to read-only.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.7.0
+          title: ""
+          date: 2025-04-01T14:48:20.781Z
+  version: 0.20.79
+  title: ""
+  date: 2025-04-01T15:09:54.272Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.6.47
       hash: 89e3075bf0a3f3a1d31d98ebbb82eb90e65a9be3
       body: |
