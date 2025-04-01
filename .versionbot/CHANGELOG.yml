@@ -1,4 +1,86 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.25
+      hash: 5b5e6eae189428f4858a8c7fc7f333e075fc5303
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.5.24 to 2.5.25
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.7.1
+              hash: dd0fcc14e4d402c6927b245a04c618c887ccde71
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.6.46 to
+                6.7.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update golang Docker tag to v1.24.2
+                      hash: 91cab6f76c1ac0b84cd97e880bad08d827075a77
+                      body: |
+                        Update golang from 1.24.1 to 1.24.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.7.1
+                  title: ""
+                  date: 2025-04-01T18:18:17.518Z
+                - commits:
+                    - subject: Use pivot_root and read_only for ephemeral rootfs
+                      hash: 458ff1f22a7344d1e5da03259e6534de54f1e1e0
+                      body: >
+                        The previous method was resulting in corruption
+
+                        of the underlying overlayfs and resulted in unwritable
+
+                        directories like /usr
+
+
+                        Instead create a new rootfs in a volume and use
+                        pivot_root
+
+                        to switch to it on container start.
+
+
+                        This allows the original container root to be set to
+                        read-only.
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-6.7.0
+                  title: ""
+                  date: 2025-04-01T14:48:20.781Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.25.7
+                      hash: 6aeea695ea9cb6f948712cf97c74fb5ed2c504b4
+                      body: |
+                        Update aws/aws-cli from 2.25.6 to 2.25.7
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.6.47
+                  title: ""
+                  date: 2025-03-31T20:17:27.375Z
+          version: github-runner-vm-2.5.25
+          title: ""
+          date: 2025-04-01T19:40:05.954Z
+  version: 0.20.81
+  title: ""
+  date: 2025-04-01T20:09:48.494Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.24
       hash: ea193a23a2aef2fcfee2949f232f13d6aa5c46d4
       body: |
