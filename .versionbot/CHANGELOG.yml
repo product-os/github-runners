@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update minio/minio Docker tag to v2025
+      hash: 0be3aeed76cc64f81cef5cf652ebc42e136b3aaf
+      body: >
+        Update minio/minio from RELEASE.2024-10-29T16-01-48Z to
+        RELEASE.2025-03-12T18-04-18Z
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.20.86
+  title: ""
+  date: 2025-04-03T13:03:05.646Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.7.5
       hash: 13ba94a9a140dde2fdae67a0728682c585f0fa23
       body: |
