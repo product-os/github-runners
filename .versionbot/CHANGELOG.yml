@@ -1,4 +1,35 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.7.5
+      hash: 13ba94a9a140dde2fdae67a0728682c585f0fa23
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.7.4 to 6.7.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Fix resolv.conf assertion that was not valid for balena engine
+              hash: 40e57505ac9348c01f4e4afe143279401dc1254c
+              body: >
+                balena engine does not put the helper text at the top of
+                resolve.conf
+
+                so we cannot use that to identify the source of the file
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.7.5
+          title: ""
+          date: 2025-04-03T09:57:35.353Z
+  version: 0.20.85
+  title: ""
+  date: 2025-04-03T10:06:56.237Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.7.4
       hash: f34d793e345bb52ffcbd9f1f1ec8a2c2b8d451f3
       body: |
