@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.7.9
+      hash: c5c0fe4ff4a9f3c076ddc00b0f0fe2d99678d394
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.7.8 to 6.7.9
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v21.1.8
+              hash: e80559f8bdb5c05b1a16a275af4c489813d1546e
+              body: |
+                Update balena-io/balena-cli from 21.1.7 to 21.1.8
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.7.9
+          title: ""
+          date: 2025-04-03T17:40:14.015Z
+  version: 0.20.91
+  title: ""
+  date: 2025-04-03T20:11:17.627Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.26
       hash: d1b266bab30e658e74a251ede7fae4d35997e2ba
       body: |
