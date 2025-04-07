@@ -1,4 +1,21 @@
 - commits:
+    - subject: Use a named volume for the containerized runner root filesystem
+      hash: 87b18612cc39a5517ac7ec4071d1f16f1267f586
+      body: |
+        This allows the original overlay to remain read-only as
+        the volume filesystem is recreated on every container boot,
+        creating an ephemeral environment.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.20.96
+  title: ""
+  date: 2025-04-07T15:02:42.099Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.7.12
       hash: d731063b6361a42f43b6b31bd8b1dda9faec1ef2
       body: |
