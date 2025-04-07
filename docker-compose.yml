@@ -10,7 +10,6 @@ x-runner-container:
   tmpfs:
     - /tmp
     - /run
-    - /scratch
   networks:
     - runner-network
   environment:
@@ -49,6 +48,10 @@ services:
   runner-container-1:
     <<: *runner-container
     image: ghcr.io/product-os/self-hosted-runners:6.7.12-jammy
+    volumes:
+      # Use a volume for the runner root filesystem
+      # See https://github.com/product-os/self-hosted-runners/pull/501
+      - runner-rootfs-1:/rootfs
 
   runner-jammy-1:
     <<: *runner-vm
@@ -374,6 +377,7 @@ volumes:
   logs-to-vector:
   registry-data:
   minio-data:
+  runner-rootfs-1:
 
 networks:
   runner-network: {}
