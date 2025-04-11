@@ -83,7 +83,7 @@ services:
 
   # https://distribution.github.io/distribution/recipes/mirror/
   registry-cache:
-    image: registry:2.8.3
+    image: registry:3.0.0
     volumes:
       - registry-data:/var/lib/registry
     tmpfs:
