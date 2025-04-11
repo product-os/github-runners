@@ -325,7 +325,7 @@ services:
     privileged: true
 
   minio:
-    image: minio/minio:RELEASE.2025-03-12T18-04-18Z
+    image: minio/minio:RELEASE.2025-04-08T15-41-24Z
     command: server /data --console-address ""
     environment:
       MINIO_BROWSER: off
