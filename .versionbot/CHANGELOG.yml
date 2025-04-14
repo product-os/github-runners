@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.30
+      hash: 975d8baa018ddde7d2d2e8942a41e0823b43c6f4
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.5.29 to 2.5.30
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update minio/minio Docker tag to RELEASE.2025-04-08T15-41-24Z
+              hash: cc1deba393a86423ce3ecc8f42608101ee46c3af
+              body: >
+                Update minio/minio from RELEASE.2025-03-12T18-04-18Z to
+                RELEASE.2025-04-08T15-41-24Z
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-2.5.30
+          title: ""
+          date: 2025-04-14T18:17:45.524Z
+  version: 0.20.106
+  title: ""
+  date: 2025-04-14T19:14:28.923Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v2.5.29
       hash: 3531e36b1c671abecb235830be80b2345513096a
       body: |
