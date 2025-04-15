@@ -1,4 +1,76 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3
+      hash: 8b54b536c0a54d229206d48e86a36a77bc0e4d48
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 2.5.30 to 3.0.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.4.0
+              hash: a14aa6035ca7448a419c177c1eb5ab19a4c910f4
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.3.10 to
+                0.4.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Revert "Enable NFS server support"
+                      hash: 731e00a27814bdf00ae79144a707dec743936c02
+                      body: >
+                        This reverts commit
+                        dc771c844c45733f5594c3395bbb3e2ebf3174e8.
+
+
+                        We don't use this feature in the runners anymore.
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                    - subject: Build kernel branch 6.1 by default
+                      hash: f13e2efa247ace30e9f08982ad9bc79bff12d0cd
+                      body: |
+                        This also removes the 'latest' tag and adds 'linux510'
+                        for compatibility.
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: github-runner-kernel-0.4.0
+                  title: ""
+                  date: 2025-04-15T15:50:30.642Z
+          version: github-runner-vm-3.0.1
+          title: ""
+          date: 2025-04-15T16:44:55.026Z
+        - commits:
+            - subject: Build with linux kernel 6.1
+              hash: a5e6773674bfa79f94753bac7a09e099eb43ff6f
+              body: ""
+              footer:
+                Change-type: major
+                change-type: major
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-3.0.0
+          title: ""
+          date: 2025-04-15T15:50:47.556Z
+  version: 0.20.111
+  title: ""
+  date: 2025-04-15T18:13:11.507Z
+- commits:
     - subject: Update minio/minio Docker tag to RELEASE.2025-04-08T15-41-24Z
       hash: 6783c16eef57ea97dc564ccb0d899f140f44e5ec
       body: >
