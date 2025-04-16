@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.1.0
+      hash: 613238913e6bf6574737fa49afd2c19a90ec1c82
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.0.2 to 3.1.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add an update-lock timeout to avoid locking forever
+              hash: 3fa8bc63aaf8880c6adab476b8c40935f4d83d5f
+              body: ""
+              footer:
+                CHange-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-3.1.0
+          title: ""
+          date: 2025-04-16T16:52:36.192Z
+  version: 0.20.113
+  title: ""
+  date: 2025-04-16T17:16:54.066Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.0.2
       hash: 3844d834ddc52ea7a71db862623bed8d7b098b28
       body: |
