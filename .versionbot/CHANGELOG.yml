@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.8.0
+      hash: 3bc5040452672883b9690a561c66467204baa28a
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.7.23 to 6.8.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add update-locks service with with default timeout of 8h
+              hash: 20e9bd592cc58ebf497ed1be3a1f7312060609df
+              body: ""
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.8.0
+          title: ""
+          date: 2025-04-17T17:09:50.818Z
+  version: 0.20.116
+  title: ""
+  date: 2025-04-17T18:11:12.296Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.7.23
       hash: 96e2aefe54943e609ccea801d01d3edf54194212
       body: |
