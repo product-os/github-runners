@@ -107,6 +107,10 @@ services:
       # Disable the blob descriptor cache by setting REGISTRY_STORAGE_CACHE_BLOBDESCRIPTOR=blah where blah is not inmemory or redis
       # https://github.com/distribution/distribution/issues/2367#issuecomment-1874449361
       REGISTRY_STORAGE_CACHE_BLOBDESCRIPTOR: blah
+      # Explicitly disable opentelemetry tracing to avoid noisy errors in the logs since we don't have a collector
+      # https://github.com/distribution/distribution/issues/4270
+      # https://github.com/open-telemetry/opentelemetry-go-contrib/issues/5194
+      OTEL_TRACES_EXPORTER: none
 
   # tag devices
   tag-sidecar:
