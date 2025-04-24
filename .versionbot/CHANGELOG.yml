@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.8.9
+      hash: fa661a6b99ba24c27cf8c66fc1b81ec3580d12c9
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.8.8 to 6.8.9
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency cli/cli to v2.71.2
+              hash: 64b307b577e406a0f15b338cad10e79035d66bbf
+              body: |
+                Update cli/cli from 2.71.0 to 2.71.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.9
+          title: ""
+          date: 2025-04-24T17:20:23.917Z
+  version: 0.20.125
+  title: ""
+  date: 2025-04-24T18:10:29.033Z
+- commits:
     - subject: Explicitly disable openelemetry tracing to avoid errors
       hash: f030d6fa6a73c483f8dceed91aca3286decb7e6c
       body: |
