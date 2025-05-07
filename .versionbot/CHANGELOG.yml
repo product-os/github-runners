@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.8.25
+      hash: db26f12c1eb6c8f0be0988ae76e2ceefb09e5bd4
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.8.24 to 6.8.25
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency just-containers/s6-overlay to v3.2.1.0
+              hash: fa5b1d7f464f5f513d1bdba633e5c07adfc3dcff
+              body: |
+                Update just-containers/s6-overlay from 3.2.0.3 to 3.2.1.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.25
+          title: ""
+          date: 2025-05-07T09:26:15.583Z
+  version: 0.20.142
+  title: ""
+  date: 2025-05-07T10:15:13.720Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.8.24
       hash: e924ae4092c9ec6b76b6466e4e911ea316dbd634
       body: |
