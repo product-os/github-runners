@@ -85,8 +85,8 @@ README for more.
 > [!NOTE]
 > Use `generic-amd64` or `generic-aarch64` balenaOS device type
 
-1. Follow RAID1 setup steps
-   [here](https://github.com/balena-os/meta-balena/blob/master/docs/raid.md)
+1. Follow
+   [the RAID1 setup documentation](https://github.com/balena-os/meta-balena/blob/master/docs/raid.md)
 2. Download image from S3 via wget (URL is in S3 dashboard)
 3. Write image to RAID array
 
