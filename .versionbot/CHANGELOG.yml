@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update pre-commit hook crate-ci/typos to v1.33.1
+      hash: 33db3e76ebf2566891d56c50096d5e61826282c6
+      body: |
+        Update crate-ci/typos from 1.32.0 to 1.33.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.20.160
+  title: ""
+  date: 2025-06-27T17:18:53.410Z
+- commits:
     - subject: Update minio/minio Docker tag to RELEASE.2025-06-13T11-33-47Z
       hash: b09b79aaf80429346cc6c1b30a4a124c86fcbb1c
       body: >
