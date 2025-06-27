@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update minio/minio Docker tag to RELEASE.2025-06-13T11-33-47Z
+      hash: b09b79aaf80429346cc6c1b30a4a124c86fcbb1c
+      body: >
+        Update minio/minio from RELEASE.2025-04-08T15-41-24Z to
+        RELEASE.2025-06-13T11-33-47Z
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.20.159
+  title: ""
+  date: 2025-06-27T16:23:20.851Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.1.22
       hash: ffe8b6bda03981e161d83e5bfd219386809b609a
       body: |
