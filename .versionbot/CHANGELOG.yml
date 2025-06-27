@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix markdownlink syntax error
+      hash: 41956ef8db8af9adb001e2cefd30b6624ed0038e
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.20.156
+  title: ""
+  date: 2025-06-27T13:28:26.149Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.8.38
       hash: 3b40df743a20f50da8c0c78fe8b35828a381617f
       body: |
