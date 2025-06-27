@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update pre-commit hook igorshubovych/markdownlint-cli to v0.45.0
+      hash: c6b87dcbcb579bb92d20f999484d3f63bfde15cb
+      body: |
+        Update igorshubovych/markdownlint-cli from 0.44.0 to 0.45.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.20.157
+  title: ""
+  date: 2025-06-27T14:16:32.693Z
+- commits:
     - subject: Fix markdownlink syntax error
       hash: 41956ef8db8af9adb001e2cefd30b6624ed0038e
       body: ""
