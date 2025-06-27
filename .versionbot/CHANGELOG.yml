@@ -1,4 +1,433 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.8.70
+      hash: c22e2c33ca095178de179f3ad8526d4683ee8937
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.8.38 to 6.8.70
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dotnet monorepo
+              hash: 4e63d955d73e7ec2dc08446b5534ab34d8e0fdb2
+              body: |
+                Update mcr.microsoft.com/dotnet/runtime-deps from 9.0.5 to 9.0.6
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.70
+          title: ""
+          date: 2025-06-12T17:34:40.229Z
+        - commits:
+            - subject: Update dependency npm to v11.4.2
+              hash: 0da0b35aaf1e6135df3ed40ab4569cb4c0f669e7
+              body: |
+                Update npm from 11.4.1 to 11.4.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.69
+          title: ""
+          date: 2025-06-12T16:30:44.743Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.27.34
+              hash: 183cb4f66a318528d76fdfabd33085512492372a
+              body: |
+                Update aws/aws-cli from 2.27.33 to 2.27.34
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.68
+          title: ""
+          date: 2025-06-11T20:21:01.253Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.27.33
+              hash: b67560361efd4353789e025e514addc6a5a8a3c6
+              body: |
+                Update aws/aws-cli from 2.27.32 to 2.27.33
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.67
+          title: ""
+          date: 2025-06-10T20:05:27.886Z
+        - commits:
+            - subject: Update dependency cli/cli to v2.74.1
+              hash: a538096501b5576f8898e63ba285f23feb28a41a
+              body: |
+                Update cli/cli from 2.74.0 to 2.74.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.66
+          title: ""
+          date: 2025-06-10T14:25:43.854Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v22.1.0
+              hash: aba19c8b54460f345a2aa00523d028f1206c9613
+              body: |
+                Update balena-io/balena-cli from 22.0.6 to 22.1.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.65
+          title: ""
+          date: 2025-06-09T20:29:28.006Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.27.32
+              hash: 60233fe14e5433f2019198e9ae63807488632f1d
+              body: |
+                Update aws/aws-cli from 2.27.31 to 2.27.32
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.64
+          title: ""
+          date: 2025-06-09T19:29:58.913Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.27.31
+              hash: 69ab75738762d58d22c70a7f8012a593854c4bb2
+              body: |
+                Update aws/aws-cli from 2.27.30 to 2.27.31
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.63
+          title: ""
+          date: 2025-06-06T20:57:09.915Z
+        - commits:
+            - subject: Update golang Docker tag to v1.24.4
+              hash: d486df464209147d9cf2a86b9507fcbc891d5ddf
+              body: |
+                Update golang from 1.24.3 to 1.24.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.62
+          title: ""
+          date: 2025-06-05T21:23:53.423Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.27.30
+              hash: 0caa914d389b04381e34ce136867660f5ae8f526
+              body: |
+                Update aws/aws-cli from 2.27.29 to 2.27.30
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.61
+          title: ""
+          date: 2025-06-05T19:31:46.849Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.27.29
+              hash: ad34d482bdbd84f083eebcd7242e1d145c4c4b49
+              body: |
+                Update aws/aws-cli from 2.27.28 to 2.27.29
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.60
+          title: ""
+          date: 2025-06-04T19:29:03.614Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.27.28
+              hash: a95c0eba005b77f7ce80bc5d3b8963582b5f6d8c
+              body: |
+                Update aws/aws-cli from 2.27.27 to 2.27.28
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.59
+          title: ""
+          date: 2025-06-03T19:28:40.261Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v22.0.6
+              hash: 13ff91eec525d6078df1b26486d9f2d73f3ab3a9
+              body: |
+                Update balena-io/balena-cli from 22.0.5 to 22.0.6
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.58
+          title: ""
+          date: 2025-06-02T21:19:01.443Z
+        - commits:
+            - subject: Update dependency actions/runner to v2.325.0
+              hash: 59bef29f3ec15b848bc2a2be8a8f0b71ea253df2
+              body: |
+                Update actions/runner from 2.324.0 to 2.325.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.57
+          title: ""
+          date: 2025-06-02T20:24:49.706Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.27.27
+              hash: 545c2ca2c2098dc193bc2e765e7353424059cbdf
+              body: |
+                Update aws/aws-cli from 2.27.26 to 2.27.27
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.56
+          title: ""
+          date: 2025-06-02T19:26:26.774Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.27.26
+              hash: 356adb6b4fbfe5e6bb7aaf3163e5936945f75b2e
+              body: |
+                Update aws/aws-cli from 2.27.25 to 2.27.26
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.55
+          title: ""
+          date: 2025-05-30T19:28:49.071Z
+        - commits:
+            - subject: Update dependency cli/cli to v2.74.0
+              hash: b6b7a8ea39ff1dab21c9fa6cbe815345fe2e7625
+              body: |
+                Update cli/cli from 2.73.0 to 2.74.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.54
+          title: ""
+          date: 2025-05-29T21:22:20.616Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.27.25
+              hash: 748f1d5c0082f1feca597aa3e8b9d71d577cebc8
+              body: |
+                Update aws/aws-cli from 2.27.24 to 2.27.25
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.53
+          title: ""
+          date: 2025-05-29T20:19:56.248Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v22.0.5
+              hash: 23e8e9277f42e3e50e81ce6f49fe7415216d2bbe
+              body: |
+                Update balena-io/balena-cli from 22.0.4 to 22.0.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.52
+          title: ""
+          date: 2025-05-29T16:26:14.641Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v22.0.4
+              hash: 21a15c7f975c5a2c4bf09e97adec9bae94fc2cb0
+              body: |
+                Update balena-io/balena-cli from 22.0.2 to 22.0.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.51
+          title: ""
+          date: 2025-05-29T14:22:20.594Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v22.0.2
+              hash: 825337f771ca3ff031e626afdcda13bdbb559f5e
+              body: |
+                Update balena-io/balena-cli from 22.0.1 to 22.0.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.50
+          title: ""
+          date: 2025-05-28T21:19:23.913Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.27.24
+              hash: a027e5314cb218809c18af20b81600f9cd3b70f5
+              body: |
+                Update aws/aws-cli from 2.27.23 to 2.27.24
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.49
+          title: ""
+          date: 2025-05-28T20:18:09.895Z
+        - commits:
+            - subject: Update dependency docker/buildx to v0.24.0
+              hash: 311524d19440c0bc0d1949bd1ce247e9ad20e6b2
+              body: |
+                Update docker/buildx from 0.23.0 to 0.24.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.48
+          title: ""
+          date: 2025-05-28T19:21:49.347Z
+        - commits:
+            - subject: Update dependency docker/compose to v2.36.2
+              hash: 8df8532139fc0eb5e3c79af4f8ec3590880fa1a5
+              body: |
+                Update docker/compose from 2.35.1 to 2.36.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.47
+          title: ""
+          date: 2025-05-28T18:19:45.658Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v22.0.1
+              hash: 65178272fa5c0c03ce57e399a060ec1e6605540e
+              body: |
+                Update balena-io/balena-cli from 22.0.0 to 22.0.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.46
+          title: ""
+          date: 2025-05-28T17:24:41.035Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.27.23
+              hash: 9ce5bad07b7c3f120e390c40e2e37e5d97414d7b
+              body: |
+                Update aws/aws-cli from 2.27.22 to 2.27.23
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.45
+          title: ""
+          date: 2025-05-27T22:20:32.993Z
+        - commits:
+            - subject: Update dependency cli/cli to v2.73.0
+              hash: 9b6125b4be473c3fe56f960afe4422752dd66793
+              body: |
+                Update cli/cli from 2.72.0 to 2.73.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.44
+          title: ""
+          date: 2025-05-27T01:33:07.876Z
+        - commits:
+            - subject: Update Node.js to v22.16.0
+              hash: 0a29dbb52ad535002957933ba39aa6f757588b7d
+              body: |
+                Update node from 22.15.1 to 22.16.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.43
+          title: ""
+          date: 2025-05-27T00:11:02.995Z
+        - commits:
+            - subject: Update dependency npm to v11.4.1
+              hash: a0ad58582d4ab43632a6acbd44a8125c5a08c4ec
+              body: |
+                Update npm from 11.4.0 to 11.4.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.42
+          title: ""
+          date: 2025-05-26T23:11:03.277Z
+        - commits:
+            - subject: Update pre-commit hook igorshubovych/markdownlint-cli to v0.45.0
+              hash: 633f1e6b93875c432b92ddb87c836910faf7c21d
+              body: |
+                Update igorshubovych/markdownlint-cli from 0.44.0 to 0.45.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.41
+          title: ""
+          date: 2025-05-26T22:12:32.323Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.27.22
+              hash: 76c66f86b74ae1611555a50e67715b1d9c9b0a25
+              body: |
+                Update aws/aws-cli from 2.27.17 to 2.27.22
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.40
+          title: ""
+          date: 2025-05-26T21:17:44.886Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v22
+              hash: ba9f404809b835146eebb4dbbaaab9c79eaf2efa
+              body: |
+                Update balena-io/balena-cli from 21.1.12 to 22.0.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.8.39
+          title: ""
+          date: 2025-05-26T20:20:33.519Z
+  version: 0.20.161
+  title: ""
+  date: 2025-06-27T18:16:21.630Z
+- commits:
     - subject: Update pre-commit hook crate-ci/typos to v1.33.1
       hash: 33db3e76ebf2566891d56c50096d5e61826282c6
       body: |
