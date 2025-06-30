@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.1.23
+      hash: de66da1be85ac05e239160ab845644cbd5d4bc7b
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.1.22 to 3.1.23
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update pre-commit hook crate-ci/typos to v1.34.0
+              hash: e9a758bb553f1c760250f6cef8b16e293a970847
+              body: |
+                Update crate-ci/typos from 1.33.1 to 1.34.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.1.23
+          title: ""
+          date: 2025-06-30T15:44:36.912Z
+  version: 0.20.164
+  title: ""
+  date: 2025-06-30T16:14:09.748Z
+- commits:
     - subject: Update pre-commit hook crate-ci/typos to v1.34.0
       hash: dd62172de1d24c484203a0c0b5d1180827ca7a57
       body: |
