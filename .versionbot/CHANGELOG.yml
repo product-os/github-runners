@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.9.33
+      hash: 3dc6d51e5e2e57791b7f5947f04524718e76304e
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.9.32 to 6.9.33
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Always remove application lockfile after releasing lock
+              hash: 0a4eba4f9913f156307205e16718f3c2d4c44b8e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.9.33
+          title: ""
+          date: 2025-07-17T16:54:22.937Z
+  version: 0.20.186
+  title: ""
+  date: 2025-07-17T17:15:13.321Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.9.32
       hash: c018ea4cb30514d5471118f051cf83cfdcc6a0b5
       body: |
