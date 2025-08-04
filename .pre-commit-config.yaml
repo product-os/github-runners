@@ -22,7 +22,7 @@ repos:
     -   id: markdownlint-docker
 
 -   repo: https://github.com/crate-ci/typos
-    rev: v1.34.0
+    rev: v1.35.0
     hooks:
     -   id: typos-docker
         args: ["--force-exclude"]
