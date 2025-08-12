@@ -1,4 +1,54 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.1.47
+      hash: 743e8359a2c2ef60eb0727d8144ae752d38a4f3e
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.1.45 to 3.1.47
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.9.69
+              hash: 17254c76d7e446d1451f3dc6575533cbaca52e8a
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.9.68 to
+                6.9.69
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: "patch: Check GH token limits and warn if depleted"
+                      hash: 3d27ef08e89ab6e6fcdd623ddfe0bc58d493dec1
+                      body: "> QoL improvement debugging jobs not starting"
+                      footer: {}
+                      author: Anton Belodedenko
+                      nested: []
+                  version: self-hosted-runners-6.9.69
+                  title: ""
+                  date: 2025-08-12T13:54:31.732Z
+          version: github-runner-vm-3.1.47
+          title: ""
+          date: 2025-08-12T15:36:26.869Z
+        - commits:
+            - subject: Update pre-commit hook pre-commit/pre-commit-hooks to v6
+              hash: e714993678067427beb6fc4070fd04b72f7fb61c
+              body: |
+                Update pre-commit/pre-commit-hooks from 5.0.0 to 6.0.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.1.46
+          title: ""
+          date: 2025-08-12T15:04:42.494Z
+  version: 0.20.243
+  title: ""
+  date: 2025-08-12T16:16:52.191Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.9.69
       hash: 62e59a37c84aa5918b302698b89fd5a2abaa0b59
       body: |
