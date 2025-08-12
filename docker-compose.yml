@@ -112,6 +112,37 @@ services:
       # https://github.com/open-telemetry/opentelemetry-go-contrib/issues/5194
       OTEL_TRACES_EXPORTER: none
 
+  # clean-up offline Enterprise runners every ~1h
+  delete-offline-runners:
+    build: runners-cleanup
+    restart: no
+    entrypoint: ["/usr/local/bin/bash", "-c"]
+    command:
+      - |
+        set -x
+
+        if [[ -n "${GH_TOKEN}" ]] && [[ -n "${ACTIONS_RUNNER_REGISTRATION_SLUG}" ]]; then
+            gh auth refresh -h github.com -s repo && gh auth status
+            while true; do
+                gh api --paginate \
+                    -H "Accept: application/vnd.github.v3+json" \
+                    "/${ACTIONS_RUNNER_REGISTRATION_SLUG}/actions/runners" |
+                    jq -r '.runners[] | select(.status=="offline").id' |
+                    xargs -I{} gh api --method DELETE \
+                        -H "Accept: application/vnd.github+json" \
+                        -H "X-GitHub-Api-Version: 2022-11-28" \
+                        /"${ACTIONS_RUNNER_REGISTRATION_SLUG}"/actions/runners/{}
+
+                sleep $(((RANDOM % CHECK_FREQUENCY) + CHECK_JITTER))s
+            done
+        else
+            sleep infinity
+        fi
+
+    environment:
+      CHECK_FREQUENCY: "3600"
+      CHECK_JITTER: "300"
+
   # tag devices
   tag-sidecar:
     image: bash:alpine3.14
