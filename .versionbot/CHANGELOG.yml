@@ -1,4 +1,27 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.9.69
+      hash: 62e59a37c84aa5918b302698b89fd5a2abaa0b59
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.9.68 to 6.9.69
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "patch: Check GH token limits and warn if depleted"
+              hash: 3d27ef08e89ab6e6fcdd623ddfe0bc58d493dec1
+              body: "> QoL improvement debugging jobs not starting"
+              footer: {}
+              author: Anton Belodedenko
+              nested: []
+          version: self-hosted-runners-6.9.69
+          title: ""
+          date: 2025-08-12T13:54:31.732Z
+  version: 0.20.242
+  title: ""
+  date: 2025-08-12T15:19:08.109Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.1.45
       hash: 77ea73a03b765dbaa200f29270193b8400cbd3ef
       body: |
