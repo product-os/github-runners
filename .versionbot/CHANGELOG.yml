@@ -1,4 +1,46 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.10.1
+      hash: b84178f1d8d9ca36579facda31c15afcb147d7e2
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.9.73 to 6.10.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update golang Docker tag to v1.25.0
+              hash: c8859a799476994d315b91900ddbc4c73896b09f
+              body: |
+                Update golang from 1.24.6 to 1.25.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.10.1
+          title: ""
+          date: 2025-08-14T18:24:11.819Z
+        - commits:
+            - subject: Update from NodeJS 22.x to 24.x
+              hash: 5008266f4583ba0bf43b28cf00a145341cd0ca11
+              body: |
+                NodeJS v24 is the current LTS and is going to
+                start becomming required by actions.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.10.0
+          title: ""
+          date: 2025-08-14T16:32:05.129Z
+  version: 0.20.249
+  title: ""
+  date: 2025-08-14T19:22:21.598Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.9.73
       hash: e628dae9da0a0edbc13a62be8f6b6b4fcf674ddc
       body: |
