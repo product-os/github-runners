@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.1.51
+      hash: 9903ce57353a7f032f14c7c9ad1ca4233444a6af
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.1.49 to 3.1.51
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update golang Docker tag to v1.25.0
+              hash: 18b38af5ae34809162bae7e8ffa402e0b8d89b70
+              body: |
+                Update golang from 1.24.6 to 1.25.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.1.51
+          title: ""
+          date: 2025-08-15T14:45:13.805Z
+        - commits:
+            - subject: Update pre-commit hook crate-ci/typos to v1.35.4
+              hash: f99c6931261d8874cff3214f87ed3d3944d26528
+              body: |
+                Update crate-ci/typos from 1.35.3 to 1.35.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.1.50
+          title: ""
+          date: 2025-08-15T14:06:54.377Z
+  version: 0.20.255
+  title: ""
+  date: 2025-08-15T22:15:43.991Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.10.5
       hash: ada8ccd80097c2a1fc50f7f3d7e569d1a634da2c
       body: |
