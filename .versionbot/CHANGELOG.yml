@@ -1,4 +1,27 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.1.49
+      hash: 980096aec2e92422a7fe0949a145ef35ee077313
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.1.48 to 3.1.49
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "patch: tentatively unregister runners when shutting down"
+              hash: 1b12bf9b281d9521c3dd1e5957e9ec15621d7a84
+              body: ""
+              footer: {}
+              author: Edwin Joassart
+              nested: []
+          version: github-runner-vm-3.1.49
+          title: ""
+          date: 2025-08-15T13:01:07.098Z
+  version: 0.20.253
+  title: ""
+  date: 2025-08-15T13:37:58.140Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.1.48
       hash: e0b8826ce195c7fff6697fbc684904082d589196
       body: |
