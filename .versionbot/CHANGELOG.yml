@@ -1,4 +1,38 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.1.53
+      hash: 66a58a3988a7f158e24227191beec3ce4c2dc7b5
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.1.52 to 3.1.53
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Move unit tests out of the production runtime image
+              hash: bc53038806409ad4b96b2e516ff0e9d52c00e7f6
+              body: >
+                This improves local test time by no longer needing to rebuild
+
+                the rootfs every time the tests are changed.
+
+
+                It also cleans up the final image by not shipping development
+                files.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-3.1.53
+          title: ""
+          date: 2025-08-18T13:12:27.887Z
+  version: 0.20.257
+  title: ""
+  date: 2025-08-18T13:30:43.793Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.1.52
       hash: 66c3b8b683b22d9456daaeb54bd2a7f64a771831
       body: |
