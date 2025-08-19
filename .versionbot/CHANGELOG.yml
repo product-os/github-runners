@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.1.54
+      hash: fbd72d8199d405b76048a551e4792ca621cab772
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.1.53 to 3.1.54
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add leviathan bats script for testing nested QEMU secure boot
+              hash: 69a401f69bf3452d53785ef0ef78592dddd2e49f
+              body: >
+                The leviathan QEMU secure boot suite has a lot of dependencies
+
+                on our runners and nested KVM, and host CPU features.
+
+
+                This suite will not run by default in CI, but allows a user to
+                run
+
+                it manually on dedicated hardware by providing a balena API
+                token
+
+                env var.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-3.1.54
+          title: ""
+          date: 2025-08-19T17:18:11.881Z
+  version: 0.20.260
+  title: ""
+  date: 2025-08-19T18:29:23.794Z
+- commits:
     - subject: Update pre-commit hook crate-ci/typos to v1.35.5
       hash: 43c303b183e8a1db06f2e8e2e2d8905a19bba828
       body: |
