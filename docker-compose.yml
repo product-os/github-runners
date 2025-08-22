@@ -209,6 +209,61 @@ services:
     labels:
       io.balena.features.dbus: '1'
 
+  zram:
+    image: alpine:3.22
+    restart: no
+    privileged: true
+    labels:
+      io.balena.features.procfs: '1'
+    entrypoint:
+      - /bin/sh
+      - -c
+    environment:
+      ENABLED: true
+      ZRAM_PCT: 50
+      ZRAM_ALGO: lz4
+    command:
+      - |
+        set -ex
+
+        case ${ENABLED} in
+          true|1|y|yes|on)
+            ;;
+          *)
+            exit 0
+            ;;
+        esac
+
+        apk add --no-cache util-linux-misc
+
+        echo "Disabling existing swap devices..."
+        swaps=$(awk 'NR>1 { print $1 }' /proc/swaps)
+
+        if [ -n "${swaps}" ]; then
+          for swap in ${swaps}; do
+            # Swap devices reported by /proc in the container are missing the /dev/ prefix
+            echo "Disabling swap device /dev${swap}..."
+            swapoff /dev${swap}
+          done
+        fi
+
+        echo "Removing existing zram devices..."
+        zrams=$(ls /dev/zram* 2>/dev/null || true)
+        if [ -n "${zrams}" ]; then
+          for d in ${zrams}; do
+            echo "Removing zram device ${d}..."
+            zramctl -r ${d}
+          done
+        fi
+
+        echo "Creating a new zram device with ${ZRAM_PCT}% of total memory..."
+        memtotal=$(grep MemTotal /proc/meminfo | awk '{ print $2 }')
+        zram_size=$((memtotal * ${ZRAM_PCT} / 100))
+        zram_dev=$(zramctl --find --size ${zram_size}K --algorithm ${ZRAM_ALGO})
+
+        echo "Creating a swap device on the zram block device and enabling it..."
+        mkswap ${zram_dev} && swapon ${zram_dev}
+
   # create DNS record
   upsert-dns:
     image: bash:alpine3.14
