@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update pre-commit hook crate-ci/typos to v1.35.6
+      hash: 5dfbfa07bffebbd928e6bf822528418d4519f205
+      body: |
+        Update crate-ci/typos from 1.35.5 to 1.35.6
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.20.269
+  title: ""
+  date: 2025-08-28T23:12:55.342Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.10.13
       hash: beb218cd0a8d3bbf684ee600c770edbc44fe9c9b
       body: |
