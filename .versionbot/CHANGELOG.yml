@@ -1,4 +1,109 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.1.58
+      hash: a5b5dfa981a1002a9c5f639652c05a285c3823f9
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.1.56 to 3.1.58
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.10.12
+              hash: d9e0f1881b856e3670be64324ffec7017d76b10d
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.10.7 to
+                6.10.12
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.28.20
+                      hash: 19d7de81fe65392dac29cfc401237aba0a35e4df
+                      body: |
+                        Update aws/aws-cli from 2.28.18 to 2.28.20
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.10.12
+                  title: ""
+                  date: 2025-08-28T20:21:08.584Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.28.18
+                      hash: 51a72ba8e0607c6a0f64988b3c183983cdfa50a5
+                      body: |
+                        Update aws/aws-cli from 2.28.16 to 2.28.18
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.10.11
+                  title: ""
+                  date: 2025-08-26T19:21:33.961Z
+                - commits:
+                    - subject: Update dependency cli/cli to v2.78.0
+                      hash: 679596afd93acaa07b81a36caedcad50597f0c19
+                      body: |
+                        Update cli/cli from 2.76.2 to 2.78.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.10.10
+                  title: ""
+                  date: 2025-08-22T21:22:17.090Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.28.16
+                      hash: 416493631f135e28ce170145dc1027f03fce14bd
+                      body: |
+                        Update aws/aws-cli from 2.28.14 to 2.28.16
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.10.9
+                  title: ""
+                  date: 2025-08-22T20:21:04.720Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.28.14
+                      hash: ad0be5b5a5b7624bf76e9892ddfb239ca82f7519
+                      body: |
+                        Update aws/aws-cli from 2.28.13 to 2.28.14
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.10.8
+                  title: ""
+                  date: 2025-08-20T20:18:28.926Z
+          version: github-runner-vm-3.1.58
+          title: ""
+          date: 2025-08-28T21:39:51.552Z
+        - commits:
+            - subject: Update pre-commit hook crate-ci/typos to v1.35.5
+              hash: cd601ed914ea6b2e3c3530b2e0d2e81dc48b1a98
+              body: |
+                Update crate-ci/typos from 1.35.4 to 1.35.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.1.57
+          title: ""
+          date: 2025-08-28T18:42:46.663Z
+  version: 0.20.270
+  title: ""
+  date: 2025-08-29T00:11:47.454Z
+- commits:
     - subject: Update pre-commit hook crate-ci/typos to v1.35.6
       hash: 5dfbfa07bffebbd928e6bf822528418d4519f205
       body: |
