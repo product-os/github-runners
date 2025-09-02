@@ -55,31 +55,31 @@ services:
 
   runner-jammy-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.1.63-jammy
+    image: ghcr.io/product-os/github-runner-vm:3.1.64-jammy
 
   runner-jammy-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.1.63-jammy
+    image: ghcr.io/product-os/github-runner-vm:3.1.64-jammy
 
   runner-jammy-3:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.1.63-jammy
+    image: ghcr.io/product-os/github-runner-vm:3.1.64-jammy
 
   runner-noble-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.1.63-noble
+    image: ghcr.io/product-os/github-runner-vm:3.1.64-noble
 
   runner-noble-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.1.63-noble
+    image: ghcr.io/product-os/github-runner-vm:3.1.64-noble
 
   runner-noble-3:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.1.63-noble
+    image: ghcr.io/product-os/github-runner-vm:3.1.64-noble
 
   runner-noble-4:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.1.63-noble
+    image: ghcr.io/product-os/github-runner-vm:3.1.64-noble
 
   # https://distribution.github.io/distribution/recipes/mirror/
   registry-cache:
