@@ -1,4 +1,56 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.10.24
+      hash: 105594e1808ea46dfd442f3c1cd5c51cd6d0939d
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.10.21 to 6.10.24
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency npm to v11.6.0
+              hash: 3fe80dd9ad69201233e4524aacdbefeb1f914b5b
+              body: |
+                Update npm from 11.5.2 to 11.6.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.10.24
+          title: ""
+          date: 2025-09-03T21:16:20.355Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v22.4.1
+              hash: ca879ef4f8392d35dc63a3a686ec2d42763d11dd
+              body: |
+                Update balena-io/balena-cli from 22.4.0 to 22.4.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.10.23
+          title: ""
+          date: 2025-09-03T20:17:51.027Z
+        - commits:
+            - subject: Update golang Docker tag to v1.25.1
+              hash: d48847f032f2a56ec5c40b6bc77a7309ab902d62
+              body: |
+                Update golang from 1.25.0 to 1.25.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.10.22
+          title: ""
+          date: 2025-09-03T19:24:39.013Z
+  version: 0.20.294
+  title: ""
+  date: 2025-09-03T22:10:17.196Z
+- commits:
     - subject: Update pre-commit hook crate-ci/typos to v1.36.1
       hash: e144697070b97093c0a5851bcf22d1ff632d4b7f
       body: |
