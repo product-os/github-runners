@@ -1,4 +1,57 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.1.77
+      hash: 68fde62a48f37e4bd34f8151aa63e1e8f52ada23
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.1.75 to 3.1.77
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.10.28
+              hash: c5d18864dd68367f19198e2477ad8d4f3a4fc748
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.10.27 to
+                6.10.28
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.28.24
+                      hash: d520e59dc9d8af6fb072359125b6d84231e78e26
+                      body: |
+                        Update aws/aws-cli from 2.28.23 to 2.28.24
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.10.28
+                  title: ""
+                  date: 2025-09-04T19:26:53.252Z
+          version: github-runner-vm-3.1.77
+          title: ""
+          date: 2025-09-04T20:42:14.053Z
+        - commits:
+            - subject: Update pre-commit hook crate-ci/typos to v1.36.2
+              hash: 07d5ef93fd1efa2cdd54b12dd6bbea908feb56c9
+              body: |
+                Update crate-ci/typos from 1.36.1 to 1.36.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.1.76
+          title: ""
+          date: 2025-09-04T15:43:31.319Z
+  version: 0.20.302
+  title: ""
+  date: 2025-09-04T21:20:56.550Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.10.28
       hash: 8a532408d7d87ff12e1a20c2642d74caa79b681e
       body: |
