@@ -156,6 +156,56 @@ services:
     labels:
       io.balena.features.balena-api: '1'
 
+  memory-tweaks:
+    image: bash:alpine3.22
+    entrypoint: ["/usr/local/bin/bash", "-c"]
+    privileged: true
+    environment:
+      DISABLED: 0
+      VERBOSE: 0
+    command:
+      - |
+          set -euo pipefail
+
+          case ${DISABLED,,} in
+            true|1|y|yes|on)
+              exit 0
+              ;;
+            *)
+              ;;
+          esac
+
+          case ${VERBOSE,,} in
+            true|1|y|yes|on)
+              set -x
+              ;;
+            *)
+              ;;
+          esac
+
+          echo "Setting swappiness to 5 (prioritize cache reclaim over swap)"
+          echo 5 > /proc/sys/vm/swappiness
+
+          echo "Setting vfs_cache_pressure to 250 (aggressive filesystem cache reclaim)"
+          echo 250 > /proc/sys/vm/vfs_cache_pressure
+
+          echo "Setting dirty_ratio to 5 (keep dirty pages low)"
+          echo 5 > /proc/sys/vm/dirty_ratio
+
+          echo "Setting dirty_background_ratio to 2 (start background writeout early)"
+          echo 2 > /proc/sys/vm/dirty_background_ratio
+
+          echo "Setting overcommit_memory to 0 (heuristic overcommit)"
+          echo 0 > /proc/sys/vm/overcommit_memory
+
+          echo "Setting min_free_kbytes to 1048576 (keep 1GB always free)"
+          echo 1048576 > /proc/sys/vm/min_free_kbytes
+
+          while true; do
+            free -h
+            sleep 1h
+          done
+
   # enable IPv6
   enable-ipv6:
     image: bash:alpine3.14
