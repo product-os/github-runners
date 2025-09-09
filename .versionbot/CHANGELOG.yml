@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.10.32
+      hash: 7961e688ce8b44980da6fcedcf4bee7f70f49949
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.10.30 to 6.10.32
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency mikefarah/yq to v4.47.2
+              hash: 0da058217260057f714e06762f989deed1b96e86
+              body: |
+                Update mikefarah/yq from 4.47.1 to 4.47.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.10.32
+          title: ""
+          date: 2025-09-09T17:23:53.106Z
+        - commits:
+            - subject: Update dotnet monorepo
+              hash: 2bf74c656f54481d66e6a9aaf22c58366163b0b6
+              body: |
+                Update mcr.microsoft.com/dotnet/runtime-deps from 9.0.8 to 9.0.9
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.10.31
+          title: ""
+          date: 2025-09-09T16:23:44.238Z
+  version: 0.20.306
+  title: ""
+  date: 2025-09-09T18:13:13.998Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.10.30
       hash: d55e9db3fa0c8ccca0b822c325e3107da22d560f
       body: |
