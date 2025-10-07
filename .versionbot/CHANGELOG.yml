@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update VM runner caps to start as root with s6
+      hash: 0f9717d852fc4c976a7f0865962da7eb7fa65440
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.21.0
+  title: ""
+  date: 2025-10-07T13:02:46.230Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.2.0
       hash: 037232eef7f8a58523e12424335a0017ad60cba1
       body: |
