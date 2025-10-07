@@ -1,4 +1,38 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.2.0
+      hash: 037232eef7f8a58523e12424335a0017ad60cba1
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.1.87 to 3.2.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Use s6-overlay for init and process supervision
+              hash: d43e03c8bb25fced586e910b1a3a80abc8819c49
+              body: |
+                s6-overlay provides proper PID 1 functionality and ensures
+                we will never have zombie processes in the container.
+
+                It also allows us to modularize the VM overlay to use
+                as a shared dependency between multiple components. That way
+                we can use the overlay directory to add custom scripts and files
+                to the rootfs before booting firecracker in a generic manner.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-3.2.0
+          title: ""
+          date: 2025-10-07T09:17:12.800Z
+  version: 0.20.348
+  title: ""
+  date: 2025-10-07T10:13:55.821Z
+- commits:
     - subject: Update balena/cert-manager Docker tag to v0.3.8
       hash: 7ac518fb83149d47177fac5474e66cd95b744b5c
       body: |
