@@ -21,16 +21,9 @@ x-runner-container:
 
 x-runner-vm:
   &runner-vm
-  cap_drop:
-    - ALL
   cap_add:
     - NET_RAW # Required for VM networking
     - NET_ADMIN # Required for VM networking
-    - CHOWN # Required to change ownership of files
-    - DAC_OVERRIDE # Required by confd
-    - CAP_SETUID # Required to drop permissions via s6-setuidgid
-    - CAP_SETGID # Required to drop permissions via s6-setuidgid
-    - CAP_KILL # Required to kill processes not owned by the user
   devices:
     - /dev/kvm # Required for Firecracker virtualization
     - /dev/net/tun # Required to create TAP/TUN device
