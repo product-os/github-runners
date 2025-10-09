@@ -99,7 +99,7 @@ services:
       REGISTRY_STORAGE_DELETE_ENABLED: "true"
       # REGISTRY_PROXY_USERNAME: changeme
       # REGISTRY_PROXY_PASSWORD: changeme
-      # REGISTRY_LOG_LEVEL: debug
+      REGISTRY_LOG_LEVEL: info
       # Disable the blob descriptor cache by setting REGISTRY_STORAGE_CACHE_BLOBDESCRIPTOR=blah where blah is not inmemory or redis
       # https://github.com/distribution/distribution/issues/2367#issuecomment-1874449361
       REGISTRY_STORAGE_CACHE_BLOBDESCRIPTOR: blah
