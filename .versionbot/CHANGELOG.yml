@@ -1,4 +1,21 @@
 - commits:
+    - subject: Do not drop all caps for vm runner
+      hash: 354fd4d0172d2fa02f79b031c42a831d2d78a547
+      body: |
+        Since we are running s6-overlay as root and dropping
+        to non-root when starting the firecracker process, we don't
+        need to drop the caps available to the entrypoint user.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.21.10
+  title: ""
+  date: 2025-10-10T00:04:57.084Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.2.4
       hash: 9417cafc963b8ca5ffcea8e1e3bb7b1020724fce
       body: |
