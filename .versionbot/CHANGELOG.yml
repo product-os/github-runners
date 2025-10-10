@@ -1,4 +1,55 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.2.5
+      hash: 5d05b2f7ff844b27b118b2c990feca699b023044
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.2.4 to 3.2.5
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Move update-locks to a longrun s6 service
+              hash: e6fcfa0666a29b6b944a21f318eaf993d48111cd
+              body: >
+                Converts the update-locks mechanism to a supervised longrun
+                service,
+
+                ensuring lock management runs continuously and is properly
+                monitored
+
+                by s6-overlay.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Move firecracker to a longrun s6 service
+              hash: 71ec6a2ec406869cd2cdb2052330c2d807d35cb0
+              body: >
+                Converts the firecracker process from a oneshot service to a
+                longrun
+
+                service, allowing s6-overlay to properly supervise the VM
+                lifecycle
+
+                and handle graceful shutdown.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-3.2.5
+          title: ""
+          date: 2025-10-10T00:31:37.942Z
+  version: 0.21.11
+  title: ""
+  date: 2025-10-10T01:33:42.310Z
+- commits:
     - subject: Do not drop all caps for vm runner
       hash: 354fd4d0172d2fa02f79b031c42a831d2d78a547
       body: |
