@@ -1,4 +1,44 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.2.8
+      hash: dbe7a5acc05bc4b05ca3a107dea86ed62efcd331
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.2.7 to 3.2.8
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.11.10
+              hash: a092477d2aff9f28b83fff62134d109a7f8d66b7
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.11.9 to
+                6.11.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update pre-commit hook rhysd/actionlint to v1.7.8
+                      hash: 62c70e3debbcf71dec2afe716474db658434a9f2
+                      body: |
+                        Update rhysd/actionlint from 1.7.7 to 1.7.8
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.11.10
+                  title: ""
+                  date: 2025-10-11T12:20:33.368Z
+          version: github-runner-vm-3.2.8
+          title: ""
+          date: 2025-10-11T13:48:54.464Z
+  version: 0.21.20
+  title: ""
+  date: 2025-10-11T15:12:21.313Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.11.10
       hash: b5cf4bb48bb0725a15813ec27fdbd141a8816acf
       body: |
