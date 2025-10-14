@@ -160,9 +160,16 @@ services:
     image: bash:alpine3.22
     entrypoint: ["/usr/local/bin/bash", "-c"]
     privileged: true
+    labels:
+      io.balena.features.procfs: 1
+      io.balena.features.sysfs: 1
     environment:
       DISABLED: 0
       VERBOSE: 0
+      VM_COMPACTION_PROACTIVENESS: 40
+      VM_MIN_FREE_KBYTES: 524288  # 512MB
+      MM_TRANSPARENT_HUGEPAGE_ENABLED: never
+      MM_TRANSPARENT_HUGEPAGE_DEFRAG: never
     command:
       - |
           set -euo pipefail
@@ -183,27 +190,61 @@ services:
               ;;
           esac
 
-          echo "Setting swappiness to 5 (prioritize cache reclaim over swap)"
-          echo 5 > /proc/sys/vm/swappiness
+          case ${MM_TRANSPARENT_HUGEPAGE_ENABLED,,} in
+            always|madvise|never)
+              ;;
+            *)
+              echo "Invalid value for MM_TRANSPARENT_HUGEPAGE_ENABLED: ${MM_TRANSPARENT_HUGEPAGE_ENABLED}"
+              exit 1
+              ;;
+          esac
 
-          echo "Setting vfs_cache_pressure to 250 (aggressive filesystem cache reclaim)"
-          echo 250 > /proc/sys/vm/vfs_cache_pressure
+          case ${MM_TRANSPARENT_HUGEPAGE_DEFRAG,,} in
+            always|madvise|never)
+              ;;
+            *)
+              echo "Invalid value for MM_TRANSPARENT_HUGEPAGE_DEFRAG: ${MM_TRANSPARENT_HUGEPAGE_DEFRAG}"
+              exit 1
+              ;;
+          esac
 
-          echo "Setting dirty_ratio to 5 (keep dirty pages low)"
-          echo 5 > /proc/sys/vm/dirty_ratio
+          # Match only numeric values between 0 and 100
+          case ${VM_COMPACTION_PROACTIVENESS} in
+            100|[1-9][0-9]|[0-9])
+              ;;
+            *)
+              echo "Invalid value for VM_COMPACTION_PROACTIVENESS: ${VM_COMPACTION_PROACTIVENESS} (must be 0-100)"
+              exit 1
+              ;;
+          esac
 
-          echo "Setting dirty_background_ratio to 2 (start background writeout early)"
-          echo 2 > /proc/sys/vm/dirty_background_ratio
+          case ${VM_MIN_FREE_KBYTES} in
+            ''|*[![:digit:]]*)
+              echo "Invalid value for VM_MIN_FREE_KBYTES: ${VM_MIN_FREE_KBYTES} (must be numeric)"
+              exit 1
+              ;;
+            *)
+              ;;
+          esac
 
-          echo "Setting overcommit_memory to 0 (heuristic overcommit)"
-          echo 0 > /proc/sys/vm/overcommit_memory
+          # Enable aggressive background compaction
+          sysctl -w vm.compaction_proactiveness=${VM_COMPACTION_PROACTIVENESS}
 
-          echo "Setting min_free_kbytes to 1048576 (keep 1GB always free)"
-          echo 1048576 > /proc/sys/vm/min_free_kbytes
+          # Keep more memory free for allocations
+          sysctl -w vm.min_free_kbytes=${VM_MIN_FREE_KBYTES}
+
+          # Disable THP to reduce fragmentation
+          echo "${MM_TRANSPARENT_HUGEPAGE_ENABLED,,}" > /sys/kernel/mm/transparent_hugepage/enabled
+          echo "${MM_TRANSPARENT_HUGEPAGE_DEFRAG,,}" > /sys/kernel/mm/transparent_hugepage/defrag
 
           while true; do
-            free -h
-            sleep 1h
+            # Watch fragmentation improve over time
+            cat /proc/buddyinfo
+
+            # Monitor compaction activity
+            cat /proc/vmstat | grep compact_
+
+            sleep 15m
           done
 
   # enable IPv6
