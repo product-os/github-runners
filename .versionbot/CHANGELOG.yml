@@ -1,4 +1,137 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.2.10
+      hash: 3ad0caf2cdfc197a6416be989e01dbfa81803568
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.2.8 to 3.2.10
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.11.17
+              hash: 0f1cc1d4fc3d01193075fc76eb000901c69c8958
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.11.16 to
+                6.11.17
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency actions/runner to v2.329.0
+                      hash: b09a55ac9aafcdd57f5598adbcd64c43608e9529
+                      body: |
+                        Update actions/runner from 2.328.0 to 2.329.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.11.17
+                  title: ""
+                  date: 2025-10-14T20:26:52.610Z
+          version: github-runner-vm-3.2.10
+          title: ""
+          date: 2025-10-14T21:44:30.743Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.11.16
+              hash: a7271a37d82f2758594c7e080489927108979898
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.11.10 to
+                6.11.16
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dotnet monorepo
+                      hash: 22fb1bd5cc0e1db822e340ed12f01ef82ccd1eac
+                      body: >
+                        Update mcr.microsoft.com/dotnet/runtime-deps from 9.0.9
+                        to 9.0.10
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.11.16
+                  title: ""
+                  date: 2025-10-14T19:26:36.487Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v22.4.13
+                      hash: 222ebd40dbee9fff5e17dabef2dda0d8168a5970
+                      body: |
+                        Update balena-io/balena-cli from 22.4.12 to 22.4.13
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.11.15
+                  title: ""
+                  date: 2025-10-14T13:40:40.316Z
+                - commits:
+                    - subject: Update golang Docker tag to v1.25.3
+                      hash: 177b211efd588343a3daa2bc35141d1b5ad16532
+                      body: |
+                        Update golang from 1.25.2 to 1.25.3
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.11.14
+                  title: ""
+                  date: 2025-10-14T00:22:59.666Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v22.4.12
+                      hash: 928ac5512e484d765b5551f5ccdc18825ef09ed5
+                      body: |
+                        Update balena-io/balena-cli from 22.4.11 to 22.4.12
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.11.13
+                  title: ""
+                  date: 2025-10-13T21:19:25.659Z
+                - commits:
+                    - subject: Update dependency mikefarah/yq to v4.48.1
+                      hash: b083cf07f0d503bc7f778c4cfbe7ca9fcf28e9e5
+                      body: |
+                        Update mikefarah/yq from 4.47.2 to 4.48.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.11.12
+                  title: ""
+                  date: 2025-10-13T20:23:33.367Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.31.14
+                      hash: 62265c604254137305276c732c3dc7fbf8382c8a
+                      body: |
+                        Update aws/aws-cli from 2.31.13 to 2.31.14
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.11.11
+                  title: ""
+                  date: 2025-10-13T19:27:20.339Z
+          version: github-runner-vm-3.2.9
+          title: ""
+          date: 2025-10-14T20:40:41.294Z
+  version: 0.21.28
+  title: ""
+  date: 2025-10-15T23:19:29.027Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.11.20
       hash: 16c195b451c1af34ff917341e50558e3710bc51f
       body: |
