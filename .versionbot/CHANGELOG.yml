@@ -1,4 +1,69 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.11.19
+      hash: 70cb67046678e0d9e97e4c9f2ad47985f402318a
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.11.15 to 6.11.19
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.31.16
+              hash: a1b604c52675506b4c018035e68d8d44e12244c7
+              body: |
+                Update aws/aws-cli from 2.31.15 to 2.31.16
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.11.19
+          title: ""
+          date: 2025-10-15T20:24:49.651Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.31.15
+              hash: ac5f7e58bb2899d93eb5c8cebb325508b03ce075
+              body: |
+                Update aws/aws-cli from 2.31.14 to 2.31.15
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.11.18
+          title: ""
+          date: 2025-10-14T21:24:44.273Z
+        - commits:
+            - subject: Update dependency actions/runner to v2.329.0
+              hash: b09a55ac9aafcdd57f5598adbcd64c43608e9529
+              body: |
+                Update actions/runner from 2.328.0 to 2.329.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.11.17
+          title: ""
+          date: 2025-10-14T20:26:52.610Z
+        - commits:
+            - subject: Update dotnet monorepo
+              hash: 22fb1bd5cc0e1db822e340ed12f01ef82ccd1eac
+              body: >
+                Update mcr.microsoft.com/dotnet/runtime-deps from 9.0.9 to 9.0.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.11.16
+          title: ""
+          date: 2025-10-14T19:26:36.487Z
+  version: 0.21.26
+  title: ""
+  date: 2025-10-15T21:15:24.163Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.11.15
       hash: 7ee41c6aa2d5ebed3d87949cbace46bdb65a7b25
       body: |
