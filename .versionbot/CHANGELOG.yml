@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update minio/minio Docker tag to RELEASE.2025-09-07T16-13-09Z
+      hash: 0329ec51eade1f59b4f0057e4d8b05d0746d6484
+      body: >
+        Update minio/minio from RELEASE.2025-07-23T15-54-02Z to
+        RELEASE.2025-09-07T16-13-09Z
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.22.1
+  title: ""
+  date: 2025-10-16T18:14:25.898Z
+- commits:
     - subject: Remove Hetzner-specific steps from upsert-dns
       hash: a418ee060d84e962a1c75eadfc348fc042a9e38e
       body: |
