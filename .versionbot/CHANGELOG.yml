@@ -1,4 +1,68 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.3.0
+      hash: 217afc46d2de1a7c8e0b3e013b5c4eee1ed4fe79
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.2.10 to 3.3.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Move pre-registration to a oneshot service
+              hash: 713c6620cff1ef7c3bfd178d58251262b15e3d0c
+              body: |
+                As this is unique to github runners, it is a good
+                example of a service that can be added as an overlay
+                between unpack-rootfs and mkfs to customize the image.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Move unpack rootfs and mkfs to supervised services
+              hash: b2e626c1a0340378dbfd1997612c40aa314a3a8f
+              body: >
+                This allows intermediary services to inject files into the
+                rootfs
+
+                between the unpack and the mkfs steps.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Move TAP device creation to oneshot service
+              hash: c5c743b8a9dd2cecdd5047462d7e74cd684ebf90
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Move dnsmasq to a supervised service
+              hash: 95b41e2aeb11f6fa629317f96ba7df42edf1064e
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-3.3.0
+          title: ""
+          date: 2025-10-16T00:33:25.196Z
+  version: 0.21.29
+  title: ""
+  date: 2025-10-16T01:33:51.340Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.2.10
       hash: 3ad0caf2cdfc197a6416be989e01dbfa81803568
       body: |
