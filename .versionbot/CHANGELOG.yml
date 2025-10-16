@@ -1,4 +1,21 @@
 - commits:
+    - subject: Remove Hetzner-specific steps from upsert-dns
+      hash: a418ee060d84e962a1c75eadfc348fc042a9e38e
+      body: |
+        Keep this service generic for multiple hosting providers
+        and rely on the ipinfo.io API to return public IPs for Cloudflare
+        DNS registration.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.22.0
+  title: ""
+  date: 2025-10-16T17:57:35.419Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.3.3
       hash: debbceba5fe8b60cd2a4f86432049ef941e7eea1
       body: |
