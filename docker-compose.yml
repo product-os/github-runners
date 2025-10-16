@@ -207,78 +207,96 @@ services:
 
   # create DNS record
   upsert-dns:
-    image: bash:alpine3.14
+    image: bash:alpine3.22
     restart: no
+    network_mode: host
+    environment:
+      CLOUDFLARE_DNS_ZONE: product-os.io
+      SUBDOMAIN: runners
+      ENABLED: true
+      VERBOSE: false
     entrypoint: ["/usr/local/bin/bash", "-c"]
     command:
       - |
           set -eu
 
-          [[ "${VERBOSE:-false}" =~ on|On|Yes|yes|true|True ]] && set -x
+          case ${ENABLED,,} in
+            true|1|y|yes|on)
+              ;;
+            *)
+              exit 0
+              ;;
+          esac
 
-          [[ $ENABLED == 'true' ]] || exit
+          case ${VERBOSE,,} in
+            true|1|y|yes|on)
+              set -x
+              ;;
+            *)
+              ;;
+          esac
 
           curl_with_opts() {
-              curl --fail --silent --retry 3 --connect-timeout 3 --compressed "$@"
+            curl --fail --silent --retry 3 --connect-timeout 3 --compressed "$@"
           }
 
-          function get_robot() {
-              local robot_json
-              robot_json="$(curl_with_opts -u "${ROBOT_USER}:${ROBOT_PASS}" "${ROBOT_API}/$1")"
-              echo "${robot_json}"
+          put_dns_record() {
+            local _zone_id="${1}"
+            local _type="${2:-A}"
+            local _name="${3}"
+            local _content="${4}"
+            local _comment="${5:-Added by upsert-dns for remote ${SUBDOMAIN}}"
+
+            curl_with_opts "https://api.cloudflare.com/client/v4/zones/${_zone_id}/dns_records" \
+                -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
+                -H "Content-Type:application/json" \
+                --data "{\"type\":\"${_type}\",\"name\":\"${_name}\",\"content\":\"${_content}\",\"ttl\":120,\"priority\":10,\"proxied\":false,\"comment\":\"${_comment}\"}"
           }
 
-          function post_robot() {
-              curl_with_opts -u "${ROBOT_USER}:${ROBOT_PASS}" "${ROBOT_API}/$1" -d "$2"
-          }
+          command -v curl || apk add curl --no-cache
+          command -v jq || apk add jq --no-cache
+          command -v dig || apk add bind-tools --no-cache
 
-          which curl || apk add curl --no-cache
-          which jq || apk add jq --no-cache
-          which dig || apk add bind-tools --no-cache
+          ipv4="$(curl_with_opts https://v4.api.ipinfo.io/ip || true)"
+          ipv6="$(curl_with_opts https://v6.api.ipinfo.io/ip || true)"
 
-          myip="$(curl_with_opts https://ipinfo.io/ip)"
-          flat_json="$(get_robot server | jq -rc --arg ip "${myip}" '.[].server | select(.server_ip==$ip)')"
-          ipv4="$(echo "${flat_json}" | jq -r '.server_ip')"
-          ipv6="$(echo "${flat_json}" | jq -r '.server_ipv6_net')"
+          if [[ -z "${ipv4}" && -z "${ipv6}" ]]; then
+            echo "Error: Failed to retrieve both IPv4 and IPv6 addresses. Please check network connectivity." >&2
+            exit 1
+          fi
 
           if curl_with_opts "https://api.cloudflare.com/client/v4/user/tokens/verify" \
             -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
             -H "Content-Type:application/json"; then
 
-              zone_id="$(curl_with_opts "https://api.cloudflare.com/client/v4/zones?name=${CLOUDFLARE_DNS_ZONE}&status=active&account.id" \
+              zone_id="$(curl_with_opts "https://api.cloudflare.com/client/v4/zones?name=${CLOUDFLARE_DNS_ZONE}&status=active" \
                 -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
                 -H "Content-Type:application/json" | jq -r '.result[].id')"
-
-              if [[ -n $zone_id ]]; then
-                  dns_name="${BALENA_DEVICE_UUID::7}.runners"
-
-                  if [[ -z "$(dig +short A "${dns_name}.${CLOUDFLARE_DNS_ZONE}")" ]]; then
-                      curl_with_opts "https://api.cloudflare.com/client/v4/zones/${zone_id}/dns_records" \
-                        -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
-                        -H "Content-Type:application/json" \
-                        --data "{\"type\":\"A\",\"name\":\"${dns_name}\",\"content\":\"${ipv4}\",\"ttl\":120,\"priority\":10,\"proxied\":false}"
-                  fi
-
-                  if [[ -z "$(dig +short AAAA "${dns_name}.${CLOUDFLARE_DNS_ZONE}")" ]]; then
-                      curl_with_opts "https://api.cloudflare.com/client/v4/zones/${zone_id}/dns_records" \
-                        -H "Authorization: Bearer ${CLOUDFLARE_API_TOKEN}" \
-                        -H "Content-Type:application/json" \
-                        --data "{\"type\":\"AAAA\",\"name\":\"${dns_name}\",\"content\":\"${ipv6}\",\"ttl\":120,\"priority\":10,\"proxied\":false}"
-                  fi
-
-                  server_number="$(get_robot "ip?server_ip=${myip}" | jq -r .[].ip.server_number)"
-                  server_name="${dns_name}.${CLOUDFLARE_DNS_ZONE}"
-
-                  if [[ -n $server_number ]]; then
-                      post_robot "server/${server_number}" "server_name=${server_name}"
-                  fi
-              fi
           fi
 
-    environment:
-      ENABLED: true
-      CLOUDFLARE_DNS_ZONE: product-os.io
-      ROBOT_API: https://robot-ws.your-server.de
+          if [[ -z "${zone_id}" ]]; then
+            echo "Error: Failed to resolve zone ID for ${CLOUDFLARE_DNS_ZONE}" >&2
+            exit 1
+          fi
+
+          if [[ $(echo "${zone_id}" | wc -l) -gt 1 ]]; then
+            echo "Error: Multiple zone IDs found for ${CLOUDFLARE_DNS_ZONE}. Please check your Cloudflare account." >&2
+            exit 1
+          fi
+
+          dns_name="${BALENA_DEVICE_UUID::7}.${SUBDOMAIN}"
+
+          if [[ -n "${ipv4}" ]] && [[ -z "$(dig +short A "${dns_name}.${CLOUDFLARE_DNS_ZONE}")" ]]; then
+            if ! put_dns_record "${zone_id}" "A" "${dns_name}" "${ipv4}"; then
+              echo "Error: Failed to create A record for ${dns_name}.${CLOUDFLARE_DNS_ZONE} with IP ${ipv4}" >&2
+            fi
+          fi
+
+          if [[ -n "${ipv6}" ]] && [[ -z "$(dig +short AAAA "${dns_name}.${CLOUDFLARE_DNS_ZONE}")" ]]; then
+            if ! put_dns_record "${zone_id}" "AAAA" "${dns_name}" "${ipv6}"; then
+              echo "Error: Failed to create AAAA record for ${dns_name}.${CLOUDFLARE_DNS_ZONE} with IP ${ipv6}" >&2
+            fi
+          fi
 
   # https://github.com/balenablocks/cert-manager
   # https://certbot.eff.org/docs/using.html
