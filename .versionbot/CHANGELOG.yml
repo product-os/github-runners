@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.0
+      hash: c84984d0db48d70de1c2f69b82ea23cd4c7d4769
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.3.3 to 3.4.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Move ext4 creation to build-time and resize at runtime
+              hash: f205eeafe99868c8a48111a1c67fd29d2b22113d
+              body: |
+                This ensures permissions of the guest rootfs will not
+                be mangled by tar, or by extracting to a temporary directory.
+
+                It also simplifies s6 startup by combining the unpack and mkfs
+                services into a single untar and resize service.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Move fc-init from the guest overlay to initrd
+              hash: 214ce82412da97127297d63cd04c51dfd4fd15f5
+              body: |
+                The guest overlay is going to be removed from this project soon.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-3.4.0
+          title: ""
+          date: 2025-10-24T00:06:03.746Z
+  version: 0.22.8
+  title: ""
+  date: 2025-10-24T01:36:52.770Z
+- commits:
     - subject: Update balena/cert-manager Docker tag to v0.4.2
       hash: 1ad08e75a9a3df1ab0ac0292030b0bdd99528871
       body: |
