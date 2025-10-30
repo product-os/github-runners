@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.11.26
+      hash: 3c1529d7639653b5535380bb4a8e4d63e2f2625c
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.11.25 to 6.11.26
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Switch back to self-hosted runners for CI
+              hash: fa38378ba23a2106e7e4c8eb09d887e12a0f7f93
+              body: |
+                This repo is private again, and will be moving to VM-based
+                runners so we cannot rely on hosted runners anymore.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.11.26
+          title: ""
+          date: 2025-10-30T02:34:25.758Z
+  version: 0.22.10
+  title: ""
+  date: 2025-10-30T02:52:20.963Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.1
       hash: c511def5edbbe25b4e29551ff98b831b159be1be
       body: |
