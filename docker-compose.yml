@@ -7,6 +7,9 @@ x-runner-container:
   labels:
     # Allow CI pipelines to load kernel modules on the host
     io.balena.features.kernel-modules: '1'
+  sysctls:
+    - net.ipv6.conf.all.disable_ipv6=1
+    - net.ipv6.conf.default.disable_ipv6=1
   tmpfs:
     - /tmp
     - /run
@@ -29,6 +32,8 @@ x-runner-vm:
     - /dev/net/tun # Required to create TAP/TUN device
   sysctls:
     - net.ipv4.ip_forward=1 # Required for VM networking
+    - net.ipv6.conf.all.disable_ipv6=1
+    - net.ipv6.conf.default.disable_ipv6=1
   tmpfs:
     - /tmp
   networks:
