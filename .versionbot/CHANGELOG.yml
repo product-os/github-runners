@@ -1,4 +1,56 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.11.47
+      hash: 5d9e24450c1a7b8472b481f3fb2732f4357769f6
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.11.44 to 6.11.47
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.31.34
+              hash: cc36894353b77fa623c7b3f2df61251588f1b29a
+              body: |
+                Update aws/aws-cli from 2.31.33 to 2.31.34
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.11.47
+          title: ""
+          date: 2025-11-12T17:07:32.011Z
+        - commits:
+            - subject: Update Node.js to v24.11.1
+              hash: dc5d7fb3bdccb656e0f98466794b6544df288632
+              body: |
+                Update node from 24.11.0 to 24.11.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.11.46
+          title: ""
+          date: 2025-11-12T15:25:40.641Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v22.5.0
+              hash: 030c5d2411c8f542fb90dc4a7e4b93da968955e6
+              body: |
+                Update balena-io/balena-cli from 22.4.16 to 22.5.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.11.45
+          title: ""
+          date: 2025-11-12T14:36:29.976Z
+  version: 0.22.31
+  title: ""
+  date: 2025-11-12T17:17:52.876Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.11.44
       hash: 84e094735c57870e0a15b4f1bda78a61d7a63ecd
       body: |
