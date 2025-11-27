@@ -1,4 +1,40 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.0
+      hash: 261de9b361d86ba4fab3e560ca2be78857fb1592
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.11.70 to 6.12.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add RUNNER_TOOL_CACHE to support runner tools caching
+              hash: ec2b62f0b4679ffdf1a786d73a21575dd3e65b37
+              body: >
+                The RUNNER_TOOL_CACHE (/opt/hostedtoolcache) is a mandatory and
+                required path to exist
+
+                in the Github runners for specific set-up actions (for example,
+                ruby/setup-ruby).
+
+
+                Otherwise the default tool cache is the same as the work
+                directory.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.12.0
+          title: ""
+          date: 2025-11-27T18:03:59.289Z
+  version: 0.22.59
+  title: ""
+  date: 2025-11-27T18:12:36.718Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.11.70
       hash: bebc107279d14d2463d427072209b80d667d24a7
       body: |
