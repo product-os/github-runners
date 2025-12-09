@@ -1,4 +1,20 @@
 - commits:
+    - subject: "docker-compose.yml: Remove jammy runners from fleet"
+      hash: 03fe34bc45ce53ccbf012459ddae276331a31c77
+      body: |
+        Standardize on Noble (24.04) runners going forward to ensure
+        consistent behaviour.
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.23.0
+  title: ""
+  date: 2025-12-09T17:17:10.596Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.16
       hash: bc5cfe7595356180d796d47eff81322366cb02e6
       body: |
