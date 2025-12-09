@@ -43,23 +43,11 @@ services:
 
   runner-container-1:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:6.12.16-jammy
+    image: ghcr.io/product-os/self-hosted-runners:6.12.16-noble
     volumes:
       # Use a volume for the runner root filesystem
       # See https://github.com/product-os/self-hosted-runners/pull/501
       - runner-rootfs-1:/rootfs
-
-  runner-jammy-1:
-    <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.13-jammy
-
-  runner-jammy-2:
-    <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.13-jammy
-
-  runner-jammy-3:
-    <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.13-jammy
 
   runner-noble-1:
     <<: *runner-vm
@@ -74,6 +62,18 @@ services:
     image: ghcr.io/product-os/github-runner-vm:3.4.13-noble
 
   runner-noble-4:
+    <<: *runner-vm
+    image: ghcr.io/product-os/github-runner-vm:3.4.13-noble
+
+  runner-noble-5:
+    <<: *runner-vm
+    image: ghcr.io/product-os/github-runner-vm:3.4.13-noble
+
+  runner-noble-6:
+    <<: *runner-vm
+    image: ghcr.io/product-os/github-runner-vm:3.4.13-noble
+
+  runner-noble-7:
     <<: *runner-vm
     image: ghcr.io/product-os/github-runner-vm:3.4.13-noble
 
