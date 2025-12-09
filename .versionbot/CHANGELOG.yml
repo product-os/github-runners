@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.17
+      hash: 4e1abffe627fa49fc6b4673ec2c52ad8c21c3247
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.16 to 6.12.17
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency docker/compose to v5
+              hash: 558021a01baf3f9805aea267bcd1f5fb4cce3570
+              body: |
+                Update docker/compose from 2.40.3 to 5.0.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.17
+          title: ""
+          date: 2025-12-09T16:18:59.131Z
+  version: 0.23.1
+  title: ""
+  date: 2025-12-09T19:22:35.242Z
+- commits:
     - subject: "docker-compose.yml: Remove jammy runners from fleet"
       hash: 03fe34bc45ce53ccbf012459ddae276331a31c77
       body: |
