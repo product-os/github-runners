@@ -1,4 +1,56 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.29
+      hash: 37b352b6fc4580aeb7dea5ac9dd1b404863f3623
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.26 to 6.12.29
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v23.2.10
+              hash: 4f194d27706d1d9cd4ab460ca8249aabe177335b
+              body: |
+                Update balena-io/balena-cli from 23.2.8 to 23.2.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.29
+          title: ""
+          date: 2025-12-14T10:37:52.614Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.32.16
+              hash: fb58bee79aa170d92fe2a96974d3bf0f91083308
+              body: |
+                Update aws/aws-cli from 2.32.15 to 2.32.16
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.28
+          title: ""
+          date: 2025-12-14T09:32:08.371Z
+        - commits:
+            - subject: Update dependency mikefarah/yq to v4.50.1
+              hash: 1792e894086dd3e0e904918328d242c7d0dbaa21
+              body: |
+                Update mikefarah/yq from 4.49.2 to 4.50.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.27
+          title: ""
+          date: 2025-12-14T08:25:25.919Z
+  version: 0.23.12
+  title: ""
+  date: 2025-12-14T11:14:46.174Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.26
       hash: fbf6d6b76118c1e3e9298f7905c6266e95318083
       body: |
