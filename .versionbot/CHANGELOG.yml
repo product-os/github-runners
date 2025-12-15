@@ -1,4 +1,111 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.19
+      hash: c713ae916464dddd2b0e784142b0fa6a021a7b95
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.16 to 3.4.19
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.32
+              hash: 2eed63e62464cae194030cb538763e26fccef6cb
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.30 to
+                6.12.32
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update pre-commit hook rhysd/actionlint to v1.7.9
+                      hash: 143cf09f57e477d38b097d74ff1e2f16dc0827a4
+                      body: |
+                        Update rhysd/actionlint from 1.7.8 to 1.7.9
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.32
+                  title: ""
+                  date: 2025-12-15T12:33:22.405Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v23.2.11
+                      hash: 3552d6a6696660eec78fd9aa662fc642e0a5e69f
+                      body: |
+                        Update balena-io/balena-cli from 23.2.10 to 23.2.11
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.31
+                  title: ""
+                  date: 2025-12-15T11:36:28.446Z
+          version: github-runner-vm-3.4.19
+          title: ""
+          date: 2025-12-15T14:01:25.967Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.30
+              hash: 4eb5610529e05f698ffc5cfb74a90cdef8252928
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.28 to
+                6.12.30
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update pre-commit hook igorshubovych/markdownlint-cli to v0.47.0
+                      hash: c6936c7e28ab5f78f37c52167dad412fc12db9de
+                      body: >
+                        Update igorshubovych/markdownlint-cli from 0.45.0 to
+                        0.47.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.30
+                  title: ""
+                  date: 2025-12-15T00:27:32.928Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v23.2.10
+                      hash: 4f194d27706d1d9cd4ab460ca8249aabe177335b
+                      body: |
+                        Update balena-io/balena-cli from 23.2.8 to 23.2.10
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.29
+                  title: ""
+                  date: 2025-12-14T10:37:52.614Z
+          version: github-runner-vm-3.4.18
+          title: ""
+          date: 2025-12-15T03:32:01.582Z
+        - commits:
+            - subject: Update pre-commit hook rhysd/actionlint to v1.7.9
+              hash: 10cc4ff9f2d657e1b03548cfd1a8e39b6f8c3346
+              body: |
+                Update rhysd/actionlint from 1.7.8 to 1.7.9
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.17
+          title: ""
+          date: 2025-12-15T02:31:38.225Z
+  version: 0.23.19
+  title: ""
+  date: 2025-12-15T23:23:46.972Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.33
       hash: 412e23a8d85a529752e71352861fd48a67967b4f
       body: |
