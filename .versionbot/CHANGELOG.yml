@@ -1,4 +1,293 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.16
+      hash: 3cb3089cf3a427de9ec97986bdd2890ecc49c95b
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.13 to 3.4.16
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update pre-commit hooks
+              hash: 511925ff749e20178bed18fdc62ab428f4bff732
+              body: |
+                Update crate-ci/typos from 1.39.2 to 1.40.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.16
+          title: ""
+          date: 2025-12-15T01:10:57.309Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.28
+              hash: 7ccc4a7e60f66ec881e4bef9442487b1bc9e07bc
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.27 to
+                6.12.28
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.32.16
+                      hash: fb58bee79aa170d92fe2a96974d3bf0f91083308
+                      body: |
+                        Update aws/aws-cli from 2.32.15 to 2.32.16
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.28
+                  title: ""
+                  date: 2025-12-14T09:32:08.371Z
+          version: github-runner-vm-3.4.15
+          title: ""
+          date: 2025-12-14T10:44:21.417Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.27
+              hash: 101a40882b9e9cd807bab9a3b4f0291acf830eb3
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.10 to
+                6.12.27
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency mikefarah/yq to v4.50.1
+                      hash: 1792e894086dd3e0e904918328d242c7d0dbaa21
+                      body: |
+                        Update mikefarah/yq from 4.49.2 to 4.50.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.27
+                  title: ""
+                  date: 2025-12-14T08:25:25.919Z
+                - commits:
+                    - subject: Update dependency npm to v11.7.0
+                      hash: 80c7c25fd92a81710f84a70dd91f8443914ccf3b
+                      body: |
+                        Update npm from 11.6.4 to 11.7.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.26
+                  title: ""
+                  date: 2025-12-12T20:31:11.026Z
+                - commits:
+                    - subject: Update dependency kubernetes/kubernetes to v1.34.3
+                      hash: 583d3a1aef8286d3512b9bf597d51686d6ee182c
+                      body: |
+                        Update kubernetes/kubernetes from 1.34.2 to 1.34.3
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.25
+                  title: ""
+                  date: 2025-12-11T22:31:13.324Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.32.15
+                      hash: 2b81c33fa7f06b41d917dfa1a4c48ea97b4989aa
+                      body: |
+                        Update aws/aws-cli from 2.32.14 to 2.32.15
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.24
+                  title: ""
+                  date: 2025-12-11T21:30:21.708Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.32.14
+                      hash: 06e9b71153056dc95f976128299ced71bb497c64
+                      body: |
+                        Update aws/aws-cli from 2.32.13 to 2.32.14
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.23
+                  title: ""
+                  date: 2025-12-10T21:33:14.572Z
+                - commits:
+                    - subject: Update Node.js to v24.12.0
+                      hash: c92279de668a80cd877faadf7c3e6fbf421806f0
+                      body: |
+                        Update node from 24.11.1 to 24.12.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.22
+                  title: ""
+                  date: 2025-12-10T18:35:13.680Z
+                - commits:
+                    - subject: Update dependency cli/cli to v2.83.2
+                      hash: 11b86be0021f3d9ecba8a87aacf1924f75ebff6a
+                      body: |
+                        Update cli/cli from 2.83.1 to 2.83.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.21
+                  title: ""
+                  date: 2025-12-10T17:34:16.383Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.32.13
+                      hash: a467c1668ca1f8a5f1c67b05f445ee50aeeab4c0
+                      body: |
+                        Update aws/aws-cli from 2.32.12 to 2.32.13
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.20
+                  title: ""
+                  date: 2025-12-10T00:25:40.540Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.32.12
+                      hash: f137e79094840176c794d65d19b452cd140cda13
+                      body: |
+                        Update aws/aws-cli from 2.32.11 to 2.32.12
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.19
+                  title: ""
+                  date: 2025-12-09T20:31:32.395Z
+                - commits:
+                    - subject: Update mcr.microsoft.com/dotnet/runtime-deps Docker tag to v10.0.1
+                      hash: b58bb2bc2a70465116945ef5f8901ae4f2b3581b
+                      body: >
+                        Update mcr.microsoft.com/dotnet/runtime-deps from 10.0.0
+                        to 10.0.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.18
+                  title: ""
+                  date: 2025-12-09T19:35:20.314Z
+                - commits:
+                    - subject: Update dependency docker/compose to v5
+                      hash: 558021a01baf3f9805aea267bcd1f5fb4cce3570
+                      body: |
+                        Update docker/compose from 2.40.3 to 5.0.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.17
+                  title: ""
+                  date: 2025-12-09T16:18:59.131Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v23.2.8
+                      hash: 81454336251fa3646cdb3e3eae9ddfce8d7981ac
+                      body: |
+                        Update balena-io/balena-cli from 23.2.7 to 23.2.8
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.16
+                  title: ""
+                  date: 2025-12-08T20:46:28.113Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v23.2.7
+                      hash: 903b72fbe3b20ac47b0e8f677d37095d7845fc2f
+                      body: |
+                        Update balena-io/balena-cli from 23.2.6 to 23.2.7
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.15
+                  title: ""
+                  date: 2025-12-08T17:37:59.781Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.32.11
+                      hash: 88e2e7f596aaf963720082529f3fca9262cc8f91
+                      body: |
+                        Update aws/aws-cli from 2.32.10 to 2.32.11
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.14
+                  title: ""
+                  date: 2025-12-05T21:28:29.785Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v23.2.6
+                      hash: 64183ad3f2f3892d4edcdcfa41b510d29a399ef2
+                      body: |
+                        Update balena-io/balena-cli from 23.2.4 to 23.2.6
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.13
+                  title: ""
+                  date: 2025-12-05T12:04:36.845Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.32.10
+                      hash: 34a5e6163d19427bfe0699836c78939ab88b6b54
+                      body: |
+                        Update aws/aws-cli from 2.32.9 to 2.32.10
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.12
+                  title: ""
+                  date: 2025-12-04T18:53:17.336Z
+                - commits:
+                    - subject: Update dependency balena-io/balena-cli to v23.2.4
+                      hash: a0a95b6403f12d35d08be61ae22147db81ca5f1e
+                      body: |
+                        Update balena-io/balena-cli from 23.2.3 to 23.2.4
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.11
+                  title: ""
+                  date: 2025-12-03T23:37:21.405Z
+          version: github-runner-vm-3.4.14
+          title: ""
+          date: 2025-12-14T09:56:49.300Z
+  version: 0.23.14
+  title: ""
+  date: 2025-12-15T01:38:13.185Z
+- commits:
     - subject: Update pre-commit hook rhysd/actionlint to v1.7.9
       hash: c734ad14ba9ca864ffbe33e30f78d4c20657108b
       body: |
