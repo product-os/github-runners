@@ -51,31 +51,31 @@ services:
 
   runner-noble-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.16-noble
+    image: ghcr.io/product-os/github-runner-vm:3.4.19-noble
 
   runner-noble-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.16-noble
+    image: ghcr.io/product-os/github-runner-vm:3.4.19-noble
 
   runner-noble-3:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.16-noble
+    image: ghcr.io/product-os/github-runner-vm:3.4.19-noble
 
   runner-noble-4:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.16-noble
+    image: ghcr.io/product-os/github-runner-vm:3.4.19-noble
 
   runner-noble-5:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.16-noble
+    image: ghcr.io/product-os/github-runner-vm:3.4.19-noble
 
   runner-noble-6:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.16-noble
+    image: ghcr.io/product-os/github-runner-vm:3.4.19-noble
 
   runner-noble-7:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.16-noble
+    image: ghcr.io/product-os/github-runner-vm:3.4.19-noble
 
   # https://distribution.github.io/distribution/recipes/mirror/
   registry-cache:
