@@ -1,4 +1,70 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.22
+      hash: e83cf9f0f592b223fc9fe95f13824d056e0373a1
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.19 to 3.4.22
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.33
+              hash: bd36f91a32f54c77456909839f47f15d557d9072
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.32 to
+                6.12.33
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.32.17
+                      hash: 44d05a4369fbe450c8e424428b7cef4f83a55bff
+                      body: |
+                        Update aws/aws-cli from 2.32.16 to 2.32.17
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.33
+                  title: ""
+                  date: 2025-12-15T21:34:05.411Z
+          version: github-runner-vm-3.4.22
+          title: ""
+          date: 2025-12-17T21:52:07.535Z
+        - commits:
+            - subject: Update alpine Docker tag to v3.23
+              hash: 9a319ec1aee60345fb6fe3495fb490e8d3c32486
+              body: |
+                Update alpine from 3.22 to 3.23
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.21
+          title: ""
+          date: 2025-12-17T21:05:01.213Z
+        - commits:
+            - subject: Update dependency firecracker-microvm/firecracker to v1.14.0
+              hash: 03251f74a95ba7eb6b82070b14e98efa3d7a4166
+              body: |
+                Update firecracker-microvm/firecracker from 1.13.1 to 1.14.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.20
+          title: ""
+          date: 2025-12-17T19:56:31.506Z
+  version: 0.23.21
+  title: ""
+  date: 2025-12-17T23:13:53.497Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.34
       hash: 5e87f9172a3a3e098248421ab6cc6c99c4ec68ca
       body: |
