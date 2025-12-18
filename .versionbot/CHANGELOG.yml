@@ -1,4 +1,57 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.23
+      hash: e5ae25edd654e559ba0dfb2723503a5dfd9ab403
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.22 to 3.4.23
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.35
+              hash: 8cc8f9c0914de44a02c358376a38d68fb219f4be
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.33 to
+                6.12.35
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.32.19
+                      hash: e16d5c54c7891f367e7c79e0fa43503ba7d50f0b
+                      body: |
+                        Update aws/aws-cli from 2.32.17 to 2.32.19
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.35
+                  title: ""
+                  date: 2025-12-17T22:28:15.060Z
+                - commits:
+                    - subject: Update dependency kubernetes/kubernetes to v1.35.0
+                      hash: dc1384d943a09a968cb19582c9e1d5e5f8524c60
+                      body: |
+                        Update kubernetes/kubernetes from 1.34.3 to 1.35.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.34
+                  title: ""
+                  date: 2025-12-17T21:27:27.190Z
+          version: github-runner-vm-3.4.23
+          title: ""
+          date: 2025-12-17T23:42:55.584Z
+  version: 0.23.22
+  title: ""
+  date: 2025-12-18T00:11:14.020Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.22
       hash: e83cf9f0f592b223fc9fe95f13824d056e0373a1
       body: |
