@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.55
+      hash: 7f5e958efc5bf5b0b4ce3e05d022757aeb448169
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.54 to 6.12.55
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update Node.js to v24.13.0
+              hash: 2225890bdd4f8d7fd185160aa9b64968acf482a5
+              body: |
+                Update node from 24.12.0 to 24.13.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.55
+          title: ""
+          date: 2026-01-13T15:33:37.878Z
+  version: 0.23.45
+  title: ""
+  date: 2026-01-13T16:16:46.717Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.54
       hash: b3c5032b6f47f233d3ea470e05d456a7abe6dc3b
       body: |
