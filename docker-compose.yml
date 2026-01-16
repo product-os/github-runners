@@ -29,6 +29,11 @@ x-runner-vm:
     - /dev/net/tun # Required to create TAP/TUN device
   sysctls:
     - net.ipv4.ip_forward=1 # Required for VM networking
+  ulimits:
+    # Prevents the kernel from swapping guest pages to disk
+    memlock:
+      soft: -1  # unlimited
+      hard: -1  # unlimited
   tmpfs:
     - /tmp
   networks:
@@ -155,6 +160,97 @@ services:
       ROBOT_API: https://robot-ws.your-server.de/server
     labels:
       io.balena.features.balena-api: '1'
+
+  memory-tweaks:
+    image: bash:alpine3.22
+    entrypoint: ["/usr/local/bin/bash", "-c"]
+    privileged: true
+    labels:
+      io.balena.features.procfs: 1
+      io.balena.features.sysfs: 1
+    environment:
+      DISABLED: 0
+      VERBOSE: 0
+      VM_COMPACTION_PROACTIVENESS: 40
+      VM_MIN_FREE_KBYTES: 524288  # 512MB
+      MM_TRANSPARENT_HUGEPAGE_ENABLED: never
+      MM_TRANSPARENT_HUGEPAGE_DEFRAG: never
+    command:
+      - |
+          set -euo pipefail
+
+          case ${DISABLED,,} in
+            true|1|y|yes|on)
+              exit 0
+              ;;
+            *)
+              ;;
+          esac
+
+          case ${VERBOSE,,} in
+            true|1|y|yes|on)
+              set -x
+              ;;
+            *)
+              ;;
+          esac
+
+          case ${MM_TRANSPARENT_HUGEPAGE_ENABLED,,} in
+            always|madvise|never)
+              ;;
+            *)
+              echo "Invalid value for MM_TRANSPARENT_HUGEPAGE_ENABLED: ${MM_TRANSPARENT_HUGEPAGE_ENABLED}"
+              exit 1
+              ;;
+          esac
+
+          case ${MM_TRANSPARENT_HUGEPAGE_DEFRAG,,} in
+            always|madvise|never)
+              ;;
+            *)
+              echo "Invalid value for MM_TRANSPARENT_HUGEPAGE_DEFRAG: ${MM_TRANSPARENT_HUGEPAGE_DEFRAG}"
+              exit 1
+              ;;
+          esac
+
+          # Match only numeric values between 0 and 100
+          case ${VM_COMPACTION_PROACTIVENESS} in
+            100|[1-9][0-9]|[0-9])
+              ;;
+            *)
+              echo "Invalid value for VM_COMPACTION_PROACTIVENESS: ${VM_COMPACTION_PROACTIVENESS} (must be 0-100)"
+              exit 1
+              ;;
+          esac
+
+          case ${VM_MIN_FREE_KBYTES} in
+            ''|*[![:digit:]]*)
+              echo "Invalid value for VM_MIN_FREE_KBYTES: ${VM_MIN_FREE_KBYTES} (must be numeric)"
+              exit 1
+              ;;
+            *)
+              ;;
+          esac
+
+          # Enable aggressive background compaction
+          sysctl -w vm.compaction_proactiveness=${VM_COMPACTION_PROACTIVENESS}
+
+          # Keep more memory free for allocations
+          sysctl -w vm.min_free_kbytes=${VM_MIN_FREE_KBYTES}
+
+          # Disable THP to reduce fragmentation
+          echo "${MM_TRANSPARENT_HUGEPAGE_ENABLED,,}" > /sys/kernel/mm/transparent_hugepage/enabled
+          echo "${MM_TRANSPARENT_HUGEPAGE_DEFRAG,,}" > /sys/kernel/mm/transparent_hugepage/defrag
+
+          while true; do
+            # Watch fragmentation improve over time
+            cat /proc/buddyinfo
+
+            # Monitor compaction activity
+            cat /proc/vmstat | grep compact_
+
+            sleep 15m
+          done
 
   # enable IPv6
   enable-ipv6:
