@@ -1,4 +1,135 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.31
+      hash: c34e9bbf9209b9deb3d9ef3f31034c2ef0a5796a
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.30 to 3.4.31
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.77
+              hash: ccfc702d7e4a99710c40f903af54a78191be16b7
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.69 to
+                6.12.77
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency npm to v11.8.0
+                      hash: a44589c63879e436b633889849805005ebdba5f5
+                      body: |
+                        Update npm from 11.7.0 to 11.8.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.77
+                  title: ""
+                  date: 2026-01-25T00:22:05.307Z
+                - commits:
+                    - subject: Update dependency just-containers/s6-overlay to v3.2.2.0
+                      hash: cb07b8f06502f11ef3e2010f7c7eb76a4fb6562f
+                      body: >
+                        Update just-containers/s6-overlay from 3.2.1.0 to 3.2.2.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.76
+                  title: ""
+                  date: 2026-01-24T22:21:51.111Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.33.6
+                      hash: dc23cd8b37faaf2e67d4dd37463733d4498f5808
+                      body: |
+                        Update aws/aws-cli from 2.33.5 to 2.33.6
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.75
+                  title: ""
+                  date: 2026-01-23T21:32:28.385Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.33.5
+                      hash: 29753ff43ff572474708b588b9542c6182362c2e
+                      body: |
+                        Update aws/aws-cli from 2.33.4 to 2.33.5
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.74
+                  title: ""
+                  date: 2026-01-22T21:34:44.954Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.33.4
+                      hash: a71b8c8192cb9ae171eaeb8e1e201113a783fd8d
+                      body: |
+                        Update aws/aws-cli from 2.33.3 to 2.33.4
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.73
+                  title: ""
+                  date: 2026-01-21T23:32:14.224Z
+                - commits:
+                    - subject: Update dependency docker/compose to v5.0.2
+                      hash: 88f0f1f815e5b25b5e9c92ec300dbe9c9cdd0027
+                      body: |
+                        Update docker/compose from 5.0.1 to 5.0.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.72
+                  title: ""
+                  date: 2026-01-21T20:46:58.048Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.33.3
+                      hash: 4ec23ff39a1fd5068ffbd25ec7cd8cb2b513002f
+                      body: |
+                        Update aws/aws-cli from 2.33.2 to 2.33.3
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.71
+                  title: ""
+                  date: 2026-01-21T19:48:51.234Z
+                - commits:
+                    - subject: Update dependency cli/cli to v2.86.0
+                      hash: 893ae10ef9fd083a01f37aabe88579e92b54030c
+                      body: |
+                        Update cli/cli from 2.85.0 to 2.86.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.70
+                  title: ""
+                  date: 2026-01-21T18:53:27.429Z
+          version: github-runner-vm-3.4.31
+          title: ""
+          date: 2026-01-25T16:39:08.086Z
+  version: 0.23.77
+  title: ""
+  date: 2026-01-25T17:12:22.403Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.77
       hash: 24d685e6682ab10dd9642540aa0ebe24467d538e
       body: |
