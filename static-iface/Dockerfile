@@ -1,5 +1,8 @@
 FROM bash:alpine3.22
 
+# hadolint ignore=DL3018
+RUN apk add --no-cache curl jq networkmanager
+
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
 

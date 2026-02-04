@@ -1,24 +1,30 @@
 #!/usr/bin/env bash
 
-set -eu
+set -euo pipefail
 
-[[ "${VERBOSE:-false}" =~ on|On|Yes|yes|true|True ]] && set -x
+case ${ENABLED,,} in
+true | 1 | y | yes | on) ;;
+*)
+	exit 0
+	;;
+esac
 
-[[ $ENABLED == 'true' ]] || exit
+case ${VERBOSE,,} in
+true | 1 | y | yes | on)
+	set -x
+	;;
+*) ;;
+esac
 
 curl_with_opts() {
 	curl --fail --silent --retry 3 --connect-timeout 3 --compressed "$@"
 }
 
-function get_robot() {
+get_robot() {
 	local robot_json
 	robot_json="$(curl_with_opts -u "${ROBOT_USER}:${ROBOT_PASS}" "${ROBOT_API}")"
 	echo "${robot_json}"
 }
-
-which curl || apk add curl --no-cache
-which jq || apk add jq --no-cache
-which nmcli || apk add networkmanager --no-cache
 
 myip="$(curl_with_opts https://ipinfo.io/ip)"
 flat_json="$(get_robot | jq -rc --arg ip "${myip}" '.[].server | select(.server_ip==$ip)')"
