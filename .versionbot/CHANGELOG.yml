@@ -1,4 +1,24 @@
 - commits:
+    - subject: "static-iface: Rewrite for full static IPv4+IPv6 configuration"
+      hash: c3301d4075b9334e43a66d7e6766c8f300c7292f
+      body: |
+        - Fetch server metadata from Hetzner Robot API (/server + /ip endpoints)
+        - Apply static IPv4 and IPv6 config via nmcli over dbus
+        - Verify connectivity with ping and DNS tests before persisting
+        - Optionally persist validated config to /mnt/boot (PERSIST=true)
+        - Use docker to access host filesystem (balenaOS restriction)
+        - Rename service from enable-ipv6 to static-iface
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.23.91
+  title: ""
+  date: 2026-02-05T17:46:24.964Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.87
       hash: 3c32ea3d46bbce7bb624720fcd469ed58d2acff7
       body: |
