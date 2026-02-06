@@ -163,6 +163,7 @@ services:
     network_mode: host # required for accurate interface discovery
     environment:
       ROBOT_API: https://robot-ws.your-server.de/server
+      ENABLED: false
     labels:
       io.balena.features.dbus: '1'
       io.balena.features.balena-socket: '1'
