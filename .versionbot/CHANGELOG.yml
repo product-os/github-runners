@@ -1,4 +1,20 @@
 - commits:
+    - subject: "static-iface: Disable service by default"
+      hash: ccac08e730d427924d3630b1a1994b2e19d23f98
+      body: |
+        Static interfaces have been set, make the service
+        opt-in going forward.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.23.93
+  title: ""
+  date: 2026-02-06T15:24:10.742Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.88
       hash: 0a430337610e4f67aaccf461eb4fe7a2373bcedf
       body: |
