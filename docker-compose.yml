@@ -156,18 +156,6 @@ services:
     labels:
       io.balena.features.balena-api: '1'
 
-  # configure static IPv4+IPv6 on Hetzner servers
-  static-iface:
-    build: ./static-iface
-    restart: no
-    network_mode: host # required for accurate interface discovery
-    environment:
-      ROBOT_API: https://robot-ws.your-server.de/server
-      ENABLED: false
-    labels:
-      io.balena.features.dbus: '1'
-      io.balena.features.balena-socket: '1'
-
   # create DNS record
   upsert-dns:
     image: bash:alpine3.22
