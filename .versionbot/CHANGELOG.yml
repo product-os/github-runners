@@ -1,4 +1,21 @@
 - commits:
+    - subject: Remove static-iface service
+      hash: c19724746dbf7b619f22b33051c7086dc6ba3cef
+      body: |
+        Static network configs are now provisioned via nmconnection-tools
+        and baked into the boot partition during provisioning. The service
+        was already disabled by default (ENABLED: false).
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.23.101
+  title: ""
+  date: 2026-02-11T16:26:33.220Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.36
       hash: 224d8b13ad713937fa6f17d406a4aa0f38626cce
       body: |
