@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.93
+      hash: 2b9a3b055b0d51e93358c38f7be47b5620c8f212
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.92 to 6.12.93
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v23.2.31
+              hash: 98110036611ee24f41f2a85cdf3272c8b41760dd
+              body: |
+                Update balena-io/balena-cli from 23.2.30 to 23.2.31
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.93
+          title: ""
+          date: 2026-02-11T18:41:14.616Z
+  version: 0.23.102
+  title: ""
+  date: 2026-02-11T19:22:56.805Z
+- commits:
     - subject: Remove static-iface service
       hash: c19724746dbf7b619f22b33051c7086dc6ba3cef
       body: |
