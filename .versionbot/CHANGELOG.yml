@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.103
+      hash: 8d03772de3014db3d3e13b71b969c73aeadd19ac
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.102 to 6.12.103
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update pre-commit hook rhysd/actionlint to v1.7.11
+              hash: f480e7cc488f7728bc672fe269761cd46f8835fd
+              body: |
+                Update rhysd/actionlint from 1.7.10 to 1.7.11
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.103
+          title: ""
+          date: 2026-02-15T01:38:39.627Z
+  version: 0.23.114
+  title: ""
+  date: 2026-02-15T05:55:09.412Z
+- commits:
     - subject: Update pre-commit hook crate-ci/typos to v1.43.4
       hash: c927a7431db79552645dcf6485dbe73cc560d7f4
       body: |
