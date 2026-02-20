@@ -1,4 +1,109 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.40
+      hash: 57a756f1bde062665d463cc52be537c4f583ed35
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.39 to 3.4.40
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.109
+              hash: d837d1df3a6e4b525d38e0c2bfcc7a64ef89e8fd
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.103 to
+                6.12.109
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency cli/cli to v2.87.1
+                      hash: 060ec959fd26fbcc5988a866c0428f2872d01f86
+                      body: |
+                        Update cli/cli from 2.87.0 to 2.87.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.109
+                  title: ""
+                  date: 2026-02-20T20:04:53.496Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.33.26
+                      hash: 719be966aa7df9475f3f9c4c75c8a9fd8f989ce9
+                      body: |
+                        Update aws/aws-cli from 2.33.25 to 2.33.26
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.108
+                  title: ""
+                  date: 2026-02-19T21:01:55.104Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.33.25
+                      hash: 2b07b3cdaae0c703928d89f0a6571565b340c879
+                      body: |
+                        Update aws/aws-cli from 2.33.24 to 2.33.25
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.107
+                  title: ""
+                  date: 2026-02-18T21:03:20.503Z
+                - commits:
+                    - subject: Update dependency cli/cli to v2.87.0
+                      hash: 0a9b5922bc73a3057ca80788e075978e5402b98b
+                      body: |
+                        Update cli/cli from 2.86.0 to 2.87.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.106
+                  title: ""
+                  date: 2026-02-18T18:11:23.544Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.33.24
+                      hash: a8062eda54ccefe80f73071e6d738f618203b35c
+                      body: |
+                        Update aws/aws-cli from 2.33.23 to 2.33.24
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.105
+                  title: ""
+                  date: 2026-02-17T22:16:16.899Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.33.23
+                      hash: f92325f339cdf3ed8f9a144aeb4939980e99931b
+                      body: |
+                        Update aws/aws-cli from 2.33.22 to 2.33.23
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.104
+                  title: ""
+                  date: 2026-02-16T21:56:12.765Z
+          version: github-runner-vm-3.4.40
+          title: ""
+          date: 2026-02-20T21:28:23.116Z
+  version: 0.23.122
+  title: ""
+  date: 2026-02-20T21:41:35.267Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.109
       hash: 362923cbe0f199affe054e0f71f16ea01cccaa2d
       body: |
