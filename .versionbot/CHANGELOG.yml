@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.110
+      hash: 09ec9e385ed41c269c09a828ad26fd9ba2989b09
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.109 to 6.12.110
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency npm to v11.10.1
+              hash: e940513e272ce21cc60311b00bc17f4f94d041ce
+              body: |
+                Update npm from 11.10.0 to 11.10.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.110
+          title: ""
+          date: 2026-02-22T23:01:45.121Z
+  version: 0.23.123
+  title: ""
+  date: 2026-02-23T00:04:06.456Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.40
       hash: 57a756f1bde062665d463cc52be537c4f583ed35
       body: |
