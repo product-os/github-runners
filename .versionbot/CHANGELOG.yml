@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.47
+      hash: 1f2f34b7ac4cb132ad7f2b7c49a1344d0fde0867
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.46 to 3.4.47
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency firecracker-microvm/firecracker to v1.15.0
+              hash: 73f7a0de8f7b66c55dc506029e40b02e4c2f8dcd
+              body: |
+                Update firecracker-microvm/firecracker from 1.14.2 to 1.15.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.47
+          title: ""
+          date: 2026-03-09T18:25:57.260Z
+  version: 0.23.144
+  title: ""
+  date: 2026-03-09T18:48:22.338Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.46
       hash: 0b5d4f9f358806122560f8e16b19cf62d58162de
       body: |
