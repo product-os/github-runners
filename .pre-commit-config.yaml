@@ -17,12 +17,12 @@ repos:
         args: ["-color", "-ignore", ":info:", "-ignore", ":style:"]
 
 -   repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.47.0
+    rev: v0.48.0
     hooks:
     -   id: markdownlint-docker
 
 -   repo: https://github.com/crate-ci/typos
-    rev: v1.43.4
+    rev: v1.44.0
     hooks:
     -   id: typos-docker
         args: ["--force-exclude"]
