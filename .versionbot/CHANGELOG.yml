@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.133
+      hash: 44810f93a7237936d4cda38861498073bfaf973f
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.132 to 6.12.133
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update pre-commit hook igorshubovych/markdownlint-cli to v0.48.0
+              hash: fff85ae4acdef3c6377cf90c3f9089af336aad6e
+              body: |
+                Update igorshubovych/markdownlint-cli from 0.47.0 to 0.48.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.133
+          title: ""
+          date: 2026-03-15T01:32:11.935Z
+  version: 0.23.161
+  title: ""
+  date: 2026-03-15T03:39:53.109Z
+- commits:
     - subject: Update pre-commit hooks
       hash: 068b1617dcf8d72848b1cca0bab07f33013e2540
       body: |
