@@ -1,4 +1,117 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.150
+      hash: f2855bba914c05b2e7011c28358f8a799475dff7
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.143 to 6.12.150
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update product-os/flowzone digest to 8674dc5
+              hash: 2761667bf08b0926a16630316a73ed83da96152c
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.150
+          title: ""
+          date: 2026-03-25T22:23:45.455Z
+        - commits:
+            - subject: Update product-os/flowzone digest to eb703ea
+              hash: ce163270bc9850edf920b257001edea9c14a1bda
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.149
+          title: ""
+          date: 2026-03-25T21:03:50.474Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.34.17
+              hash: 77bea5095d1cc2eae828c6dd4411914a6099ae7f
+              body: |
+                Update aws/aws-cli from 2.34.15 to 2.34.17
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+            - subject: Update product-os/flowzone digest to 54776e8
+              hash: 68829169b144aeec19833187a9e4b5850c76cd3c
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.148
+          title: ""
+          date: 2026-03-25T20:17:56.338Z
+        - commits:
+            - subject: Update docker/setup-buildx-action action to v4
+              hash: 1f3c41ae9434d7f76515fd609060bcf0518d42cb
+              body: |
+                Update docker/setup-buildx-action from 3.12.0 to 4.0.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.147
+          title: ""
+          date: 2026-03-25T00:03:22.176Z
+        - commits:
+            - subject: Update dependency docker/compose to v5.1.1
+              hash: 4297091dbc96aae7349f227da5e8a329d5f1bd82
+              body: |
+                Update docker/compose from 5.1.0 to 5.1.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.146
+          title: ""
+          date: 2026-03-24T23:04:22.744Z
+        - commits:
+            - subject: Update Node.js to v24.14.1
+              hash: 9eb3a2070a654d472e3f05cd9443e03891863b1b
+              body: |
+                Update node from 24.14.0 to 24.14.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.145
+          title: ""
+          date: 2026-03-24T22:02:46.100Z
+        - commits:
+            - subject: Pin product-os/flowzone action to a53cf4b
+              hash: f660c3da44d79a1d4f8b358edd1954333d860844
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.144
+          title: ""
+          date: 2026-03-24T19:27:13.215Z
+  version: 0.23.178
+  title: ""
+  date: 2026-03-25T23:42:53.517Z
+- commits:
     - subject: Update balena/cert-manager Docker tag to v0.4.11
       hash: 0a07de35d7ba46c04914130eb10fcf5a53f6a41e
       body: |
