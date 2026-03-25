@@ -1,4 +1,17 @@
 - commits:
+    - subject: Pin product-os/flowzone action to 8674dc5
+      hash: 1c8209f8a4b4dc9a98618fad493f578f2f2f0ca2
+      body: |
+        Update product-os/flowzone
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.176
+  title: ""
+  date: 2026-03-25T22:06:35.344Z
+- commits:
     - subject: Update balena/cert-manager Docker tag to v0.4.10
       hash: 62e9ae8f0cf8380c9a07de89b8ba3bb47f25799f
       body: |
