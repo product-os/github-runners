@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.36
+      hash: 097c56c8d3f08340aeab3ae925f37ee0c4ff580b
+      body: |
+        Update ghcr.io/balena-io/logs-to-vector from 1.10.34 to 1.10.36
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.189
+  title: ""
+  date: 2026-03-26T12:57:05.245Z
+- commits:
     - subject: Update product-os/flowzone digest to 3eb3c97
       hash: f6cd03c5951608e3fd684d601bee318766b4b7a0
       body: |
