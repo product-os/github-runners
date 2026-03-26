@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update balena/cert-manager Docker tag to v0.4.15
+      hash: 1c86d3643896c84c4f8d5b0a8eef982f89e98839
+      body: |
+        Update balena/cert-manager from 0.4.11 to 0.4.15
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.181
+  title: ""
+  date: 2026-03-26T03:43:05.074Z
+- commits:
     - subject: Update product-os/flowzone digest to 4815186
       hash: de4ebc23a7c91298c499ddd9b74a944b288134e9
       body: |
