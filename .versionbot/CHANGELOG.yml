@@ -1,4 +1,404 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.64
+      hash: 10726053e4114d1011e26b4fbb3d2d720e92494b
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.54 to 3.4.64
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.6.11
+              hash: e8ca0018c9badda2a1d8e1452492ce85c78cadee
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.6.10 to
+                0.6.11
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update product-os/flowzone digest to 3eb3c97
+                      hash: 7eebe0d7318d56fb936e302fedaa81d36662a4c2
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.11
+                  title: ""
+                  date: 2026-03-26T11:00:02.314Z
+          version: github-runner-vm-3.4.64
+          title: ""
+          date: 2026-03-26T13:20:30.537Z
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.6.10
+              hash: ca1a1910491ad1712811400978c2b8476113d0e3
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.6.0 to
+                0.6.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update product-os/flowzone digest to 7b49c1e
+                      hash: 3066f2f86bfc47edca9412d08ba2ce1b1d2056a9
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.10
+                  title: ""
+                  date: 2026-03-26T10:08:19.234Z
+                - commits:
+                    - subject: Update product-os/flowzone digest to 8d926e2
+                      hash: e15926de5242da1d0face114cdb4fa5ccfa07e14
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                    - subject: Update product-os/flowzone digest to 7b1359d
+                      hash: ca2cdcadd353fb6e91e0b031a91ac68fff780505
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.9
+                  title: ""
+                  date: 2026-03-26T08:58:58.872Z
+                - commits:
+                    - subject: Update product-os/flowzone digest to 7b87702
+                      hash: d30b9095ef1e4f766d9478dd87e7d8633b771201
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.8
+                  title: ""
+                  date: 2026-03-26T06:15:38.558Z
+                - commits:
+                    - subject: Update product-os/flowzone digest to cc9836f
+                      hash: f3910e1f9b7cde17eaa1295647379bd5846ce417
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.7
+                  title: ""
+                  date: 2026-03-26T05:28:36.907Z
+                - commits:
+                    - subject: Update product-os/flowzone digest to b79645a
+                      hash: 4c8a9c0c8f4193979bccbc455ce8b4742b4ff6d3
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.6
+                  title: ""
+                  date: 2026-03-26T03:56:14.191Z
+                - commits:
+                    - subject: Update product-os/flowzone digest to 4815186
+                      hash: e1df1347885153f426879f09d4ca1af70cc40cc0
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.5
+                  title: ""
+                  date: 2026-03-26T02:23:27.848Z
+                - commits:
+                    - subject: Update product-os/flowzone digest to 267495d
+                      hash: c88afa09f819541cc80a69f9d76d8382077e68ad
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.4
+                  title: ""
+                  date: 2026-03-26T01:25:09.909Z
+                - commits:
+                    - subject: Update product-os/flowzone digest to 8b1df62
+                      hash: 8d033159aee9e0e1665860a7a485195ebf05aab9
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.3
+                  title: ""
+                  date: 2026-03-25T23:13:47.604Z
+                - commits:
+                    - subject: Update product-os/flowzone digest to 8674dc5
+                      hash: 0384ac5a1bdb472066bf50cefd60ca45edc20458
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.2
+                  title: ""
+                  date: 2026-03-25T22:14:11.938Z
+                - commits:
+                    - subject: Update product-os/flowzone digest to eb703ea
+                      hash: be773944a70e6ad09945cdce355d6348364a6f30
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                    - subject: Pin product-os/flowzone action to 54776e8
+                      hash: 18800e5ac6874d65ecc01c269e2629c2e9a003c2
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.1
+                  title: ""
+                  date: 2026-03-25T20:51:24.160Z
+          version: github-runner-vm-3.4.63
+          title: ""
+          date: 2026-03-26T11:28:02.976Z
+        - commits:
+            - subject: Update product-os/flowzone digest to b79645a
+              hash: efae92e49be24c3c3502903d02d30770a048e9d8
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.62
+          title: ""
+          date: 2026-03-26T04:53:20.092Z
+        - commits:
+            - subject: Update product-os/flowzone digest to 267495d
+              hash: 2f8f806f5fcc1a2d5486e87bffcaa28b43448e49
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.61
+          title: ""
+          date: 2026-03-26T02:12:42.905Z
+        - commits:
+            - subject: Update product-os/flowzone digest to eb703ea
+              hash: fbbef117c4f422ef24a2eaafee9760e723d921d6
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.60
+          title: ""
+          date: 2026-03-25T21:48:01.280Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.147
+              hash: d0b9dc373ad18602b0b314448c2cfbf19c5288eb
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.145 to
+                6.12.147
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update docker/setup-buildx-action action to v4
+                      hash: 1f3c41ae9434d7f76515fd609060bcf0518d42cb
+                      body: |
+                        Update docker/setup-buildx-action from 3.12.0 to 4.0.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.147
+                  title: ""
+                  date: 2026-03-25T00:03:22.176Z
+                - commits:
+                    - subject: Update dependency docker/compose to v5.1.1
+                      hash: 4297091dbc96aae7349f227da5e8a329d5f1bd82
+                      body: |
+                        Update docker/compose from 5.1.0 to 5.1.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.146
+                  title: ""
+                  date: 2026-03-24T23:04:22.744Z
+          version: github-runner-vm-3.4.59
+          title: ""
+          date: 2026-03-25T02:05:29.167Z
+        - commits:
+            - subject: Pin product-os/flowzone action to 54776e8
+              hash: a16501fa4099e88334e1e0b44ea5e46715a47de2
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.58
+          title: ""
+          date: 2026-03-25T00:47:58.384Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.145
+              hash: 9c845e80235cbfc651925a813c0d4162a560b627
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.144 to
+                6.12.145
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update Node.js to v24.14.1
+                      hash: 9eb3a2070a654d472e3f05cd9443e03891863b1b
+                      body: |
+                        Update node from 24.14.0 to 24.14.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.145
+                  title: ""
+                  date: 2026-03-24T22:02:46.100Z
+          version: github-runner-vm-3.4.57
+          title: ""
+          date: 2026-03-24T23:29:18.720Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.144
+              hash: 1bfde5d3d9403876a5e8648b6b01c3215bcdb30b
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.140 to
+                6.12.144
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Pin product-os/flowzone action to a53cf4b
+                      hash: f660c3da44d79a1d4f8b358edd1954333d860844
+                      body: |
+                        Update product-os/flowzone
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.144
+                  title: ""
+                  date: 2026-03-24T19:27:13.215Z
+                - commits:
+                    - subject: Update dependency npm to v11.12.0
+                      hash: 25c58f42e7380a47442fadbcca02444664fe4e30
+                      body: |
+                        Update npm from 11.11.1 to 11.12.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.143
+                  title: ""
+                  date: 2026-03-24T17:16:23.621Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.34.15
+                      hash: 138fb1d5cfeb8e8eac032553437f206feb681e21
+                      body: |
+                        Update aws/aws-cli from 2.34.14 to 2.34.15
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.142
+                  title: ""
+                  date: 2026-03-23T20:07:24.842Z
+                - commits:
+                    - subject: Update dependency kubernetes/kubernetes to v1.35.3
+                      hash: 1f404c66b25cb91414c9bd1219c25e78b6dc896e
+                      body: |
+                        Update kubernetes/kubernetes from 1.35.2 to 1.35.3
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.141
+                  title: ""
+                  date: 2026-03-20T21:08:59.621Z
+          version: github-runner-vm-3.4.56
+          title: ""
+          date: 2026-03-24T21:03:13.432Z
+        - commits:
+            - subject: Update docker/login-action action to v4
+              hash: 80f72e95a4156ea6c7412a57f4b35f270b37b2ea
+              body: |
+                Update docker/login-action from 3.7.0 to 4.0.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.55
+          title: ""
+          date: 2026-03-24T16:02:13.839Z
+  version: 0.23.190
+  title: ""
+  date: 2026-03-26T16:12:45.079Z
+- commits:
     - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.36
       hash: 097c56c8d3f08340aeab3ae925f37ee0c4ff580b
       body: |
