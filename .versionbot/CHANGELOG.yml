@@ -1,4 +1,16 @@
 - commits:
+    - subject: Revert flowzone pinning to master
+      hash: e62e9a78c006637b5a8b4637da98866b67d3c4dd
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Kyle Harding
+      nested: []
+  version: 0.23.192
+  title: ""
+  date: 2026-03-26T17:38:46.919Z
+- commits:
     - subject: Update balena/cert-manager Docker tag to v0.4.21
       hash: 97d90aed918e8dad842a85725743e0d0d25f9b65
       body: |
