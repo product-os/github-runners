@@ -1,4 +1,133 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.159
+      hash: ed41ce80039a38137d17e629b88c3f36ff650979
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.150 to 6.12.159
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Revert flowzone pinning to master
+              hash: c77a9f66599ab88f2c74107a68832df3b21345c2
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.12.159
+          title: ""
+          date: 2026-03-26T18:41:15.798Z
+        - commits:
+            - subject: Update dependency cli/cli to v2.89.0
+              hash: bb06bef0f5795415aa6526a477f6fc1be176fbc8
+              body: |
+                Update cli/cli from 2.88.1 to 2.89.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.158
+          title: ""
+          date: 2026-03-26T16:30:40.498Z
+        - commits:
+            - subject: Update product-os/flowzone digest to 8ea01d3
+              hash: f3347d8d266154836cf89aa8e66660797cc7e9b4
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.157
+          title: ""
+          date: 2026-03-26T13:17:00.469Z
+        - commits:
+            - subject: Update product-os/flowzone digest to 3eb3c97
+              hash: 5623986be10a2c867cdd55253667fac3327a34c8
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.156
+          title: ""
+          date: 2026-03-26T11:13:19.820Z
+        - commits:
+            - subject: Update product-os/flowzone digest to 8d926e2
+              hash: 8dbde856a3f1ab39d0d4865e7f3a2ed1a31856ba
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.155
+          title: ""
+          date: 2026-03-26T09:00:27.255Z
+        - commits:
+            - subject: Update dependency mikefarah/yq to v4.52.5
+              hash: 6b59f9215fbe35998729d832fcc208390d9273f6
+              body: |
+                Update mikefarah/yq from 4.52.4 to 4.52.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.154
+          title: ""
+          date: 2026-03-26T06:27:55.504Z
+        - commits:
+            - subject: Update product-os/flowzone digest to cc9836f
+              hash: 8186daa8f23f011230b20e7214baf76fe0294dc4
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.153
+          title: ""
+          date: 2026-03-26T05:37:34.452Z
+        - commits:
+            - subject: Update product-os/flowzone digest to b79645a
+              hash: d7ee1e7cee309863e24f8167283ad6474ff9807f
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.152
+          title: ""
+          date: 2026-03-26T03:58:08.651Z
+        - commits:
+            - subject: Update product-os/flowzone digest to 4815186
+              hash: 2c901451ff5a664cb74b0944aeeea317fa832970
+              body: |
+                Update product-os/flowzone
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.151
+          title: ""
+          date: 2026-03-26T02:42:55.508Z
+  version: 0.23.195
+  title: ""
+  date: 2026-03-26T20:00:29.420Z
+- commits:
     - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.37
       hash: c75f0f4a33bce2c3aac89c716c5cd32e08778494
       body: |
