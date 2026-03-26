@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update product-os/flowzone digest to 8d926e2
+      hash: db76a0e8d191b376b95cbda8c9dddfb4ab3ab5fe
+      body: |
+        Update product-os/flowzone
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.186
+  title: ""
+  date: 2026-03-26T08:50:44.934Z
+- commits:
     - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.33
       hash: a4083c0b09c1f68032845e5cb49ee02c8878baf1
       body: |
