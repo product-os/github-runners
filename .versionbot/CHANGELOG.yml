@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update product-os/flowzone digest to 7b1359d
+      hash: a52071b1bfbc7bc428fbbf2a18819d4aa6d307dc
+      body: |
+        Update product-os/flowzone
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.184
+  title: ""
+  date: 2026-03-26T06:59:57.089Z
+- commits:
     - subject: Update balena/cert-manager Docker tag to v0.4.17
       hash: a18b9e0b377e00c0961e95ab57f0869d22cb425b
       body: |
