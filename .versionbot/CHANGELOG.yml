@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update balena/cert-manager Docker tag to v0.4.22
+      hash: 0e667d747000bca1928c3a94862e9632e70c57df
+      body: |
+        Update balena/cert-manager from 0.4.21 to 0.4.22
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.193
+  title: ""
+  date: 2026-03-26T18:00:27.598Z
+- commits:
     - subject: Revert flowzone pinning to master
       hash: e62e9a78c006637b5a8b4637da98866b67d3c4dd
       body: ""
