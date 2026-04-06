@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update registry Docker tag to v3.1.0
+      hash: 327f1d0cd093c7dba8d7200a28eb21b79e089aa0
+      body: |
+        Update registry from 3.0.0 to 3.1.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.208
+  title: ""
+  date: 2026-04-06T21:51:08.167Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.169
       hash: 34b0d786fc9a244f3ae32733095c7e2b63d9adbf
       body: |
