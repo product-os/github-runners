@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update pre-commit hook rhysd/actionlint to v1.7.12
+      hash: 30fdb020bbe8696cda62adad2a23c5eabbd08655
+      body: |
+        Update rhysd/actionlint from 1.7.11 to 1.7.12
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.220
+  title: ""
+  date: 2026-04-15T01:34:24.516Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.177
       hash: f8feb86ca4cd5cde9090070f1f55d59649387af3
       body: |
