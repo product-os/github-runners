@@ -1,4 +1,91 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.80
+      hash: 55565b3adfa0b1e534a3d775824089691901d192
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.79 to 3.4.80
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.6.14
+              hash: 28e68646eb980a5336f940403bb418c9b3833fb5
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.6.13 to
+                0.6.14
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Bump kernel base from v6.1 to v6.1.170
+                      hash: 07d0e7de67ccc411d21ca33331bb2340833a84cf
+                      body: >
+                        Pull in ~170 stable releases of security and bug fixes
+                        accumulated
+
+                        since the original v6.1 (December 2022) tag. Notable:
+                        the build was
+
+                        missing every linux-6.1.y backport, including a long
+                        backlog of CVE
+
+                        fixes unrelated to AF_ALG.
+
+
+                        Introduces KERNEL_VERSION (defaulting to 6.1.170) as the
+                        actual git
+
+                        tag to clone, while KERNEL_BRANCH (6.1) continues to
+                        identify the
+
+                        patches/ and config/ subdirectories — so future stable
+                        bumps only
+
+                        need a single value change.
+
+
+                        Notes on CVE-2026-31431 ("Copy Fail", algif_aead): the
+                        upstream fix
+
+                        (mainline a664bf3d603d) is currently in stable-review
+                        for 6.1.y
+
+                        (Eric Biggers' [PATCH 6.1 0/9] AF_ALG fixes, lore
+                        20260430062731)
+
+                        and not yet in any 6.1.y release. This kernel build is
+                        unaffected
+
+                        in practice because CONFIG_CRYPTO_USER_API_AEAD (and the
+                        rest of
+
+                        CONFIG_CRYPTO_USER_API_*) is already =n in both arch
+                        configs, so
+
+                        the algif_aead module is never compiled in. Re-bump to
+                        6.1.171+ once
+
+                        the series lands upstream.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: github-runner-kernel-0.6.14
+                  title: ""
+                  date: 2026-04-30T13:31:21.663Z
+          version: github-runner-vm-3.4.80
+          title: ""
+          date: 2026-05-07T19:55:26.762Z
+  version: 0.23.256
+  title: ""
+  date: 2026-05-07T21:00:15.535Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.204
       hash: d2465cf2758d3375c36921cb560397e202bab8d4
       body: |
