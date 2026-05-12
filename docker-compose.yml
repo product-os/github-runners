@@ -79,7 +79,7 @@ services:
 
   # https://distribution.github.io/distribution/recipes/mirror/
   registry-cache:
-    image: registry:3.1.1
+    image: registry:3.1.1@sha256:85347ed2ecde64161c7a4788a4d7d3dcc9d6f86f7be95834022e3c6a423a945a
     volumes:
       - registry-data:/var/lib/registry
     tmpfs:
@@ -110,7 +110,7 @@ services:
 
   # tag devices
   tag-sidecar:
-    image: bash:alpine3.14
+    image: bash:alpine3.14@sha256:f34654f94d3d227b7a19e2e8156c8ac7e68f45639d67ba8acee87c18f54261ca
     restart: no
     entrypoint: ["/usr/local/bin/bash", "-c"]
     command:
@@ -158,7 +158,7 @@ services:
 
   # create DNS record
   upsert-dns:
-    image: bash:alpine3.22
+    image: bash:alpine3.22@sha256:84e9597a44c52678823f5292b595004b0bccc722092b0764cb4269e2859f540a
     restart: no
     network_mode: host
     environment:
