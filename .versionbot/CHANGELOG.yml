@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.38
+      hash: cc49d8eed90d2d42012674232c07fadf6eb87c23
+      body: |
+        Update ghcr.io/balena-io/logs-to-vector from 1.10.37 to 1.10.38
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.265
+  title: ""
+  date: 2026-05-13T11:32:36.866Z
+- commits:
     - subject: Update balena/cert-manager Docker tag to v0.4.26
       hash: f64a88fde0ce5598229f91d5d965b94d62120c5d
       body: |
