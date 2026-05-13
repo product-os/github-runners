@@ -1,4 +1,70 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.212
+      hash: 3c1366dac11cedf6d206ab482545bdaf9d0531f4
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.208 to 6.12.212
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update golang:1.26.3 Docker digest to 633d23b
+              hash: 3e8a158a04987f2a8322cb34d04757aa772840c1
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.212
+          title: ""
+          date: 2026-05-13T02:23:46.729Z
+        - commits:
+            - subject: Update dotnet monorepo
+              hash: c5efcbdf2d2e70797d010a1fe880ce3df9985653
+              body: >
+                Update mcr.microsoft.com/dotnet/runtime-deps from 10.0.7 to
+                10.0.8
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.211
+          title: ""
+          date: 2026-05-12T20:57:39.121Z
+        - commits:
+            - subject: Pin dependencies
+              hash: 086fade3f227cd197028620d303f556554cda11b
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.210
+          title: ""
+          date: 2026-05-12T18:48:57.858Z
+        - commits:
+            - subject: Update dependency kubernetes/kubernetes to v1.36.1
+              hash: 7972401560c15c0f0b870d5742b7feca338679ba
+              body: |
+                Update kubernetes/kubernetes from 1.36.0 to 1.36.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.209
+          title: ""
+          date: 2026-05-12T17:47:50.565Z
+  version: 0.23.267
+  title: ""
+  date: 2026-05-13T13:28:08.353Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.87
       hash: bf5bb21116d4777a54ced98de6aadf26230677d8
       body: |
