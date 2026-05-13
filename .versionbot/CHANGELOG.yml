@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update balena/cert-manager Docker tag to v0.4.26
+      hash: f64a88fde0ce5598229f91d5d965b94d62120c5d
+      body: |
+        Update balena/cert-manager from 0.4.24 to 0.4.26
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.264
+  title: ""
+  date: 2026-05-13T09:40:04.260Z
+- commits:
     - subject: Pin dependencies
       hash: 6e9017374e1c5a9af5977cfb4abf97142596f205
       body: |
