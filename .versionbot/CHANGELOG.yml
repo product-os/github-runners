@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.224
+      hash: cb9fd81f648c887a396bc3d6495e17cf6782f919
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.222 to 6.12.224
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency docker/compose to v5.1.4
+              hash: 2bfa8d027e60d3012f5ab4e24fa11018709cb7cc
+              body: |
+                Update docker/compose from 5.1.3 to 5.1.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.224
+          title: ""
+          date: 2026-05-21T22:27:25.804Z
+        - commits:
+            - subject: Update dependency powershell/powershell to v7.6.2
+              hash: e339e7a98db30719fb8bc94ffee2fcdb77eeeee8
+              body: |
+                Update powershell/powershell from 7.6.1 to 7.6.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.223
+          title: ""
+          date: 2026-05-21T21:35:43.238Z
+  version: 0.23.287
+  title: ""
+  date: 2026-05-21T23:07:51.370Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.96
       hash: 04a22b054ba9fd23a554f9e926edde8e8829c972
       body: |
