@@ -1,4 +1,71 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.96
+      hash: 04a22b054ba9fd23a554f9e926edde8e8829c972
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.94 to 3.4.96
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.222
+              hash: e087f481e851c3284418b475043017dfeee27403
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.221 to
+                6.12.222
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update Node.js to v24.16.0
+                      hash: 60afdacf89e91e0596ffdb419a1ea31b891ea639
+                      body: |
+                        Update node from 24.15.0 to 24.16.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.222
+                  title: ""
+                  date: 2026-05-21T14:12:28.311Z
+          version: github-runner-vm-3.4.96
+          title: ""
+          date: 2026-05-21T18:30:41.701Z
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.6.16
+              hash: dee1e88f17dec09e8ca267d80225a25c0b184209
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.6.15 to
+                0.6.16
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update debian:bookworm-slim Docker digest to 0104b33
+                      hash: 493c1585309b1b4e59fb4877ba97174a4ff293c4
+                      body: |
+                        Update debian
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.16
+                  title: ""
+                  date: 2026-05-19T23:10:49.996Z
+          version: github-runner-vm-3.4.95
+          title: ""
+          date: 2026-05-21T17:07:28.619Z
+  version: 0.23.286
+  title: ""
+  date: 2026-05-21T19:19:54.429Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.222
       hash: d6d640aad55b4dece17620d115c001bc810cb3be
       body: |
