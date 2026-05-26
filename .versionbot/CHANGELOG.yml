@@ -1,4 +1,27 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.231
+      hash: f39ca22e3582c849c5e927184907b1bc55d9aeb5
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.230 to 6.12.231
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "patch: Add python symlink and verify"
+              hash: 0651ece8ad17c6f7fac5d5681e387a47a94b2492
+              body: ""
+              footer: {}
+              author: Anton B.
+              nested: []
+          version: self-hosted-runners-6.12.231
+          title: ""
+          date: 2026-05-25T23:43:16.243Z
+  version: 0.23.299
+  title: ""
+  date: 2026-05-26T00:03:45.394Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.101
       hash: fb749ea40dd86dd42fea1d4b499eea99caf1e6e7
       body: |
