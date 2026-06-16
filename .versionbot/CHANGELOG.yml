@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.145
+      hash: d586259adbda63e7a0d337f24baf80ff706bdbd6
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.144 to 3.4.145
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update GitHub Actions to v1.10.1
+              hash: 795422dc5a9e70e87d0773b86db34b434ac02189
+              body: |
+                Update tespkg/actions-cache from 1.10.0 to 1.10.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.145
+          title: ""
+          date: 2026-06-16T19:47:59.481Z
+  version: 0.23.314
+  title: ""
+  date: 2026-06-16T20:42:02.876Z
+- commits:
     - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.42
       hash: cef017c516863630e278f253354410dd06a0476a
       body: |
