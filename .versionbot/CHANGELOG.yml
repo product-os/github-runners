@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.152
+      hash: 9a1cafbc53da57c265f8391775ee029fc71b408c
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.151 to 3.4.152
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update registry:3.1.1 Docker digest to 5620083
+              hash: 21a06e7947f6c5047724cf48875c8ec70ba310e4
+              body: |
+                Update registry
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.152
+          title: ""
+          date: 2026-06-23T02:06:26.850Z
+  version: 0.23.330
+  title: ""
+  date: 2026-06-23T03:47:23.395Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.151
       hash: fe496c035d66ddc619c38683303dae9c3168fbfa
       body: |
