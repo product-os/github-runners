@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update registry:3.1.1 Docker digest to 1be5527
+      hash: 19357df0d6e2cae97412e7b04fcd7d990564b678
+      body: |
+        Update registry
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.332
+  title: ""
+  date: 2026-06-23T15:46:52.307Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.275
       hash: 555f1f21f2ed0828f15ae4d0e22a58581a677144
       body: |
