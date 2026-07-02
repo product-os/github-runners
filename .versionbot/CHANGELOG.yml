@@ -1,4 +1,56 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.292
+      hash: 13fa33d419d0b6580a96df2f151dd8389c0bc7ac
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.289 to 6.12.292
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency cli/cli to v2.96.0
+              hash: 22e00f7750274a54c183486e4d732430066e08f7
+              body: |
+                Update cli/cli from 2.95.0 to 2.96.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.292
+          title: ""
+          date: 2026-07-02T22:19:59.314Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.35.15
+              hash: af46aac047cadd7af4bfdd473143cc5098f80e6f
+              body: |
+                Update aws/aws-cli from 2.35.14 to 2.35.15
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.291
+          title: ""
+          date: 2026-07-02T20:28:08.217Z
+        - commits:
+            - subject: Update dependency docker/compose to v5.3.0
+              hash: ee306acf9ac43e1e1bce888ef885874030cdad19
+              body: |
+                Update docker/compose from 5.2.0 to 5.3.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.290
+          title: ""
+          date: 2026-07-02T18:39:09.390Z
+  version: 0.23.352
+  title: ""
+  date: 2026-07-02T23:03:14.341Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.165
       hash: 4d842aed1abb629fa0872de82b16af256bbe719f
       body: |
