@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.287
+      hash: 974f3c87d034a69f04a22ba71eb6238c841fe1d4
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.286 to 6.12.287
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update docker/setup-buildx-action action to v4.2.0
+              hash: bae62d10e1bfed4d60b58c6bc3305a63fa3102de
+              body: |
+                Update docker/setup-buildx-action from 4.1.0 to 4.2.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.287
+          title: ""
+          date: 2026-07-02T10:06:24.633Z
+  version: 0.23.347
+  title: ""
+  date: 2026-07-02T11:34:43.308Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.286
       hash: 33500e7e67859c5bca2b73249efc371d68753a5d
       body: |
