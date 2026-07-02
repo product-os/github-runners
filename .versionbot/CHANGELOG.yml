@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.162
+      hash: 6a04733e136858f99f03ab3a7a18f5dcb49d8ffc
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.161 to 3.4.162
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update docker/login-action action to v4.3.0
+              hash: 8210d6b2610014e691c9c9eecc3b532b2af403ff
+              body: |
+                Update docker/login-action from 4.2.0 to 4.3.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.162
+          title: ""
+          date: 2026-07-02T10:25:47.390Z
+  version: 0.23.348
+  title: ""
+  date: 2026-07-02T12:24:40.049Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.287
       hash: 974f3c87d034a69f04a22ba71eb6238c841fe1d4
       body: |
