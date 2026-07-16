@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.310
+      hash: 852aaedae98cb739942185e7bbd3d88212fc192c
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.309 to 6.12.310
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "runner: Install 7zip for better artifact compression"
+              hash: b8d39b6a75be95829bfae60e2cb7b02621d2f703
+              body: >
+                High compression ratio in 7z format with LZMA and LZMA2
+                compression
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.12.310
+          title: ""
+          date: 2026-07-16T14:41:33.253Z
+  version: 0.23.388
+  title: ""
+  date: 2026-07-16T15:23:47.261Z
+- commits:
     - subject: Update balena/cert-manager Docker tag to v0.4.30
       hash: b23eb9f99fe898ca24d0118b1cb24e507049e6be
       body: |
