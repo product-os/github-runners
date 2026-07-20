@@ -1,4 +1,83 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.186
+      hash: ec9f554038d66a815d903d4730c98f5f6f7ecb37
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.184 to 3.4.186
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.314
+              hash: 58f15b68d3e4f78bc30fc2c574e5f70166698e78
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.311 to
+                6.12.314
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update golang:1.26.5 Docker digest to 3aff665
+                      hash: 29931da800c5f787d61a30201751c47339d583fb
+                      body: |
+                        Update golang
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.314
+                  title: ""
+                  date: 2026-07-20T06:08:46.939Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.36.2
+                      hash: 83c1dff75068ea154cefec069c99777d6746ee49
+                      body: |
+                        Update aws/aws-cli from 2.36.1 to 2.36.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.313
+                  title: ""
+                  date: 2026-07-17T20:18:59.128Z
+                - commits:
+                    - subject: Update dependency just-containers/s6-overlay to v3.2.3.2
+                      hash: 83db40444595a910ba33ece9179fc68a26676185
+                      body: >
+                        Update just-containers/s6-overlay from 3.2.3.0 to 3.2.3.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.312
+                  title: ""
+                  date: 2026-07-17T01:31:46.916Z
+          version: github-runner-vm-3.4.186
+          title: ""
+          date: 2026-07-20T08:26:18.168Z
+        - commits:
+            - subject: Update golang:1.26.5 Docker digest to 3aff665
+              hash: b6da7cfec78f7fc6eeb9ea1afdd32a255b56d66e
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.185
+          title: ""
+          date: 2026-07-20T06:29:00.801Z
+  version: 0.23.394
+  title: ""
+  date: 2026-07-20T09:48:01.227Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.314
       hash: f5fbc741a01187407093eeec9e2f53c1a058e47c
       body: |
