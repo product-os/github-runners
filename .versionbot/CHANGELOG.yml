@@ -1,4 +1,56 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.321
+      hash: d2f2c3b64a845f32645a226f7ccc473f9214e7c3
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.318 to 6.12.321
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency kubernetes/kubernetes to v1.36.3
+              hash: e081df161e521f9b96aa561a068d39667a59c5c8
+              body: |
+                Update kubernetes/kubernetes from 1.36.2 to 1.36.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.321
+          title: ""
+          date: 2026-07-23T01:31:58.855Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.36.6
+              hash: 9165d5319a601b0ed65389680ef8441482c25b4e
+              body: |
+                Update aws/aws-cli from 2.36.5 to 2.36.6
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.320
+          title: ""
+          date: 2026-07-22T20:21:40.011Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.36.5
+              hash: df4e2baa04bd595b430e35fab5951a3a926ec7ed
+              body: |
+                Update aws/aws-cli from 2.36.4 to 2.36.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.319
+          title: ""
+          date: 2026-07-21T20:25:00.205Z
+  version: 0.23.399
+  title: ""
+  date: 2026-07-23T02:17:41.987Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.318
       hash: b5a3f07205778ab97108eb6a52dacafd200b2b49
       body: |
