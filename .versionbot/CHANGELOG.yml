@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.345
+      hash: 81bbae168fea46162c98927898dfc6c767f103e0
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.344 to 6.12.345
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.36.20
+              hash: c2df06c8b1753c70e393f084891a261d829100cf
+              body: |
+                Update aws/aws-cli from 2.36.19 to 2.36.20
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.345
+          title: ""
+          date: 2026-08-10T20:13:05.057Z
+  version: 0.23.441
+  title: ""
+  date: 2026-08-10T20:52:02.219Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.344
       hash: 58bf0cfc2613f582668ed3f6083690910c8afb91
       body: |
