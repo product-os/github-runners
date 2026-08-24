@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update dependency flowzonify to v0.4.0
+      hash: b4088de55e225a1b8bea8707b073d0ecbbdcdbf8
+      body: |
+        Update flowzonify from 0.0.0 to 0.4.0
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.481
+  title: ""
+  date: 2026-08-24T21:49:29.573Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.372
       hash: 8cbd625a5b8ec033944d5a00cdea2286b64ebe35
       body: |
