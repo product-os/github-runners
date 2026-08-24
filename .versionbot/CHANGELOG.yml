@@ -1,4 +1,96 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.219
+      hash: 280a3ef9dcaad3d5260d055e762c8045f084c9ed
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.218 to 3.4.219
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.372
+              hash: 843e86cc02b5ec8114fd97f3956dce449db877e3
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.367 to
+                6.12.372
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.36.30
+                      hash: 634b20dd4502d2a418e6dfdc7023bf335608a119
+                      body: |
+                        Update aws/aws-cli from 2.36.29 to 2.36.30
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.372
+                  title: ""
+                  date: 2026-08-24T20:06:03.069Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.36.29
+                      hash: 7a70f295fd59bcb66b011e8644e06e2cbe7c32ea
+                      body: |
+                        Update aws/aws-cli from 2.36.28 to 2.36.29
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.371
+                  title: ""
+                  date: 2026-08-21T20:13:13.785Z
+                - commits:
+                    - subject: Update dependency cli/cli to v2.98.0
+                      hash: d5188e3d3f47bbf40bb3e687c77c747f6a49adde
+                      body: |
+                        Update cli/cli from 2.97.0 to 2.98.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.370
+                  title: ""
+                  date: 2026-08-20T23:10:25.419Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.36.28
+                      hash: 3842c069d8b3a44a0d98e6735b3837a76fedce01
+                      body: |
+                        Update aws/aws-cli from 2.36.27 to 2.36.28
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.369
+                  title: ""
+                  date: 2026-08-20T20:02:49.418Z
+                - commits:
+                    - subject: Update dependency kubernetes/kubernetes to v1.36.4
+                      hash: 7e0f2ed9c7fcfacb5e66682703b708389bce3c34
+                      body: |
+                        Update kubernetes/kubernetes from 1.36.3 to 1.36.4
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.368
+                  title: ""
+                  date: 2026-08-20T13:01:47.384Z
+          version: github-runner-vm-3.4.219
+          title: ""
+          date: 2026-08-24T21:27:15.361Z
+  version: 0.23.482
+  title: ""
+  date: 2026-08-24T22:46:54.028Z
+- commits:
     - subject: Update dependency flowzonify to v0.4.0
       hash: b4088de55e225a1b8bea8707b073d0ecbbdcdbf8
       body: |
