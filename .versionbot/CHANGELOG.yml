@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.375
+      hash: e19c3fbcaf3cef3346e9680dae2232a27d6c4e49
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.373 to 6.12.375
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency flowzonify to v0.4.0
+              hash: 816a901884b56829876d5a4da9d1ff4fd6faf088
+              body: |
+                Update flowzonify from 0.0.0 to 0.4.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.375
+          title: ""
+          date: 2026-08-25T15:12:17.183Z
+        - commits:
+            - subject: Update golang:1.27.0 Docker digest to 0ecdc2a
+              hash: b26b0fe8257cc6badfa4f90e96108b74c5fef32e
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.374
+          title: ""
+          date: 2026-08-25T14:12:18.438Z
+  version: 0.23.492
+  title: ""
+  date: 2026-08-25T17:44:45.320Z
+- commits:
     - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.45
       hash: 1ee32d9670743f8673cf850effdf869e41c5fa8a
       body: |
