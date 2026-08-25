@@ -1,4 +1,57 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.223
+      hash: 8cc3afab1eec5d457b385cb2c3faf52f8e6498ac
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.222 to 3.4.223
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.6.23
+              hash: 6195f7f724762f6238a8ff128f3271a5c2624774
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.6.21 to
+                0.6.23
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency flowzonify to v0.4.0
+                      hash: 9d3a619737494eae1836e4a92e947b445c6432b1
+                      body: |
+                        Update flowzonify from 0.0.0 to 0.4.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.23
+                  title: ""
+                  date: 2026-08-25T04:01:53.386Z
+                - commits:
+                    - subject: Update debian:bookworm-slim Docker digest to 8820086
+                      hash: c853da824c7a31315a135e09b625bb23a19fefd0
+                      body: |
+                        Update debian
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.22
+                  title: ""
+                  date: 2026-08-25T03:21:17.869Z
+          version: github-runner-vm-3.4.223
+          title: ""
+          date: 2026-08-25T06:37:52.143Z
+  version: 0.23.486
+  title: ""
+  date: 2026-08-25T06:50:29.797Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.222
       hash: f8f691a4a50fc192f4e69fb7a6249775b658f307
       body: |
