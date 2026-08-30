@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.383
+      hash: d4416ab4b0a46fee36a97056fe681de83c52d77c
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.382 to 6.12.383
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update mcr.microsoft.com/dotnet/runtime-deps:8.0.30-jammy Docker digest
+                to 6203db8
+              hash: 39513b1ef9cd944c6357c8817f76494834540c08
+              body: |
+                Update mcr.microsoft.com/dotnet/runtime-deps
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.383
+          title: ""
+          date: 2026-08-29T23:53:39.557Z
+  version: 0.23.501
+  title: ""
+  date: 2026-08-30T01:22:58.670Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.382
       hash: 87dba1da23805057b70fc6d708647ab067fc2e03
       body: |
