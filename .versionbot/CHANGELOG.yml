@@ -1,4 +1,96 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.233
+      hash: d4e925850192916c51dd0fdecca3c6a88d034e8e
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.232 to 3.4.233
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.391
+              hash: a45eb25a6c070d0a9d143e8f7998fe544069b337
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.386 to
+                6.12.391
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update golang:1.27.1 Docker digest to 512690a
+                      hash: 9566b8b78be781b653af2ee5d45d5995d21945db
+                      body: |
+                        Update golang
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.391
+                  title: ""
+                  date: 2026-09-02T17:13:49.018Z
+                - commits:
+                    - subject: Update golang:1.27.1 Docker digest to f773aa2
+                      hash: d20976a58c07a770cbab39fed39948580fec5265
+                      body: |
+                        Update golang
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.390
+                  title: ""
+                  date: 2026-09-02T05:14:49.246Z
+                - commits:
+                    - subject: Update golang Docker tag to v1.27.1
+                      hash: 7179b24e92fa62021f9a5828b2ec3749f7d0d915
+                      body: |
+                        Update golang from 1.27.0 to 1.27.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.389
+                  title: ""
+                  date: 2026-09-02T02:12:49.563Z
+                - commits:
+                    - subject: Update dependency cli/cli to v2.99.0
+                      hash: b9279c4c13c218001a011b9e72cb4c7d49d2192b
+                      body: |
+                        Update cli/cli from 2.98.0 to 2.99.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.388
+                  title: ""
+                  date: 2026-09-01T21:01:48.672Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.36.37
+                      hash: db66db307f99d29b9c802fd908a97fe3e91ebadb
+                      body: |
+                        Update aws/aws-cli from 2.36.36 to 2.36.37
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.387
+                  title: ""
+                  date: 2026-09-01T19:58:14.086Z
+          version: github-runner-vm-3.4.233
+          title: ""
+          date: 2026-09-02T20:18:28.774Z
+  version: 0.23.517
+  title: ""
+  date: 2026-09-02T20:52:18.315Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.232
       hash: 891a1d668fe425adb7556763a1ee6f4d9d07548a
       body: |
