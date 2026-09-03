@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.393
+      hash: d9b475fd35cecedd711c43ac5fbb35803eaa5bea
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.392 to 6.12.393
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency cli/cli to v2.100.0
+              hash: f856fc36578c9206abf1212f4bd41a2c0cb7799d
+              body: |
+                Update cli/cli from 2.99.0 to 2.100.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.393
+          title: ""
+          date: 2026-09-03T16:14:08.490Z
+  version: 0.23.519
+  title: ""
+  date: 2026-09-03T16:53:29.693Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.392
       hash: cdf817f8bd7fd803405d74da01d5f698552ae3a4
       body: |
