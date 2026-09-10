@@ -1,4 +1,71 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.236
+      hash: e6471a352ac3bd5a3a42151bf3c2d85920cb94af
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.235 to 3.4.236
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.405
+              hash: ed5d9299acb4b96b300271dfa42d3295de200d25
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.402 to
+                6.12.405
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update golang:1.27.1 Docker digest to f44f6e8
+                      hash: e3a321c44a42eacae22471ed101596d3a11936d8
+                      body: |
+                        Update golang
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.405
+                  title: ""
+                  date: 2026-09-10T02:17:01.976Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.36.42
+                      hash: 0f5fec5f271994ec467042b730895b81cffb487f
+                      body: |
+                        Update aws/aws-cli from 2.36.41 to 2.36.42
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.404
+                  title: ""
+                  date: 2026-09-09T19:59:21.120Z
+                - commits:
+                    - subject: Update mcr.microsoft.com/dotnet/runtime-deps:10.0.12-noble Docker
+                        digest to 9c2883a
+                      hash: 625f7329430fd5aea4f4547a3c165a4155cc7c1e
+                      body: |
+                        Update mcr.microsoft.com/dotnet/runtime-deps
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.403
+                  title: ""
+                  date: 2026-09-09T06:03:07.965Z
+          version: github-runner-vm-3.4.236
+          title: ""
+          date: 2026-09-10T04:03:06.965Z
+  version: 0.23.534
+  title: ""
+  date: 2026-09-10T04:56:00.472Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.405
       hash: 74aac1b35dfdff2c8ebb363b8d30cdbcd3e2f6b0
       body: |
