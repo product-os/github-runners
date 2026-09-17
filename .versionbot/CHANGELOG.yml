@@ -1,4 +1,203 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.242
+      hash: 48e08fd4c673ba5f7c22d2c01f476e4b3121610b
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.238 to 3.4.242
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update pre-commit hook crate-ci/typos to v1.50.2
+              hash: b63430685f3fe1ffa9a4bfc5e644e6b2a06add52
+              body: |
+                Update crate-ci/typos from 1.49.1 to 1.50.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.242
+          title: ""
+          date: 2026-09-17T11:36:52.203Z
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.415
+              hash: 2f142c01025538712f31e3b0297c3f65f5ce3e2d
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.405 to
+                6.12.415
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.36.47
+                      hash: 0b48d896733d5557f4561ad4669258e8ffb85c00
+                      body: |
+                        Update aws/aws-cli from 2.36.46 to 2.36.47
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.415
+                  title: ""
+                  date: 2026-09-16T21:03:51.056Z
+                - commits:
+                    - subject: Update docker/setup-buildx-action action to v4.4.1
+                      hash: dedad7ab1387220a5f55ae4d8eb302875e080d42
+                      body: |
+                        Update docker/setup-buildx-action from 4.4.0 to 4.4.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.414
+                  title: ""
+                  date: 2026-09-16T09:10:59.677Z
+                - commits:
+                    - subject: Update mcr.microsoft.com/dotnet/runtime-deps:8.0.31-jammy Docker digest
+                        to 509ddc8
+                      hash: dd74f9d044e30c8e990cb12afcd1cbbdc801d916
+                      body: |
+                        Update mcr.microsoft.com/dotnet/runtime-deps
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.413
+                  title: ""
+                  date: 2026-09-15T23:14:32.731Z
+                - commits:
+                    - subject: Update dependency cli/cli to v2.101.0
+                      hash: 1855de1f887f339986c9744c901b377716940cb7
+                      body: |
+                        Update cli/cli from 2.100.0 to 2.101.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.412
+                  title: ""
+                  date: 2026-09-15T21:07:36.302Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.36.46
+                      hash: 73ef925f53063e519c440aa0d275a61bb456768b
+                      body: |
+                        Update aws/aws-cli from 2.36.45 to 2.36.46
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.411
+                  title: ""
+                  date: 2026-09-15T20:00:55.124Z
+                - commits:
+                    - subject: Update docker/setup-buildx-action action to v4.4.0
+                      hash: 7d9d4f9114282ca2eb5d5fef7a337320a655510f
+                      body: |
+                        Update docker/setup-buildx-action from 4.3.0 to 4.4.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.410
+                  title: ""
+                  date: 2026-09-15T10:10:19.663Z
+                - commits:
+                    - subject: Update dependency docker/buildx to v0.37.1
+                      hash: 02dc216611410ab4b8a3b2b0d92460236ea2e9c4
+                      body: |
+                        Update docker/buildx from 0.37.0 to 0.37.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.409
+                  title: ""
+                  date: 2026-09-14T22:05:59.627Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.36.45
+                      hash: 15be4b0fe20ceeea7b9c3a56abe9d8dbc4f9555e
+                      body: |
+                        Update aws/aws-cli from 2.36.43 to 2.36.45
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.408
+                  title: ""
+                  date: 2026-09-14T21:03:20.533Z
+                - commits:
+                    - subject: Update mcr.microsoft.com/dotnet/runtime-deps:10.0.12-noble Docker
+                        digest to 23257ea
+                      hash: c87c136abe12cd8ae3db5058ee16de8b3cf265d2
+                      body: |
+                        Update mcr.microsoft.com/dotnet/runtime-deps
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.407
+                  title: ""
+                  date: 2026-09-11T19:08:13.540Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.36.43
+                      hash: e7ef1e3601e6996a975979e95402e9d1cef403de
+                      body: |
+                        Update aws/aws-cli from 2.36.42 to 2.36.43
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.406
+                  title: ""
+                  date: 2026-09-10T20:05:12.798Z
+          version: github-runner-vm-3.4.241
+          title: ""
+          date: 2026-09-17T10:18:07.832Z
+        - commits:
+            - subject: Update pre-commit hook crate-ci/typos to v1.49.1
+              hash: 5b72169c50f81837de013b0a036d2002f4f20d51
+              body: |
+                Update crate-ci/typos from 1.49.0 to 1.49.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.240
+          title: ""
+          date: 2026-09-17T08:57:57.095Z
+        - commits:
+            - subject: Switch to pgsty/minio image
+              hash: 73832d17058a71fda2f71623cf8e7302346dc4e5
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                See: https://balena.fibery.io/Work/Project/2938
+                see: https://balena.fibery.io/Work/Project/2938
+              author: Thodoris Greasidis
+              nested: []
+          version: github-runner-vm-3.4.239
+          title: ""
+          date: 2026-09-17T07:12:51.525Z
+  version: 0.23.544
+  title: ""
+  date: 2026-09-17T22:50:24.431Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.416
       hash: 484fcfa98672a59b7f1a79f01205214163f4718a
       body: |
