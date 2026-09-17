@@ -1,4 +1,28 @@
 - commits:
+    - subject: Switch tests to pgsty/minio
+      hash: faae27ad0b765c612242bbb846bab47ed3467559
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        See: https://balena.fibery.io/Work/Project/2938
+        see: https://balena.fibery.io/Work/Project/2938
+      author: Thodoris Greasidis
+      nested: []
+    - subject: Switch to pgsty/minio image
+      hash: 240fd4161a73fe7d84618bed81ae52216551f33e
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        See: https://balena.fibery.io/Work/Project/2938
+        see: https://balena.fibery.io/Work/Project/2938
+      author: Thodoris Greasidis
+      nested: []
+  version: 0.23.541
+  title: ""
+  date: 2026-09-17T05:57:48.302Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.410
       hash: a8ee9c41265b45a11350a141f3b5a9e517c1f2c9
       body: |
