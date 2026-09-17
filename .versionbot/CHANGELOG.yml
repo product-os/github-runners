@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update pre-commit hook crate-ci/typos to v1.50.2
+      hash: 306e9cb046c863854a514f70a6cb098cec7bafcd
+      body: |
+        Update crate-ci/typos from 1.49.1 to 1.50.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.542
+  title: ""
+  date: 2026-09-17T07:02:20.929Z
+- commits:
     - subject: Switch tests to pgsty/minio
       hash: faae27ad0b765c612242bbb846bab47ed3467559
       body: ""
