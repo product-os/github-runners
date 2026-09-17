@@ -1,6 +1,6 @@
 services:
   minio:
-    image: minio/minio:RELEASE.2024-10-29T16-01-48Z
+    image: pgsty/minio:RELEASE.2026-08-04T00-00-00Z
     command: server /data --console-address ""
     environment:
       MINIO_BROWSER: off
