@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.46
+      hash: e012ab79a5f1e66aa00df4dccab781976cd9b470
+      body: |
+        Update ghcr.io/balena-io/logs-to-vector from 1.10.45 to 1.10.46
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.546
+  title: ""
+  date: 2026-09-18T01:55:17.335Z
+- commits:
     - subject: Update registry:3.1.1 Docker digest to 849b7d2
       hash: 0f4fa19d8ab984e17483d27755cc78db5798a037
       body: |
