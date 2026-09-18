@@ -1,4 +1,69 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.246
+      hash: 583ba13cd7c0ea1cfb309109c78435efac613a53
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.242 to 3.4.246
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update alpine:3.24 Docker digest to 5b02b42
+              hash: 139f639d5301cadc656c259f4e6e0dc756710819
+              body: |
+                Update alpine
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.246
+          title: ""
+          date: 2026-09-18T04:31:17.470Z
+        - commits:
+            - subject: Update registry:3.1.1 Docker digest to fd374ba
+              hash: f7ccb7073fe52e23fbf8877e5c682fd0b6f43d05
+              body: |
+                Update registry
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.245
+          title: ""
+          date: 2026-09-18T03:43:17.216Z
+        - commits:
+            - subject: Update registry:3.1.1 Docker digest to 849b7d2
+              hash: aab6994a892a505c59a2cdbe0a5ea630b4aebd44
+              body: |
+                Update registry
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.244
+          title: ""
+          date: 2026-09-18T01:51:18.544Z
+        - commits:
+            - subject: Update alpine:3.24 Docker digest to e7c4abb
+              hash: 260e59a2cf52aa2ad029264babce3740a813b8c4
+              body: |
+                Update alpine
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.243
+          title: ""
+          date: 2026-09-18T00:13:26.783Z
+  version: 0.23.549
+  title: ""
+  date: 2026-09-18T04:50:49.108Z
+- commits:
     - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.47
       hash: 8320a31235f30a22786d9aaf4aa7ca05181b7151
       body: |
