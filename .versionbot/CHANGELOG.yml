@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update registry:3.1.1 Docker digest to fd374ba
+      hash: a4c3f981afcee1957c1e8a6be7b1e38b79035fde
+      body: |
+        Update registry
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.547
+  title: ""
+  date: 2026-09-18T02:57:12.198Z
+- commits:
     - subject: Update ghcr.io/balena-io/logs-to-vector Docker tag to v1.10.46
       hash: e012ab79a5f1e66aa00df4dccab781976cd9b470
       body: |
