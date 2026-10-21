@@ -1,4 +1,17 @@
 - commits:
+    - subject: Pin pgsty/minio Docker tag to b6bfe72
+      hash: 6f088c30735ed9851ad6fa6f026def9850988905
+      body: |
+        Update pgsty/minio
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.567
+  title: ""
+  date: 2026-10-21T20:22:43.188Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.423
       hash: dac87b85928d7d9eb45090d079aff896c06e60cc
       body: |
