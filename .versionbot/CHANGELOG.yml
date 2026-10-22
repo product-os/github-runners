@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/product-os/minio-init Docker tag to v0.1.7
+      hash: 2699ec56e79be9a73e4e8e97d54c1baf21c760d5
+      body: |
+        Update ghcr.io/product-os/minio-init from 0.1.5 to 0.1.7
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.587
+  title: ""
+  date: 2026-10-22T23:45:41.629Z
+- commits:
     - subject: "minio-init: Generate user passwords with ansible.builtin.password"
       hash: 385ff62141f3d586958603d4f3ab3251146d8aa2
       body: |
