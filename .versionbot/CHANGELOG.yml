@@ -1,4 +1,630 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.470
+      hash: da60eac677cd5f825aabad699cfa0891b12d44e2
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.423 to 6.12.470
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dotnet monorepo
+              hash: 81f4f815869b4138ef51065191370bf09f12941c
+              body: |
+                Update mcr.microsoft.com/dotnet/runtime-deps
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.470
+          title: ""
+          date: 2026-10-21T22:03:34.814Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v25
+              hash: 362b90d492a72efa95feca13b3fbf75446b339e7
+              body: |
+                Update balena-io/balena-cli from 23.2.32 to 25.2.7
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.469
+          title: ""
+          date: 2026-10-21T21:08:19.132Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.38.4
+              hash: cc5c360641b9dcc26203b173f5f37fa41d72d96c
+              body: |
+                Update aws/aws-cli from 2.38.3 to 2.38.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.468
+          title: ""
+          date: 2026-10-21T20:11:29.959Z
+        - commits:
+            - subject: Update dependency docker/buildx to v0.38.1
+              hash: 7cdea3fb2900e17a59c29b5173ab69bb507da202
+              body: |
+                Update docker/buildx from 0.38.0 to 0.38.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.467
+          title: ""
+          date: 2026-10-21T18:06:39.575Z
+        - commits:
+            - subject: Update golang:1.27.3 Docker digest to f20d83a
+              hash: 7139a9bf1b65a99aa17c552bf1813f94d529eab8
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.466
+          title: ""
+          date: 2026-10-21T17:10:42.992Z
+        - commits:
+            - subject: Update dependency cli/cli to v2.103.0
+              hash: 2ee7521173eb013e67f35ae13e668f1e4a6f864a
+              body: |
+                Update cli/cli from 2.102.1 to 2.103.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.465
+          title: ""
+          date: 2026-10-21T16:17:30.297Z
+        - commits:
+            - subject: Update Node.js to v24.22.1
+              hash: ca369d7f6a0c2daa08fdb40eb27da85d43f157a9
+              body: |
+                Update node from 24.22.0 to 24.22.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.464
+          title: ""
+          date: 2026-10-21T12:08:07.424Z
+        - commits:
+            - subject: Update dependency docker/compose to v5.6.1
+              hash: 26461f75f39e750e79acbfcf0b7770726884a445
+              body: |
+                Update docker/compose from 5.6.0 to 5.6.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.463
+          title: ""
+          date: 2026-10-21T09:13:29.080Z
+        - commits:
+            - subject: Update golang:1.27.3 Docker digest to f241642
+              hash: de94b2e465626dab43397db7fe151889642f7455
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.462
+          title: ""
+          date: 2026-10-21T08:17:12.004Z
+        - commits:
+            - subject: Update golang:1.27.3 Docker digest to 6928d94
+              hash: b08d27bdca3948b756969b2e13f4f7df9d1a02a3
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.461
+          title: ""
+          date: 2026-10-21T05:12:55.269Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.38.3
+              hash: fef42d8a5431345a15bc25bcc1e3c6e93ff541e3
+              body: |
+                Update aws/aws-cli from 2.38.2 to 2.38.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.460
+          title: ""
+          date: 2026-10-20T21:09:38.830Z
+        - commits:
+            - subject: Update dependency cli/cli to v2.102.1
+              hash: c48245a18c3937e5940f0538947620b11f861a4a
+              body: |
+                Update cli/cli from 2.102.0 to 2.102.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.459
+          title: ""
+          date: 2026-10-20T20:07:27.593Z
+        - commits:
+            - subject: Update golang Docker tag to v1.27.3
+              hash: 5610d6d1a09f42062ad0be68559b433a86134752
+              body: |
+                Update golang from 1.27.2 to 1.27.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.458
+          title: ""
+          date: 2026-10-20T05:10:35.301Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.38.2
+              hash: 460eeb0fcd9a2877219e617039b8479a670c509d
+              body: |
+                Update aws/aws-cli from 2.38.1 to 2.38.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.457
+          title: ""
+          date: 2026-10-19T20:04:06.031Z
+        - commits:
+            - subject: Update dependency npm to v11.21.1
+              hash: c091e546609317f47b17491cd07074f9c2a8d338
+              body: |
+                Update npm from 11.21.0 to 11.21.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.456
+          title: ""
+          date: 2026-10-18T17:05:35.904Z
+        - commits:
+            - subject: Update Node.js to v24.22.0
+              hash: 878244a84584bae580245906b19b7e869240bc42
+              body: |
+                Update node from 24.21.0 to 24.22.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.455
+          title: ""
+          date: 2026-10-14T21:01:19.624Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.38.1
+              hash: 898a64d835c2e4e54701f8a817f40a4dc75d021a
+              body: |
+                Update aws/aws-cli from 2.38.0 to 2.38.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.454
+          title: ""
+          date: 2026-10-14T20:07:03.143Z
+        - commits:
+            - subject: Update golang:1.27.2 Docker digest to 8201530
+              hash: 34c7322104bef6c56909c90a36714afa27a77065
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.453
+          title: ""
+          date: 2026-10-14T02:07:41.021Z
+        - commits:
+            - subject: Update dotnet monorepo
+              hash: 956210a4ceab77fc7021c8ee004cbd036d230f49
+              body: >
+                Update mcr.microsoft.com/dotnet/runtime-deps from 10.0.12 to
+                10.0.13
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.452
+          title: ""
+          date: 2026-10-13T23:58:51.340Z
+        - commits:
+            - subject: Update dependency powershell/powershell to v7.6.7
+              hash: 485a5a17d51e88f74fcd8d9e8ec85f44e60395e3
+              body: |
+                Update powershell/powershell from 7.6.6 to 7.6.7
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.451
+          title: ""
+          date: 2026-10-13T21:13:53.018Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.38.0
+              hash: e8824a0a8354f4d76a46fc16bce8b63b5d3fe750
+              body: |
+                Update aws/aws-cli from 2.37.13 to 2.38.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.450
+          title: ""
+          date: 2026-10-13T20:03:59.411Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.37.13
+              hash: bdcf6d57eb7fb06c50c5dda779a5c1b02a06b284
+              body: |
+                Update aws/aws-cli from 2.37.12 to 2.37.13
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.449
+          title: ""
+          date: 2026-10-13T09:26:03.962Z
+        - commits:
+            - subject: Update golang:1.27.2 Docker digest to 007a316
+              hash: 00a6c10d398d4e1199aca9cf05560be5de316bbd
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.448
+          title: ""
+          date: 2026-10-13T08:24:39.003Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.37.12
+              hash: 09a94c44b30996f536c4a51c73187dd977909f25
+              body: |
+                Update aws/aws-cli from 2.37.11 to 2.37.12
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.447
+          title: ""
+          date: 2026-10-09T20:02:56.785Z
+        - commits:
+            - subject: Update dependency docker/buildx to v0.38.0
+              hash: 774cc9ce7bfef85f6b104c2819a0085cd83c0791
+              body: |
+                Update docker/buildx from 0.37.1 to 0.38.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.446
+          title: ""
+          date: 2026-10-08T21:17:49.800Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.37.11
+              hash: 2d258c46ec02bd49ff8a46c777c13eaf52a23a2e
+              body: |
+                Update aws/aws-cli from 2.37.9 to 2.37.11
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.445
+          title: ""
+          date: 2026-10-08T20:05:44.695Z
+        - commits:
+            - subject: Update golang Docker tag to v1.27.2
+              hash: b068edee8f00003866deb5905bf643c698548d5f
+              body: |
+                Update golang from 1.27.1 to 1.27.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.444
+          title: ""
+          date: 2026-10-08T19:16:54.340Z
+        - commits:
+            - subject: Update dependency actions/runner to v2.338.0
+              hash: 37f701d0a16696352bf24c29e0bfc5fe5b3b0c7e
+              body: |
+                Update actions/runner from 2.337.0 to 2.338.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.443
+          title: ""
+          date: 2026-10-06T15:09:15.379Z
+        - commits:
+            - subject: Update golang:1.27.1 Docker digest to 1e93e00
+              hash: 59cd1b7b890ed4eb503b6eeec2733de2b363a3ce
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.442
+          title: ""
+          date: 2026-10-06T08:13:51.065Z
+        - commits:
+            - subject: Update golang:1.27.1 Docker digest to 23fe807
+              hash: 453f55e0101c0d2e7d1a57dec5e5884601928696
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.441
+          title: ""
+          date: 2026-10-06T05:12:58.253Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.37.9
+              hash: cf392bb95cb48eff73962767bf85e05e50fa4638
+              body: |
+                Update aws/aws-cli from 2.37.8 to 2.37.9
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.440
+          title: ""
+          date: 2026-10-03T20:47:09.748Z
+        - commits:
+            - subject: Update dependency npm to v11.21.0
+              hash: b3064742bb0bf4b96d973c9700f749f835fce490
+              body: |
+                Update npm from 11.20.0 to 11.21.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.439
+          title: ""
+          date: 2026-10-03T18:59:18.899Z
+        - commits:
+            - subject: Update dotnet monorepo
+              hash: 073d5633eadf3782b7b58d42775fe1e8fa3a0cba
+              body: |
+                Update mcr.microsoft.com/dotnet/runtime-deps
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.438
+          title: ""
+          date: 2026-10-02T21:06:13.030Z
+        - commits:
+            - subject: Update dependency docker/compose to v5.6.0
+              hash: 3d5d9da17e934921c824509f5bb70a11669a7fad
+              body: |
+                Update docker/compose from 5.5.1 to 5.6.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.437
+          title: ""
+          date: 2026-10-02T17:08:20.826Z
+        - commits:
+            - subject: Update dotnet monorepo
+              hash: 7c33883e3eba4fc219baa26b6028dd82c824b627
+              body: |
+                Update mcr.microsoft.com/dotnet/runtime-deps
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.436
+          title: ""
+          date: 2026-10-02T14:09:10.853Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.37.8
+              hash: 5ea252dac34d8e0df51717b0a7b1b2a98d08bfd1
+              body: |
+                Update aws/aws-cli from 2.37.7 to 2.37.8
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.435
+          title: ""
+          date: 2026-10-01T20:08:59.383Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.37.7
+              hash: eebc450f3e08e61a23ff9006a94c8992118c7dc4
+              body: |
+                Update aws/aws-cli from 2.37.6 to 2.37.7
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.434
+          title: ""
+          date: 2026-09-30T20:08:10.050Z
+        - commits:
+            - subject: Update golang:1.27.1 Docker digest to e0174e5
+              hash: 21c36a79e253cc5701043e7a78c288b1318c8ec9
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.433
+          title: ""
+          date: 2026-09-30T08:22:17.394Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.37.6
+              hash: a53948bc9ed21637d0b337023d7316c0f79cfeb8
+              body: |
+                Update aws/aws-cli from 2.37.5 to 2.37.6
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.432
+          title: ""
+          date: 2026-09-30T04:12:15.016Z
+        - commits:
+            - subject: Update dependency cli/cli to v2.102.0
+              hash: 9b4c17d670f4fc833b9dc66c46c43ff2ca83cce5
+              body: |
+                Update cli/cli from 2.101.0 to 2.102.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.431
+          title: ""
+          date: 2026-09-30T03:22:40.720Z
+        - commits:
+            - subject: Update dependency mikefarah/yq to v4.54.1
+              hash: 36972719189f7e9087ea4d101b7651b4b02af255
+              body: |
+                Update mikefarah/yq from 4.53.6 to 4.54.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.430
+          title: ""
+          date: 2026-09-29T05:11:54.244Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.37.5
+              hash: 46338850755fb3099bbfd3835d20259052b18348
+              body: |
+                Update aws/aws-cli from 2.37.4 to 2.37.5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.429
+          title: ""
+          date: 2026-09-28T20:05:01.328Z
+        - commits:
+            - subject: Update dependency npm to v11.20.0
+              hash: b72c661c198abd5ff2c674da53145e46fb6ab0c8
+              body: |
+                Update npm from 11.19.1 to 11.20.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.428
+          title: ""
+          date: 2026-09-25T22:00:46.177Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.37.4
+              hash: bf0f48b71f6cc7e6f0979cec105dddde47a06331
+              body: |
+                Update aws/aws-cli from 2.37.3 to 2.37.4
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.427
+          title: ""
+          date: 2026-09-25T20:07:02.673Z
+        - commits:
+            - subject: Update mcr.microsoft.com/dotnet/runtime-deps:8.0.31-jammy Docker digest
+                to e7a499d
+              hash: 9314687e3f9ba662fbf86795a3be19882e0830a2
+              body: |
+                Update mcr.microsoft.com/dotnet/runtime-deps
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.426
+          title: ""
+          date: 2026-09-25T03:06:30.643Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.37.3
+              hash: db717eff103fa45a6f361854a0885ea1614373d7
+              body: |
+                Update aws/aws-cli from 2.37.2 to 2.37.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.425
+          title: ""
+          date: 2026-09-25T01:41:16.137Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.37.2
+              hash: bbd4b7ccf4fbed71272b5de837e5ed00a95979dd
+              body: |
+                Update aws/aws-cli from 2.37.1 to 2.37.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.424
+          title: ""
+          date: 2026-09-24T20:04:12.804Z
+  version: 0.23.571
+  title: ""
+  date: 2026-10-22T01:20:37.325Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.310
       hash: 966b7a9561090107cc6650bd633b680b689fce20
       body: |
