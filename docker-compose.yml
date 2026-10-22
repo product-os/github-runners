@@ -51,31 +51,31 @@ services:
 
   runner-noble-1:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.310-noble@sha256:1ca5a1578e49100ed69a1bbf9464f26370bc7a08e24333439724dfe420b7aa43
+    image: ghcr.io/product-os/github-runner-vm:3.4.311-noble@sha256:b395df7a9b92e1f3f2a90984f0874a3a7995f3770746d4d53a7825bf2c134a0a
 
   runner-noble-2:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.310-noble@sha256:1ca5a1578e49100ed69a1bbf9464f26370bc7a08e24333439724dfe420b7aa43
+    image: ghcr.io/product-os/github-runner-vm:3.4.311-noble@sha256:b395df7a9b92e1f3f2a90984f0874a3a7995f3770746d4d53a7825bf2c134a0a
 
   runner-noble-3:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.310-noble@sha256:1ca5a1578e49100ed69a1bbf9464f26370bc7a08e24333439724dfe420b7aa43
+    image: ghcr.io/product-os/github-runner-vm:3.4.311-noble@sha256:b395df7a9b92e1f3f2a90984f0874a3a7995f3770746d4d53a7825bf2c134a0a
 
   runner-noble-4:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.310-noble@sha256:1ca5a1578e49100ed69a1bbf9464f26370bc7a08e24333439724dfe420b7aa43
+    image: ghcr.io/product-os/github-runner-vm:3.4.311-noble@sha256:b395df7a9b92e1f3f2a90984f0874a3a7995f3770746d4d53a7825bf2c134a0a
 
   runner-noble-5:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.310-noble@sha256:1ca5a1578e49100ed69a1bbf9464f26370bc7a08e24333439724dfe420b7aa43
+    image: ghcr.io/product-os/github-runner-vm:3.4.311-noble@sha256:b395df7a9b92e1f3f2a90984f0874a3a7995f3770746d4d53a7825bf2c134a0a
 
   runner-noble-6:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.310-noble@sha256:1ca5a1578e49100ed69a1bbf9464f26370bc7a08e24333439724dfe420b7aa43
+    image: ghcr.io/product-os/github-runner-vm:3.4.311-noble@sha256:b395df7a9b92e1f3f2a90984f0874a3a7995f3770746d4d53a7825bf2c134a0a
 
   runner-noble-7:
     <<: *runner-vm
-    image: ghcr.io/product-os/github-runner-vm:3.4.310-noble@sha256:1ca5a1578e49100ed69a1bbf9464f26370bc7a08e24333439724dfe420b7aa43
+    image: ghcr.io/product-os/github-runner-vm:3.4.311-noble@sha256:b395df7a9b92e1f3f2a90984f0874a3a7995f3770746d4d53a7825bf2c134a0a
 
   # https://distribution.github.io/distribution/recipes/mirror/
   registry-cache:
