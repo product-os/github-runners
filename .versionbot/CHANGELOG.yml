@@ -1,4 +1,17 @@
 - commits:
+    - subject: Update ghcr.io/product-os/minio-init Docker tag to v0.1.1
+      hash: 947a21b3093cf6da39f2f089eff5cb7937ce4f04
+      body: |
+        Update ghcr.io/product-os/minio-init from 0.1.0 to 0.1.1
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested: []
+  version: 0.23.581
+  title: ""
+  date: 2026-10-22T18:58:19.196Z
+- commits:
     - subject: Update balena/cert-manager Docker tag to v0.5.2
       hash: 7d99ed1c53127d9f3db0e24e4b9c187b955ef903
       body: |
