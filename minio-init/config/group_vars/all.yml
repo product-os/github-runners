@@ -19,12 +19,12 @@ minio_buckets:
 minio_users:
   - name: "actions-user"
     # Generate a random password as we will use access keys for access
-    password: "{{ lookup('community.general.random_string', base64=true, length=30) }}"
+    password: "{{ lookup('ansible.builtin.password', '/dev/null', length=30, chars=['ascii_letters', 'digits']) }}"
     policies: ["readwrite"]
     state: present
   - name: "yocto-user"
     # Generate a random password as we will use access keys for access
-    password: "{{ lookup('community.general.random_string', base64=true, length=30) }}"
+    password: "{{ lookup('ansible.builtin.password', '/dev/null', length=30, chars=['ascii_letters', 'digits']) }}"
     policies: ["readwrite"]
     state: present
 

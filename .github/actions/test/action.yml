@@ -1,0 +1,20 @@
+# https://github.com/product-os/flowzone#custom
+name: "Test custom"
+description: "Custom test step to run during a pull request"
+# Flowzone always provides these inputs, so the composite action must define them
+inputs:
+  json:
+    description: "JSON stringified object containing all the inputs from the calling workflow"
+    required: true
+  secrets:
+    description: "JSON stringified object containing all the secrets from the calling workflow"
+    required: true
+  variables:
+    description: "JSON stringified object containing all the variables from the calling workflow"
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Test minio-init
+      shell: bash
+      run: docker compose -f minio-init/tests/docker-compose.yml up --build --exit-code-from sut
