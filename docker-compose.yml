@@ -267,7 +267,7 @@ services:
   # .. sends logs to log-aggregator in product-os namespace over AWS/VPC peering link
   logs-to-vector:
     # FIXME: switch to ghcr.io or implement registry-proxy tag listing for updates
-    image: ghcr.io/balena-io/logs-to-vector:1.10.49@sha256:9a76f409242a1bdf72f54179d79a441d9d6bb44505ff9532ee1c07389406a9e3
+    image: ghcr.io/balena-io/logs-to-vector:1.10.50@sha256:740760d6a133de746ab47ade8714d623178d1618d811f95a6661cec2595864a1
     restart: unless-stopped
     environment:
       LOG: warn
