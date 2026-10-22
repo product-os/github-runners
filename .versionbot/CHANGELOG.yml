@@ -1,4 +1,20 @@
 - commits:
+    - subject: "minio-init: Generate user passwords with ansible.builtin.password"
+      hash: 385ff62141f3d586958603d4f3ab3251146d8aa2
+      body: |
+        minio-init 0.1.0 moved to ansible-core, which does not ship
+        community.general, so the random_string lookup fails on start.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 0.23.586
+  title: ""
+  date: 2026-10-22T23:29:37.243Z
+- commits:
     - subject: Update ghcr.io/product-os/minio-init Docker tag to v0.1.5
       hash: b4d0f38a117ef58ecb530548214612c24a1450e4
       body: |
