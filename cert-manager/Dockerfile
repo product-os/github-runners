@@ -1,4 +1,4 @@
 # FIXME: switch to bh.cr/balena/cert-manager/x.y.z when multi-arch ships
-FROM balena/cert-manager:0.5.2@sha256:70806c8b411da0737335b7bc3dcb25d316f02a593abf6097580322cc4665d5f3
+FROM balena/cert-manager:0.5.3@sha256:93d908247273335d23f027a9ba61897975b98ef13ab010989f816b0f72d2b850
 
 COPY *.json /opt/
