@@ -1,4 +1,71 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.319
+      hash: 8f3cfd2e1963d5e9ac8973c17b9e482ca21d16e0
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.318 to 3.4.319
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.475
+              hash: c71e048388d306cffd7f81dc965902a1bff8c8b6
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.472 to
+                6.12.475
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dotnet monorepo
+                      hash: 9de75d70410cd234e53be9c7139010eed4df5746
+                      body: >
+                        Update mcr.microsoft.com/dotnet/runtime-deps from
+                        10.0.13 to 10.0.14
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.475
+                  title: ""
+                  date: 2026-10-25T19:57:59.864Z
+                - commits:
+                    - subject: Update dependency powershell/powershell to v7.6.9
+                      hash: 069ae62e0b86fbfd16d52b2f77c56188fc8ad894
+                      body: |
+                        Update powershell/powershell from 7.6.8 to 7.6.9
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.474
+                  title: ""
+                  date: 2026-10-25T18:00:42.329Z
+                - commits:
+                    - subject: Update dependency cli/cli to v2.103.2
+                      hash: a21c49cf5119740d41624f06cbb7b85a499f64c5
+                      body: |
+                        Update cli/cli from 2.103.0 to 2.103.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.473
+                  title: ""
+                  date: 2026-10-23T21:14:54.440Z
+          version: github-runner-vm-3.4.319
+          title: ""
+          date: 2026-10-25T21:23:49.899Z
+  version: 0.23.596
+  title: ""
+  date: 2026-10-25T22:53:51.049Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.476
       hash: 5624c3dcc5297cfcede640cbcdeb69d6f29f24b5
       body: |
