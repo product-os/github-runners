@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.485
+      hash: a0efa1816fb368ab4ee5a36fd22b57990109aa14
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.484 to 6.12.485
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency kubernetes/kubernetes to v1.37.2
+              hash: 181dcefb667082b52ffb15f1d36abe33066ec1b9
+              body: |
+                Update kubernetes/kubernetes from 1.37.1 to 1.37.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.485
+          title: ""
+          date: 2026-10-28T05:05:41.807Z
+  version: 0.23.615
+  title: ""
+  date: 2026-10-28T05:47:10.176Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.328
       hash: dc786b1f4a677afc65e37d4e7d0f4e82034f190f
       body: |
