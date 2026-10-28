@@ -1,4 +1,96 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.332
+      hash: 3f7af3a5d2aa40ae3bcbc7c15b0823bf6f7369d3
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.331 to 3.4.332
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.487
+              hash: 62f8cfc975b163c8a3fd6692eaef028b909de5bf
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.482 to
+                6.12.487
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update golang:1.27.3 Docker digest to b760209
+                      hash: 17f7faeaa9ee744bb082f49c66d356e0e4a7f78d
+                      body: |
+                        Update golang
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.487
+                  title: ""
+                  date: 2026-10-28T12:00:30.180Z
+                - commits:
+                    - subject: Update golang:1.27.3 Docker digest to 898838c
+                      hash: 1e0b424915798259637b77f09c705e1fd0d15f39
+                      body: |
+                        Update golang
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.486
+                  title: ""
+                  date: 2026-10-28T07:57:34.819Z
+                - commits:
+                    - subject: Update dependency kubernetes/kubernetes to v1.37.2
+                      hash: 181dcefb667082b52ffb15f1d36abe33066ec1b9
+                      body: |
+                        Update kubernetes/kubernetes from 1.37.1 to 1.37.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.485
+                  title: ""
+                  date: 2026-10-28T05:05:41.807Z
+                - commits:
+                    - subject: Update golang:1.27.3 Docker digest to 6f1acc8
+                      hash: d317e2f88a0e3d01e18d7582d478bef30d65a2c5
+                      body: |
+                        Update golang
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.484
+                  title: ""
+                  date: 2026-10-28T02:00:59.661Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.39.0
+                      hash: d5e96745a61a0f2d228ed8f15999db889e11c5b7
+                      body: |
+                        Update aws/aws-cli from 2.38.6 to 2.39.0
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.483
+                  title: ""
+                  date: 2026-10-27T21:01:00.689Z
+          version: github-runner-vm-3.4.332
+          title: ""
+          date: 2026-10-28T13:51:15.513Z
+  version: 0.23.621
+  title: ""
+  date: 2026-10-28T16:14:24.543Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.331
       hash: e05d0c526e3d2b89f3d8e8688c12172572ea6b8f
       body: |
