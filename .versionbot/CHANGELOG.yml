@@ -1,4 +1,44 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.330
+      hash: 2370d7676f70adc1962976835b7514d4c54f38a6
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.329 to 3.4.330
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/github-runner-kernel Docker tag to v0.6.27
+              hash: 84f847ade6a7bfbf3f7d74d0ac619ff20e06d3f2
+              body: >
+                Update ghcr.io/product-os/github-runner-kernel from 0.6.26 to
+                0.6.27
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update debian:bookworm-slim Docker digest to 99c0b25
+                      hash: 5b268ec6d2f4317a6310445ea59cda34e93b656d
+                      body: |
+                        Update debian
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: github-runner-kernel-0.6.27
+                  title: ""
+                  date: 2026-10-28T02:56:24.794Z
+          version: github-runner-vm-3.4.330
+          title: ""
+          date: 2026-10-28T09:56:50.625Z
+  version: 0.23.618
+  title: ""
+  date: 2026-10-28T11:45:10.923Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.329
       hash: aac2e42b3d6dc62703e93d46ddf9b783cc9c820d
       body: |
