@@ -1,4 +1,69 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.345
+      hash: 8f1adcac7180ef64f318acadc5284010a795b5eb
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.341 to 3.4.345
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update docker/login-action action to v4.8.0
+              hash: 4812efe31cf15d8a2fe876b33a742a1eafe17d92
+              body: |
+                Update docker/login-action from 4.7.0 to 4.8.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.345
+          title: ""
+          date: 2026-11-06T00:42:14.275Z
+        - commits:
+            - subject: Update golang:1.27.3 Docker digest to e519d3b
+              hash: 1ad6a62167382a1c93b127ee71dcbdb2d47c3158
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.344
+          title: ""
+          date: 2026-11-05T23:12:54.687Z
+        - commits:
+            - subject: Update registry:3.1.2 Docker digest to 88604df
+              hash: 1e58b12587276e3307cf3134a3ea9b323cabc71e
+              body: |
+                Update registry
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.343
+          title: ""
+          date: 2026-11-05T22:22:54.768Z
+        - commits:
+            - subject: Update alpine:3.24 Docker digest to ce9e1e6
+              hash: 1a51d3de9cef89bd6324541cddfbcf388d97a4ef
+              body: |
+                Update alpine
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.342
+          title: ""
+          date: 2026-11-05T21:27:31.885Z
+  version: 0.23.645
+  title: ""
+  date: 2026-11-06T00:58:46.211Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.501
       hash: 8ac975dc17d437e2cde9e187cc6edf9cd1a65f23
       body: |
