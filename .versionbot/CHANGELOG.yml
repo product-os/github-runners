@@ -1,4 +1,43 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.503
+      hash: bdda7c32932ca382fb5aead9b794fd5e7c32b19d
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.501 to 6.12.503
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency mikefarah/yq to v4.54.2
+              hash: 2dfbd37d29b94c8a824b55e84c248c954bd0718b
+              body: |
+                Update mikefarah/yq from 4.54.1 to 4.54.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.503
+          title: ""
+          date: 2026-11-06T03:11:03.823Z
+        - commits:
+            - subject: Update dotnet monorepo
+              hash: 869d7ed4bc898ba1243f2e109c02e00652df6afd
+              body: |
+                Update mcr.microsoft.com/dotnet/runtime-deps
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.502
+          title: ""
+          date: 2026-11-06T01:17:40.829Z
+  version: 0.23.649
+  title: ""
+  date: 2026-11-06T04:43:32.477Z
+- commits:
     - subject: Update registry:3.1.2 Docker digest to 3890751
       hash: 1c0fc3bbe4a12d2ae6755b447642493939a60815
       body: |
