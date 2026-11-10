@@ -1,4 +1,56 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.512
+      hash: 47c82074d5f6b8501806ed177d64dfe0d4b66101
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.509 to 6.12.512
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency powershell/powershell to v7.6.10
+              hash: 5eba00c55219a8476102b55ac3592ccebdd96708
+              body: |
+                Update powershell/powershell from 7.6.9 to 7.6.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.512
+          title: ""
+          date: 2026-11-10T22:58:16.032Z
+        - commits:
+            - subject: Update golang:1.27.4 Docker digest to 08bcb99
+              hash: 7b2717cf7286cb11d54957b4a3b8d94b5e067064
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.511
+          title: ""
+          date: 2026-11-10T22:05:14.279Z
+        - commits:
+            - subject: Update dependency balena-io/balena-cli to v25.2.11
+              hash: a42861c8bae05b75772bc48201d91fcb65904c5b
+              body: |
+                Update balena-io/balena-cli from 25.2.9 to 25.2.11
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.510
+          title: ""
+          date: 2026-11-10T20:57:43.463Z
+  version: 0.23.662
+  title: ""
+  date: 2026-11-10T23:41:42.760Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.353
       hash: 372786cdb1b8a2b877bec3ced55a9d0be139ea90
       body: |
