@@ -43,7 +43,7 @@ services:
 
   runner-container-1:
     <<: *runner-container
-    image: ghcr.io/product-os/self-hosted-runners:6.12.515-noble@sha256:2918bca0a216760912d278dd2f7bd2ed99437cf2945df87c65e526df5a635735
+    image: ghcr.io/product-os/self-hosted-runners:6.12.516-noble@sha256:a2c864be79b09ebbd04db2c26029aef04c6e9187c51e6e753e424e3a596883b5
     volumes:
       # Use a volume for the runner root filesystem
       # See https://github.com/product-os/self-hosted-runners/pull/501
