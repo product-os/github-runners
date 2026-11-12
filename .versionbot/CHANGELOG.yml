@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.518
+      hash: 0714796d9175ff22d7c718336cf9aecb48b2f9bd
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.517 to 6.12.518
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency mikefarah/yq to v4.54.3
+              hash: 7ed2108e3955f60df50e2b5149ee80324ab28ca7
+              body: |
+                Update mikefarah/yq from 4.54.2 to 4.54.3
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.518
+          title: ""
+          date: 2026-11-12T00:01:02.676Z
+  version: 0.23.670
+  title: ""
+  date: 2026-11-12T01:45:04.306Z
+- commits:
     - subject: Update registry:3.1.2 Docker digest to 82f6ff4
       hash: efff2c368582051fbfc0389568be682de9480ca1
       body: |
