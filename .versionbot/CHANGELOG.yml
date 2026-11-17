@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.536
+      hash: 3a3fc98a7bf9aca8636dfc739adc6150d8d12a8f
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.535 to 6.12.536
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update golang:1.27.4 Docker digest to 205c763
+              hash: 5d34854713d20690af2b69cf2eac6b16ef652b21
+              body: |
+                Update golang
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.536
+          title: ""
+          date: 2026-11-17T16:01:42.875Z
+  version: 0.23.697
+  title: ""
+  date: 2026-11-17T16:53:47.433Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.535
       hash: 820190d083d45d8893d945dbfd5d34ff5c413057
       body: |
