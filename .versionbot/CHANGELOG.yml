@@ -1,4 +1,23 @@
 - commits:
+    - subject: Pin metrics-agent image by digest
+      hash: fb617c27cdbeb6b5fe8306b3243d099acbe93154
+      body: |
+        The metrics-agent service runs privileged with the balenaEngine socket
+        but was referenced by a mutable tag only, so a re-pointed upstream tag
+        would be deployed to every runner host on the next release. Pin it by
+        digest like every other image in the fleet compose file; Renovate
+        already updates tag and digest together for pinned images.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Claude-Session: https://claude.ai/code/session_0166rPqujRmCFiQw783zgGEL
+        claude-session: https://claude.ai/code/session_0166rPqujRmCFiQw783zgGEL
+      author: Claude
+      nested: []
+  version: 0.23.716
+  title: ""
+  date: 2026-11-20T00:00:39.328Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.548
       hash: 7b575092e82f4a8425d4f0c1c0c87ef841e56c6e
       body: |
