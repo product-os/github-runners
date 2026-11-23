@@ -1,4 +1,92 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.379
+      hash: 8e49b0f75088dfe039cd82c954d63b16c6462ee4
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.377 to 3.4.379
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Verify release downloads against pinned checksums
+              hash: 0ceccb6d54b839965887342a20d01014b83e0b04
+              body: >
+                - Install eget with go install at a fixed version, so the go
+                command
+                  verifies it against the Go checksum database, and let Renovate track it.
+                - Add build/eget-verified, which looks up each asset's SHA-256
+                in
+                  build/checksums.sha256 and passes it to eget --verify-sha256. It
+                  refuses to run without a pinned hash, and the pinned flags always
+                  take precedence over caller options.
+                - Download s6-overlay, go-github-apps and firecracker through
+                it.
+
+                - Add a Renovate regex manager (github-release-attachments) so
+                the
+                  hashes move with the tag bumps, and wait 7 days before trusting a
+                  new release.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Pin build inputs that were pulled by mutable reference
+              hash: 594a44c4971608e3b2ea05085fde40ef58aeadf5
+              body: >
+                - Pin the confd and minio-init images by digest.
+
+                - Install bats from a lockfile with npm ci --ignore-scripts
+                instead of
+                  an unversioned global npm install.
+                - Copy the host register/unregister scripts and lsb-release from
+                the
+                  digest-pinned upstream image rather than the stage that runs npm.
+                - Stop ignoring tests/** in Renovate so the minio-init pin stays
+                current.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-3.4.379
+          title: ""
+          date: 2026-11-23T23:24:49.443Z
+        - commits:
+            - subject: Use pre-commit hooks that need no Docker
+              hash: 88710d7bedfd12c32f1154aa02e5125b37a2146d
+              body: >
+                The -docker hooks build an image locally, which breaks when the
+                active
+
+                buildx builder does not load images ("pull access denied" on
+
+                pre-commit-<hash>). typos-docker also compiles typos from source
+                on
+
+                every rev bump, which needs more memory than a default Podman
+                machine
+
+                has. Switch to the wheel, node and go variants.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: github-runner-vm-3.4.378
+          title: ""
+          date: 2026-11-23T22:22:58.017Z
+  version: 0.23.734
+  title: ""
+  date: 2026-11-23T23:43:29.123Z
+- commits:
     - subject: Update ghcr.io/product-os/minio-init Docker tag to v0.1.8
       hash: 3125ce5d2fb4928edc1ed2c1a840ca2e6d377bca
       body: |
