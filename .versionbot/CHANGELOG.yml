@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.385
+      hash: e2eed12d73413600ef9dc26a24734ac5f3385fa4
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.384 to 3.4.385
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/minio-init Docker tag to v0.0.10
+              hash: e8d9102c947fef566c6d72746c821c0e8cf91c3c
+              body: |
+                Update ghcr.io/product-os/minio-init from 0.0.3 to 0.0.10
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.385
+          title: ""
+          date: 2026-11-24T09:43:36.774Z
+  version: 0.23.742
+  title: ""
+  date: 2026-11-24T10:49:29.836Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.384
       hash: 1fb2b986359595e0c611eabb9e1cdfe0e604871f
       body: |
