@@ -1,4 +1,53 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.560
+      hash: 67cd69810adf5431a8091e4223ba9a6e9a0b1f0f
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.558 to 6.12.560
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Use pre-commit hooks that need no Docker
+              hash: 3fefe650a9c6d19fd86289c27597388c338a946d
+              body: >
+                The -docker hooks build an image locally, which breaks when the
+                active
+
+                buildx builder does not load images ("pull access denied" on
+
+                pre-commit-<hash>). Switch actionlint and markdownlint to the go
+                and
+
+                node variants.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.12.560
+          title: ""
+          date: 2026-11-23T22:53:21.902Z
+        - commits:
+            - subject: Update dependency aws/aws-cli to v2.42.2
+              hash: 82b633fc843a3715bb2fbda64dd813ec463e617a
+              body: |
+                Update aws/aws-cli from 2.42.1 to 2.42.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: self-hosted-runners-6.12.559
+          title: ""
+          date: 2026-11-23T22:06:12.143Z
+  version: 0.23.735
+  title: ""
+  date: 2026-11-24T00:57:18.378Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.379
       hash: 8e49b0f75088dfe039cd82c954d63b16c6462ee4
       body: |
