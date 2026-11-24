@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.384
+      hash: 1fb2b986359595e0c611eabb9e1cdfe0e604871f
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.383 to 3.4.384
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update dependency nabeken/go-github-apps to v0.2.7
+              hash: 15be864d89cf4a02d9e60d09ab131547f1b4c300
+              body: |
+                Update nabeken/go-github-apps from 0.1.15 to 0.2.7
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: github-runner-vm-3.4.384
+          title: ""
+          date: 2026-11-24T07:55:45.460Z
+  version: 0.23.741
+  title: ""
+  date: 2026-11-24T08:45:40.995Z
+- commits:
     - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.383
       hash: 8642e6874068e0ef04f0490a1135ce63442458a5
       body: |
