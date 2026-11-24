@@ -1,4 +1,68 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.381
+      hash: 8f232bfe32143a9978591031093b8cbd56feb053
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.380 to 3.4.381
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.560
+              hash: aea0185387f310495df70a2c9410691d8f3cbb42
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.558 to
+                6.12.560
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Use pre-commit hooks that need no Docker
+                      hash: 3fefe650a9c6d19fd86289c27597388c338a946d
+                      body: >
+                        The -docker hooks build an image locally, which breaks
+                        when the active
+
+                        buildx builder does not load images ("pull access
+                        denied" on
+
+                        pre-commit-<hash>). Switch actionlint and markdownlint
+                        to the go and
+
+                        node variants.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-6.12.560
+                  title: ""
+                  date: 2026-11-23T22:53:21.902Z
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.42.2
+                      hash: 82b633fc843a3715bb2fbda64dd813ec463e617a
+                      body: |
+                        Update aws/aws-cli from 2.42.1 to 2.42.2
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.559
+                  title: ""
+                  date: 2026-11-23T22:06:12.143Z
+          version: github-runner-vm-3.4.381
+          title: ""
+          date: 2026-11-24T01:37:06.518Z
+  version: 0.23.738
+  title: ""
+  date: 2026-11-24T03:44:30.211Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.561
       hash: 158f188e90c8e51c6eac28f03fafc30a103a1ecb
       body: |
