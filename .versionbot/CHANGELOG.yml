@@ -1,4 +1,40 @@
 - commits:
+    - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.569
+      hash: fd97a00a50d5a52c1937be411d2663ebb2800221
+      body: |
+        Update ghcr.io/product-os/self-hosted-runners from 6.12.568 to 6.12.569
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Limit VERBOSE output in register and runner scripts
+              hash: 624fbd4519751bc5aa40d3024b89ace5919a5a0e
+              body: >
+                Replace xtrace in the register script with explicit debug
+                messages,
+
+                keep get_geo and the runner launch out of xtrace, and default
+                VERBOSE
+
+                to false in the test compose file.
+              footer:
+                See: https://balena.fibery.io/Work/Improvement/5022
+                see: https://balena.fibery.io/Work/Improvement/5022
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: self-hosted-runners-6.12.569
+          title: ""
+          date: 2026-11-25T01:44:16.498Z
+  version: 0.23.754
+  title: ""
+  date: 2026-11-25T02:47:22.236Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.568
       hash: 185ade887ad3628a18cf1bc6e5fb6c6aa2f05f23
       body: |
