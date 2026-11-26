@@ -1,4 +1,67 @@
 - commits:
+    - subject: Update ghcr.io/product-os/github-runner-vm Docker tag to v3.4.392
+      hash: 0dc6a8f4be9a1689af69201da0cba20d6717d1d3
+      body: |
+        Update ghcr.io/product-os/github-runner-vm from 3.4.391 to 3.4.392
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.570
+              hash: 31f6f4e6b85c7d096e10e77d803f7ac4bc079b88
+              body: >
+                Update ghcr.io/product-os/self-hosted-runners from 6.12.568 to
+                6.12.570
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update dependency aws/aws-cli to v2.42.4
+                      hash: 0cd4b717de118b582de3fddc55386b9f63003d4d
+                      body: |
+                        Update aws/aws-cli from 2.42.3 to 2.42.4
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: self-hosted-runners-6.12.570
+                  title: ""
+                  date: 2026-11-25T20:58:44.124Z
+                - commits:
+                    - subject: Limit VERBOSE output in register and runner scripts
+                      hash: 624fbd4519751bc5aa40d3024b89ace5919a5a0e
+                      body: >
+                        Replace xtrace in the register script with explicit
+                        debug messages,
+
+                        keep get_geo and the runner launch out of xtrace, and
+                        default VERBOSE
+
+                        to false in the test compose file.
+                      footer:
+                        See: https://balena.fibery.io/Work/Improvement/5022
+                        see: https://balena.fibery.io/Work/Improvement/5022
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Kyle Harding <kyle@balena.io>
+                        signed-off-by: Kyle Harding <kyle@balena.io>
+                      author: Kyle Harding
+                      nested: []
+                  version: self-hosted-runners-6.12.569
+                  title: ""
+                  date: 2026-11-25T01:44:16.498Z
+          version: github-runner-vm-3.4.392
+          title: ""
+          date: 2026-11-25T22:21:17.620Z
+  version: 0.23.758
+  title: ""
+  date: 2026-11-26T00:59:24.668Z
+- commits:
     - subject: Update ghcr.io/product-os/self-hosted-runners Docker tag to v6.12.572
       hash: 33ab4ce5e48bfa996cb8b084b023e7c30919ea02
       body: |
